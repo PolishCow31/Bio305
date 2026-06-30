@@ -1,14 +1,13 @@
 name = "bio305-api"
-main = "src/index.js"
 compatibility_date = "2026-06-01"
+pages_build_output_dir = "public"
 
-# Created via the Cloudflare dashboard (D1 create is not in the ~/.zshrc token's scope).
-# After `wrangler d1 create bio305`, paste the returned database_id below.
-[[d1_databases]]
-binding = "DB"
-database_name = "bio305"
-database_id = "PASTE_AFTER_CREATING_D1"
+# Cloudflare Pages project (frontend lives on GitHub Pages; this is the API only).
+# KV created with `wrangler kv namespace create bio305`.
+[[kv_namespaces]]
+binding = "BIO305_KV"
+id = "3fcc47b82e6847db903398544383542c"
 
-# Secrets (NOT stored here) — set once after deploy:
-#   wrangler secret put APP_SECRET     # his app passcode (gates /sync, /grade)
-#   wrangler secret put RELAY_SECRET   # separate secret for the local grading relay (/jobs)
+# Secrets (set after first deploy, NOT stored here):
+#   wrangler pages secret put APP_SECRET   --project-name bio305-api
+#   wrangler pages secret put RELAY_SECRET --project-name bio305-api
