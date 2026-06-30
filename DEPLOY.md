@@ -1,8 +1,10 @@
 # Bio 305 — deploy guide
 
-Frontend = static, ships to **GitHub Pages** (`polishcow.github.io/Bio305`).
-Backend = a **Cloudflare Worker** (`api/`) + **D1** + a local **`claude -p` relay**.
-The app works fully **local-only** with no backend; the backend only adds cross-device sync + LLM deep-grading.
+> **STATUS: DEPLOYED (Jun 30 2026).** Frontend live at **https://polishcow31.github.io/Bio305/**, API live at **https://bio305-api.pages.dev/api**.
+> **Actual backend stack = Cloudflare Pages Functions + KV** (not Worker+D1: the account token lacks D1-create and Workers scope). The Worker/D1 steps in section B below are superseded — the live API is `api/functions/api/[[path]].js` deployed via `wrangler pages deploy`. Secrets live in the private project handoff, not here.
+
+Frontend = static on **GitHub Pages**. Backend = **CF Pages Functions + KV** (`api/`) + a local **`claude -p` relay**.
+The app works fully **local-only** with no backend; the backend adds cross-device sync + LLM deep-grading.
 
 Legend: **[YOU]** needs your account/login (your hand). **[CY]** I can run it once the [YOU] steps are done.
 
