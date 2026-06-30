@@ -38,7 +38,7 @@
     app.innerHTML = "";
     app.appendChild(el(`
       <section class="hero">
-        <img class="watermark" src="img/blockm.svg" alt="" aria-hidden="true" />
+        <div class="watermark" aria-hidden="true"></div>
         <p class="eyebrow">University of Michigan · Genetics</p>
         <h1>Welcome back, Christian.</h1>
         <p class="sub">${ due ? `<b>${due}</b> card${due>1?"s":""} due. Exam I in <b>${Store.daysToExam()} days</b>.`

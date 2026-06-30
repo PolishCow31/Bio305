@@ -1,6 +1,6 @@
 /* Bio 305 service worker — offline shell cache. Cache version bumps on deploy. */
-const C = "bio305-v2";
-const ASSETS = ["./","index.html","css/style.css?v=1","js/store.js?v=1","js/app.js?v=2",
+const C = "bio305-v3";
+const ASSETS = ["./","index.html","css/style.css?v=2","js/store.js?v=1","js/app.js?v=3",
   "data/units.json","data/L1.json","img/blockm.svg","manifest.json"];
 self.addEventListener("install", e=>{
   e.waitUntil(caches.open(C).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));

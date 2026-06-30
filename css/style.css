@@ -61,7 +61,10 @@ button{font-family:inherit;cursor:pointer;}
 .hero h1{font-family:var(--serif);font-weight:600;font-size:clamp(28px,6vw,40px);line-height:1.06;
   margin:0 0 8px;letter-spacing:-.5px;}
 .hero p.sub{font-size:15.5px;color:var(--ink-soft);margin:0;max-width:620px;}
-.hero .watermark{position:absolute;right:-18px;top:-30px;height:140px;opacity:.06;pointer-events:none;}
+.hero .watermark{position:absolute;right:-6px;top:-22px;width:124px;height:124px;opacity:.11;pointer-events:none;
+  background:var(--maize);
+  -webkit-mask:url(../img/blockm.svg) no-repeat center/contain; mask:url(../img/blockm.svg) no-repeat center/contain;}
+[data-theme=light] .hero .watermark{background:var(--navy);opacity:.05;}
 
 /* ---- primary CTA ---- */
 .cta-row{display:flex;gap:12px;flex-wrap:wrap;margin:22px 0 30px;}
@@ -209,5 +212,5 @@ button{font-family:inherit;cursor:pointer;}
 }
 @media(max-width:719px){
   .grade-row{grid-template-columns:repeat(2,1fr);}
-  .hero .watermark{height:108px;}
+  .hero .watermark{width:92px;height:92px;top:-14px;}
 }
