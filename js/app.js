@@ -192,11 +192,11 @@
         sg.querySelector(".miss-b").onclick=()=>{ Store.logProblem(c.id,false,lat); i++; show(); };
         sg.querySelector(".deep-b").onclick=async(e)=>{
           if(!Store.cloudConfigured()){ e.target.textContent="Set up sync first →"; setTimeout(()=>go("/settings"),800); return; }
-          e.target.disabled=true; e.target.textContent="Grading…";
+          e.target.disabled=true; e.target.textContent="Grading… (up to ~2 min)";
           try{
             const jid=await Store.deepGrade(c, ta.value);
             let r, t=0;
-            while(t++<30){ await new Promise(z=>setTimeout(z,2000)); r=await Store.pollGrade(jid); if(r.status==="done"||r.status==="error") break; }
+            while(t++<95){ await new Promise(z=>setTimeout(z,2000)); r=await Store.pollGrade(jid); if(r.status==="done"||r.status==="error") break; }
             if(r&&r.status==="done"){
               e.target.textContent="Deep grade: "+(r.verdict||"")+(r.score!=null?" ("+Math.round(r.score*100)+"%)":"");
               res.appendChild(el(`<div class="verdict ${r.verdict==='correct'?'ok':r.verdict==='partial'?'partial':'no'}" style="margin-top:10px">
