@@ -106,7 +106,7 @@
         <div class="face front">
           <div class="tagline"><span class="chip type">${c.type}</span><span class="chip">${c.topic}</span></div>
           <div class="q md">${md(c.q)}</div>
-          <div class="hint">tap to reveal</div>
+          <div class="hint">tap · space to flip</div>
         </div>
         <div class="face back">
           <div class="a md">${c.type==="concept"?'<span class="lead">Answer</span>':''}${md(c.a||"")}</div>
@@ -125,10 +125,10 @@
     const lat = performance.now()-sess.shownTs;
     const host = stage.querySelector(".grade-host");
     const row = el(`<div class="grade-row">
-      <button class="grade again"><b>Again</b><small>&lt;1m</small></button>
-      <button class="grade hard"><b>Hard</b><small>soon</small></button>
-      <button class="grade good"><b>Good</b><small>space</small></button>
-      <button class="grade easy"><b>Easy</b><small>later</small></button></div>`);
+      <button class="grade again"><b>Again</b><small>1</small></button>
+      <button class="grade hard"><b>Hard</b><small>2</small></button>
+      <button class="grade good"><b>Good</b><small>3</small></button>
+      <button class="grade easy"><b>Easy</b><small>4</small></button></div>`);
     const gs=[1,2,3,4];
     [...row.children].forEach((b,k)=>b.onclick=()=>{
       Store.grade(id, gs[k], lat);
@@ -312,6 +312,16 @@
     if(Store.cloudConfigured()){ try{ await Store.pull(); }catch(e){} }
     window.addEventListener("hashchange", route);
     route();
+    // Keyboard (laptop): space = flip, 1/2/3/4 = Again/Hard/Good/Easy. Review screen only.
+    document.addEventListener("keydown", (e)=>{
+      const fc=document.querySelector(".flash-card"); if(!fc) return;
+      const t=(document.activeElement||{}).tagName; if(t==="INPUT"||t==="TEXTAREA") return;
+      if(e.code==="Space"){ e.preventDefault(); if(!fc.classList.contains("flipped")) fc.click(); return; }
+      if(fc.classList.contains("flipped")){
+        const i={"1":0,"2":1,"3":2,"4":3}[e.key];
+        if(i!==undefined){ e.preventDefault(); const g=document.querySelectorAll(".grade-row .grade")[i]; if(g) g.click(); }
+      }
+    });
     if("serviceWorker" in navigator && location.hostname.endsWith("github.io"))
       navigator.serviceWorker.register("sw.js").catch(()=>{});
   });
