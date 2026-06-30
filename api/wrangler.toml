@@ -1,0 +1,14 @@
+name = "bio305-api"
+main = "src/index.js"
+compatibility_date = "2026-06-01"
+
+# Created via the Cloudflare dashboard (D1 create is not in the ~/.zshrc token's scope).
+# After `wrangler d1 create bio305`, paste the returned database_id below.
+[[d1_databases]]
+binding = "DB"
+database_name = "bio305"
+database_id = "PASTE_AFTER_CREATING_D1"
+
+# Secrets (NOT stored here) — set once after deploy:
+#   wrangler secret put APP_SECRET     # his app passcode (gates /sync, /grade)
+#   wrangler secret put RELAY_SECRET   # separate secret for the local grading relay (/jobs)

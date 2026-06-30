@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Bio 305 grade relay. Edit the two env values, then:
+     cp this file to ~/Library/LaunchAgents/  and  launchctl load ~/Library/LaunchAgents/com.bio305.graderelay.plist
+     (launchctl unload … to stop). Runs the drainer every 30s. -->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.bio305.graderelay</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>/Users/christian/Sites/Bio305/api/relay/grade-relay.sh</string>
+  </array>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>BIO305_API</key><string>https://bio305-api.REPLACE.workers.dev</string>
+    <key>BIO305_RELAY_SECRET</key><string>REPLACE_WITH_RELAY_SECRET</string>
+  </dict>
+  <key>StartInterval</key><integer>30</integer>
+  <key>RunAtLoad</key><true/>
+  <key>StandardOutPath</key><string>/tmp/bio305-relay.log</string>
+  <key>StandardErrorPath</key><string>/tmp/bio305-relay.err</string>
+</dict>
+</plist>

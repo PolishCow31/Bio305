@@ -1,0 +1,114 @@
+[
+ {
+  "unit": 1,
+  "title": "Unit 1 · Molecular Genetics",
+  "exam": "Exam I (Jul 20)",
+  "lectures": [
+   {
+    "n": 1,
+    "title": "Introduction & DNA",
+    "status": "live",
+    "file": "L1.json"
+   },
+   {
+    "n": 2,
+    "title": "Replication",
+    "status": "tbd"
+   },
+   {
+    "n": 3,
+    "title": "RNA & Transcription",
+    "status": "tbd"
+   },
+   {
+    "n": 4,
+    "title": "Proteins & Translation",
+    "status": "tbd"
+   },
+   {
+    "n": 5,
+    "title": "Mutation, Repair & Recombination",
+    "status": "tbd"
+   },
+   {
+    "n": 6,
+    "title": "Bacterial & Viral Genetics",
+    "status": "tbd"
+   }
+  ]
+ },
+ {
+  "unit": 2,
+  "title": "Unit 2 · Gene Regulation & Transmission",
+  "exam": "Exam II (Aug 3)",
+  "lectures": [
+   {
+    "n": 7,
+    "title": "Prokaryotic Gene Regulation",
+    "status": "tbd"
+   },
+   {
+    "n": 8,
+    "title": "Eukaryotic Gene Regulation I",
+    "status": "tbd"
+   },
+   {
+    "n": 9,
+    "title": "Euk Gene Reg II; Epigenetics",
+    "status": "tbd"
+   },
+   {
+    "n": 10,
+    "title": "Mendel & Probability",
+    "status": "tbd"
+   },
+   {
+    "n": 11,
+    "title": "Pedigrees & Sex-Linkage",
+    "status": "tbd"
+   },
+   {
+    "n": 12,
+    "title": "Extrachromosomal Inheritance",
+    "status": "tbd"
+   }
+  ]
+ },
+ {
+  "unit": 3,
+  "title": "Unit 3 · Mapping, Variation & Populations",
+  "exam": "Exam III (Aug 17)",
+  "lectures": [
+   {
+    "n": 13,
+    "title": "Gene Mapping & Linkage",
+    "status": "tbd"
+   },
+   {
+    "n": 14,
+    "title": "Chromosomal Aberrations",
+    "status": "tbd"
+   },
+   {
+    "n": 15,
+    "title": "Gene Interactions",
+    "status": "tbd"
+   },
+   {
+    "n": 16,
+    "title": "Quantitative Genetics",
+    "status": "tbd"
+   },
+   {
+    "n": 17,
+    "title": "Population Genetics I",
+    "status": "tbd"
+   },
+   {
+    "n": 18,
+    "title": "Population Genetics II",
+    "status": "tbd"
+   }
+  ]
+ }
+]

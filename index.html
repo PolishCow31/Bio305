@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Bio 305 · Genetics</title>
+<meta name="theme-color" content="#00274C" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+<meta name="apple-mobile-web-app-title" content="Bio 305" />
+<link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png" />
+<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+<link rel="manifest" href="manifest.json" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css?v=1" />
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/home" aria-label="Bio 305 home">
+    <img class="blockm" src="img/blockm.svg" alt="" aria-hidden="true" />
+    <span class="wordmark"><b>Bio&nbsp;305</b><small>Genetics</small></span>
+  </a>
+  <div class="right">
+    <span class="goal" id="goal-pill" title="Exam I — Monday July 20">EXAM I · <em id="goal-days">—</em></span>
+    <a class="icon-btn" id="settings-btn" href="#/settings" aria-label="Settings">⚙</a>
+    <button class="icon-btn" id="theme-btn" aria-label="Toggle light/dark">◐</button>
+  </div>
+</header>
+<div class="maize-rule"></div>
+
+<main id="app" class="wrap"><!-- views render here --></main>
+
+<nav class="tabbar" id="tabbar">
+  <a href="#/home" data-tab="home"><span class="ti">▦</span>Home</a>
+  <a href="#/review" data-tab="review"><span class="ti">◆</span>Review</a>
+  <a href="#/problems" data-tab="problems"><span class="ti">∑</span>Problems</a>
+  <a href="#/stats" data-tab="stats"><span class="ti">▲</span>Stats</a>
+</nav>
+
+<script src="js/store.js?v=1"></script>
+<script src="js/app.js?v=1"></script>
+</body>
+</html>

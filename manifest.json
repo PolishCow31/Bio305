@@ -1,0 +1,16 @@
+{
+  "name": "Bio 305 · Genetics",
+  "short_name": "Bio 305",
+  "description": "University of Michigan BIO 305 — Genetics flashcards & spaced repetition",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#00203f",
+  "theme_color": "#00274C",
+  "icons": [
+    { "src": "img/favicon-32.png", "sizes": "32x32", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "180x180", "type": "image/png" },
+    { "src": "apple-touch-icon.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
