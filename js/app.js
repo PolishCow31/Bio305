@@ -184,24 +184,24 @@
           ${vlabel} <span style="color:var(--ink-faint);font-weight:400">· auto-check is a hint; you grade it</span></div>`));
         res.appendChild(el(`<div class="worked"><span class="lead">Worked solution</span><div class="md">${md(c.worked||"")}</div>
           <div class="md" style="margin-top:10px"><b>Answer:</b> ${md(c.answer||"")}</div></div>`));
+        const isLocal=["localhost","127.0.0.1"].includes(location.hostname);
         const sg=el(`<div class="cta-row" style="margin-top:14px">
           <button class="btn good-b">I got it</button>
           <button class="btn alt miss-b">Missed it</button>
-          <button class="btn alt deep-b" title="Send to claude -p for a full LLM grade (cloud)">Deep grade</button></div>`);
+          <button class="btn alt deep-b" title="${isLocal?'Grade this answer with claude -p on your laptop':'Deep grade runs on your laptop'}">Deep grade</button></div>`);
         sg.querySelector(".good-b").onclick=()=>{ Store.logProblem(c.id,true,lat); i++; show(); };
         sg.querySelector(".miss-b").onclick=()=>{ Store.logProblem(c.id,false,lat); i++; show(); };
         sg.querySelector(".deep-b").onclick=async(e)=>{
-          if(!Store.cloudConfigured()){ e.target.textContent="Set up sync first →"; setTimeout(()=>go("/settings"),800); return; }
-          e.target.disabled=true; e.target.textContent="Grading… (up to ~2 min)";
+          // Laptop-local grader: button → on-machine daemon (127.0.0.1:8457) → claude -p → verdict inline. No queue/poll/KV.
+          if(!isLocal){ e.target.disabled=true; e.target.textContent="Laptop only"; return; }
+          e.target.disabled=true; e.target.textContent="Grading…";
           try{
-            const jid=await Store.deepGrade(c, ta.value);
-            let r, t=0;
-            while(t++<95){ await new Promise(z=>setTimeout(z,2000)); r=await Store.pollGrade(jid); if(r.status==="done"||r.status==="error") break; }
-            if(r&&r.status==="done"){
+            const r=await Store.localGrade(c, ta.value);
+            if(r && !r.error){
               e.target.textContent="Deep grade: "+(r.verdict||"")+(r.score!=null?" ("+Math.round(r.score*100)+"%)":"");
               res.appendChild(el(`<div class="verdict ${r.verdict==='correct'?'ok':r.verdict==='partial'?'partial':'no'}" style="margin-top:10px">
                 <b>LLM grade:</b> ${r.verdict||''} — ${r.note||''}</div>`));
-            } else e.target.textContent="Timed out (is the relay running?)";
+            } else { e.target.textContent="Grader error"; if(r&&r.note) e.target.title=r.note; }
           }catch(x){ e.target.textContent="Error: "+x.message; }
         };
         res.appendChild(sg);

@@ -59,7 +59,10 @@ export async function onRequest(ctx){
       const id = crypto.randomUUID();
       await KV.put("job:"+id, JSON.stringify({ id, account:b.account||"default", card_id:b.card_id||"",
         question:b.question||"", model_answer:b.model_answer||"", student_answer:b.student_answer||"",
-        status:"pending", created_at:Date.now() }));
+        status:"pending", created_at:Date.now() }), { expirationTtl: 86400 });   // 24h backstop: abandoned jobs self-clean
+      // Maintain a small pending-id index so the relay's every-30s /jobs poll is one GET, never a KV.list.
+      const idx = JSON.parse(await KV.get("pending:index") || "[]");
+      if(!idx.includes(id)){ idx.push(id); await KV.put("pending:index", JSON.stringify(idx)); }
       return json({id,status:"pending"},200,origin);
     }
     if(route.startsWith("grade/") && request.method==="GET"){
@@ -72,10 +75,26 @@ export async function onRequest(ctx){
     // ---- RELAY (local claude -p drainer) ----
     if(route==="jobs" && request.method==="GET"){
       if(!relayOK()) return json({error:"unauthorized"},401,origin);
-      const list = await KV.list({prefix:"job:"});
       const out=[];
-      for(const k of list.keys){
-        const raw = await KV.get(k.name); if(!raw) continue;
+      // Hourly reconciliation (relay adds ?full=1 ~once/hour): authoritative KV.list to catch any
+      // job the index missed (rare concurrent-write race) and rebuild the index from ground truth.
+      // ~24 list ops/day instead of the old 2,880 that blew the 1,000/day list cap ~4am nightly.
+      if(new URL(request.url).searchParams.get("full")==="1"){
+        const live=[];
+        const list = await KV.list({prefix:"job:"});
+        for(const k of list.keys){
+          const raw = await KV.get(k.name); if(!raw) continue;
+          const j = JSON.parse(raw);
+          if(j.status==="pending"){ live.push(j.id);
+            if(out.length<10) out.push({id:j.id,card_id:j.card_id,question:j.question,model_answer:j.model_answer,student_answer:j.student_answer}); }
+        }
+        await KV.put("pending:index", JSON.stringify(live));   // rebuild index from truth
+        return json({jobs:out,reconciled:true},200,origin);
+      }
+      // Cheap default path: ONE get for the index, then get only the (usually 0) pending ids. No list.
+      const idx = JSON.parse(await KV.get("pending:index") || "[]");
+      for(const id of idx){
+        const raw = await KV.get("job:"+id); if(!raw) continue;
         const j = JSON.parse(raw);
         if(j.status==="pending"){ out.push({id:j.id,card_id:j.card_id,question:j.question,model_answer:j.model_answer,student_answer:j.student_answer}); }
         if(out.length>=10) break;
@@ -89,7 +108,11 @@ export async function onRequest(ctx){
       const j = JSON.parse(raw); const b = await request.json();
       Object.assign(j,{ status:b.error?"error":"done", verdict:b.verdict||null,
         score:b.score!=null?b.score:null, note:b.note||null, graded_at:Date.now() });
-      await KV.put("job:"+id, JSON.stringify(j));
+      await KV.put("job:"+id, JSON.stringify(j), { expirationTtl: 3600 });   // auto-clean 1h after grading (app reads verdict well before)
+      // Drop from the pending index so the cheap /jobs path stops returning it.
+      const idx = JSON.parse(await KV.get("pending:index") || "[]");
+      const ni = idx.filter(x=>x!==id);
+      if(ni.length!==idx.length) await KV.put("pending:index", JSON.stringify(ni));
       return json({ok:true},200,origin);
     }
 

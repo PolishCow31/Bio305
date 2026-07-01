@@ -14,7 +14,15 @@ LOCK="/tmp/bio305-relay.lock"
 trap 'rm -f "$LOCK"' EXIT
 touch "$LOCK"
 
-jobs=$(curl -s -H "x-relay-secret: $SECRET" "$API/jobs")
+# Normally /jobs is a cheap single-key read (the pending index). Once an hour, add ?full=1 so the
+# Worker does an authoritative KV.list to catch anything the index missed and prune dead ids.
+# Keeps list ops ~24/day instead of the 2,880/day (30s poll) that blew the 1,000/day KV list cap.
+SWEEP="/tmp/bio305-relay.sweep"
+full=""
+if [ ! -e "$SWEEP" ] || [ $(( $(date +%s) - $(stat -f %m "$SWEEP" 2>/dev/null || echo 0) )) -ge 3600 ]; then
+  full="?full=1"; touch "$SWEEP"
+fi
+jobs=$(curl -s -H "x-relay-secret: $SECRET" "$API/jobs$full")
 [ -z "$jobs" ] && exit 0
 
 # Program from the file, jobs JSON from the pipe (stdin). Keeping these separate is the fix —

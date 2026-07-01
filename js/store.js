@@ -211,10 +211,19 @@ const Store = (function(){
   }
   async function pollGrade(id){ const c=cfg();
     const r=await fetch(c.apiBase+"/grade/"+id,{headers:{"x-app-secret":c.appSecret}}); return r.json(); }
+  // Laptop-local deep grade: POST straight to the on-machine daemon; verdict returns INLINE (no queue/poll/KV).
+  async function localGrade(card,student){
+    const r=await fetch("http://127.0.0.1:8457/grade",{method:"POST",
+      headers:{"content-type":"application/json"},
+      body:JSON.stringify({card_id:card.id,question:card.q,
+        model_answer:((card.answer||"")+"  "+(card.worked||"")).trim(),student_answer:student})});
+    if(!r.ok){ let e={}; try{e=await r.json();}catch(_){} throw new Error(e.error||("grader "+r.status)); }
+    return r.json();
+  }
 
   return { init, save, units:()=>units, cards:()=>cards, get, reviewCards, problemCards,
     dueQueue, lectureQueue, isDue, srs, grade, localCheck, logProblem, logSession,
     cardStat, topicStats, overview, daysToExam, exportJSON, importJSON, md,
     settings:()=>state.settings,
-    cloudConfigured, setCloud, cloudCfg:cfg, pull, push, deepGrade, pollGrade };
+    cloudConfigured, setCloud, cloudCfg:cfg, pull, push, deepGrade, pollGrade, localGrade };
 })();
