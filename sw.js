@@ -1,6 +1,6 @@
 /* Bio 305 service worker — offline shell cache. Cache version bumps on deploy. */
-const C = "bio305-v8";
-const ASSETS = ["./","index.html","css/style.css?v=2","js/store.js?v=2","js/app.js?v=5",
+const C = "bio305-v9";
+const ASSETS = ["./","index.html","css/style.css?v=2","js/store.js?v=3","js/app.js?v=5",
   "data/units.json","data/L1.json","data/L2.json","img/blockm.svg",
   "img/favicon-32.png","img/icon-512.png","apple-touch-icon.png","manifest.json"];
 self.addEventListener("install", e=>{

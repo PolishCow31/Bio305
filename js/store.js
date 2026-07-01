@@ -16,12 +16,15 @@ const Store = (function(){
     if(!_suppressPush && cloudConfigured()) schedulePush(); }
 
   async function init(){
-    const [u,c] = await Promise.all([
-      fetch("data/units.json").then(r=>r.json()),
-      fetch("data/L1.json").then(r=>r.json())
-    ]);
-    units = u; cards = c; byId = {};
-    cards.forEach(c=>{ c.lecture = 1; byId[c.id]=c; });
+    units = await fetch("data/units.json").then(r=>r.json());
+    // Load EVERY live lecture's deck via units.json's file mapping — not just L1.
+    const live = units.flatMap(u=>u.lectures).filter(l=>l.status==="live" && l.file);
+    const decks = await Promise.all(live.map(l =>
+      fetch("data/"+l.file).then(r=>r.json()).then(cs=>{ cs.forEach(c=>c.lecture=l.n); return cs; })
+    ));
+    cards = decks.flat();
+    byId = {};
+    cards.forEach(c=>{ byId[c.id]=c; });
     return true;
   }
 
