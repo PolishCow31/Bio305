@@ -157,7 +157,7 @@
   "target_s": 12,
   "src": "slide 28",
   "q": "What did Griffith's experiment demonstrate?",
-  "a": "Genetic transformation — a \"transforming principle\" passes from heat-killed virulent (S) bacteria into live nonvirulent (R) bacteria."
+  "a": "Genetic transformation (Griffith, **1928**) — a \"transforming principle\" passes from heat-killed virulent (S) bacteria into live nonvirulent (R) bacteria."
  },
  {
   "id": "L1-R017",
@@ -167,7 +167,7 @@
   "target_s": 15,
   "src": "slide 29 / Lec1r 7.1",
   "q": "What did Avery, MacLeod & McCarty show, and by what approach?",
-  "a": "That the transforming principle is DNA — by process of elimination (destroying protein/RNA/DNA in turn; only destroying DNA abolished transformation)."
+  "a": "That the transforming principle is DNA (Avery–MacLeod–McCarty, **1944**) — by process of elimination (destroying protein/RNA/DNA in turn; only destroying DNA abolished transformation)."
  },
  {
   "id": "L1-R018",
@@ -177,7 +177,7 @@
   "target_s": 20,
   "src": "slide 30 / Lec1r 7.1",
   "q": "In Hershey–Chase, what do ³²P and ³⁵S label, and what was the result?",
-  "a": "³²P labels DNA, ³⁵S labels protein. ³²P (DNA) entered the bacteria; ³⁵S (protein) stayed in the empty phage \"ghosts\" → DNA is the hereditary material."
+  "a": "³²P labels DNA, ³⁵S labels protein. ³²P (DNA) entered the bacteria; ³⁵S (protein) stayed in the empty phage \"ghosts\" → DNA is the hereditary material (Hershey–Chase, **1952**)."
  },
  {
   "id": "L1-R019",
@@ -317,7 +317,87 @@
   "target_s": 12,
   "src": "Lec1r (Ch 1 / 7.2)",
   "q": "What two building-block features distinguish RNA from DNA?",
-  "a": "RNA uses ribose (2′-OH) instead of deoxyribose (2′-H), and uracil (U) in place of thymine (T). On a base-composition table, \"has T → DNA, has U → RNA\" is the quick tell.\n\n### Concept"
+  "a": "RNA uses ribose (2′-OH) instead of deoxyribose (2′-H), and uracil (U) in place of thymine (T). On a base-composition table, \"has T → DNA, has U → RNA\" is the quick tell."
+ },
+ {
+  "id": "L1-R033",
+  "type": "recall",
+  "topic": "history",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec1r 7.1 (Ch 7) / slide 24",
+  "q": "Who first isolated DNA, in what year, and what did he name it?",
+  "a": "**Friedrich Miescher, 1869** — isolated it from the nuclei of white blood cells and named it \"nuclein.\""
+ },
+ {
+  "id": "L1-R034",
+  "type": "recall",
+  "topic": "history",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec1r 7.1 (Ch 7)",
+  "q": "Who first proposed (1895) that the chromatin/nuclein in chromosomes is the physical basis of inheritance?",
+  "a": "**Edmund Beecher Wilson, 1895** — after showing egg and sperm contribute equal chromosome numbers, he argued chromatin (≈ Miescher's nuclein) is the physical basis of heredity."
+ },
+ {
+  "id": "L1-R035",
+  "type": "recall",
+  "topic": "history",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec1r 7.1 / slides 24–26",
+  "q": "Who, in 1903, independently linked chromosome behavior in meiosis to Mendelian inheritance (the chromosome theory)?",
+  "a": "**Walter Sutton** (Wilson's student) and, independently, **Theodor Boveri** — 1903."
+ },
+ {
+  "id": "L1-R036",
+  "type": "recall",
+  "topic": "history",
+  "diff": 2,
+  "target_s": 20,
+  "src": "slides 24–26 (Archbold)",
+  "q": "Who gave the first cytological (visual) proof of independent assortment — in what organism and year?",
+  "a": "**Eleanor Carothers, 1913**, in grasshoppers — a heteromorphic (visibly size-different) chromosome pair let her SEE the maternal vs paternal homologs segregate independently in meiosis I."
+ },
+ {
+  "id": "L1-R037",
+  "type": "recall",
+  "topic": "techniques",
+  "diff": 2,
+  "target_s": 20,
+  "src": "Lec1r 1.4 (p16)",
+  "q": "What was the first use of gel electrophoresis — who, when, and to show what?",
+  "a": "**Linus Pauling, 1949** — that a variant β-globin (βS) causes sickle-cell disease; the first \"molecular disease\" identified by electrophoresis."
+ },
+ {
+  "id": "L1-R038",
+  "type": "recall",
+  "topic": "techniques",
+  "diff": 1,
+  "target_s": 15,
+  "src": "slide 38 / Lec1r 1.4 (p17)",
+  "q": "Who invented the Southern blot and when — and how were Northern/Western named?",
+  "a": "**Edwin Southern, 1975** (DNA→membrane transfer). \"Northern\" (RNA) and \"Western\" (protein) are tongue-in-cheek analogies to his name — they are NOT people's names."
+ },
+ {
+  "id": "L1-R039",
+  "type": "recall",
+  "topic": "techniques",
+  "diff": 1,
+  "target_s": 15,
+  "src": "Lec1r 1.4 (Fig 1.12, p16)",
+  "q": "In a gel, what is the \"origin of migration,\" and toward which electrode do the samples move?",
+  "a": "The **wells** (left by the comb in the agarose) are the origin; the negatively-charged samples migrate toward the **positive (+)** electrode."
+ },
+ {
+  "id": "L1-R040",
+  "type": "recall",
+  "topic": "techniques",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec1r 1.4 (p16–17)",
+  "q": "How does ethidium bromide (EtBr) make nucleic acids visible — and is it a general or a specific label?",
+  "a": "EtBr binds nucleic acids and **fluoresces when excited by UV light**, so the bands can be seen/photographed. It is a **general** stain — it labels all DNA/RNA regardless of sequence."
  },
  {
   "id": "L1-C001",
@@ -477,7 +557,57 @@
   "target_s": 30,
   "src": "PR Haenfler (verified)",
   "q": "In a single-stranded nucleic acid, is \"purines = pyrimidines\" guaranteed the way A=T / G=C are in double-stranded DNA?",
-  "a": "No. In dsDNA, complementary pairing forces A=T and G=C, so purines (A+G) necessarily equal pyrimidines (T+C). A single strand has no pairing constraint, so purines need NOT equal pyrimidines — if a ss sample happens to show A+G = C+U (e.g. 50/50), that's a coincidence of that sequence, not a rule. (An exam choice \"equal purines and pyrimidines\" can still be the correct *consistent-with-the-data* answer even for a single-stranded molecule.)\n\n### Problem"
+  "a": "No. In dsDNA, complementary pairing forces A=T and G=C, so purines (A+G) necessarily equal pyrimidines (T+C). A single strand has no pairing constraint, so purines need NOT equal pyrimidines — if a ss sample happens to show A+G = C+U (e.g. 50/50), that's a coincidence of that sequence, not a rule. (An exam choice \"equal purines and pyrimidines\" can still be the correct *consistent-with-the-data* answer even for a single-stranded molecule.)"
+ },
+ {
+  "id": "L1-C017",
+  "type": "concept",
+  "topic": "history",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec1r 7.1 (Ch 7)",
+  "q": "Name the three experiments — WITH dates — that established DNA as the hereditary material, and what each one added.",
+  "a": "**Griffith (1928):** a heritable \"transforming principle\" exists (not yet identified). **Avery–MacLeod–McCarty (1944):** that principle IS DNA — shown by destroying candidates one at a time (only DNase abolished transformation). **Hershey–Chase (1952):** confirmed it with ³²P/³⁵S labeling — DNA, not protein, enters the cell. (The textbook frames them as \"three experiments conducted between 1928 and 1952.\")"
+ },
+ {
+  "id": "L1-C018",
+  "type": "concept",
+  "topic": "history",
+  "diff": 2,
+  "target_s": 30,
+  "src": "Lec1r 7.1 (p33)",
+  "q": "What methodological advance let Avery's group test WHICH molecule was the transforming principle?",
+  "a": "**Martin Dawson (with Oswald Avery)** developed an *in vitro* transformation procedure — mixing live R cells with a purified extract of heat-killed SIII in a tube. That let them selectively destroy each candidate (lipids/polysaccharides, then protease, RNase, DNase) and see which destruction blocked transformation. Only DNase did → DNA."
+ },
+ {
+  "id": "L1-C019",
+  "type": "concept",
+  "topic": "techniques",
+  "diff": 3,
+  "target_s": 35,
+  "src": "Lec1r 1.4 (p17)",
+  "q": "Beyond running the gel, detecting ONE specific protein or ONE specific sequence took two innovations — what are they?",
+  "a": "(1) **Blotting** — transferring the separated molecules from the gel onto a durable membrane (a permanent record you can then probe). (2) **Molecular probes** — traceable molecules that bind one specific target: an **antibody** for a specific protein, or a labeled **single-stranded nucleic acid** that finds its complement by **hybridization**."
+ },
+ {
+  "id": "L1-C020",
+  "type": "concept",
+  "topic": "techniques",
+  "diff": 3,
+  "target_s": 40,
+  "src": "slides 42–48 / Lec1r 1.4",
+  "q": "Southern vs Northern vs Western — same backbone (gel → blot → probe). Give each one's target and the step UNIQUE to it.",
+  "a": "**Southern = DNA:** the only one that **digests the sample with restriction enzymes** first (and uses alkali to denature the strands for hybridization). **Northern = RNA:** **no** restriction digestion (you don't cut RNA that way). **Western = protein:** the sample is **denatured and SDS-coated** (uniform negative charge → migrates by size), then detected with **antibodies**, not a nucleic-acid probe."
+ },
+ {
+  "id": "L1-C021",
+  "type": "concept",
+  "topic": "techniques",
+  "diff": 2,
+  "target_s": 30,
+  "src": "Lec1r 1.4 (Fig 1.13, p16)",
+  "q": "In Pauling's 1949 hemoglobin gel, why does a βA/βS heterozygote show TWO bands while βA/βA and βS/βS each show one?",
+  "a": "Each homozygote makes a single β-globin form (one charge → one mobility → one band). The heterozygote makes **both** βA and βS, which differ in charge/mobility, so they separate into two bands (βS migrates less than βA). The gel reads genotype directly — molecular co-dominance."
  },
  {
   "id": "L1-P001",
@@ -609,7 +739,7 @@
   "src": "HW1 Q6 (figure-verified)",
   "q": "In the HW1 gel, Band 1 sits nearer the wells/origin (top, by −) and Band 2 has migrated farther toward +. Which statement is NOT consistent with the gel? (1) Band 1 was stained/probed (2) Band 1 has lower molecular mass than Band 2 (3) Band 1 has a negative charge (4) Band 1 is closer to the origin than Band 2 (5) Band 1 has lower electrophoretic mobility than Band 2.",
   "worked": "Band 1 migrated less → it is the LARGER fragment (higher mass, lower mobility, nearer the origin). So (1) true (visible ⇒ labeled), (3) true (DNA is negative), (4) true, (5) true (larger = slower). (2) claims Band 1 has *lower* mass — false, because Band 1 is the larger band.",
-  "answer": "2 — \"Band 1 has a lower molecular mass than Band 2\" is the inconsistent statement (Band 1 is the larger fragment). [Figure-verified: Band 1 is the upper band, nearer the origin.]\n\n> The cards below (P013–P019, C016) are calibrated from **real BIO 305 past-exam questions** (Problem Roulette), hand-verified by Cy. They reflect how this material is actually tested."
+  "answer": "2 — \"Band 1 has a lower molecular mass than Band 2\" is the inconsistent statement (Band 1 is the larger fragment). [Figure-verified: Band 1 is the upper band, nearer the origin.]"
  },
  {
   "id": "L1-P013",
@@ -686,6 +816,17 @@
   "src": "PR RFLP + cross (verified) [bridges L10]",
   "q": "Round (RR) × wrinkled (rr); F1 selfed → F2; two random F2 plants are crossed → F3, genotyped on a gel where R = full-length (upper band) and r = a 20%-shorter fragment (lower band). The F3 gel: every lane shows the upper band; some also show the lower band; none show the lower band alone. Most likely F2-parent genotypes? (A) rr, RR (B) RR, RR (C) rr, rr (D) RR, Rr (E) Rr, Rr",
   "worked": "Read each lane by fragment size: upper only = RR, both bands = Rr, lower only = rr. The F3 has RR and Rr but NO rr. Only RR × Rr gives ½ RR : ½ Rr with zero rr. (RR×RR → no heterozygotes; Rr×Rr → ¼ rr, which is absent; any rr parent can't yield RR offspring.)",
-  "answer": "D\n\n---\n\n## 5. Source map — traceability\n\n| Section | Primary source |\n|---|---|\n| 2.1 What genetics is | Slides 14–22 |\n| 2.2 DNA as hereditary molecule | Slides 24–31; Lec1r 7.1 (Griffith Fig 7.1–7.2, Hershey-Chase) |\n| 2.3 DNA chemistry | Slide 23; Lec1r 7.1–7.2 (nucleotide structure, carbons, purine/pyrimidine) |\n| 2.4 Double helix | Slides 32–36; Lec1r 1.1–1.2, 7.2 (dimensions, grooves) |\n| 2.5 Techniques | Slides 37–49 |\n| 2.6 Exam strategy | Slides 3, 12 |\n| HW problems | Bio305/Homework/Unit 1/L1 — Lec1_HWproblems(_KEY).pdf |\n| Discussion DS1 | Logistics/intro only (no content questions) |\n| Enrichment | \"Watson, Crick & Franklin\" (Guardian), \"The DNA riddle\" — context/color, not folded as cards |\n\n**Resolved:** HW1 Q6 (gel interpretation) — I rendered the actual gel figure from the PDF. Band 1 is the upper band (nearer the origin), so it is the larger fragment and the inconsistent statement is **#2**. Now a verified card (**L1-P012**).\n\n**Verification status:** every problem card is from the official answer key, the textbook's own worked solution, a slide's sample question (standard technique), the rendered HW figure (Q6), or hand-computed and checked. All nine original problems were re-verified by hand on review, and a three-reviewer pass (completeness / relevance / accuracy) drove this revision. No unverified answer keys shipped."
+  "answer": "D"
+ },
+ {
+  "id": "L1-P020",
+  "type": "problem",
+  "topic": "techniques",
+  "diff": 2,
+  "target_s": 90,
+  "src": "PR Archbold Su23 Exam 1 (Problem 42545, verified)",
+  "q": "A gel of DNA fragments shows **Band 1** near the wells/origin (top, by −) and **Band 2** migrated farther toward +. Which statement is NOT consistent with the gel? (A) Band 2 has a higher molecular mass than Band 1 (B) Band 1 must have a negative charge (C) Band 2 has higher electrophoretic mobility than Band 1 (D) Band 2 must have been stained or hybridized by a molecular probe (E) Band 1 is closer to the origin of migration than Band 2.",
+  "worked": "Band 2 migrated farther → it is the **smaller** fragment → lower molecular mass, higher mobility. Check the others: (B) DNA's phosphate backbone is negative — true; (C) farther = higher mobility — true; (D) it's visible, so it was labeled — true; (E) Band 1 is the upper band, nearer the origin — true. (A) claims Band 2 has a *higher* mass — false, because Band 2 is the smaller, faster fragment.",
+  "answer": "A — \"Band 2 has a higher molecular mass than Band 1\" (Band 2 is the smaller fragment that ran farther)."
  }
 ]

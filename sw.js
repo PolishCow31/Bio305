@@ -1,5 +1,5 @@
 /* Bio 305 service worker — offline shell cache. Cache version bumps on deploy. */
-const C = "bio305-v4";
+const C = "bio305-v5";
 const ASSETS = ["./","index.html","css/style.css?v=2","js/store.js?v=1","js/app.js?v=4",
   "data/units.json","data/L1.json","img/blockm.svg","manifest.json"];
 self.addEventListener("install", e=>{
