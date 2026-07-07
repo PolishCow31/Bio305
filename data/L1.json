@@ -1055,22 +1055,6 @@
   ]
  },
  {
-  "id": "L1-P012",
-  "type": "problem",
-  "topic": "techniques",
-  "diff": 2,
-  "target_s": 90,
-  "src": "HW1 Q6 (figure-verified)",
-  "q": "In the HW1 gel, Band 1 sits nearer the wells/origin (top, by −) and Band 2 has migrated farther toward +. Which statement is NOT consistent with the gel? (1) Band 1 was stained/probed (2) Band 1 has lower molecular mass than Band 2 (3) Band 1 has a negative charge (4) Band 1 is closer to the origin than Band 2 (5) Band 1 has lower electrophoretic mobility than Band 2.",
-  "worked": "Band 1 migrated less → it is the LARGER fragment (higher mass, lower mobility, nearer the origin). So (1) true (visible ⇒ labeled), (3) true (DNA is negative), (4) true, (5) true (larger = slower). (2) claims Band 1 has *lower* mass — false, because Band 1 is the larger band.",
-  "answer": "2 — \"Band 1 has a lower molecular mass than Band 2\" is the inconsistent statement (Band 1 is the larger fragment). [Figure-verified: Band 1 is the upper band, nearer the origin.]",
-  "tags": [
-   "gel-electrophoresis",
-   "figure-interpretation",
-   "exceptions"
-  ]
- },
- {
   "id": "L1-P013",
   "type": "problem",
   "topic": "techniques",
@@ -1180,22 +1164,6 @@
    "gel-electrophoresis",
    "figure-interpretation",
    "calculation"
-  ]
- },
- {
-  "id": "L1-P020",
-  "type": "problem",
-  "topic": "techniques",
-  "diff": 2,
-  "target_s": 90,
-  "src": "PR Archbold Su23 Exam 1 (Problem 42545, verified)",
-  "q": "A gel of DNA fragments shows **Band 1** near the wells/origin (top, by −) and **Band 2** migrated farther toward +. Which statement is NOT consistent with the gel? (A) Band 2 has a higher molecular mass than Band 1 (B) Band 1 must have a negative charge (C) Band 2 has higher electrophoretic mobility than Band 1 (D) Band 2 must have been stained or hybridized by a molecular probe (E) Band 1 is closer to the origin of migration than Band 2.",
-  "worked": "Band 2 migrated farther → it is the **smaller** fragment → lower molecular mass, higher mobility. Check the others: (B) DNA's phosphate backbone is negative — true; (C) farther = higher mobility — true; (D) it's visible, so it was labeled — true; (E) Band 1 is the upper band, nearer the origin — true. (A) claims Band 2 has a *higher* mass — false, because Band 2 is the smaller, faster fragment.",
-  "answer": "A — \"Band 2 has a higher molecular mass than Band 1\" (Band 2 is the smaller fragment that ran farther).",
-  "tags": [
-   "gel-electrophoresis",
-   "figure-interpretation",
-   "exceptions"
   ]
  },
  {

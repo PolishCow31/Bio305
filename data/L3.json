@@ -342,38 +342,6 @@
   "id": "L3-C015"
  },
  {
-  "type": "concept",
-  "topic": "Why the −10 is AT-rich",
-  "diff": 2,
-  "target_s": 16,
-  "src": "L3 transcript §5.1 + L3 reading (Bacterial Promoters, Pribnow box)",
-  "q": "The −10 element (Pribnow box, ~TATAAT) is AT-rich. Why is that AT-richness functionally important, and what's the direct parallel from DNA replication?",
-  "a": "AT base pairs have only 2 hydrogen bonds (vs 3 for GC), so an AT-rich stretch is easier to melt/unwind. The −10 is exactly where the DNA gets pulled open to form the open promoter complex, so it 'wants' to be easy to separate. Same problem/solution as replication's OriC, which is also AT-rich so it can be melted to start.",
-  "tags": [
-   "promoter",
-   "rna-chemistry",
-   "compare-contrast",
-   "mechanism"
-  ],
-  "id": "L3-C016"
- },
- {
-  "type": "concept",
-  "topic": "Why −10/−35 positions are estimates",
-  "diff": 2,
-  "target_s": 18,
-  "src": "L3 transcript §5.1 + L3 reading (Genetic Analysis 8.1 / spacing not critical)",
-  "q": "You're told to find a bacterial promoter's −10 element by counting exactly 10 bp upstream of +1. Why is that counting approach unreliable, and what should you actually expect?",
-  "a": "The positions are ESTIMATES, not exact addresses. The spacing between −10, −35, and +1 varies gene-to-gene (sometimes an extra base gets inserted), and the sequences between/around them are highly variable spacers. So counting back exactly 10 won't reliably land you on the box — but counting back ~10 will land you WITHIN the Pribnow box. The consensus is defined by nucleotide content + relative location, tolerant of small spacing shifts.",
-  "tags": [
-   "promoter",
-   "figure-interpretation",
-   "exceptions",
-   "sequence-reading"
-  ],
-  "id": "L3-C017"
- },
- {
   "type": "recall",
   "topic": "Closed → open promoter complex",
   "diff": 2,
