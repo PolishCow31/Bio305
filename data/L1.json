@@ -7,7 +7,10 @@
   "target_s": 8,
   "src": "slide 15",
   "q": "What is genetics the study of?",
-  "a": "Heredity and variation."
+  "a": "Heredity and variation.",
+  "tags": [
+   "foundations"
+  ]
  },
  {
   "id": "L1-R002",
@@ -17,7 +20,10 @@
   "target_s": 8,
   "src": "slide 16",
   "q": "Define a \"gene\" in the sense used in this course.",
-  "a": "A unit of heritable information."
+  "a": "A unit of heritable information.",
+  "tags": [
+   "foundations"
+  ]
  },
  {
   "id": "L1-R003",
@@ -27,7 +33,11 @@
   "target_s": 12,
   "src": "slides 18–22",
   "q": "Genotype vs phenotype?",
-  "a": "Genotype = the DNA sequence (underlying); phenotype = the observable trait/morphology."
+  "a": "Genotype = the DNA sequence (underlying); phenotype = the observable trait/morphology.",
+  "tags": [
+   "foundations",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R004",
@@ -37,7 +47,10 @@
   "target_s": 12,
   "src": "slide 22",
   "q": "Genetic analysis is the process of ___?",
-  "a": "Correlating phenotype and genotype."
+  "a": "Correlating phenotype and genotype.",
+  "tags": [
+   "foundations"
+  ]
  },
  {
   "id": "L1-R005",
@@ -47,7 +60,10 @@
   "target_s": 12,
   "src": "slide 23 / Lec1r 7.2",
   "q": "What three components make up a DNA nucleotide?",
-  "a": "A deoxyribose sugar, a phosphate group, and one of four nitrogenous bases (A, T, G, C)."
+  "a": "A deoxyribose sugar, a phosphate group, and one of four nitrogenous bases (A, T, G, C).",
+  "tags": [
+   "nucleotide-chemistry"
+  ]
  },
  {
   "id": "L1-R006",
@@ -57,7 +73,12 @@
   "target_s": 12,
   "src": "Lec1r 7.1",
   "q": "Which bases are purines, which are pyrimidines, and how many rings does each type have?",
-  "a": "Purines = A and G (double-ringed). Pyrimidines = C and T (single-ringed). Mnemonic: \"PURe As Gold\" / \"CUT the PY.\""
+  "a": "Purines = A and G (double-ringed). Pyrimidines = C and T (single-ringed). Mnemonic: \"PURe As Gold\" / \"CUT the PY.\"",
+  "tags": [
+   "nucleotide-chemistry",
+   "base-pairing",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R007",
@@ -67,7 +88,12 @@
   "target_s": 15,
   "src": "Lec1r 1.2/7.2",
   "q": "What bond links adjacent nucleotides in a strand, and which groups does it join?",
-  "a": "A phosphodiester bond — a **covalent** bond — joining the 5′ phosphate of one nucleotide to the 3′ hydroxyl (OH) of the next. (Covalent = strong; it builds the backbone and does NOT break when the strands separate.)"
+  "a": "A phosphodiester bond — a **covalent** bond — joining the 5′ phosphate of one nucleotide to the 3′ hydroxyl (OH) of the next. (Covalent = strong; it builds the backbone and does NOT break when the strands separate.)",
+  "tags": [
+   "nucleotide-chemistry",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-R008",
@@ -77,7 +103,12 @@
   "target_s": 12,
   "src": "Lec1r 7.2",
   "q": "What is at the 2′ carbon of deoxyribose, and why does it matter?",
-  "a": "A hydrogen (H), not a hydroxyl (OH). The missing oxygen is why it's \"deoxy\"-ribose; RNA's ribose has OH at 2′."
+  "a": "A hydrogen (H), not a hydroxyl (OH). The missing oxygen is why it's \"deoxy\"-ribose; RNA's ribose has OH at 2′.",
+  "tags": [
+   "nucleotide-chemistry",
+   "dna-vs-rna",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R009",
@@ -87,7 +118,11 @@
   "target_s": 15,
   "src": "Lec1r 7.2",
   "q": "On deoxyribose, what is attached at the 1′, 3′, and 5′ carbons?",
-  "a": "1′ = the nitrogenous base; 3′ = a hydroxyl (OH); 5′ = the phosphate."
+  "a": "1′ = the nitrogenous base; 3′ = a hydroxyl (OH); 5′ = the phosphate.",
+  "tags": [
+   "nucleotide-chemistry",
+   "directionality"
+  ]
  },
  {
   "id": "L1-R010",
@@ -97,7 +132,12 @@
   "target_s": 10,
   "src": "slide 35 / Lec1r 1.2",
   "q": "How many hydrogen bonds form in an A–T pair vs a G–C pair?",
-  "a": "A–T = 2 hydrogen bonds; G–C = 3 hydrogen bonds. These are **noncovalent** (weak) — they join the two strands and break during replication, unlike the covalent backbone."
+  "a": "A–T = 2 hydrogen bonds; G–C = 3 hydrogen bonds. These are **noncovalent** (weak) — they join the two strands and break during replication, unlike the covalent backbone.",
+  "tags": [
+   "dna-structure",
+   "base-pairing",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R011",
@@ -107,7 +147,11 @@
   "target_s": 12,
   "src": "Lec1r 1.2",
   "q": "What does it mean that the two DNA strands are \"antiparallel\"?",
-  "a": "They run in opposite directions — one strand 5′→3′, its complement 3′→5′."
+  "a": "They run in opposite directions — one strand 5′→3′, its complement 3′→5′.",
+  "tags": [
+   "dna-structure",
+   "directionality"
+  ]
  },
  {
   "id": "L1-R012",
@@ -117,7 +161,11 @@
   "target_s": 15,
   "src": "slide 31 / Lec1r 1.2",
   "q": "State Chargaff's rules for double-stranded DNA.",
-  "a": "%A = %T and %G = %C; total purines = total pyrimidines, i.e. (A+G) = (T+C). But (A+T) ≠ (G+C) in general."
+  "a": "%A = %T and %G = %C; total purines = total pyrimidines, i.e. (A+G) = (T+C). But (A+T) ≠ (G+C) in general.",
+  "tags": [
+   "base-pairing",
+   "calculation"
+  ]
  },
  {
   "id": "L1-R013",
@@ -127,7 +175,11 @@
   "target_s": 15,
   "src": "Lec1r 7.2",
   "q": "Give the B-form DNA dimensions: diameter and length of one helical turn.",
-  "a": "Diameter ≈ 2 nm (20 Å); one full turn ≈ 3.4 nm (34 Å), ~10 bp per turn."
+  "a": "Diameter ≈ 2 nm (20 Å); one full turn ≈ 3.4 nm (34 Å), ~10 bp per turn.",
+  "tags": [
+   "dna-structure",
+   "calculation"
+  ]
  },
  {
   "id": "L1-R014",
@@ -137,7 +189,11 @@
   "target_s": 12,
   "src": "slide 36 / Lec1r 1.2",
   "q": "What does \"semiconservative\" replication mean?",
-  "a": "Each daughter duplex is made of one conserved parental strand and one newly synthesized strand."
+  "a": "Each daughter duplex is made of one conserved parental strand and one newly synthesized strand.",
+  "tags": [
+   "semiconservative",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-R015",
@@ -147,7 +203,11 @@
   "target_s": 15,
   "src": "slides 27, 31",
   "q": "What was the tetranucleotide hypothesis, and who is associated with it?",
-  "a": "Phoebus Levene's idea that DNA was a simple, repetitive 4-base molecule — \"too simple\" to carry genetic information. Disproved by Chargaff."
+  "a": "Phoebus Levene's idea that DNA was a simple, repetitive 4-base molecule — \"too simple\" to carry genetic information. Disproved by Chargaff.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R016",
@@ -157,7 +217,11 @@
   "target_s": 12,
   "src": "slide 28",
   "q": "What did Griffith's experiment demonstrate?",
-  "a": "Genetic transformation (Griffith, **1928**) — a \"transforming principle\" passes from heat-killed virulent (S) bacteria into live nonvirulent (R) bacteria."
+  "a": "Genetic transformation (Griffith, **1928**) — a \"transforming principle\" passes from heat-killed virulent (S) bacteria into live nonvirulent (R) bacteria.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R017",
@@ -167,7 +231,12 @@
   "target_s": 15,
   "src": "slide 29 / Lec1r 7.1",
   "q": "What did Avery, MacLeod & McCarty show, and by what approach?",
-  "a": "That the transforming principle is DNA (Avery–MacLeod–McCarty, **1944**) — by process of elimination (destroying protein/RNA/DNA in turn; only destroying DNA abolished transformation)."
+  "a": "That the transforming principle is DNA (Avery–MacLeod–McCarty, **1944**) — by process of elimination (destroying protein/RNA/DNA in turn; only destroying DNA abolished transformation).",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-R018",
@@ -177,7 +246,12 @@
   "target_s": 20,
   "src": "slide 30 / Lec1r 7.1",
   "q": "In Hershey–Chase, what do ³²P and ³⁵S label, and what was the result?",
-  "a": "³²P labels DNA, ³⁵S labels protein. ³²P (DNA) entered the bacteria; ³⁵S (protein) stayed in the empty phage \"ghosts\" → DNA is the hereditary material (Hershey–Chase, **1952**)."
+  "a": "³²P labels DNA, ³⁵S labels protein. ³²P (DNA) entered the bacteria; ³⁵S (protein) stayed in the empty phage \"ghosts\" → DNA is the hereditary material (Hershey–Chase, **1952**).",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-R019",
@@ -187,7 +261,12 @@
   "target_s": 15,
   "src": "slides 32–34",
   "q": "Who took the first X-ray fiber photos of DNA, and whose later image revealed the helix?",
-  "a": "Astbury & Bell (1938) took the first X-ray fiber photos; Rosalind Franklin's Photo 51 revealed the double helix."
+  "a": "Astbury & Bell (1938) took the first X-ray fiber photos; Rosalind Franklin's Photo 51 revealed the double helix.",
+  "tags": [
+   "dna-structure",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-R020",
@@ -197,7 +276,11 @@
   "target_s": 20,
   "src": "slide 34 / Lec1r 1.1",
   "q": "Who built the DNA double-helix model and when, and who received the 1962 Nobel?",
-  "a": "Watson & Crick, 1953. The 1962 Nobel went to Watson, Crick, and Wilkins — not Franklin (she died in 1958; no posthumous Nobel)."
+  "a": "Watson & Crick, 1953. The 1962 Nobel went to Watson, Crick, and Wilkins — not Franklin (she died in 1958; no posthumous Nobel).",
+  "tags": [
+   "dna-structure",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R021",
@@ -207,7 +290,11 @@
   "target_s": 12,
   "src": "slides 39–40",
   "q": "What does gel electrophoresis separate molecules by, and which direction do small ones go?",
-  "a": "By size; smaller molecules travel faster and farther from the origin."
+  "a": "By size; smaller molecules travel faster and farther from the origin.",
+  "tags": [
+   "gel-electrophoresis",
+   "technique"
+  ]
  },
  {
   "id": "L1-R022",
@@ -217,7 +304,12 @@
   "target_s": 12,
   "src": "slide 40",
   "q": "Why is DNA negatively charged in a gel?",
-  "a": "Its phosphate backbone is negatively charged (the bases are not the charge source)."
+  "a": "Its phosphate backbone is negatively charged (the bases are not the charge source).",
+  "tags": [
+   "gel-electrophoresis",
+   "nucleotide-chemistry",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-R023",
@@ -227,7 +319,12 @@
   "target_s": 12,
   "src": "slides 38, 42–48",
   "q": "Southern, Northern, and Western blots each detect what?",
-  "a": "Southern = DNA, Northern = RNA, Western = protein."
+  "a": "Southern = DNA, Northern = RNA, Western = protein.",
+  "tags": [
+   "blotting",
+   "technique",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R024",
@@ -237,7 +334,11 @@
   "target_s": 15,
   "src": "slide 44",
   "q": "What do restriction enzymes recognize and cut?",
-  "a": "They recognize a specific nucleotide sequence and cut the phosphodiester (sugar-phosphate) backbone. Sites range 3–20+ nt (the useful ones are 4–8 bp, often palindromic); the enzyme may cut within or outside its recognition site."
+  "a": "They recognize a specific nucleotide sequence and cut the phosphodiester (sugar-phosphate) backbone. Sites range 3–20+ nt (the useful ones are 4–8 bp, often palindromic); the enzyme may cut within or outside its recognition site.",
+  "tags": [
+   "technique",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-R025",
@@ -247,7 +348,11 @@
   "target_s": 12,
   "src": "slide 44",
   "q": "Blunt vs sticky ends?",
-  "a": "Symmetric cuts within the recognition site give blunt ends; offset cuts leave single-stranded overhangs = sticky ends."
+  "a": "Symmetric cuts within the recognition site give blunt ends; offset cuts leave single-stranded overhangs = sticky ends.",
+  "tags": [
+   "technique",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R026",
@@ -257,7 +362,11 @@
   "target_s": 20,
   "src": "slide 45",
   "q": "Decode the name EcoRI.",
-  "a": "E = genus *Escherichia*, co = species *coli*, R = strain, I = first enzyme identified in that strain (Roman numeral). Know the *category* each part encodes (genus / species / strain / discovery order) — not the literal strain code."
+  "a": "E = genus *Escherichia*, co = species *coli*, R = strain, I = first enzyme identified in that strain (Roman numeral). Know the *category* each part encodes (genus / species / strain / discovery order) — not the literal strain code.",
+  "tags": [
+   "technique",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R027",
@@ -267,7 +376,11 @@
   "target_s": 15,
   "src": "slide 41",
   "q": "Stain vs probe — which is general, which is specific, and why?",
-  "a": "A stain is **general** — it labels any molecule of a class (e.g. any dsDNA) regardless of sequence (examples: intercalators like ethidium bromide; minor-groove binders like DAPI). A probe is **specific** — it binds one sequence by complementary base pairing, carrying a label. (The general-vs-specific distinction is the point; the dye names are just examples.)"
+  "a": "A stain is **general** — it labels any molecule of a class (e.g. any dsDNA) regardless of sequence (examples: intercalators like ethidium bromide; minor-groove binders like DAPI). A probe is **specific** — it binds one sequence by complementary base pairing, carrying a label. (The general-vs-specific distinction is the point; the dye names are just examples.)",
+  "tags": [
+   "technique",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R028",
@@ -277,7 +390,12 @@
   "target_s": 18,
   "src": "slide 48",
   "q": "Why must proteins be treated with SDS before electrophoresis?",
-  "a": "To denature them and coat them in uniform negative charge so they migrate by size like nucleic-acid polymers; detection then uses antibodies against an epitope."
+  "a": "To denature them and coat them in uniform negative charge so they migrate by size like nucleic-acid polymers; detection then uses antibodies against an epitope.",
+  "tags": [
+   "gel-electrophoresis",
+   "technique",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-R029",
@@ -287,7 +405,11 @@
   "target_s": 12,
   "src": "Lec1r 7.2",
   "q": "Nucleoside vs nucleotide?",
-  "a": "Nucleoside = base + sugar (no phosphate). Nucleotide = base + sugar + one to three phosphates."
+  "a": "Nucleoside = base + sugar (no phosphate). Nucleotide = base + sugar + one to three phosphates.",
+  "tags": [
+   "nucleotide-chemistry",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R030",
@@ -297,7 +419,11 @@
   "target_s": 10,
   "src": "slide 17",
   "q": "Whose phrase is \"descent with modification,\" and what does it describe?",
-  "a": "Darwin's — it describes how lineages change over generations (the variation side of genetics)."
+  "a": "Darwin's — it describes how lineages change over generations (the variation side of genetics).",
+  "tags": [
+   "foundations",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R031",
@@ -307,7 +433,12 @@
   "target_s": 15,
   "src": "slides 43, 46 / Lec1r",
   "q": "What is hybridization in a blot, and what does \"partial-match\" hybridization let you detect?",
-  "a": "Hybridization = a labeled probe binding its target by complementary base pairing. Because partial matches still hybridize, one probe can detect related sequences (Southern) or multiple RNA splice isoforms across tissues (Northern)."
+  "a": "Hybridization = a labeled probe binding its target by complementary base pairing. Because partial matches still hybridize, one probe can detect related sequences (Southern) or multiple RNA splice isoforms across tissues (Northern).",
+  "tags": [
+   "blotting",
+   "technique",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-R032",
@@ -317,7 +448,12 @@
   "target_s": 12,
   "src": "Lec1r (Ch 1 / 7.2)",
   "q": "What two building-block features distinguish RNA from DNA?",
-  "a": "RNA uses ribose (2′-OH) instead of deoxyribose (2′-H), and uracil (U) in place of thymine (T). On a base-composition table, \"has T → DNA, has U → RNA\" is the quick tell."
+  "a": "RNA uses ribose (2′-OH) instead of deoxyribose (2′-H), and uracil (U) in place of thymine (T). On a base-composition table, \"has T → DNA, has U → RNA\" is the quick tell.",
+  "tags": [
+   "dna-vs-rna",
+   "nucleotide-chemistry",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-R033",
@@ -327,7 +463,11 @@
   "target_s": 12,
   "src": "Lec1r 7.1 (Ch 7) / slide 24",
   "q": "Who first isolated DNA, in what year, and what did he name it?",
-  "a": "**Friedrich Miescher, 1869** — isolated it from the nuclei of white blood cells and named it \"nuclein.\""
+  "a": "**Friedrich Miescher, 1869** — isolated it from the nuclei of white blood cells and named it \"nuclein.\"",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R034",
@@ -337,7 +477,11 @@
   "target_s": 18,
   "src": "Lec1r 7.1 (Ch 7)",
   "q": "Who first proposed (1895) that the chromatin/nuclein in chromosomes is the physical basis of inheritance?",
-  "a": "**Edmund Beecher Wilson, 1895** — after showing egg and sperm contribute equal chromosome numbers, he argued chromatin (≈ Miescher's nuclein) is the physical basis of heredity."
+  "a": "**Edmund Beecher Wilson, 1895** — after showing egg and sperm contribute equal chromosome numbers, he argued chromatin (≈ Miescher's nuclein) is the physical basis of heredity.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R035",
@@ -347,7 +491,11 @@
   "target_s": 18,
   "src": "Lec1r 7.1 / slides 24–26",
   "q": "Who, in 1903, independently linked chromosome behavior in meiosis to Mendelian inheritance (the chromosome theory)?",
-  "a": "**Walter Sutton** (Wilson's student) and, independently, **Theodor Boveri** — 1903."
+  "a": "**Walter Sutton** (Wilson's student) and, independently, **Theodor Boveri** — 1903.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R036",
@@ -357,7 +505,11 @@
   "target_s": 20,
   "src": "slides 24–26 (Archbold)",
   "q": "Who gave the first cytological (visual) proof of independent assortment — in what organism and year?",
-  "a": "**Eleanor Carothers, 1913**, in grasshoppers — a heteromorphic (visibly size-different) chromosome pair let her SEE the maternal vs paternal homologs segregate independently in meiosis I."
+  "a": "**Eleanor Carothers, 1913**, in grasshoppers — a heteromorphic (visibly size-different) chromosome pair let her SEE the maternal vs paternal homologs segregate independently in meiosis I.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-R037",
@@ -367,7 +519,12 @@
   "target_s": 20,
   "src": "Lec1r 1.4 (p16)",
   "q": "What was the first use of gel electrophoresis — who, when, and to show what?",
-  "a": "**Linus Pauling, 1949** — that a variant β-globin (βS) causes sickle-cell disease; the first \"molecular disease\" identified by electrophoresis."
+  "a": "**Linus Pauling, 1949** — that a variant β-globin (βS) causes sickle-cell disease; the first \"molecular disease\" identified by electrophoresis.",
+  "tags": [
+   "gel-electrophoresis",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-R038",
@@ -377,7 +534,12 @@
   "target_s": 15,
   "src": "slide 38 / Lec1r 1.4 (p17)",
   "q": "Who invented the Southern blot and when — and how were Northern/Western named?",
-  "a": "**Edwin Southern, 1975** (DNA→membrane transfer). \"Northern\" (RNA) and \"Western\" (protein) are tongue-in-cheek analogies to his name — they are NOT people's names."
+  "a": "**Edwin Southern, 1975** (DNA→membrane transfer). \"Northern\" (RNA) and \"Western\" (protein) are tongue-in-cheek analogies to his name — they are NOT people's names.",
+  "tags": [
+   "blotting",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-R039",
@@ -387,7 +549,12 @@
   "target_s": 15,
   "src": "Lec1r 1.4 (Fig 1.12, p16)",
   "q": "In a gel, what is the \"origin of migration,\" and toward which electrode do the samples move?",
-  "a": "The **wells** (left by the comb in the agarose) are the origin; the negatively-charged samples migrate toward the **positive (+)** electrode."
+  "a": "The **wells** (left by the comb in the agarose) are the origin; the negatively-charged samples migrate toward the **positive (+)** electrode.",
+  "tags": [
+   "gel-electrophoresis",
+   "technique",
+   "figure-interpretation"
+  ]
  },
  {
   "id": "L1-R040",
@@ -397,7 +564,12 @@
   "target_s": 18,
   "src": "Lec1r 1.4 (p16–17)",
   "q": "How does ethidium bromide (EtBr) make nucleic acids visible — and is it a general or a specific label?",
-  "a": "EtBr binds nucleic acids and **fluoresces when excited by UV light**, so the bands can be seen/photographed. It is a **general** stain — it labels all DNA/RNA regardless of sequence."
+  "a": "EtBr binds nucleic acids and **fluoresces when excited by UV light**, so the bands can be seen/photographed. It is a **general** stain — it labels all DNA/RNA regardless of sequence.",
+  "tags": [
+   "gel-electrophoresis",
+   "technique",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-C001",
@@ -407,7 +579,11 @@
   "target_s": 25,
   "src": "slide 27",
   "q": "Why was DNA originally doubted as the hereditary material?",
-  "a": "It has only 4 subunits and was thought \"too simple\" (the tetranucleotide hypothesis); proteins, with 20 amino acids, seemed to have the complexity needed to encode heredity."
+  "a": "It has only 4 subunits and was thought \"too simple\" (the tetranucleotide hypothesis); proteins, with 20 amino acids, seemed to have the complexity needed to encode heredity.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-C002",
@@ -417,7 +593,12 @@
   "target_s": 30,
   "src": "slide 28 / Lec1r 7.1",
   "q": "What did Griffith's experiment show — and what did it NOT establish?",
-  "a": "It showed a heritable \"transforming principle\" can pass from dead virulent cells into live cells. It did NOT identify that principle as DNA — that came later (Avery, then Hershey-Chase)."
+  "a": "It showed a heritable \"transforming principle\" can pass from dead virulent cells into live cells. It did NOT identify that principle as DNA — that came later (Avery, then Hershey-Chase).",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-C003",
@@ -427,7 +608,12 @@
   "target_s": 30,
   "src": "slide 29",
   "q": "How did Avery–MacLeod–McCarty pinpoint DNA as the transforming principle?",
-  "a": "Process of elimination: they selectively destroyed proteins, RNA, then DNA. Transformation was lost only when DNA was destroyed → DNA is the transforming principle."
+  "a": "Process of elimination: they selectively destroyed proteins, RNA, then DNA. Transformation was lost only when DNA was destroyed → DNA is the transforming principle.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-C004",
@@ -437,7 +623,12 @@
   "target_s": 30,
   "src": "slide 30 / Lec1r 7.1",
   "q": "How did Hershey–Chase confirm DNA (not protein) is hereditary?",
-  "a": "They labeled phage DNA (³²P) and protein (³⁵S) separately. After infection + blending, only ³²P entered the host cells; ³⁵S stayed outside in the ghosts. So DNA, not protein, carries the genetic instructions."
+  "a": "They labeled phage DNA (³²P) and protein (³⁵S) separately. After infection + blending, only ³²P entered the host cells; ³⁵S stayed outside in the ghosts. So DNA, not protein, carries the genetic instructions.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-C005",
@@ -447,7 +638,12 @@
   "target_s": 25,
   "src": "slide 31",
   "q": "Why did Chargaff's rule disprove the tetranucleotide hypothesis?",
-  "a": "If DNA were a monotonous 1:1:1:1 repeat, all four bases would be 25%. Chargaff found species-specific ratios (with A=T, G=C but variable A+T vs G+C) — so DNA composition varies and can carry information."
+  "a": "If DNA were a monotonous 1:1:1:1 repeat, all four bases would be 25%. Chargaff found species-specific ratios (with A=T, G=C but variable A+T vs G+C) — so DNA composition varies and can carry information.",
+  "tags": [
+   "base-pairing",
+   "who-what-when",
+   "calculation"
+  ]
  },
  {
   "id": "L1-C006",
@@ -457,7 +653,12 @@
   "target_s": 25,
   "src": "Lec1r 7.2",
   "q": "Why does a purine always pair with a pyrimidine?",
-  "a": "Pairing a double-ringed purine with a single-ringed pyrimidine keeps the rung a constant size, so the helix stays a uniform ~2 nm wide. Purine-purine would bulge; pyrimidine-pyrimidine would pinch."
+  "a": "Pairing a double-ringed purine with a single-ringed pyrimidine keeps the rung a constant size, so the helix stays a uniform ~2 nm wide. Purine-purine would bulge; pyrimidine-pyrimidine would pinch.",
+  "tags": [
+   "dna-structure",
+   "base-pairing",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-C007",
@@ -467,7 +668,12 @@
   "target_s": 30,
   "src": "slide 36 / Lec1r 1.2",
   "q": "How did the double-helix structure itself suggest a copying mechanism?",
-  "a": "Because the strands are complementary, each strand fully specifies the other. So each strand can act as a template to rebuild its partner — implying semiconservative replication."
+  "a": "Because the strands are complementary, each strand fully specifies the other. So each strand can act as a template to rebuild its partner — implying semiconservative replication.",
+  "tags": [
+   "semiconservative",
+   "dna-structure",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-C008",
@@ -477,7 +683,12 @@
   "target_s": 30,
   "src": "slides 39–40",
   "q": "Two DNA bands sit at different positions in a gel. How do you interpret size, mass, and mobility from their positions?",
-  "a": "The band that traveled farther from the origin is smaller (lower molecular mass) and had higher electrophoretic mobility. The band closer to the origin is larger. (This reasoning resolves HW1 Q6 — see L1-P012.)"
+  "a": "The band that traveled farther from the origin is smaller (lower molecular mass) and had higher electrophoretic mobility. The band closer to the origin is larger. (This reasoning resolves HW1 Q6 — see L1-P012.)",
+  "tags": [
+   "gel-electrophoresis",
+   "figure-interpretation",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-C009",
@@ -487,7 +698,12 @@
   "target_s": 30,
   "src": "slides 42–47",
   "q": "Which step is required in a Southern blot but NOT in a Northern blot, and why?",
-  "a": "Restriction-enzyme digestion. You digest DNA (Southern) with restriction enzymes, but you don't cut RNA (Northern) that way. (All the other steps — gel, transfer, labeled probe — are shared.)"
+  "a": "Restriction-enzyme digestion. You digest DNA (Southern) with restriction enzymes, but you don't cut RNA (Northern) that way. (All the other steps — gel, transfer, labeled probe — are shared.)",
+  "tags": [
+   "blotting",
+   "compare-contrast",
+   "technique"
+  ]
  },
  {
   "id": "L1-C010",
@@ -497,7 +713,12 @@
   "target_s": 25,
   "src": "slide 41",
   "q": "What makes a probe specific to its target, while a stain is not?",
-  "a": "A probe binds through sequence complementarity (base pairing) to a particular sequence; a general stain binds any molecule of that class (e.g., any dsDNA) regardless of sequence."
+  "a": "A probe binds through sequence complementarity (base pairing) to a particular sequence; a general stain binds any molecule of that class (e.g., any dsDNA) regardless of sequence.",
+  "tags": [
+   "blotting",
+   "technique",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-C011",
@@ -507,7 +728,12 @@
   "target_s": 35,
   "src": "HW1 Q3",
   "q": "A sequenced genome shows %A ≠ %T and %G ≠ %C. What can you infer about its structure, and what kind of organism is it most likely from?",
-  "a": "It violates Chargaff's rule, so it's likely single-stranded. Among typical options, only viruses commonly have single-stranded genomes → likely viral."
+  "a": "It violates Chargaff's rule, so it's likely single-stranded. Among typical options, only viruses commonly have single-stranded genomes → likely viral.",
+  "tags": [
+   "base-pairing",
+   "dna-vs-rna",
+   "exceptions"
+  ]
  },
  {
   "id": "L1-C012",
@@ -517,7 +743,10 @@
   "target_s": 20,
   "src": "slide 12",
   "q": "What principle should guide picking the \"best\" of several plausible multiple-choice answers?",
-  "a": "Occam's razor — \"plurality should not be posited without necessity.\" Prefer the answer requiring the fewest assumptions."
+  "a": "Occam's razor — \"plurality should not be posited without necessity.\" Prefer the answer requiring the fewest assumptions.",
+  "tags": [
+   "foundations"
+  ]
  },
  {
   "id": "L1-C013",
@@ -527,7 +756,11 @@
   "target_s": 25,
   "src": "slide 39 / Lec1r (Ch 1 Q25)",
   "q": "Mechanistically, *why* does a smaller DNA fragment migrate farther in a gel?",
-  "a": "The gel is a sieve-like matrix (a mesh of pores). Larger molecules are held back more as they thread through; smaller ones pass more easily, so in a fixed time they travel farther toward the positive electrode."
+  "a": "The gel is a sieve-like matrix (a mesh of pores). Larger molecules are held back more as they thread through; smaller ones pass more easily, so in a fixed time they travel farther toward the positive electrode.",
+  "tags": [
+   "gel-electrophoresis",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-C014",
@@ -537,7 +770,11 @@
   "target_s": 30,
   "src": "Lec1r 7.1",
   "q": "What properties must the hereditary molecule have — the criteria DNA had to satisfy?",
-  "a": "(1) located in the nucleus / on chromosomes, (2) chemically stable, (3) complex enough to store large amounts of information, (4) able to replicate faithfully, (5) able to mutate at a low rate (the source of variation). The tetranucleotide hypothesis attacked #3 — complexity."
+  "a": "(1) located in the nucleus / on chromosomes, (2) chemically stable, (3) complex enough to store large amounts of information, (4) able to replicate faithfully, (5) able to mutate at a low rate (the source of variation). The tetranucleotide hypothesis attacked #3 — complexity.",
+  "tags": [
+   "hereditary-material",
+   "foundations"
+  ]
  },
  {
   "id": "L1-C015",
@@ -547,7 +784,12 @@
   "target_s": 35,
   "src": "slide 28 / Lec1r 7.1",
   "q": "Why are Griffith's S cells virulent and R cells not — and why does recovering live S from a dead-S + live-R mix prove *transfer of material*, not just mutation?",
-  "a": "S (\"smooth\") cells have a polysaccharide capsule that hides them from the host immune system → virulent. R (\"rough\") cells have a mutated capsule gene → no capsule → immune-cleared → nonvirulent. A mutation can flip R↔S within a serotype but can't change the serotype (e.g. II↔III); since the recovered virulent cells match the *dead* strain's type, material must have been taken up from the dead cells — transformation, not spontaneous mutation."
+  "a": "S (\"smooth\") cells have a polysaccharide capsule that hides them from the host immune system → virulent. R (\"rough\") cells have a mutated capsule gene → no capsule → immune-cleared → nonvirulent. A mutation can flip R↔S within a serotype but can't change the serotype (e.g. II↔III); since the recovered virulent cells match the *dead* strain's type, material must have been taken up from the dead cells — transformation, not spontaneous mutation.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-C016",
@@ -557,7 +799,12 @@
   "target_s": 30,
   "src": "PR Haenfler (verified)",
   "q": "In a single-stranded nucleic acid, is \"purines = pyrimidines\" guaranteed the way A=T / G=C are in double-stranded DNA?",
-  "a": "No. In dsDNA, complementary pairing forces A=T and G=C, so purines (A+G) necessarily equal pyrimidines (T+C). A single strand has no pairing constraint, so purines need NOT equal pyrimidines — if a ss sample happens to show A+G = C+U (e.g. 50/50), that's a coincidence of that sequence, not a rule. (An exam choice \"equal purines and pyrimidines\" can still be the correct *consistent-with-the-data* answer even for a single-stranded molecule.)"
+  "a": "No. In dsDNA, complementary pairing forces A=T and G=C, so purines (A+G) necessarily equal pyrimidines (T+C). A single strand has no pairing constraint, so purines need NOT equal pyrimidines — if a ss sample happens to show A+G = C+U (e.g. 50/50), that's a coincidence of that sequence, not a rule. (An exam choice \"equal purines and pyrimidines\" can still be the correct *consistent-with-the-data* answer even for a single-stranded molecule.)",
+  "tags": [
+   "base-pairing",
+   "dna-vs-rna",
+   "exceptions"
+  ]
  },
  {
   "id": "L1-C017",
@@ -567,7 +814,12 @@
   "target_s": 35,
   "src": "Lec1r 7.1 (Ch 7)",
   "q": "Name the three experiments — WITH dates — that established DNA as the hereditary material, and what each one added.",
-  "a": "**Griffith (1928):** a heritable \"transforming principle\" exists (not yet identified). **Avery–MacLeod–McCarty (1944):** that principle IS DNA — shown by destroying candidates one at a time (only DNase abolished transformation). **Hershey–Chase (1952):** confirmed it with ³²P/³⁵S labeling — DNA, not protein, enters the cell. (The textbook frames them as \"three experiments conducted between 1928 and 1952.\")"
+  "a": "**Griffith (1928):** a heritable \"transforming principle\" exists (not yet identified). **Avery–MacLeod–McCarty (1944):** that principle IS DNA — shown by destroying candidates one at a time (only DNase abolished transformation). **Hershey–Chase (1952):** confirmed it with ³²P/³⁵S labeling — DNA, not protein, enters the cell. (The textbook frames them as \"three experiments conducted between 1928 and 1952.\")",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L1-C018",
@@ -577,7 +829,12 @@
   "target_s": 30,
   "src": "Lec1r 7.1 (p33)",
   "q": "What methodological advance let Avery's group test WHICH molecule was the transforming principle?",
-  "a": "**Martin Dawson (with Oswald Avery)** developed an *in vitro* transformation procedure — mixing live R cells with a purified extract of heat-killed SIII in a tube. That let them selectively destroy each candidate (lipids/polysaccharides, then protease, RNase, DNase) and see which destruction blocked transformation. Only DNase did → DNA."
+  "a": "**Martin Dawson (with Oswald Avery)** developed an *in vitro* transformation procedure — mixing live R cells with a purified extract of heat-killed SIII in a tube. That let them selectively destroy each candidate (lipids/polysaccharides, then protease, RNase, DNase) and see which destruction blocked transformation. Only DNase did → DNA.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L1-C019",
@@ -587,7 +844,12 @@
   "target_s": 35,
   "src": "Lec1r 1.4 (p17)",
   "q": "Beyond running the gel, detecting ONE specific protein or ONE specific sequence took two innovations — what are they?",
-  "a": "(1) **Blotting** — transferring the separated molecules from the gel onto a durable membrane (a permanent record you can then probe). (2) **Molecular probes** — traceable molecules that bind one specific target: an **antibody** for a specific protein, or a labeled **single-stranded nucleic acid** that finds its complement by **hybridization**."
+  "a": "(1) **Blotting** — transferring the separated molecules from the gel onto a durable membrane (a permanent record you can then probe). (2) **Molecular probes** — traceable molecules that bind one specific target: an **antibody** for a specific protein, or a labeled **single-stranded nucleic acid** that finds its complement by **hybridization**.",
+  "tags": [
+   "blotting",
+   "technique",
+   "who-what-when"
+  ]
  },
  {
   "id": "L1-C020",
@@ -597,7 +859,12 @@
   "target_s": 40,
   "src": "slides 42–48 / Lec1r 1.4",
   "q": "Southern vs Northern vs Western — same backbone (gel → blot → probe). Give each one's target and the step UNIQUE to it.",
-  "a": "**Southern = DNA:** the only one that **digests the sample with restriction enzymes** first (and uses alkali to denature the strands for hybridization). **Northern = RNA:** **no** restriction digestion (you don't cut RNA that way). **Western = protein:** the sample is **denatured and SDS-coated** (uniform negative charge → migrates by size), then detected with **antibodies**, not a nucleic-acid probe."
+  "a": "**Southern = DNA:** the only one that **digests the sample with restriction enzymes** first (and uses alkali to denature the strands for hybridization). **Northern = RNA:** **no** restriction digestion (you don't cut RNA that way). **Western = protein:** the sample is **denatured and SDS-coated** (uniform negative charge → migrates by size), then detected with **antibodies**, not a nucleic-acid probe.",
+  "tags": [
+   "blotting",
+   "compare-contrast",
+   "technique"
+  ]
  },
  {
   "id": "L1-C021",
@@ -607,7 +874,12 @@
   "target_s": 30,
   "src": "Lec1r 1.4 (Fig 1.13, p16)",
   "q": "In Pauling's 1949 hemoglobin gel, why does a βA/βS heterozygote show TWO bands while βA/βA and βS/βS each show one?",
-  "a": "Each homozygote makes a single β-globin form (one charge → one mobility → one band). The heterozygote makes **both** βA and βS, which differ in charge/mobility, so they separate into two bands (βS migrates less than βA). The gel reads genotype directly — molecular co-dominance."
+  "a": "Each homozygote makes a single β-globin form (one charge → one mobility → one band). The heterozygote makes **both** βA and βS, which differ in charge/mobility, so they separate into two bands (βS migrates less than βA). The gel reads genotype directly — molecular co-dominance.",
+  "tags": [
+   "gel-electrophoresis",
+   "who-what-when",
+   "figure-interpretation"
+  ]
  },
  {
   "id": "L1-P001",
@@ -618,7 +890,11 @@
   "src": "HW1 Q5 (KEY-verified)",
   "q": "In the nematode *C. elegans*, the DNA is 68% AT. (a) What fraction of nucleotides are thymine? (b) What fraction are cytosine? (c) How frequently would the sequence \"GGGCCC\" occur?",
   "worked": "- (a) AT = 68% and A = T (Chargaff) → T = 68/2 = **34%**.\n- (b) GC = 100 − 68 = 32%, and G = C → C = 32/2 = **16%**.\n- (c) P(G) = P(C) = 0.16 at any position. P(GGGCCC) = (0.16)⁶ ≈ 1.68×10⁻⁵ ≈ **1 in 59,600**.",
-  "answer": "(a) 34% T  (b) 16% C  (c) (0.16)⁶ ≈ 1/59,600"
+  "answer": "(a) 34% T  (b) 16% C  (c) (0.16)⁶ ≈ 1/59,600",
+  "tags": [
+   "base-pairing",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P002",
@@ -629,7 +905,12 @@
   "src": "HW1 Q3 (KEY-verified)",
   "q": "You sequence DNA from river water and find fragments matching no known genome. Which base composition is most likely **viral**?\nA: A12 T13 G37 C38 | B: A31 T32 G18 C19 | C: A10 T32 G39 C19 | D: A24 T24 G27 C25 | E: A39 T40 G10 C11",
   "worked": "Double-stranded DNA obeys Chargaff (A≈T, G≈C). Check each: A, B, D, E all have A≈T and G≈C → double-stranded. **C** has A=10 vs T=32 and G=39 vs C=19 → violates Chargaff → single-stranded → most likely viral.",
-  "answer": "C"
+  "answer": "C",
+  "tags": [
+   "base-pairing",
+   "dna-vs-rna",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P003",
@@ -640,7 +921,12 @@
   "src": "HW1 Q2 (KEY-verified)",
   "q": "Based on Griffith's transformation experiment, what happens to a mouse injected with **both heat-killed RII and heat-killed SII** strains?",
   "worked": "Transformation requires a LIVE recipient (live R) to be transformed by material from heat-killed S. Here both strains are heat-killed — there is no live cell to become virulent, and heat-killed cells can't cause disease themselves.",
-  "answer": "The mouse survives."
+  "answer": "The mouse survives.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "mechanism"
+  ]
  },
  {
   "id": "L1-P004",
@@ -651,7 +937,12 @@
   "src": "Lec1r Genetic Analysis 1.1 (textbook-verified)",
   "q": "Write the sequence and polarity of the strand complementary to: **3′-ACGGATCCTCCCTAGTGCGTAATACG-5′**",
   "worked": "Pair A↔T, G↔C base by base; the complement is antiparallel, so it reads 5′→3′ left-to-right. A→T, C→G, G→C, G→C, A→T, T→A, … (continue across).",
-  "answer": "**5′-TGCCTAGGAGGGATCACGCATTATGC-3′**"
+  "answer": "**5′-TGCCTAGGAGGGATCACGCATTATGC-3′**",
+  "tags": [
+   "dna-structure",
+   "sequence-reading",
+   "directionality"
+  ]
  },
  {
   "id": "L1-P005",
@@ -662,7 +953,11 @@
   "src": "HW1 Q1 (KEY-verified)",
   "q": "Which building block of DNA carries the genetic information — nitrogenous bases, sugars, phosphate groups, or hydrogen bonds?",
   "worked": "The sugar-phosphate backbone is identical along the molecule; only the sequence of bases varies, so the bases encode the information.",
-  "answer": "Nitrogenous bases."
+  "answer": "Nitrogenous bases.",
+  "tags": [
+   "nucleotide-chemistry",
+   "dna-structure"
+  ]
  },
  {
   "id": "L1-P006",
@@ -673,7 +968,11 @@
   "src": "HW1 Q4 (KEY-verified)",
   "q": "Which molecule is LEAST likely to contain genetic information — RNA, proteins, or lipids?",
   "worked": "RNA clearly can (e.g., RNA viruses); proteins were historically argued to (prions, complexity). Lipids have no complex sequence/structure capable of encoding information.",
-  "answer": "Lipids."
+  "answer": "Lipids.",
+  "tags": [
+   "foundations",
+   "hereditary-material"
+  ]
  },
  {
   "id": "L1-P007",
@@ -684,7 +983,12 @@
   "src": "slide 47 (sample Q; answer = standard technique)",
   "q": "Which step in a Southern blot would you NOT need in a Northern blot? (A) restriction-enzyme digestion (B) gel electrophoresis (C) transfer to membrane (D) hybridize with labeled probe (E) all are needed in both.",
   "worked": "Northern blots analyze RNA, which is not cut with restriction enzymes; gel, transfer, and probe steps are shared by both.",
-  "answer": "A — restriction-enzyme digestion."
+  "answer": "A — restriction-enzyme digestion.",
+  "tags": [
+   "blotting",
+   "compare-contrast",
+   "technique"
+  ]
  },
  {
   "id": "L1-P008",
@@ -695,7 +999,12 @@
   "src": "authored (hand-verified)",
   "q": "Write the complement, with polarity, of **5′-TTACGGCATTAG-3′**.",
   "worked": "Complement each base and remember the partner strand is antiparallel: pairing under the given strand gives 3′-AATGCCGTAATC-5′, which written 5′→3′ is CTAATGCCGTAA.",
-  "answer": "**5′-CTAATGCCGTAA-3′**"
+  "answer": "**5′-CTAATGCCGTAA-3′**",
+  "tags": [
+   "dna-structure",
+   "sequence-reading",
+   "directionality"
+  ]
  },
  {
   "id": "L1-P009",
@@ -706,7 +1015,11 @@
   "src": "authored (hand-verified)",
   "q": "A double-stranded DNA is 30% adenine. Give the percentages of T, G, and C.",
   "worked": "A = T → T = 30%. A + T = 60%, so G + C = 40%; G = C → each = 20%.",
-  "answer": "T = 30%, G = 20%, C = 20%."
+  "answer": "T = 30%, G = 20%, C = 20%.",
+  "tags": [
+   "base-pairing",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P010",
@@ -717,7 +1030,12 @@
   "src": "Lec1r Genetic Analysis 7.1 / Ch 7 Q16–17 (method-verified)",
   "q": "A DNA duplex has the strand 5′-ACGTTGCA-3′ (8 bp). Count (a) the total phosphodiester bonds in the duplex and (b) the total hydrogen bonds.",
   "worked": "- (a) A strand of n nucleotides has n−1 phosphodiester bonds → 7 per strand × 2 strands = **14**.\n- (b) Score each pair by the listed base: A·C·G·T·T·G·C·A → 4 A-T pairs (×2 = 8) + 4 G-C pairs (×3 = 12) = **20**.",
-  "answer": "(a) 14 phosphodiester bonds; (b) 20 hydrogen bonds."
+  "answer": "(a) 14 phosphodiester bonds; (b) 20 hydrogen bonds.",
+  "tags": [
+   "dna-structure",
+   "base-pairing",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P011",
@@ -728,7 +1046,12 @@
   "src": "Lec1r Ch 1 Q26 (method-verified)",
   "q": "Classify each sample as DNA or RNA AND single- or double-stranded, from its base percentages:\nS1: A22 T22 G28 C28 | S2: A30 U30 G20 C20 | S3: A33 T18 G27 C22 | S4: A22 U10 G40 C28",
   "worked": "Two independent tests. (i) has T → DNA, has U → RNA. (ii) Chargaff holds (A=T/U and G=C) → double-stranded; violated → single-stranded.\n- S1: T → DNA; A=T, G=C → **dsDNA**.\n- S2: U → RNA; A=U, G=C → **dsRNA**.\n- S3: T → DNA; A(33)≠T(18) → **ssDNA**.\n- S4: U → RNA; A(22)≠U(10) → **ssRNA**.",
-  "answer": "S1 dsDNA · S2 dsRNA · S3 ssDNA · S4 ssRNA."
+  "answer": "S1 dsDNA · S2 dsRNA · S3 ssDNA · S4 ssRNA.",
+  "tags": [
+   "dna-vs-rna",
+   "base-pairing",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P012",
@@ -739,7 +1062,12 @@
   "src": "HW1 Q6 (figure-verified)",
   "q": "In the HW1 gel, Band 1 sits nearer the wells/origin (top, by −) and Band 2 has migrated farther toward +. Which statement is NOT consistent with the gel? (1) Band 1 was stained/probed (2) Band 1 has lower molecular mass than Band 2 (3) Band 1 has a negative charge (4) Band 1 is closer to the origin than Band 2 (5) Band 1 has lower electrophoretic mobility than Band 2.",
   "worked": "Band 1 migrated less → it is the LARGER fragment (higher mass, lower mobility, nearer the origin). So (1) true (visible ⇒ labeled), (3) true (DNA is negative), (4) true, (5) true (larger = slower). (2) claims Band 1 has *lower* mass — false, because Band 1 is the larger band.",
-  "answer": "2 — \"Band 1 has a lower molecular mass than Band 2\" is the inconsistent statement (Band 1 is the larger fragment). [Figure-verified: Band 1 is the upper band, nearer the origin.]"
+  "answer": "2 — \"Band 1 has a lower molecular mass than Band 2\" is the inconsistent statement (Band 1 is the larger fragment). [Figure-verified: Band 1 is the upper band, nearer the origin.]",
+  "tags": [
+   "gel-electrophoresis",
+   "figure-interpretation",
+   "exceptions"
+  ]
  },
  {
   "id": "L1-P013",
@@ -750,7 +1078,12 @@
   "src": "PR base-pairing (verified)",
   "q": "Which method does NOT rely on base pairing between complementary nucleic acids? (A) Northern blot (B) PCR (C) Southern blot (D) all of these rely on base pairing (E) Sanger sequencing",
   "worked": "Northern/Southern = a labeled probe hybridizes by complementarity; PCR = primers anneal to template; Sanger = primer anneals + template-directed dNTP/ddNTP addition. All four use base pairing. (A *Western* blot uses antibodies — but it isn't an option here.)",
-  "answer": "D"
+  "answer": "D",
+  "tags": [
+   "blotting",
+   "compare-contrast",
+   "technique"
+  ]
  },
  {
   "id": "L1-P014",
@@ -761,7 +1094,12 @@
   "src": "PR Archbold (verified)",
   "q": "An archaeal genome has two extra bases, Y and Z, that pair only with each other. Which extended-Chargaff statement is NOT correct? (A) A+T=G+C=Y+Z (B) A+Z=T+C+Y−G (C) A+C+Y=T+Z+G (D) A+G+Z=T+G+Z (E) A+G+Y=T+C+Z",
   "worked": "Double-stranded pairing → A=T, G=C, Y=Z. (A) would force 2A=2G=2Y, i.e. A=G=Y — not generally true → NOT correct. B–E all reduce to valid identities (e.g. B: T+C+Y−G = A+G+Y−G = A+Y = A+Z).",
-  "answer": "A"
+  "answer": "A",
+  "tags": [
+   "base-pairing",
+   "calculation",
+   "exceptions"
+  ]
  },
  {
   "id": "L1-P015",
@@ -772,7 +1110,12 @@
   "src": "PR Wierzbicki W21 Exam 3 (verified)",
   "q": "A sequenced bacterial genome reads A 20%, T 30%, G 22%, C 28%. Best interpretation? (A) dsDNA genome (B) infected by a ssDNA phage (C) can't distinguish a ssDNA genome from a ssDNA-phage infection (D) ssDNA genome (E) infected by a dsDNA phage",
   "worked": "A≠T and G≠C → Chargaff violated → single-stranded DNA is present. That fits EITHER a ssDNA genome (D) OR a dsDNA bacterium carrying a ssDNA phage (B) — identical data. So you can't distinguish → C. (A/E require Chargaff to hold.) A \"best answer\" trap: two individually-true options (B, D) make the encompassing option (C) correct.",
-  "answer": "C"
+  "answer": "C",
+  "tags": [
+   "base-pairing",
+   "dna-vs-rna",
+   "exceptions"
+  ]
  },
  {
   "id": "L1-P016",
@@ -783,7 +1126,12 @@
   "src": "PR nucleotide-structure, multi-select (verified)",
   "q": "Given a ribonucleotide (ATP) diagram with groups A = 3′-OH, B = 2′-OH, C = triphosphate, D = adenine base. Choose ALL correct: (A) Group D forms 3 H-bonds in DNA, 2 in RNA. (B) Group A is in RNA's ribose but not DNA's deoxyribose. (C) This molecule pairs with a pyrimidine. (D) Group B at the 3′ end is required for elongation. (E) The triphosphate (Group C) forms the phosphodiester bond while releasing pyrophosphate (PPi).",
   "worked": "C true — adenine (a purine) pairs a pyrimidine. E true — nucleotides add as triphosphates; the α-phosphate joins the chain, releasing PPi. A false — adenine = 2 H-bonds in BOTH DNA and RNA (3 is the G–C pair). B false — Group A is the 3′-OH, present in both sugars; the 2′-OH (Group B) is what distinguishes ribose. D false — elongation needs the 3′-OH (Group A), not the 2′-OH.",
-  "answer": "C and E"
+  "answer": "C and E",
+  "tags": [
+   "nucleotide-chemistry",
+   "base-pairing",
+   "figure-interpretation"
+  ]
  },
  {
   "id": "L1-P017",
@@ -794,7 +1142,12 @@
   "src": "PR (verified)",
   "q": "Five viral strains' base composition (%). Which is most likely a **double-stranded RNA** virus? V1: A22.5 U23.5 G18.1 C35.9 (T0). V2: A28.5 U30.0 G20.3 C21.2 (T0). V3: A33 T32.3 G16.3 C18.4 (U0). V4: A16.4 T17.6 G34.2 C31.8 (U0). V5: A27 U26.4 G29.1 C17.5 (T0).",
   "worked": "dsRNA must (1) be RNA — has U, no T — and (2) obey Chargaff: A=U and G=C. V3, V4 have T → DNA. V1 (G18≠C36) and V5 (G29≠C17.5) → ssRNA. V2: A28.5≈U30 and G20.3≈C21.2 → double-stranded RNA.",
-  "answer": "B (Virus 2)"
+  "answer": "B (Virus 2)",
+  "tags": [
+   "base-pairing",
+   "dna-vs-rna",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P018",
@@ -805,7 +1158,12 @@
   "src": "PR (verified)",
   "q": "SARS-CoV-2 is a single-stranded RNA virus with 38% GC content. Approximately what % of the genome is **thymine**? (A) 0% (B) 100% (C) 62% (D) 31% (E) between 31% and 62%",
   "worked": "It's RNA — there is no thymine at all (RNA uses uracil) → 0%. The trap: splitting \"62% AT\" into 31% each applies Chargaff while ignoring that RNA has U not T, and that a single strand doesn't obey intra-strand Chargaff anyway.",
-  "answer": "A"
+  "answer": "A",
+  "tags": [
+   "base-pairing",
+   "dna-vs-rna",
+   "exceptions"
+  ]
  },
  {
   "id": "L1-P019",
@@ -816,7 +1174,12 @@
   "src": "PR RFLP + cross (verified) [bridges L10]",
   "q": "Round (RR) × wrinkled (rr); F1 selfed → F2; two random F2 plants are crossed → F3, genotyped on a gel where R = full-length (upper band) and r = a 20%-shorter fragment (lower band). The F3 gel: every lane shows the upper band; some also show the lower band; none show the lower band alone. Most likely F2-parent genotypes? (A) rr, RR (B) RR, RR (C) rr, rr (D) RR, Rr (E) Rr, Rr",
   "worked": "Read each lane by fragment size: upper only = RR, both bands = Rr, lower only = rr. The F3 has RR and Rr but NO rr. Only RR × Rr gives ½ RR : ½ Rr with zero rr. (RR×RR → no heterozygotes; Rr×Rr → ¼ rr, which is absent; any rr parent can't yield RR offspring.)",
-  "answer": "D"
+  "answer": "D",
+  "tags": [
+   "gel-electrophoresis",
+   "figure-interpretation",
+   "calculation"
+  ]
  },
  {
   "id": "L1-P020",
@@ -827,6 +1190,11 @@
   "src": "PR Archbold Su23 Exam 1 (Problem 42545, verified)",
   "q": "A gel of DNA fragments shows **Band 1** near the wells/origin (top, by −) and **Band 2** migrated farther toward +. Which statement is NOT consistent with the gel? (A) Band 2 has a higher molecular mass than Band 1 (B) Band 1 must have a negative charge (C) Band 2 has higher electrophoretic mobility than Band 1 (D) Band 2 must have been stained or hybridized by a molecular probe (E) Band 1 is closer to the origin of migration than Band 2.",
   "worked": "Band 2 migrated farther → it is the **smaller** fragment → lower molecular mass, higher mobility. Check the others: (B) DNA's phosphate backbone is negative — true; (C) farther = higher mobility — true; (D) it's visible, so it was labeled — true; (E) Band 1 is the upper band, nearer the origin — true. (A) claims Band 2 has a *higher* mass — false, because Band 2 is the smaller, faster fragment.",
-  "answer": "A — \"Band 2 has a higher molecular mass than Band 1\" (Band 2 is the smaller fragment that ran farther)."
+  "answer": "A — \"Band 2 has a higher molecular mass than Band 1\" (Band 2 is the smaller fragment that ran farther).",
+  "tags": [
+   "gel-electrophoresis",
+   "figure-interpretation",
+   "exceptions"
+  ]
  }
 ]

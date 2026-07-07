@@ -2,3 +2,8 @@ node_modules/
 .wrangler/
 .DS_Store
 *.log
+
+.claude/
+engine/gen-log.jsonl
+engine/*.manifest.json
+engine/pending-cards.json

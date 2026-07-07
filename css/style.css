@@ -206,11 +206,77 @@ button{font-family:inherit;cursor:pointer;}
 .tabbar a.active{color:var(--maize);}
 [data-theme=light] .tabbar a.active{color:var(--navy);}
 
-@media(min-width:720px){
-  .tabbar{display:none;}
-  body{padding-bottom:0;}
-}
 @media(max-width:719px){
   .grade-row{grid-template-columns:repeat(2,1fr);}
   .hero .watermark{width:92px;height:92px;top:-14px;}
 }
+/* Desktop: float the tab bar as a centered pill so nav works on laptop too (was hidden before). */
+@media(min-width:720px){
+  .tabbar{left:50%;right:auto;transform:translateX(-50%);bottom:16px;width:auto;
+    border:1px solid var(--line-2);border-radius:999px;box-shadow:var(--shadow);overflow:hidden;
+    padding-bottom:0;background:linear-gradient(180deg,#013a6e,#00274C);}
+  [data-theme=light] .tabbar{background:#fff;}
+  .tabbar a{padding:10px 20px;flex-direction:row;gap:7px;font-size:12px;}
+  .tabbar a .ti{font-size:14px;}
+  body{padding-bottom:64px;}
+}
+
+/* ===== v6 additions: adaptive tags, HUD, heatmap, health ===== */
+/* hot-tags banner */
+.hotbar{display:flex;align-items:center;gap:8px;flex-wrap:wrap;background:var(--panel);
+  border:1px solid var(--line);border-left:3px solid var(--maize);border-radius:var(--r-sm);
+  box-shadow:var(--shadow-sm);padding:11px 14px;margin:0 0 18px;}
+.hotbar .hl{font-size:11px;letter-spacing:1.2px;text-transform:uppercase;color:var(--ink-faint);font-weight:700;}
+.hotbar .hchips{display:flex;gap:7px;flex-wrap:wrap;}
+.chip.tag{cursor:pointer;text-transform:none;letter-spacing:.2px;font-weight:600;font-size:11px;
+  color:var(--ink-soft);border-color:var(--line-2);transition:.12s;}
+.chip.tag:hover{border-color:var(--maize);color:var(--maize);}
+.chip.tag.hot{background:transparent;font-weight:700;}
+
+/* health strip on home */
+.healthstrip{display:flex;align-items:center;gap:10px;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--r-sm);box-shadow:var(--shadow-sm);padding:11px 14px;margin:0 0 8px;cursor:pointer;font-size:14px;color:var(--ink-soft);}
+.healthstrip .dot{width:9px;height:9px;border-radius:999px;flex:none;}
+.healthstrip .dot.ok{background:var(--good);} .healthstrip .dot.warn{background:#e8a13a;}
+.healthstrip .go{margin-left:auto;color:var(--maize-2);font-weight:600;}
+
+/* review label + live HUD */
+.rev-label{font-weight:700;letter-spacing:.3px;color:var(--ink);}
+.hud{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;margin:0 0 16px;
+  font-size:13px;color:var(--ink-soft);}
+.hud .h-item b{font-family:var(--serif);font-size:17px;color:var(--ink);font-weight:700;}
+.hud .h-acc b{color:var(--good);} .hud .h-streak b{color:var(--maize-2);}
+.grade-wrap .pace{text-align:center;font-size:12.5px;font-weight:600;margin:14px 0 2px;}
+.grade-wrap .pace.good{color:var(--good);} .grade-wrap .pace.slow{color:#c98a2a;}
+.review-stage.blitz .flash-card{min-height:210px;}
+.review-stage.blitz .face{padding:22px 20px;} .review-stage.blitz .face .q{font-size:17px;}
+
+/* session recap */
+.recap .recap-cols{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+@media(max-width:560px){.recap .recap-cols{grid-template-columns:1fr;}}
+.recap .rc-h{font-size:11px;letter-spacing:1px;text-transform:uppercase;font-weight:700;margin-bottom:8px;}
+.recap .rc-h.up{color:#e8a13a;} .recap .rc-h.down{color:var(--good);}
+.recap .rc-b{display:flex;gap:7px;flex-wrap:wrap;}
+
+/* tag heatmap */
+.sub-note{font-size:11.5px;color:var(--ink-faint);font-weight:400;letter-spacing:.2px;text-transform:none;}
+.heat{display:grid;grid-template-columns:repeat(auto-fill,minmax(128px,1fr));gap:8px;}
+.hcell{display:flex;flex-direction:column;gap:5px;text-align:left;border:1px solid var(--line-2);
+  border-left-width:3px;border-radius:10px;padding:9px 11px;background:var(--panel-2);color:var(--ink);transition:.12s;}
+.hcell:hover{transform:translateY(-1px);box-shadow:var(--shadow-sm);}
+.hcell .hl{font-size:12px;font-weight:600;line-height:1.2;}
+.hcell .hw{font-size:11px;color:var(--ink-faint);font-weight:600;}
+
+/* system health findings */
+.finding{border-left:3px solid var(--line-2);}
+.finding.sev-critical,.finding.sev-high{border-left-color:var(--bad);}
+.finding.sev-warn,.finding.sev-medium{border-left-color:#e8a13a;}
+.finding.sev-low,.finding.sev-info{border-left-color:var(--good);}
+.finding .fhead{display:flex;align-items:center;gap:9px;margin-bottom:8px;flex-wrap:wrap;}
+.finding .sev{font-size:10px;letter-spacing:1px;font-weight:800;padding:2px 8px;border-radius:999px;
+  background:var(--bg-2);color:var(--ink-soft);}
+.finding.sev-critical .sev,.finding.sev-high .sev{background:rgba(255,107,83,.16);color:var(--bad);}
+.finding.sev-warn .sev,.finding.sev-medium .sev{background:rgba(232,161,58,.16);color:#e8a13a;}
+.finding .farea{font-weight:700;font-size:14px;}
+.finding .fmsg{font-size:14.5px;line-height:1.5;}
+.finding .ffix{margin-top:9px;font-size:13.5px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:9px;}

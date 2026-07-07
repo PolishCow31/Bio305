@@ -1,7 +1,7 @@
 /* Bio 305 service worker — offline shell cache. Cache version bumps on deploy. */
-const C = "bio305-v9";
-const ASSETS = ["./","index.html","css/style.css?v=2","js/store.js?v=3","js/app.js?v=5",
-  "data/units.json","data/L1.json","data/L2.json","img/blockm.svg",
+const C = "bio305-v10";
+const ASSETS = ["./","index.html","css/style.css?v=3","js/store.js?v=4","js/app.js?v=6",
+  "data/units.json","data/tags.json","data/L1.json","data/L2.json","img/blockm.svg",
   "img/favicon-32.png","img/icon-512.png","apple-touch-icon.png","manifest.json"];
 self.addEventListener("install", e=>{
   e.waitUntil(caches.open(C).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()));
@@ -11,6 +11,11 @@ self.addEventListener("activate", e=>{
 });
 self.addEventListener("fetch", e=>{
   if(e.request.method!=="GET") return;
+  // System-health is refreshed by the critic fleet between deploys — always go to network, never cache-stale.
+  if(e.request.url.indexOf("system-health.json")>=0){
+    e.respondWith(fetch(e.request).catch(()=>new Response("null",{headers:{"content-type":"application/json"}})));
+    return;
+  }
   e.respondWith(caches.match(e.request).then(r=> r || fetch(e.request).then(resp=>{
     const cp=resp.clone(); caches.open(C).then(c=>c.put(e.request,cp)); return resp;
   }).catch(()=>caches.match("index.html"))));

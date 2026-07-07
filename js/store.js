@@ -4,19 +4,25 @@ const Store = (function(){
   const KEY = "bio305.v1";
   const EXAM_I = new Date(2026,6,20).getTime();   // Mon Jul 20 2026 (month is 0-based)
   const DAY = 86400000;
+  // Adaptive tag weights: miss a tag -> its cards surface sooner; master it -> shown far less (never 0).
+  const TAG_DEF=1.0, TAG_MISS=0.6, TAG_HARD=0.15, TAG_MAX=4.0, TAG_FLOOR=0.45;
   let cards = [], units = [], byId = {};
-  let state = load();   // { srs:{id:{...}}, sessions:[], settings:{} }
+  let tagList = [], tagIndex = {}, health = null;   // taxonomy + critic-fleet findings
+  let state = load();   // { srs:{id:{...}}, sessions:[], settings:{}, tagW:{} }
   let _suppressPush = false;
 
   function load(){
-    try{ const s = JSON.parse(localStorage.getItem(KEY)); if(s&&s.srs) return s; }catch(e){}
-    return { srs:{}, sessions:[], settings:{theme:"dark"} };
+    try{ const s = JSON.parse(localStorage.getItem(KEY)); if(s&&s.srs){ if(!s.tagW) s.tagW={}; return s; } }catch(e){}
+    return { srs:{}, sessions:[], settings:{theme:"dark"}, tagW:{} };
   }
   function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
     if(!_suppressPush && cloudConfigured()) schedulePush(); }
 
   async function init(){
     units = await fetch("data/units.json").then(r=>r.json());
+    // taxonomy (optional but expected) + critic-fleet findings (optional)
+    try{ const tg = await fetch("data/tags.json").then(r=>r.json()); tagList = tg.tags||[]; tagList.forEach(t=>tagIndex[t.id]=t); }catch(e){ tagList=[]; }
+    try{ health = await fetch("data/system-health.json",{cache:"no-store"}).then(r=>r.ok?r.json():null); }catch(e){ health=null; }
     // Load EVERY live lecture's deck via units.json's file mapping — not just L1.
     const live = units.flatMap(u=>u.lectures).filter(l=>l.status==="live" && l.file);
     const decks = await Promise.all(live.map(l =>
@@ -24,9 +30,23 @@ const Store = (function(){
     ));
     cards = decks.flat();
     byId = {};
-    cards.forEach(c=>{ byId[c.id]=c; });
+    cards.forEach(c=>{ if(!c.tags) c.tags=[]; byId[c.id]=c; });
     return true;
   }
+  // ---- adaptive tag weights ----
+  function tw(id){ if(state.tagW[id]==null) state.tagW[id]=TAG_DEF; return state.tagW[id]; }
+  function bumpTags(card, g){                       // g: 1=again/wrong 2=hard 3=good 4=easy
+    (card.tags||[]).forEach(t=>{
+      let w = tw(t);
+      if(g<=1)       w = Math.min(TAG_MAX, w + TAG_MISS);
+      else if(g===2) w = Math.min(TAG_MAX, w + TAG_HARD);
+      else if(g===3) w = w + (TAG_DEF  - w)*0.18;   // ease back toward baseline
+      else           w = w + (TAG_FLOOR- w)*0.25;   // mastered -> below baseline, still >0
+      state.tagW[t] = Math.round(w*1000)/1000;
+    });
+  }
+  function tagBoost(card){ const ts=card.tags||[]; if(!ts.length) return TAG_DEF; let s=0; ts.forEach(t=>s+=tw(t)); return s/ts.length; }
+  const tagLabel = id => (tagIndex[id]&&tagIndex[id].label) || id;
 
   // ---- card sets ----
   const reviewCards = ()=> cards.filter(c=> c.type!=="problem");   // flip cards
@@ -39,18 +59,42 @@ const Store = (function(){
   }
   const isDue = id => { const s=state.srs[id]; return !s || !s.seen || s.due<=Date.now(); };
 
-  // Due queue for flip cards: due/unseen first, weakest (lowest ease, most lapses) prioritized.
+  // Due queue for flip cards: due/unseen first, then blended weakness + hot-tag boost.
   function dueQueue(){
     const due = reviewCards().filter(c=>isDue(c.id));
     return due.sort((a,a2)=>{
       const sa=state.srs[a.id], sb=state.srs[a2.id];
       const na=!sa||!sa.seen, nb=!sb||!sb.seen;
       if(na!==nb) return na?1:-1;                 // review scheduled-overdue before brand-new
-      const ea=(sa?sa.ease:2.3), eb=(sb?sb.ease:2.3);
-      return ea-eb;                               // weaker (lower ease) first
+      return priority(a2)-priority(a);            // higher priority first
     });
   }
+  // Adaptive priority: hot tags dominate, plus overdue + intrinsic weakness. Drives Smart mode + due order.
+  function priority(c){
+    const s=state.srs[c.id]||{};
+    const overdue = s.seen ? Math.min(3,Math.max(0,(Date.now()-(s.due||0))/DAY)) : 0.5;
+    const weak = s.ease? Math.max(0,2.5-s.ease) : 0.3;
+    return tagBoost(c)*1.0 + overdue*0.35 + weak*0.3 + (s.seen?0:0.35);
+  }
+  // Smart/adaptive queue: every review card ranked by priority (ignores strict due-ness) — catered practice.
+  function adaptiveQueue(kind){
+    const pool = kind==="problem"? problemCards() : reviewCards();
+    return pool.slice().sort((a,b)=>priority(b)-priority(a));
+  }
   function lectureQueue(lec){ return reviewCards().filter(c=>c.lecture===lec); }
+  function tagQueue(tagId){ return reviewCards().filter(c=>(c.tags||[]).includes(tagId)).sort((a,b)=>priority(b)-priority(a)); }
+
+  // Per-tag rollup for the heatmap: weight + coverage + observed accuracy.
+  function tagStats(){
+    const idx={}; tagList.forEach(t=>idx[t.id]={id:t.id,label:t.label,kind:t.kind,lecture:t.lecture,w:tw(t.id),cards:0,reps:0,corr:0});
+    cards.forEach(c=>(c.tags||[]).forEach(t=>{ if(!idx[t])return; idx[t].cards++;
+      const st=cardStat(c); if(st){ idx[t].reps+=st.reps; idx[t].corr+=st.acc*st.reps; } }));
+    return Object.values(idx).map(t=>({...t, acc: t.reps? t.corr/t.reps : null}))
+      .sort((a,b)=> b.w-a.w || (a.label>b.label?1:-1));
+  }
+  function hotTags(n){ return tagStats().filter(t=>t.w>1.05 && t.cards>0).slice(0,n||6); }
+  const taxonomy = ()=> tagList;
+  const systemHealth = ()=> health;
 
   // ---- grading a flip card (Anki 1-4) ----
   function grade(id, g, latencyMs){
@@ -68,6 +112,7 @@ const Store = (function(){
     }
     s.seen = true;
     s.hist.push({ts:Date.now(),lat:Math.round(latencyMs),grade:g,correct});
+    bumpTags(get(id), g);
     save();
   }
 
@@ -97,6 +142,7 @@ const Store = (function(){
     s.ivl = correct ? Math.min(capDays, s.reps===1?2:Math.max(2,(s.ivl||2)*2)) : 0;
     s.due = correct ? Date.now()+s.ivl*DAY : Date.now()+60*1000;
     s.hist.push({ts:Date.now(),lat:Math.round(latencyMs),grade:correct?3:1,correct});
+    bumpTags(get(id), correct?3:1);
     save();
   }
 
@@ -225,8 +271,9 @@ const Store = (function(){
   }
 
   return { init, save, units:()=>units, cards:()=>cards, get, reviewCards, problemCards,
-    dueQueue, lectureQueue, isDue, srs, grade, localCheck, logProblem, logSession,
+    dueQueue, adaptiveQueue, lectureQueue, tagQueue, isDue, srs, grade, localCheck, logProblem, logSession,
     cardStat, topicStats, overview, daysToExam, exportJSON, importJSON, md,
+    tagStats, hotTags, taxonomy, tagLabel, tagBoost, priority, systemHealth,
     settings:()=>state.settings,
     cloudConfigured, setCloud, cloudCfg:cfg, pull, push, deepGrade, pollGrade, localGrade };
 })();

@@ -7,7 +7,12 @@
   "target_s": 12,
   "src": "reading 7.3",
   "q": "What does \"semiconservative\" replication mean, and what are the two other models Meselson–Stahl tested?",
-  "a": "Each daughter duplex = one conserved **parental** strand + one **new** strand. The rejected alternatives: **conservative** (one all-old duplex + one all-new) and **dispersive** (each strand a patchwork of old and new)."
+  "a": "Each daughter duplex = one conserved **parental** strand + one **new** strand. The rejected alternatives: **conservative** (one all-old duplex + one all-new) and **dispersive** (each strand a patchwork of old and new).",
+  "tags": [
+   "semiconservative",
+   "compare-contrast",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R002",
@@ -17,7 +22,12 @@
   "target_s": 18,
   "src": "reading 7.3",
   "q": "Who proved semiconservative replication, when, and by what method?",
-  "a": "**Meselson & Stahl, 1958**, using **CsCl density-gradient ultracentrifugation** — grew *E. coli* in heavy ¹⁵N, switched to light ¹⁴N, and tracked DNA density each generation."
+  "a": "**Meselson & Stahl, 1958**, using **CsCl density-gradient ultracentrifugation** — grew *E. coli* in heavy ¹⁵N, switched to light ¹⁴N, and tracked DNA density each generation.",
+  "tags": [
+   "semiconservative",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L2-R003",
@@ -27,7 +37,12 @@
   "target_s": 15,
   "src": "reading 7.3",
   "q": "Who reported the first evidence of a single origin of replication in *E. coli*, and when?",
-  "a": "**John Cairns, 1963** (autoradiography of the replicating circular chromosome → the \"theta\"/replication-bubble image)."
+  "a": "**John Cairns, 1963** (autoradiography of the replicating circular chromosome → the \"theta\"/replication-bubble image).",
+  "tags": [
+   "replication-origin",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L2-R004",
@@ -37,7 +52,12 @@
   "target_s": 12,
   "src": "reading 7.3 / transcript",
   "q": "In which direction do all DNA polymerases synthesize, and what do they add onto?",
-  "a": "**5′→3′** — they add a new nucleotide's 5′-phosphate onto the free **3′-OH** of the growing strand. (\"Follow the 3′ hydroxyl.\") They read the template 3′→5′."
+  "a": "**5′→3′** — they add a new nucleotide's 5′-phosphate onto the free **3′-OH** of the growing strand. (\"Follow the 3′ hydroxyl.\") They read the template 3′→5′.",
+  "tags": [
+   "dna-polymerase",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R005",
@@ -47,7 +67,12 @@
   "target_s": 15,
   "src": "reading 7.4 / transcript",
   "q": "Why does DNA replication need an RNA primer, and what makes it?",
-  "a": "DNA polymerase **cannot start de novo** — it can only extend a 3′-OH. **Primase** (DnaG) synthesizes a short **RNA** primer (~12–24 nt, contains uracil) that provides that first 3′-OH. RNA primers are later removed."
+  "a": "DNA polymerase **cannot start de novo** — it can only extend a 3′-OH. **Primase** (DnaG) synthesizes a short **RNA** primer (~12–24 nt, contains uracil) that provides that first 3′-OH. RNA primers are later removed.",
+  "tags": [
+   "replication-fork",
+   "dna-polymerase",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R006",
@@ -57,7 +82,12 @@
   "target_s": 18,
   "src": "reading 7.4",
   "q": "Describe *E. coli* oriC: size, base composition, and its two sequence elements.",
-  "a": "**oriC** ≈ **245 bp**, **AT-rich**. Contains three **13-mers** (AT-rich tandem repeats — the meltable \"DNA unwinding element\") and four **9-mers** (**DnaA boxes**, consensus **TTATCCACA**)."
+  "a": "**oriC** ≈ **245 bp**, **AT-rich**. Contains three **13-mers** (AT-rich tandem repeats — the meltable \"DNA unwinding element\") and four **9-mers** (**DnaA boxes**, consensus **TTATCCACA**).",
+  "tags": [
+   "replication-origin",
+   "sequence-reading",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R007",
@@ -67,7 +97,12 @@
   "target_s": 20,
   "src": "reading 7.4",
   "q": "What do DnaA, DnaB, and DnaC each do at oriC?",
-  "a": "**DnaA** binds the **9-mers**, bends the DNA, and opens (melts) the AT-rich **13-mers** → open complex. **DnaC** loads **DnaB** (the **helicase**) onto the single strands; DnaB unwinds the duplex bidirectionally."
+  "a": "**DnaA** binds the **9-mers**, bends the DNA, and opens (melts) the AT-rich **13-mers** → open complex. **DnaC** loads **DnaB** (the **helicase**) onto the single strands; DnaB unwinds the duplex bidirectionally.",
+  "tags": [
+   "replication-origin",
+   "replication-fork",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R008",
@@ -77,7 +112,11 @@
   "target_s": 12,
   "src": "reading 7.4",
   "q": "What does helicase do, and what does single-strand binding protein (SSB) do?",
-  "a": "**Helicase (DnaB)** breaks hydrogen bonds to unwind the double helix ahead of the fork. **SSB** coats the exposed single strands to stop them re-annealing."
+  "a": "**Helicase (DnaB)** breaks hydrogen bonds to unwind the double helix ahead of the fork. **SSB** coats the exposed single strands to stop them re-annealing.",
+  "tags": [
+   "replication-fork",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R008b",
@@ -87,7 +126,12 @@
   "target_s": 12,
   "src": "reading 7.3",
   "q": "How many origins does a bacterial vs a eukaryotic chromosome use?",
-  "a": "Bacterial (small, circular) = **one** origin (bidirectional). Eukaryotic (large, linear) = **many** — yeast ~400, *Drosophila* ~10,000, human up to ~50,000."
+  "a": "Bacterial (small, circular) = **one** origin (bidirectional). Eukaryotic (large, linear) = **many** — yeast ~400, *Drosophila* ~10,000, human up to ~50,000.",
+  "tags": [
+   "replication-origin",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-R009",
@@ -97,7 +141,12 @@
   "target_s": 15,
   "src": "reading 7.4",
   "q": "Leading vs lagging strand — how is each synthesized?",
-  "a": "**Leading strand** = synthesized **continuously** toward the fork (one primer). **Lagging strand** = synthesized **discontinuously** away from the fork, as short **Okazaki fragments**, each needing its own RNA primer."
+  "a": "**Leading strand** = synthesized **continuously** toward the fork (one primer). **Lagging strand** = synthesized **discontinuously** away from the fork, as short **Okazaki fragments**, each needing its own RNA primer.",
+  "tags": [
+   "leading-lagging",
+   "mechanism",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-R010",
@@ -107,7 +156,12 @@
   "target_s": 15,
   "src": "reading 7.4",
   "q": "What are Okazaki fragments, who found them, and how long are they?",
-  "a": "Short DNA segments of the **lagging strand** (discontinuous synthesis), detected by **Reiji Okazaki**. **E. coli: ~1000–2000 nt; eukaryotes: ~100–200 nt.**"
+  "a": "Short DNA segments of the **lagging strand** (discontinuous synthesis), detected by **Reiji Okazaki**. **E. coli: ~1000–2000 nt; eukaryotes: ~100–200 nt.**",
+  "tags": [
+   "leading-lagging",
+   "who-what-when",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R011",
@@ -117,7 +171,12 @@
   "target_s": 18,
   "src": "reading 7.4",
   "q": "What does DNA polymerase III do, and how many are in a replisome?",
-  "a": "**DNA Pol III** = the principal DNA synthesizer (high processivity, 3′→5′ proofreading), starting at a primer's 3′-OH. **Two** Pol III per **replisome** (one leading, one lagging)."
+  "a": "**DNA Pol III** = the principal DNA synthesizer (high processivity, 3′→5′ proofreading), starting at a primer's 3′-OH. **Two** Pol III per **replisome** (one leading, one lagging).",
+  "tags": [
+   "dna-polymerase",
+   "replication-fork",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R012",
@@ -127,7 +186,13 @@
   "target_s": 20,
   "src": "reading 7.4",
   "q": "What two activities does DNA polymerase I use to deal with RNA primers?",
-  "a": "Its **5′→3′ exonuclease** chews out RNA-primer nucleotides one by one, while its **5′→3′ polymerase** fills in DNA behind. (Pol I also has 3′→5′ proofreading + does DNA repair.)"
+  "a": "Its **5′→3′ exonuclease** chews out RNA-primer nucleotides one by one, while its **5′→3′ polymerase** fills in DNA behind. (Pol I also has 3′→5′ proofreading + does DNA repair.)",
+  "tags": [
+   "dna-polymerase",
+   "primer-removal",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R013",
@@ -137,7 +202,12 @@
   "target_s": 12,
   "src": "reading 7.4",
   "q": "What does DNA ligase do?",
-  "a": "Forms a **phosphodiester bond** to seal the single-stranded **nick** between adjacent DNA fragments — joining **Okazaki fragments** into a continuous strand (ATP-dependent)."
+  "a": "Forms a **phosphodiester bond** to seal the single-stranded **nick** between adjacent DNA fragments — joining **Okazaki fragments** into a continuous strand (ATP-dependent).",
+  "tags": [
+   "primer-removal",
+   "leading-lagging",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R014",
@@ -147,7 +217,12 @@
   "target_s": 18,
   "src": "reading 7.4",
   "q": "What is the sliding clamp — its shape, and its function?",
-  "a": "A ring (~**75 Å** across, ~**35 Å** hole) that **encircles double-stranded DNA** and tethers DNA Pol III to the template → dramatically boosts **processivity** (how far the polymerase stays on the track)."
+  "a": "A ring (~**75 Å** across, ~**35 Å** hole) that **encircles double-stranded DNA** and tethers DNA Pol III to the template → dramatically boosts **processivity** (how far the polymerase stays on the track).",
+  "tags": [
+   "replication-fork",
+   "dna-polymerase",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R015",
@@ -157,7 +232,12 @@
   "target_s": 15,
   "src": "reading 7.4 / transcript",
   "q": "What is proofreading, which activity performs it, and how accurate is replication?",
-  "a": "Removing a just-added wrong nucleotide via the **3′→5′ exonuclease** activity (step back, clip, retry). Error rate ≈ **1 in 10⁹** nucleotides in wild-type *E. coli*."
+  "a": "Removing a just-added wrong nucleotide via the **3′→5′ exonuclease** activity (step back, clip, retry). Error rate ≈ **1 in 10⁹** nucleotides in wild-type *E. coli*.",
+  "tags": [
+   "proofreading",
+   "directionality",
+   "calculation"
+  ]
  },
  {
   "id": "L2-R016",
@@ -167,7 +247,11 @@
   "target_s": 15,
   "src": "reading 7.4 / transcript",
   "q": "What is supercoiling, and what relieves it?",
-  "a": "**Supercoiling** = torsional strain from unwinding the helix during replication. **Topoisomerases** (a.k.a. gyrases) cut one or both strands, let the DNA rotate/untwist, then rejoin it. (They have re-joining ability but are **not** DNA ligase.)"
+  "a": "**Supercoiling** = torsional strain from unwinding the helix during replication. **Topoisomerases** (a.k.a. gyrases) cut one or both strands, let the DNA rotate/untwist, then rejoin it. (They have re-joining ability but are **not** DNA ligase.)",
+  "tags": [
+   "supercoiling",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R017",
@@ -177,7 +261,12 @@
   "target_s": 20,
   "src": "reading 7.4",
   "q": "Name the three principal bacterial replication polymerases and their jobs (Table 7.3).",
-  "a": "**DnaG** (primase) = RNA primer synthesis; **Pol I** = RNA-primer removal + proofreading + repair; **Pol III** = bulk DNA replication + proofreading. (Eukaryotes use Greek: α/primase, δ lagging, ε leading — **don't memorize the Greek ones except γ**, which returns in repair.)"
+  "a": "**DnaG** (primase) = RNA primer synthesis; **Pol I** = RNA-primer removal + proofreading + repair; **Pol III** = bulk DNA replication + proofreading. (Eukaryotes use Greek: α/primase, δ lagging, ε leading — **don't memorize the Greek ones except γ**, which returns in repair.)",
+  "tags": [
+   "dna-polymerase",
+   "primer-removal",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-R018",
@@ -187,7 +276,12 @@
   "target_s": 18,
   "src": "reading 7.4 / transcript",
   "q": "What is the end-replication problem?",
-  "a": "On a **linear** chromosome, when the terminal lagging-strand RNA primer is removed there's **no upstream 3′-OH to fill the gap** → a **3′ overhang** forms and the chromosome **shortens each replication cycle**."
+  "a": "On a **linear** chromosome, when the terminal lagging-strand RNA primer is removed there's **no upstream 3′-OH to fill the gap** → a **3′ overhang** forms and the chromosome **shortens each replication cycle**.",
+  "tags": [
+   "telomere",
+   "leading-lagging",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R019",
@@ -197,7 +291,12 @@
   "target_s": 18,
   "src": "reading 7.4",
   "q": "What are telomeres — composition, function, and the vertebrate repeat?",
-  "a": "Repetitive, non-coding DNA at linear chromosome ends (vertebrate repeat **5′-TTAGGG-3′**, ~6 bp; 2–20 kb at birth). Being repetitive/gene-free, they can be safely lost bit-by-bit each cycle, buffering the end-replication problem."
+  "a": "Repetitive, non-coding DNA at linear chromosome ends (vertebrate repeat **5′-TTAGGG-3′**, ~6 bp; 2–20 kb at birth). Being repetitive/gene-free, they can be safely lost bit-by-bit each cycle, buffering the end-replication problem.",
+  "tags": [
+   "telomere",
+   "sequence-reading",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R020",
@@ -207,7 +306,12 @@
   "target_s": 18,
   "src": "reading 7.4 / transcript",
   "q": "What kind of enzyme is telomerase (its two components and its activity)?",
-  "a": "A **ribonucleoprotein** = **protein + an RNA template**. It's a **reverse transcriptase** — an **RNA-dependent DNA polymerase** (makes DNA off its own RNA template), encoded by the **TERT** gene. It extends the G-rich 3′ overhang."
+  "a": "A **ribonucleoprotein** = **protein + an RNA template**. It's a **reverse transcriptase** — an **RNA-dependent DNA polymerase** (makes DNA off its own RNA template), encoded by the **TERT** gene. It extends the G-rich 3′ overhang.",
+  "tags": [
+   "telomere",
+   "dna-polymerase",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R021",
@@ -217,7 +321,11 @@
   "target_s": 20,
   "src": "reading 7.4",
   "q": "Who discovered telomeres/telomerase, in what organism, and what prize followed?",
-  "a": "**Elizabeth Blackburn & Carol Greider (1987)** in the ciliate *Tetrahymena*; with **Jack Szostak** they won the **2009 Nobel Prize** in Physiology or Medicine."
+  "a": "**Elizabeth Blackburn & Carol Greider (1987)** in the ciliate *Tetrahymena*; with **Jack Szostak** they won the **2009 Nobel Prize** in Physiology or Medicine.",
+  "tags": [
+   "telomere",
+   "who-what-when"
+  ]
  },
  {
   "id": "L2-R022",
@@ -227,7 +335,11 @@
   "target_s": 15,
   "src": "reading 7.4 / transcript",
   "q": "What is Shelterin + the T-loop, and what do they do?",
-  "a": "**Shelterin** (a protein complex; components TRF/TPP1/POT1 — don't memorize the parts) folds the telomere into a **T-loop** (the end tucks back and base-pairs), **capping** it so double-strand-break repair can't fuse chromosome ends."
+  "a": "**Shelterin** (a protein complex; components TRF/TPP1/POT1 — don't memorize the parts) folds the telomere into a **T-loop** (the end tucks back and base-pairs), **capping** it so double-strand-break repair can't fuse chromosome ends.",
+  "tags": [
+   "telomere",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R023",
@@ -237,7 +349,12 @@
   "target_s": 18,
   "src": "reading 7.4 / transcript",
   "q": "What is the Hayflick limit — who, when, and its cause?",
-  "a": "**Leonard Hayflick, 1965** — cultured vertebrate cells divide only **~50–70 times** then stop (senescence) or die. Cause = progressive **telomere shortening**."
+  "a": "**Leonard Hayflick, 1965** — cultured vertebrate cells divide only **~50–70 times** then stop (senescence) or die. Cause = progressive **telomere shortening**.",
+  "tags": [
+   "telomere",
+   "who-what-when",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R024",
@@ -247,7 +364,11 @@
   "target_s": 15,
   "src": "reading 7.4 / transcript",
   "q": "What is the relationship between telomerase and cancer?",
-  "a": "Telomerase is **reactivated in ~80–90% of cancers**, letting cells escape the Hayflick limit and divide indefinitely (evading telomere-triggered death) — a hallmark of cancer's \"immortality.\""
+  "a": "Telomerase is **reactivated in ~80–90% of cancers**, letting cells escape the Hayflick limit and divide indefinitely (evading telomere-triggered death) — a hallmark of cancer's \"immortality.\"",
+  "tags": [
+   "telomere",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R025",
@@ -257,7 +378,12 @@
   "target_s": 18,
   "src": "reading 7.5",
   "q": "What is PCR, who invented it, and when?",
-  "a": "**Polymerase Chain Reaction** — an in-vitro, automated DNA replication that exponentially amplifies a target sequence. Invented by **Kary Mullis, 1983**."
+  "a": "**Polymerase Chain Reaction** — an in-vitro, automated DNA replication that exponentially amplifies a target sequence. Invented by **Kary Mullis, 1983**.",
+  "tags": [
+   "pcr",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L2-R026",
@@ -267,7 +393,12 @@
   "target_s": 20,
   "src": "reading 7.5 / transcript",
   "q": "Name PCR's three cycle steps with their temperatures and what happens at each.",
-  "a": "**Denature (~95 °C)** — heat melts the strands apart. **Anneal (~45–68 °C)** — primers hybridize to the template. **Extend (~72 °C)** — Taq polymerase builds new DNA from each primer's 3′-OH."
+  "a": "**Denature (~95 °C)** — heat melts the strands apart. **Anneal (~45–68 °C)** — primers hybridize to the template. **Extend (~72 °C)** — Taq polymerase builds new DNA from each primer's 3′-OH.",
+  "tags": [
+   "pcr",
+   "technique",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R027",
@@ -277,7 +408,12 @@
   "target_s": 20,
   "src": "reading 7.5 / transcript",
   "q": "What is Taq polymerase, where is it from, and why was it chosen for PCR?",
-  "a": "DNA polymerase from ***Thermus aquaticus*** (hot-spring bacterium; first collected by **Brock, Yellowstone, 1965**). Chosen because it's **thermostable** — it survives the ~95 °C denaturation step (~1000 bp/min; but lacks 3′→5′ proofreading)."
+  "a": "DNA polymerase from ***Thermus aquaticus*** (hot-spring bacterium; first collected by **Brock, Yellowstone, 1965**). Chosen because it's **thermostable** — it survives the ~95 °C denaturation step (~1000 bp/min; but lacks 3′→5′ proofreading).",
+  "tags": [
+   "pcr",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L2-R028",
@@ -287,7 +423,12 @@
   "target_s": 12,
   "src": "reading 7.5 / transcript",
   "q": "How many copies does PCR make after n cycles, and roughly after 30?",
-  "a": "**2ⁿ** (each cycle doubles the target). After 30 cycles ≈ **2³⁰ ≈ 1 billion** copies."
+  "a": "**2ⁿ** (each cycle doubles the target). After 30 cycles ≈ **2³⁰ ≈ 1 billion** copies.",
+  "tags": [
+   "pcr",
+   "calculation",
+   "technique"
+  ]
  },
  {
   "id": "L2-R029",
@@ -297,7 +438,12 @@
   "target_s": 18,
   "src": "reading 7.5 / transcript",
   "q": "What is Sanger sequencing, who developed it and when, and what molecule terminates the chain?",
-  "a": "**Sanger (chain-termination) sequencing** — **Frederick Sanger, 1977** (Maxam & Gilbert published a different method the same year). Chains terminate when a **dideoxynucleotide (ddNTP)** is incorporated."
+  "a": "**Sanger (chain-termination) sequencing** — **Frederick Sanger, 1977** (Maxam & Gilbert published a different method the same year). Chains terminate when a **dideoxynucleotide (ddNTP)** is incorporated.",
+  "tags": [
+   "sanger-sequencing",
+   "who-what-when",
+   "technique"
+  ]
  },
  {
   "id": "L2-R030",
@@ -307,7 +453,12 @@
   "target_s": 15,
   "src": "reading 7.5 / transcript",
   "q": "Why does a ddNTP terminate a growing DNA strand?",
-  "a": "A **dideoxynucleotide** lacks the **3′-OH** (it's deoxygenated at BOTH the 2′ and 3′ carbons). With no 3′-OH, no further phosphodiester bond can form → **chain termination**."
+  "a": "A **dideoxynucleotide** lacks the **3′-OH** (it's deoxygenated at BOTH the 2′ and 3′ carbons). With no 3′-OH, no further phosphodiester bond can form → **chain termination**.",
+  "tags": [
+   "sanger-sequencing",
+   "nucleotide-chemistry",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-R031",
@@ -317,7 +468,12 @@
   "target_s": 12,
   "src": "transcript / reading 7.5",
   "q": "In modern (automated) Sanger sequencing, how is the sequence read out?",
-  "a": "Each ddNTP base carries a different **fluorescent** color; fragments are separated by **capillary gel electrophoresis** and a detector reads the colored peaks as a **chromatogram**."
+  "a": "Each ddNTP base carries a different **fluorescent** color; fragments are separated by **capillary gel electrophoresis** and a detector reads the colored peaks as a **chromatogram**.",
+  "tags": [
+   "sanger-sequencing",
+   "technique",
+   "figure-interpretation"
+  ]
  },
  {
   "id": "L2-R032",
@@ -327,7 +483,12 @@
   "target_s": 18,
   "src": "transcript",
   "q": "How does high-throughput / shotgun (Illumina) sequencing work in brief?",
-  "a": "Break the genome into millions of tiny fragments; do **reversible** chain termination — add a base, image its color, chemically **restore the 3′-OH**, repeat — one base at a time, massively in parallel. A computer overlaps the reads into **contigs** → a **reference genome**."
+  "a": "Break the genome into millions of tiny fragments; do **reversible** chain termination — add a base, image its color, chemically **restore the 3′-OH**, repeat — one base at a time, massively in parallel. A computer overlaps the reads into **contigs** → a **reference genome**.",
+  "tags": [
+   "sequencing-tech",
+   "technique",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C001",
@@ -337,7 +498,12 @@
   "target_s": 35,
   "src": "reading 7.3 / transcript",
   "q": "How do the generation-by-generation bands distinguish the three replication models?",
-  "a": "**Gen 1** separates **conservative** (which gives a pure-**light** band immediately) from **semiconservative/dispersive** (both give only an intermediate/**hybrid** band). **Gen 2** separates **semiconservative** (a discrete **light** band appears alongside constant hybrid) from **dispersive** (a single band that just drifts steadily lighter, never splitting)."
+  "a": "**Gen 1** separates **conservative** (which gives a pure-**light** band immediately) from **semiconservative/dispersive** (both give only an intermediate/**hybrid** band). **Gen 2** separates **semiconservative** (a discrete **light** band appears alongside constant hybrid) from **dispersive** (a single band that just drifts steadily lighter, never splitting).",
+  "tags": [
+   "semiconservative",
+   "figure-interpretation",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-C002",
@@ -347,7 +513,12 @@
   "target_s": 30,
   "src": "reading 7.3 / transcript",
   "q": "In semiconservative replication, what happens to the hybrid band vs the light band across generations?",
-  "a": "The **hybrid** (heavy–light) band stays a **constant amount** (2 duplexes — the original parental strands persist as hybrids); the **light** (light–light) band **grows** each cycle. So later gens show a constant hybrid + an ever-thickening light band."
+  "a": "The **hybrid** (heavy–light) band stays a **constant amount** (2 duplexes — the original parental strands persist as hybrids); the **light** (light–light) band **grows** each cycle. So later gens show a constant hybrid + an ever-thickening light band.",
+  "tags": [
+   "semiconservative",
+   "figure-interpretation",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C003",
@@ -357,7 +528,12 @@
   "target_s": 25,
   "src": "reading 7.4 / transcript",
   "q": "Why must DNA replication start with an RNA primer instead of DNA?",
-  "a": "DNA polymerase can only **extend** an existing 3′-OH — it can't initiate a strand from scratch. **RNA polymerase/primase CAN** start de novo, so a short RNA primer lays down the first 3′-OH for DNA pol to build on. (The RNA is later removed because it's chemically labile.)"
+  "a": "DNA polymerase can only **extend** an existing 3′-OH — it can't initiate a strand from scratch. **RNA polymerase/primase CAN** start de novo, so a short RNA primer lays down the first 3′-OH for DNA pol to build on. (The RNA is later removed because it's chemically labile.)",
+  "tags": [
+   "dna-polymerase",
+   "replication-fork",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C004",
@@ -367,7 +543,12 @@
   "target_s": 30,
   "src": "reading 7.4 / transcript",
   "q": "Why is the lagging strand synthesized discontinuously (in Okazaki fragments)?",
-  "a": "The two strands are **antiparallel**, but polymerase only builds **5′→3′**. On the strand running the \"wrong\" way relative to fork movement, synthesis must repeatedly restart (new primer + short fragment) as the fork exposes more template → discontinuous **Okazaki fragments**."
+  "a": "The two strands are **antiparallel**, but polymerase only builds **5′→3′**. On the strand running the \"wrong\" way relative to fork movement, synthesis must repeatedly restart (new primer + short fragment) as the fork exposes more template → discontinuous **Okazaki fragments**.",
+  "tags": [
+   "leading-lagging",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C005",
@@ -377,7 +558,11 @@
   "target_s": 35,
   "src": "reading 7.4",
   "q": "Mechanistically, how does DnaA binding the 9-mers open the origin?",
-  "a": "**DnaA** binds the four **9-mer** boxes and oligomerizes, **bending/wrapping** the DNA. That torsional strain is transmitted to the adjacent AT-rich **13-mers**, whose weak (2-H-bond) A–T pairs melt → an **open complex** where helicase can load."
+  "a": "**DnaA** binds the four **9-mer** boxes and oligomerizes, **bending/wrapping** the DNA. That torsional strain is transmitted to the adjacent AT-rich **13-mers**, whose weak (2-H-bond) A–T pairs melt → an **open complex** where helicase can load.",
+  "tags": [
+   "replication-origin",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C006",
@@ -387,7 +572,12 @@
   "target_s": 20,
   "src": "reading 7.4 / transcript",
   "q": "Why is the origin of replication AT-rich?",
-  "a": "A–T pairs have only **2 hydrogen bonds** (vs 3 for G–C), so an AT-rich stretch takes **less energy to melt open** — ideal for the strand separation that starts replication."
+  "a": "A–T pairs have only **2 hydrogen bonds** (vs 3 for G–C), so an AT-rich stretch takes **less energy to melt open** — ideal for the strand separation that starts replication.",
+  "tags": [
+   "replication-origin",
+   "base-pairing",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C007",
@@ -397,7 +587,13 @@
   "target_s": 30,
   "src": "reading 7.4",
   "q": "Contrast the roles of DNA Pol III and DNA Pol I at the lagging strand.",
-  "a": "**Pol III** rapidly synthesizes the bulk of each Okazaki fragment until it hits the next RNA primer, then leaves the gap. **Pol I** (high affinity for DNA–RNA gaps) removes the RNA primer (5′→3′ exonuclease) and fills DNA behind it; **ligase** then seals the final nick."
+  "a": "**Pol III** rapidly synthesizes the bulk of each Okazaki fragment until it hits the next RNA primer, then leaves the gap. **Pol I** (high affinity for DNA–RNA gaps) removes the RNA primer (5′→3′ exonuclease) and fills DNA behind it; **ligase** then seals the final nick.",
+  "tags": [
+   "dna-polymerase",
+   "primer-removal",
+   "leading-lagging",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-C008",
@@ -407,7 +603,13 @@
   "target_s": 30,
   "src": "reading 7.4 / transcript",
   "q": "DON'T confuse the two Pol I exonuclease directions — what does each do?",
-  "a": "**5′→3′ exonuclease** = removes the **RNA primer** ahead of the polymerase (Pol I only). **3′→5′ exonuclease** = **proofreading**, backing up to clip a just-added wrong nucleotide (Pol I *and* Pol III). Same enzyme family, opposite directions, different jobs."
+  "a": "**5′→3′ exonuclease** = removes the **RNA primer** ahead of the polymerase (Pol I only). **3′→5′ exonuclease** = **proofreading**, backing up to clip a just-added wrong nucleotide (Pol I *and* Pol III). Same enzyme family, opposite directions, different jobs.",
+  "tags": [
+   "proofreading",
+   "primer-removal",
+   "directionality",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-C009",
@@ -417,7 +619,12 @@
   "target_s": 25,
   "src": "reading 7.4",
   "q": "How does a polymerase detect and fix a misincorporated nucleotide?",
-  "a": "A mismatch can't hydrogen-bond properly, so the daughter strand's 3′ end is displaced from the \"palm\" polymerase site into the **3′→5′ exonuclease site**; the wrong nucleotide (plus a few) is clipped, the strand rotates back, and **5′→3′ synthesis resumes**."
+  "a": "A mismatch can't hydrogen-bond properly, so the daughter strand's 3′ end is displaced from the \"palm\" polymerase site into the **3′→5′ exonuclease site**; the wrong nucleotide (plus a few) is clipped, the strand rotates back, and **5′→3′ synthesis resumes**.",
+  "tags": [
+   "proofreading",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C010",
@@ -427,7 +634,12 @@
   "target_s": 35,
   "src": "reading 7.4 / transcript",
   "q": "Why can't a linear chromosome be replicated all the way to its end?",
-  "a": "The lagging strand needs an RNA primer near the very end of its template; when that terminal primer is removed there's **no upstream 3′-OH** to fill the gap (a polymerase can't run the other way). So a short 3′ overhang goes unreplicated and the chromosome shortens each cycle."
+  "a": "The lagging strand needs an RNA primer near the very end of its template; when that terminal primer is removed there's **no upstream 3′-OH** to fill the gap (a polymerase can't run the other way). So a short 3′ overhang goes unreplicated and the chromosome shortens each cycle.",
+  "tags": [
+   "telomere",
+   "leading-lagging",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C011",
@@ -437,7 +649,12 @@
   "target_s": 35,
   "src": "reading 7.4 / transcript",
   "q": "How does telomerase extend the chromosome end?",
-  "a": "Telomerase carries an **RNA template** complementary to the telomere repeat. It base-pairs to the **3′ G-rich overhang**, uses its RNA as template to **add DNA repeats (5′→3′)** to that overhang, then **translocates** and repeats — lengthening the overhang (it does NOT fill the 5′ gap)."
+  "a": "Telomerase carries an **RNA template** complementary to the telomere repeat. It base-pairs to the **3′ G-rich overhang**, uses its RNA as template to **add DNA repeats (5′→3′)** to that overhang, then **translocates** and repeats — lengthening the overhang (it does NOT fill the 5′ gap).",
+  "tags": [
+   "telomere",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C012",
@@ -447,7 +664,12 @@
   "target_s": 25,
   "src": "HW / transcript",
   "q": "After telomerase extends the single-stranded G overhang, how does that end become double-stranded again?",
-  "a": "In the **next cell cycle**, the extended overhang serves as template and is filled in as part of the **lagging strand (Okazaki fragments)** — i.e., the complementary C-strand is made by normal lagging-strand synthesis."
+  "a": "In the **next cell cycle**, the extended overhang serves as template and is filled in as part of the **lagging strand (Okazaki fragments)** — i.e., the complementary C-strand is made by normal lagging-strand synthesis.",
+  "tags": [
+   "telomere",
+   "leading-lagging",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C013",
@@ -457,7 +679,11 @@
   "target_s": 25,
   "src": "reading 7.4 / transcript",
   "q": "Why does telomere shortening limit cell division, and what's it called?",
-  "a": "Once telomeres get too short, further division risks losing real genes, so the cell stops dividing — **senescence** (lecture) / triggers **apoptosis** (reading). This division cap is the **Hayflick limit**, and it contributes to aging (damaged cells can't be replaced)."
+  "a": "Once telomeres get too short, further division risks losing real genes, so the cell stops dividing — **senescence** (lecture) / triggers **apoptosis** (reading). This division cap is the **Hayflick limit**, and it contributes to aging (damaged cells can't be replaced).",
+  "tags": [
+   "telomere",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C014",
@@ -467,7 +693,11 @@
   "target_s": 25,
   "src": "transcript / reading 7.4",
   "q": "Why is \"turn on telomerase to cure aging\" dangerous?",
-  "a": "Reactivating telomerase removes the Hayflick brake on division — the same thing **cancer** cells do (~80–90% reactivate telomerase). You'd trade aging for **cancer risk**: the aging↔cancer balance."
+  "a": "Reactivating telomerase removes the Hayflick brake on division — the same thing **cancer** cells do (~80–90% reactivate telomerase). You'd trade aging for **cancer risk**: the aging↔cancer balance.",
+  "tags": [
+   "telomere",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C015",
@@ -477,7 +707,12 @@
   "target_s": 30,
   "src": "transcript / reading 7.5",
   "q": "Why must PCR primers be oriented with their 3′ ends pointing *toward* each other, and what happens if they aren't? *(she flagged this as exam-important)*",
-  "a": "Each primer's 3′-OH must point **into the target** so synthesis runs toward the other primer — that way each strand builds template for the other, giving **exponential** amplification. Primers pointing outward (or same direction) don't bracket the target → no exponential product."
+  "a": "Each primer's 3′-OH must point **into the target** so synthesis runs toward the other primer — that way each strand builds template for the other, giving **exponential** amplification. Primers pointing outward (or same direction) don't bracket the target → no exponential product.",
+  "tags": [
+   "pcr",
+   "directionality",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C016",
@@ -487,7 +722,12 @@
   "target_s": 20,
   "src": "reading 7.5 / transcript",
   "q": "How is PCR a \"stripped-down\" replication — what replaces the cell's machinery?",
-  "a": "**Heat** replaces helicase/SSB (melts the strands); **synthetic DNA primers** replace primase/RNA primers (so no primer removal needed → one continuous DNA product); a **thermostable polymerase (Taq)** + dNTPs + buffer + Mg²⁺ do the synthesis."
+  "a": "**Heat** replaces helicase/SSB (melts the strands); **synthetic DNA primers** replace primase/RNA primers (so no primer removal needed → one continuous DNA product); a **thermostable polymerase (Taq)** + dNTPs + buffer + Mg²⁺ do the synthesis.",
+  "tags": [
+   "pcr",
+   "compare-contrast",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C017",
@@ -497,7 +737,12 @@
   "target_s": 35,
   "src": "transcript / reading 7.5",
   "q": "When you read a Sanger sequencing gel, what sequence are you reading, and how does it relate to the template? *(she said this is likely on the exam)*",
-  "a": "You read the **synthesized** strand — bottom-to-top of the gel = **5′→3′** (smallest fragment ran farthest = the earliest/5′-most terminated base). The **template** strand is its **complement** (antiparallel). Know which is which: the gel bands are the *new* strand, not the template."
+  "a": "You read the **synthesized** strand — bottom-to-top of the gel = **5′→3′** (smallest fragment ran farthest = the earliest/5′-most terminated base). The **template** strand is its **complement** (antiparallel). Know which is which: the gel bands are the *new* strand, not the template.",
+  "tags": [
+   "sanger-sequencing",
+   "directionality",
+   "figure-interpretation"
+  ]
  },
  {
   "id": "L2-C018",
@@ -507,7 +752,12 @@
   "target_s": 25,
   "src": "reading 7.5",
   "q": "Why does a dideoxynucleotide stop the chain, and how does using a small fraction of one ddNTP give a readable ladder?",
-  "a": "No **3′-OH** on the ddNTP → no next phosphodiester bond → termination. Using mostly normal dNTPs + a **small %** of one ddNTP means the chain terminates **randomly** at each occurrence of that base → a **ladder** of fragments of every length ending in that base, which you separate by size."
+  "a": "No **3′-OH** on the ddNTP → no next phosphodiester bond → termination. Using mostly normal dNTPs + a **small %** of one ddNTP means the chain terminates **randomly** at each occurrence of that base → a **ladder** of fragments of every length ending in that base, which you separate by size.",
+  "tags": [
+   "sanger-sequencing",
+   "nucleotide-chemistry",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-C019",
@@ -517,7 +767,12 @@
   "target_s": 20,
   "src": "reading 7.4 / transcript",
   "q": "Topoisomerase and DNA ligase both re-join DNA — how are their jobs different?",
-  "a": "**Topoisomerase/gyrase** cut DNA to relieve **supercoiling** (torsional strain ahead of the fork), then reseal — a transient cut-rotate-rejoin. **Ligase** permanently seals the **nick between Okazaki fragments**. Topoisomerase is not the ligase enzyme, though it has re-joining ability."
+  "a": "**Topoisomerase/gyrase** cut DNA to relieve **supercoiling** (torsional strain ahead of the fork), then reseal — a transient cut-rotate-rejoin. **Ligase** permanently seals the **nick between Okazaki fragments**. Topoisomerase is not the ligase enzyme, though it has re-joining ability.",
+  "tags": [
+   "supercoiling",
+   "primer-removal",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-P001",
@@ -528,7 +783,12 @@
   "src": "reading 7.3 (Fig 7.9 Q)",
   "q": "In the Meselson–Stahl experiment (semiconservative), what is the ratio of **light : hybrid** DNA duplexes after the **4th** replication cycle?",
   "worked": "Semiconservative: the 2 original parental strands persist as **2 hybrid** duplexes every generation; total duplexes = 2ⁿ. After n cycles, light = 2ⁿ − 2, so light:hybrid = (2ⁿ−2)/2 = 2ⁿ⁻¹ − 1. Gen1 → 0 (all hybrid); Gen2 → 1:1; Gen3 → 3:1; **Gen4 → 2³ − 1 = 7 → 7:1.**",
-  "answer": "7 : 1 (light : hybrid)."
+  "answer": "7 : 1 (light : hybrid).",
+  "tags": [
+   "semiconservative",
+   "calculation",
+   "figure-interpretation"
+  ]
  },
  {
   "id": "L2-P002",
@@ -539,7 +799,12 @@
   "src": "transcript clicker (verified)",
   "q": "For the semiconservative model, what does the **3rd generation** density gradient look like? (A) same as 2nd gen (B) the higher/light band gets thicker while the intermediate/hybrid band stays the same (C) the lower/hybrid band gets thicker while the light stays the same (D) two equal bands.",
   "worked": "Each cycle the hybrid amount is constant (2 duplexes) and the light-light amount grows. So gen 3 vs gen 2: the **light band thickens**, hybrid unchanged.",
-  "answer": "B (light band thickens; hybrid band constant). *(Confirmed in lecture.)*"
+  "answer": "B (light band thickens; hybrid band constant). *(Confirmed in lecture.)*",
+  "tags": [
+   "semiconservative",
+   "figure-interpretation",
+   "calculation"
+  ]
  },
  {
   "id": "L2-P003",
@@ -550,7 +815,11 @@
   "src": "HW Q4 (hand-verified)",
   "q": "The *E. coli* chromosome (single origin, two forks moving outward until they meet) is 4×10⁶ bp and takes 40 min to copy. What is the speed of **one** replication fork in bp/min?",
   "worked": "Two forks split the circle, so each fork copies half: 4×10⁶ / 2 = 2×10⁶ bp. Over 40 min: 2×10⁶ / 40 = **5×10⁴**.",
-  "answer": "50,000 bp/min per fork."
+  "answer": "50,000 bp/min per fork.",
+  "tags": [
+   "replication-fork",
+   "calculation"
+  ]
  },
  {
   "id": "L2-P004",
@@ -561,7 +830,11 @@
   "src": "HW Q5a (hand-verified)",
   "q": "The largest *Drosophila* chromosome is ~6×10⁷ bp and is replicated in <10 min. If it used a **single** origin at the center, what fork speed would the machinery need?",
   "worked": "Single central origin → 2 forks, each copies half: 6×10⁷ / 2 = 3×10⁷ bp in 10 min → 3×10⁷ / 10 = **3×10⁶**.",
-  "answer": "3,000,000 bp/min per fork (physically impossible — motivating multiple origins)."
+  "answer": "3,000,000 bp/min per fork (physically impossible — motivating multiple origins).",
+  "tags": [
+   "replication-origin",
+   "calculation"
+  ]
  },
  {
   "id": "L2-P005",
@@ -572,7 +845,11 @@
   "src": "HW Q5b (hand-verified)",
   "q": "Same *Drosophila* chromosome (6×10⁷ bp), but real forks synthesize only **5,000 bp/min**. What is the minimum number of origins needed to finish in 10 min?",
   "worked": "Each origin fires **two** forks. In 10 min one fork does 5,000×10 = 50,000 bp, so one origin covers 2×50,000 = **100,000 bp**. Origins needed = 6×10⁷ / 1×10⁵ = **600**.",
-  "answer": "600 origins (minimum)."
+  "answer": "600 origins (minimum).",
+  "tags": [
+   "replication-origin",
+   "calculation"
+  ]
  },
  {
   "id": "L2-P006",
@@ -583,7 +860,11 @@
   "src": "HW Q1 (verified)",
   "q": "What enzymatic activity is present in telomerase? (1) DNA-dependent DNA polymerase (2) RNA-dependent DNA polymerase (3) DNA-dependent RNA polymerase (4) RNA-dependent RNA polymerase (5) none.",
   "worked": "Telomerase makes **DNA** using its own **RNA** template — a reverse transcriptase = RNA-dependent DNA polymerase.",
-  "answer": "2 — RNA-dependent DNA polymerase."
+  "answer": "2 — RNA-dependent DNA polymerase.",
+  "tags": [
+   "telomere",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-P007",
@@ -594,7 +875,12 @@
   "src": "HW Q2 (verified)",
   "q": "How is telomeric DNA converted from single-stranded (the extended overhang) to double-stranded form? (1) never, always ss (2) never, extended as ds (3) next cell cycle as part of the leading strand (4) next cell cycle as Okazaki fragments (5) two cell cycles later.",
   "worked": "The extended G-overhang is filled in during the next round as the complementary (C) strand — made by lagging-strand, i.e. **Okazaki-fragment**, synthesis.",
-  "answer": "4 — in the next cell cycle as Okazaki fragments."
+  "answer": "4 — in the next cell cycle as Okazaki fragments.",
+  "tags": [
+   "telomere",
+   "leading-lagging",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-P008",
@@ -605,7 +891,12 @@
   "src": "HW Q3 (verified vs Genetic Analysis 7.2)",
   "q": "A temperature-sensitive lethal *E. coli* dies just after replication begins at 42 °C. The DNA is composed of very long strands **plus** numerous ~1000-nt fragments. (a) Which enzyme is likely affected? (b) How were the small fragments formed?",
   "worked": "Long strands = leading strand (fine). Numerous unjoined ~1000-nt pieces = **Okazaki fragments** that got synthesized but never sealed → the joining enzyme is broken. Pol III (synthesis) and Pol I (primer removal) both still worked (fragments are full DNA), so the defect is in **DNA ligase**.",
-  "answer": "(a) **DNA ligase**. (b) They are **Okazaki fragments** — the lagging strand is synthesized discontinuously as short RNA-primed pieces that normally get joined by ligase; here they remain separate."
+  "answer": "(a) **DNA ligase**. (b) They are **Okazaki fragments** — the lagging strand is synthesized discontinuously as short RNA-primed pieces that normally get joined by ligase; here they remain separate.",
+  "tags": [
+   "primer-removal",
+   "leading-lagging",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-P009",
@@ -616,7 +907,12 @@
   "src": "HW Q6 (reasoning — skeptic-checked)",
   "q": "In *E. coli* oriC, what happens if the ~100 bp **between** the 13-mer array and the 9-mer array is deleted? (1) DNA degradation (2) the 13-mer and 9-mer consensus sequences are sequenced as one (3) replication won't proceed — there isn't proper space/geometry to open the origin and load the replisome (4) the replisome can't find oriC.",
   "worked": "The 9-mers (DnaA boxes) are intact, so DnaA still **finds** oriC → (4) is wrong. No nuclease is invoked → (1) wrong; \"sequenced as one\" is a non-sequitur → (2) wrong. But DnaA at the 9-mers must be correctly **spaced/phased** relative to the 13-mers to bend the DNA and melt them; deleting the spacer disrupts open-complex formation, so initiation/replication won't proceed.",
-  "answer": "3 — replication will not proceed. DnaA still binds the intact 9-mers so it *finds* oriC (→ #4 is wrong), but deleting ~100 bp (~10 helical turns) between the boxes and the AT-rich 13-mers destroys the spacing/phasing DnaA needs to bend and melt them → no open complex → initiation fails. *(Mechanism-confirmed vs. the E. coli oriC literature — spacing here is \"strictly critical.\" #3's \"not enough space\" wording is loose, but it's the only \"won't proceed\" option.)*"
+  "answer": "3 — replication will not proceed. DnaA still binds the intact 9-mers so it *finds* oriC (→ #4 is wrong), but deleting ~100 bp (~10 helical turns) between the boxes and the AT-rich 13-mers destroys the spacing/phasing DnaA needs to bend and melt them → no open complex → initiation fails. *(Mechanism-confirmed vs. the E. coli oriC literature — spacing here is \"strictly critical.\" #3's \"not enough space\" wording is loose, but it's the only \"won't proceed\" option.)*",
+  "tags": [
+   "replication-origin",
+   "exceptions",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-P010",
@@ -627,7 +923,12 @@
   "src": "transcript clicker (verified)",
   "q": "Which statement about **prokaryotic** replication is TRUE? (A) only two primers are needed (continuous leading strands both ways) (B) DNA ligase is dispensable because leading & lagging strands meet (C) no genetic material is lost because multiple bubbles eventually meet (D) telomeres are dispensable because the chromosomes are circular (E) SSBs aren't needed because bacterial DNA is single-stranded.",
   "worked": "A false (lagging strand needs many primers). B false (ligase still joins Okazaki fragments). C false (prokaryotes use a **single** origin, not multiple). E false (bacterial DNA is double-stranded; only some viruses are ss). **D true** — telomeres are only needed for **linear** ends; a circular chromosome has none.",
-  "answer": "D. *(Confirmed in lecture.)*"
+  "answer": "D. *(Confirmed in lecture.)*",
+  "tags": [
+   "prokaryote-vs-eukaryote",
+   "telomere",
+   "compare-contrast"
+  ]
  },
  {
   "id": "L2-P011",
@@ -638,7 +939,11 @@
   "src": "transcript clicker (verified)",
   "q": "You reactivate telomerase in adult human cells \"to cure aging.\" What is the major danger? (best answer)",
   "worked": "Removing the Hayflick brake lets cells divide without limit — exactly what cancer cells exploit (telomerase reactivated in ~80–90% of cancers).",
-  "answer": "Greatly increased **cancer** risk. *(Confirmed in lecture — answer C.)*"
+  "answer": "Greatly increased **cancer** risk. *(Confirmed in lecture — answer C.)*",
+  "tags": [
+   "telomere",
+   "mechanism"
+  ]
  },
  {
   "id": "L2-P012",
@@ -649,7 +954,11 @@
   "src": "transcript clicker (verified)",
   "q": "Why was Taq polymerase chosen for early PCR? (best answer)",
   "worked": "PCR's denaturation step hits ~95 °C, which destroys ordinary polymerases. Taq (from *Thermus aquaticus*) is **thermostable** and survives it — so you don't re-add enzyme each cycle. (Its lack of proofreading is a known downside, but heat-stability wins.)",
-  "answer": "It is **thermostable / works near boiling.** *(Confirmed — answer B.)*"
+  "answer": "It is **thermostable / works near boiling.** *(Confirmed — answer B.)*",
+  "tags": [
+   "pcr",
+   "technique"
+  ]
  },
  {
   "id": "L2-P013",
@@ -660,7 +969,12 @@
   "src": "transcript (yeast htz1 primer design, verified)",
   "q": "To PCR-amplify a region whose **top (coding) strand** is 5′-AGGCGG…-3′, the **forward** primer should match/relate to which strand, and roughly what should each primer's start look like?",
   "worked": "The **forward primer = same sequence as the top strand's 5′ region** (it binds the bottom strand and extends across the top), so it starts like the top strand: **5′-AGG…**. The **reverse primer = reverse complement of the top strand's 3′ region** (binds the top strand), so it starts **5′-GCC…**. Both 3′-OHs point inward.",
-  "answer": "Forward = 5′ end of the top strand (starts AGG…); reverse = reverse complement of the other end (starts GCC…). *(Confirmed — answer D.)*"
+  "answer": "Forward = 5′ end of the top strand (starts AGG…); reverse = reverse complement of the other end (starts GCC…). *(Confirmed — answer D.)*",
+  "tags": [
+   "pcr",
+   "sequence-reading",
+   "directionality"
+  ]
  },
  {
   "id": "L2-P014",
@@ -671,7 +985,11 @@
   "src": "transcript / reading 7.5 (method-verified)",
   "q": "Starting from a single double-stranded target, how many copies of the target region exist after **25** PCR cycles (100% efficiency)?",
   "worked": "Each cycle doubles: after n cycles = 2ⁿ. 2²⁵ = **33,554,432** ≈ 3.4×10⁷.",
-  "answer": "2²⁵ ≈ 3.4×10⁷ (about 33.5 million)."
+  "answer": "2²⁵ ≈ 3.4×10⁷ (about 33.5 million).",
+  "tags": [
+   "pcr",
+   "calculation"
+  ]
  },
  {
   "id": "L2-P015",
@@ -682,7 +1000,13 @@
   "src": "reading Genetic Analysis 7.1 (textbook-verified)",
   "q": "For the duplex whose one strand is 5′-ACGACGCTA-3′: (a) give the complementary strand with polarity; (b) count total phosphodiester bonds and total hydrogen bonds in the duplex.",
   "worked": "(a) Complement (antiparallel): 3′-TGCTGCGAT-5′. (b) Each 9-nt strand has 8 phosphodiester bonds → 8×2 = **16**. Base pairs: sequence A,C,G,A,C,G,C,T,A → count A/T pairs = 4 (×2 H-bonds = 8), G/C pairs = 5 (×3 = 15) → **23** H-bonds.",
-  "answer": "(a) 3′-TGCTGCGAT-5′; (b) 16 phosphodiester bonds, 23 hydrogen bonds."
+  "answer": "(a) 3′-TGCTGCGAT-5′; (b) 16 phosphodiester bonds, 23 hydrogen bonds.",
+  "tags": [
+   "base-pairing",
+   "sequence-reading",
+   "directionality",
+   "calculation"
+  ]
  },
  {
   "id": "L2-P016",
@@ -693,6 +1017,10 @@
   "src": "discussion Q4 (method-verified)",
   "q": "A bacterial genome is ~15% adenine. What is the probability of a **specific 8-bp sequence** occurring at a given position, and about how many times would it appear in a 4.4×10⁶ bp genome? (assume Chargaff)",
   "worked": "15% A → 15% T (A=T), so G+C = 70% → G = C = 35%. Each position's probability = that base's frequency (0.15 for A/T, 0.35 for G/C); an 8-mer's probability = the product of its 8 positions. Expected count ≈ P × genome length. (E.g., an all-GC 8-mer: 0.35⁸ ≈ 2.25×10⁻⁴ → ×4.4×10⁶ ≈ **~990 times**; an all-AT 8-mer: 0.15⁸ ≈ 2.56×10⁻⁷ → ~1 time.)",
-  "answer": "P(8-mer) = product of the 8 base frequencies; expected count = P × 4.4×10⁶. (Plug in the actual primer-binding 8-mer's bases from the discussion sheet.)"
+  "answer": "P(8-mer) = product of the 8 base frequencies; expected count = P × 4.4×10⁶. (Plug in the actual primer-binding 8-mer's bases from the discussion sheet.)",
+  "tags": [
+   "base-pairing",
+   "calculation"
+  ]
  }
 ]
