@@ -209,7 +209,7 @@ const Store = (function(){
 
   // ---- export / import (cross-device until cloud sync lands) ----
   function exportJSON(){ return JSON.stringify(state); }
-  function importJSON(txt){ const s=JSON.parse(txt); if(s&&s.srs){ state=s; save(); return true;} return false; }
+  function importJSON(txt){ const s=JSON.parse(txt); if(s&&s.srs){ state=migrate(s); save(); return true;} return false; }
 
   // ---- markdown-lite ----
   function md(t){
