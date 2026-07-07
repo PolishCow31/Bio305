@@ -77,7 +77,8 @@
 
   // Dedup key: dev-stamped events are globally unique; legacy events (no dev) are single-origin
   // so a ts+grade fallback is safe.
-  const evKey = e => e.dev ? e.dev+":"+e.ts : "L:"+e.ts+":"+e.grade;
+  // Include grade so two distinct same-device/same-ms events can't collapse into one (no-loss).
+  const evKey = e => (e.dev||"L")+":"+e.ts+":"+e.grade;
 
   // Merge two states into a convergent result. Commutative + idempotent (an OR-set of events
   // + deterministic fold = a CRDT). Union events per card -> replay; union sessions; LWW settings;
@@ -89,14 +90,17 @@
     ids.forEach(id=>{
       const ha=(a.srs&&a.srs[id]&&a.srs[id].hist)||[], hb=(b.srs&&b.srs[id]&&b.srs[id].hist)||[];
       const seen={}, merged=[];
-      ha.concat(hb).forEach(e=>{ const k=evKey(e); if(!seen[k]){ seen[k]=1; merged.push(e); } });
+      ha.concat(hb).forEach(e=>{ if(!e || !isFinite(e.ts)) return;   // drop malformed events (no NaN due)
+        const k=evKey(e); if(!seen[k]){ seen[k]=1; merged.push(e); } });
       out.srs[id]=replayCard(id, merged, byId||{}, EXAM_I);
     });
-    const sseen={};
-    (a.sessions||[]).concat(b.sessions||[]).forEach(x=>{ const k=(x.dev||"")+":"+x.ts; if(!sseen[k]){ sseen[k]=1; out.sessions.push(x); } });
-    out.sessions.sort((x,y)=>x.ts-y.ts);
-    const sa=a.settings||{}, sb=b.settings||{};
-    out.settings = (sb.updatedAt||0) > (sa.updatedAt||0) ? Object.assign({},sb) : Object.assign({},sa);
+    const sseen={};   // dedup EXACT duplicates (same session synced back); keep every distinct one
+    (a.sessions||[]).concat(b.sessions||[]).forEach(x=>{ const k=JSON.stringify(x); if(!sseen[k]){ sseen[k]=1; out.sessions.push(x); } });
+    out.sessions.sort((x,y)=> x.ts-y.ts || (JSON.stringify(x)<JSON.stringify(y)?-1:1));   // total order -> commutative
+    // settings: LWW by updatedAt, with a deterministic content tiebreak on equal stamps (commutative).
+    const sa=a.settings||{}, sb=b.settings||{}, ua=sa.updatedAt||0, ub=sb.updatedAt||0;
+    const winner = ub>ua ? sb : ua>ub ? sa : (JSON.stringify(sb)>JSON.stringify(sa) ? sb : sa);
+    out.settings = Object.assign({}, winner);
     out.tagW = cardsLen ? recomputeTagW(out.srs, byId||{})
              : (Object.keys(a.tagW||{}).length ? a.tagW : (b.tagW||{}));
     return out;
