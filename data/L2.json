@@ -1022,5 +1022,393 @@
    "base-pairing",
    "calculation"
   ]
+ },
+ {
+  "type": "concept",
+  "topic": "Pol I dual exonuclease",
+  "diff": 3,
+  "target_s": 20,
+  "src": "reading 7.4 (Fig 7.19, lines 970-985) / transcript §2.5, EXAM traps",
+  "q": "You are studying an E. coli strain whose DNA Pol I has a point mutation that kills ONLY its 5'→3' exonuclease activity; its 3'→5' exonuclease and polymerase activities are intact. Which normal replication event fails, and which is preserved? Explain why the two exonucleases are not interchangeable.",
+  "a": "FAILS: RNA-primer removal. The 5'→3' exonuclease is what chews out RNA-primer nucleotides one-by-one (starting at the primer's 5' nucleotide, pushing the gap 3'-ward) so the polymerase can backfill DNA. Without it, RNA primers stay in the daughter strand and Okazaki fragments can't be finished/ligated. PRESERVED: proofreading — the 3'→5' exonuclease still backs up to clip a just-added wrong nucleotide. Not interchangeable because they run in OPPOSITE directions doing OPPOSITE jobs: 5'→3' exo removes the primer AHEAD of the polymerase; 3'→5' exo proofreads BEHIND it. (Archbold's guaranteed trap: 5'→3' exo = primer removal, 3'→5' exo = proofreading.)",
+  "tags": [
+   "primer-removal",
+   "dna-polymerase",
+   "proofreading",
+   "directionality",
+   "mechanism"
+  ],
+  "id": "L2-C020"
+ },
+ {
+  "type": "concept",
+  "topic": "DnaA opens the origin",
+  "diff": 3,
+  "target_s": 20,
+  "src": "reading 7.4 (Fig 7.17, lines 806-814) / transcript §2.3",
+  "q": "At E. coli oriC, DnaA binds the 9-mer boxes yet the strands actually melt apart over in the 13-mer region. Walk through the mechanism connecting those two facts, and explain why the 13-mers (not the 9-mers) are where the DNA opens.",
+  "a": "DnaA binds the four 9-mers (DnaA boxes) and self-associates/oligomerizes, bending and wrapping the DNA around itself. That torsional strain is transmitted to the ADJACENT AT-rich 13-mer tandem repeats, whose weak A-T pairs (2 H-bonds each) melt open → an 'open complex'. The 13-mers open (not the 9-mers) because they're AT-rich, so they take the least energy to denature — the 9-mers are just the protein-docking/anchoring site that generates the strain. DnaC then loads DnaB (helicase) onto the exposed single strands.",
+  "tags": [
+   "replication-origin",
+   "replication-fork",
+   "mechanism",
+   "base-pairing"
+  ],
+  "id": "L2-C021"
+ },
+ {
+  "type": "concept",
+  "topic": "Temperature-sensitive mutant ID",
+  "diff": 3,
+  "target_s": 20,
+  "src": "reading Genetic Analysis 7.2 (lines 1297-1347) / HW Q3",
+  "q": "You have a temperature-sensitive lethal E. coli that dies just after replication starts at 42 C. At the restrictive temperature it still makes DNA via Pol III and still removes RNA primers and replaces them with DNA — but its finished DNA is a mix of very long strands PLUS many unjoined ~1000-nt fragments. Which enzyme is defective, and what are the short fragments?",
+  "a": "Defective enzyme = DNA ligase. Reasoning: the long strands = leading strand (fine); Pol III synthesis works and primer removal (Pol I) works — so the fragments are complete DNA, not RNA-primed hybrids. The only remaining step is sealing the nicks between adjacent fragments, which is ligase's sole job. The short pieces are Okazaki fragments: the lagging strand is built discontinuously as short primed segments that normally get joined by ligase — here they stay separate. (Contrast: if primer removal ALSO failed, suspect Pol I instead.)",
+  "tags": [
+   "primer-removal",
+   "leading-lagging",
+   "dna-polymerase",
+   "mechanism"
+  ],
+  "id": "L2-C022"
+ },
+ {
+  "type": "recall",
+  "topic": "oriC anatomy + why AT-rich",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.4 (Fig 7.15, lines 357-386) / transcript §2.3",
+  "q": "Describe E. coli oriC: its size, base composition, its two repeat elements (with the 9-mer consensus), and the single-sentence reason its composition matters.",
+  "a": "oriC ≈ 245 bp and AT-rich. Two elements: three 13-mer tandem repeats (very AT-rich — the meltable 'DNA unwinding element') and four 9-mers (the DnaA boxes, consensus 5'-TTATCCACA-3'). It matters because A-T pairs have only 2 hydrogen bonds (vs 3 for G-C), so an AT-rich origin takes the LEAST energy to melt open — exactly what's needed to start strand separation.",
+  "tags": [
+   "replication-origin",
+   "sequence-reading",
+   "mechanism",
+   "base-pairing"
+  ],
+  "id": "L2-R033"
+ },
+ {
+  "type": "concept",
+  "topic": "Pol I vs II vs III",
+  "diff": 2,
+  "target_s": 20,
+  "src": "reading 7.4 (Table 7.3, lines 1177-1205) / transcript §2.6",
+  "q": "Contrast the three principal bacterial DNA polymerases (I, II, III) by primary job and proofreading, and name the ONE exonuclease activity that sets Pol I apart from the other two.",
+  "a": "Pol III = the workhorse, does the bulk of new DNA synthesis (highest processivity), proofreads 3'→5'. Pol I = removes RNA primers and fills the gaps, plus DNA repair, proofreads 3'→5'. Pol II = DNA repair, proofreads 3'→5'. All three proofread (3'→5' exonuclease). The activity UNIQUE to Pol I is the 5'→3' exonuclease — that's what lets only Pol I strip out RNA primers. (Roman numerals = prokaryotic; Greek letters = eukaryotic.)",
+  "tags": [
+   "dna-polymerase",
+   "compare-contrast",
+   "proofreading",
+   "primer-removal",
+   "mechanism"
+  ],
+  "id": "L2-C023"
+ },
+ {
+  "type": "concept",
+  "topic": "Topoisomerase vs ligase",
+  "diff": 2,
+  "target_s": 20,
+  "src": "reading 7.4 (Fig 7.22, lines 1212-1233) / transcript §2.9, EXAM traps",
+  "q": "Both topoisomerase/gyrase and DNA ligase cut-and-rejoin DNA backbone bonds — a classic Archbold 'important distinction.' What distinct problem does each solve, and why is calling topoisomerase 'a ligase' wrong?",
+  "a": "Topoisomerase/gyrase relieves SUPERCOILING: unwinding the helix ahead of the fork torques the rest of a closed circle (like twisting a coiled phone cord); topoisomerase makes a TRANSIENT cut in one or both strands, lets the DNA swivel/untwist, then reseals the SAME break. DNA ligase makes a PERMANENT seal of the nick BETWEEN two separate Okazaki fragments, forming a new phosphodiester bond to join them. So topoisomerase has re-joining ability but is NOT the ligase enzyme — different substrate (its own transient cut vs. a fragment-to-fragment nick) and different purpose (torsional relief vs. joining pieces).",
+  "tags": [
+   "supercoiling",
+   "primer-removal",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L2-C024"
+ },
+ {
+  "type": "concept",
+  "topic": "Sliding clamp / processivity",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.4 (Fig 7.20, lines 1002-1015) / transcript §2.7",
+  "q": "On its own DNA Pol III has low processivity, yet in vivo it stays on the template for tens of thousands of nucleotides. What is the sliding clamp, how does it physically achieve this, and what does 'processivity' mean?",
+  "a": "Processivity = how far a polymerase stays bound and keeps synthesizing before falling off the template. The sliding clamp is a ring (~75 Å across, ~35 Å central hole) that ENCIRCLES the double-stranded DNA and physically tethers Pol III to the template, so the enzyme can't diffuse away — dramatically boosting processivity. When template runs out, the clamp drops Pol III and it's replaced by Pol I (for primer removal). (Distinct from the C-shaped polymerase 'hand' that only cups DNA on one side.)",
+  "tags": [
+   "dna-polymerase",
+   "replication-fork",
+   "mechanism"
+  ],
+  "id": "L2-C025"
+ },
+ {
+  "type": "concept",
+  "topic": "Directionality of primer replacement",
+  "diff": 3,
+  "target_s": 20,
+  "src": "reading 7.4 (lines 970-975) / transcript §2.1-2.2",
+  "q": "When DNA Pol I replaces an RNA primer on the lagging strand, from WHICH end of the primer does it start, in which direction does the single-stranded gap travel, and why can't a polymerase instead just fill the gap by running the opposite way?",
+  "a": "Pol I starts at the 5'-most nucleotide of the RNA primer and works 5'→3', so the single-stranded gap is pushed in the 3' direction as each RNA nucleotide is excised and backfilled with DNA. A polymerase can't 'run the other way' to fill a gap because ALL polymerases synthesize only 5'→3' onto a free 3'-OH ('follow the 3' hydroxyl') — there's no 3'→5' synthesis, so filling must proceed from an upstream 3'-OH toward the gap, not backward into it. (This same constraint is exactly why linear chromosome ends can't be filled — the end-replication problem.)",
+  "tags": [
+   "primer-removal",
+   "directionality",
+   "dna-polymerase",
+   "mechanism"
+  ],
+  "id": "L2-C026"
+ },
+ {
+  "type": "concept",
+  "topic": "Proofreading mechanics",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.4 (Fig 7.21, lines 1117-1133, 1284-1295) / transcript §2.8",
+  "q": "By what activity does a DNA polymerase proofread, what physically triggers the correction at the enzyme, and how accurate is wild-type E. coli replication as a result?",
+  "a": "Proofreading uses the 3'→5' exonuclease activity. Trigger: a misincorporated base can't hydrogen-bond properly, so the daughter strand's 3'-OH end is displaced out of the 'palm' polymerase site and rotates into the 3'→5' exonuclease site (at the 'heel' of the hand); the wrong nucleotide (plus a few neighbors) is clipped, the strand rotates back, and 5'→3' synthesis resumes. Net error rate ≈ 1 in 10^9 nucleotides. (It's a brief 'rewind,' NOT a change of synthesis direction.)",
+  "tags": [
+   "proofreading",
+   "dna-polymerase",
+   "directionality",
+   "mechanism"
+  ],
+  "id": "L2-C027"
+ },
+ {
+  "type": "recall",
+  "topic": "End-replication problem",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.4 (Fig 7.23) / transcript §3.3",
+  "q": "On a linear chromosome, exactly why does the very end of the lagging-strand template go unreplicated when its terminal RNA primer is removed?",
+  "a": "Removing the terminal RNA primer leaves a gap, and there is no upstream 3'-OH for a polymerase to extend into it (Pol I can only fill 5'→3' from an adjacent primer's 3'-OH, and no polymerase runs the other way). So a short 3' overhang stays single-stranded and the 5' end is not completed — the chromosome shortens each cycle.",
+  "tags": [
+   "telomere",
+   "mechanism",
+   "directionality",
+   "leading-lagging"
+  ],
+  "id": "L2-R034"
+ },
+ {
+  "type": "concept",
+  "topic": "Telomere: the TODAY problem",
+  "diff": 3,
+  "target_s": 25,
+  "src": "transcript §3.3 (her 'weirdest thing you'll see' emphasis)",
+  "q": "Archbold called telomere loss two problems and said the more urgent one is the one the textbook underplays. Beyond chromosomes shrinking over generations, what is the immediate danger of a bare 3' overhang, and what would happen to a human cell without telomere capping?",
+  "a": "A bare single-stranded overhang looks like a double-strand break, so double-strand-break repair machinery would fuse chromosome ends together. In humans that means the 46 chromosomes get glued into one giant chromosome with 46 centromeres, which is torn apart at mitosis/meiosis → the cell dies. The gradual gene loss is the 'tomorrow' problem; the DSB-mimic/end-fusion is the worse 'today' problem.",
+  "tags": [
+   "telomere",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L2-C028"
+ },
+ {
+  "type": "recall",
+  "topic": "Telomerase identity",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.4 / transcript §3.4",
+  "q": "What type of enzyme is telomerase, what two components does it carry, which strand/end does it act on, and which direction does it build?",
+  "a": "A ribonucleoprotein reverse transcriptase = an RNA-dependent DNA polymerase (protein + its own RNA template), encoded by TERT. It base-pairs its C-rich RNA template to the G-rich 3' overhang (the 'G-strand') and adds DNA telomere repeats onto that 3' end, building 5'→3' like every other polymerase.",
+  "tags": [
+   "telomere",
+   "dna-polymerase",
+   "directionality",
+   "mechanism"
+  ],
+  "id": "L2-R035"
+ },
+ {
+  "type": "concept",
+  "topic": "Telomerase: extend vs fill (textbook trap)",
+  "diff": 3,
+  "target_s": 30,
+  "src": "transcript EXAM SIGNALS + §3.4-3.5 (textbook warning)",
+  "q": "Archbold told you to cross out the telomere figure in the textbook. What does that figure get wrong about what telomerase does, what does telomerase actually accomplish, and how does Shelterin finish the job?",
+  "a": "The book draws the overhang getting filled in to make a blunt double-stranded end — it never really does. Telomerase does NOT fill the 5' gap; it makes the 3' G-overhang LONGER (long enough to grab). Shelterin proteins then fold that end into a T-loop (with a D-loop where the overhang tucks back and base-pairs upstream), capping it like an aglet so DSB-repair proteins can't see it and fuse the ends. It's 'hidden, not filled.'",
+  "tags": [
+   "telomere",
+   "mechanism",
+   "figure-interpretation",
+   "exceptions"
+  ],
+  "id": "L2-C029"
+ },
+ {
+  "type": "concept",
+  "topic": "Senescence / Hayflick / aging-cancer",
+  "diff": 2,
+  "target_s": 25,
+  "src": "transcript §3.6-3.7 / reading 7.4 (clicker C)",
+  "q": "Once telomeres get too short, why does the cell stop dividing, what is that state called (lecture vs reading), and why is 'switch telomerase back on to cure aging' a dangerous idea?",
+  "a": "Further division would start deleting real genes, so the cell permanently stops dividing — senescence (lecture framing; the reading emphasizes telomere-triggered apoptosis instead — know both). This division cap is the Hayflick limit and contributes to aging because worn-out cells can't be replaced. Reactivating telomerase removes that brake — which is exactly what cancer does (telomerase reactivated in ~80-90% of cancers), so you'd trade aging for cancer risk: the aging↔cancer balance.",
+  "tags": [
+   "telomere",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L2-C030"
+ },
+ {
+  "type": "recall",
+  "topic": "Hayflick limit who/when",
+  "diff": 2,
+  "target_s": 15,
+  "src": "reading 7.4 / transcript §3.6",
+  "q": "What is the Hayflick limit — who described it and when, roughly how many divisions, and what is its molecular cause?",
+  "a": "The Hayflick limit is the cap on how many times a normal cell divides before it stops or dies — Leonard Hayflick, 1965, ~50-70 divisions for cultured vertebrate cells. Cause: progressive telomere shortening with each replication cycle.",
+  "tags": [
+   "telomere",
+   "who-what-when"
+  ],
+  "id": "L2-R036"
+ },
+ {
+  "type": "concept",
+  "topic": "PCR as stripped-down replication",
+  "diff": 3,
+  "target_s": 30,
+  "src": "reading 7.5 / transcript §4.1",
+  "q": "PCR is replication with the cellular machinery stripped out. For each of these replication jobs, name what PCR uses instead: (a) unwinding the strands (helicase/SSB), (b) providing a starting 3'-OH (primase/RNA primer), (c) synthesis. And why does swapping in synthetic DNA primers simplify the product versus a cell?",
+  "a": "(a) Heat (~95 °C denaturation) melts the strands apart — no helicase/SSB needed. (b) Synthetic DNA primers anneal directly — no primase and no RNA. (c) A thermostable polymerase (Taq, from Thermus aquaticus) + dNTPs + buffer + Mg2+ do the synthesis. Because the primers are DNA (not RNA), there is nothing to remove and replace afterward, so you get one continuous DNA product instead of primed Okazaki-style pieces.",
+  "tags": [
+   "pcr",
+   "technique",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L2-C031"
+ },
+ {
+  "type": "problem",
+  "topic": "PCR primer design",
+  "diff": 3,
+  "target_s": 20,
+  "src": "transcript EXAM SIGNALS + §4.2 (htz1-style primer problem, clicker D)",
+  "q": "You are amplifying a gene whose top (coding) strand reads 5'-ATGCCAGT......ACGTTCAG-3'. Give the sequence (5'→3') of the forward primer and the reverse primer that would amplify this region, and state the one rule about their 3' ends that makes amplification exponential. (She flagged primer directionality as exam-important.)",
+  "worked": "Rule: the two primers' 3'-OH ends must point TOWARD each other (into the target) so each primer's extension builds template for the other → exponential amplification. Forward primer = same sequence as the 5' end of the top strand (it binds the bottom strand and extends across the top), so it copies the top's left end: 5'-ATGCCAGT-3'. Reverse primer = reverse complement of the top strand's 3' (right) end: top right = 5'-ACGTTCAG-3'; its complement is 3'-TGCAAGTC-5', written 5'→3' the reverse primer is 5'-CTGAACGT-3' (it binds the top strand and extends leftward). Both 3' ends now face inward.",
+  "answer": "Forward primer: 5'-ATGCCAGT-3' (matches the top strand's 5' end). Reverse primer: 5'-CTGAACGT-3' (reverse complement of the top strand's 3' end). Key rule: the primers' 3'-OH ends must point toward each other; reversed/outward primers give no exponential product.",
+  "tags": [
+   "pcr",
+   "directionality",
+   "sequence-reading",
+   "technique"
+  ],
+  "id": "L2-P017"
+ },
+ {
+  "type": "problem",
+  "topic": "PCR cycle-number (2^n)",
+  "diff": 2,
+  "target_s": 20,
+  "src": "reading 7.5 / transcript §4.1 (2^n amplification)",
+  "q": "You start a PCR with 5 copies of a double-stranded target and run it at 100% efficiency. Give the general formula for target copies after n cycles, then compute the number of target-region copies after 20 cycles.",
+  "worked": "Each cycle doubles every target molecule, so copies = (starting copies) × 2^n, NOT just 2^n (the 2^n formula assumes you began with a single molecule). Here starting = 5, n = 20. 2^20 = 1,048,576. Multiply: 5 × 1,048,576 = 5,242,880.",
+  "answer": "Copies = (initial molecules) × 2^n. After 20 cycles: 5 × 2^20 = 5 × 1,048,576 = 5,242,880 (≈ 5.24 × 10^6).",
+  "tags": [
+   "pcr",
+   "calculation",
+   "technique"
+  ],
+  "id": "L2-P018"
+ },
+ {
+  "type": "problem",
+  "topic": "Read a Sanger gel → synthesized strand",
+  "diff": 2,
+  "target_s": 18,
+  "src": "transcript Lec2T §4.3 EXAM SIGNAL (read the gel; synth-vs-template) + reading 7.5",
+  "q": "You sequence a fragment of the fictional pathogen *Mortis vulgaris* by classic Sanger sequencing, running four lanes (ddA, ddC, ddG, ddT) on a slab gel and exposing film. Reading from the BOTTOM of the gel (fastest-migrating band) up to the top, the bands fall in these lanes: A, C, G, G, T, A, C, T. Write the sequence of the SYNTHESIZED (new) strand with correct polarity.",
+  "worked": "The bands are the newly synthesized strand, not the template. The smallest fragment migrates farthest, so it sits at the bottom; that fragment was terminated by the FIRST (5'-most) ddNTP added onto the primer. So reading the gel bottom→top gives the synthesized strand 5'→3' directly. The lane each band sits in names the terminating base = that position's base. Bottom→top (A C G G T A C T) is therefore the synthesized strand read 5'→3'.",
+  "answer": "Synthesized strand: 5'-ACGGTACT-3' (gel read bottom→top = 5'→3').",
+  "tags": [
+   "sanger-sequencing",
+   "figure-interpretation",
+   "directionality",
+   "technique"
+  ],
+  "id": "L2-P019"
+ },
+ {
+  "type": "problem",
+  "topic": "Sanger gel → deduce TEMPLATE strand",
+  "diff": 2,
+  "target_s": 18,
+  "src": "transcript Lec2T §4.3 + EXAM SIGNAL (synthesized vs template) + reading 7.5",
+  "q": "Same *Mortis vulgaris* gel. You have already read the synthesized strand off the gel as 5'-TCGGATCA-3'. The exam then asks for the sequence of the TEMPLATE strand that was actually being sequenced. Give it with polarity. (This is the synthesized-vs-template distinction she flagged.)",
+  "worked": "The gel bands = the synthesized strand; the template is its complement AND antiparallel. Align them: synth 5'-TCGGATCA-3' pairs base-for-base with template written 3'-AGCCTAGT-5' beneath it (T·A, C·G, G·C, G·C, A·T, T·A, C·G, A·T). Rewriting that template in the conventional 5'→3' direction reverses it to 5'-TGATCCGA-3'. Do NOT just report the gel sequence as the template — that is the classic trap.",
+  "answer": "Template strand: 3'-AGCCTAGT-5' (i.e. 5'-TGATCCGA-3'). It is the antiparallel complement of the synthesized strand, not the gel sequence itself.",
+  "tags": [
+   "sanger-sequencing",
+   "directionality",
+   "sequence-reading",
+   "figure-interpretation"
+  ],
+  "id": "L2-P020"
+ },
+ {
+  "type": "problem",
+  "topic": "Template → predict gel band order",
+  "diff": 3,
+  "target_s": 20,
+  "src": "reading 7.5 + transcript Lec2T §4.3 (template vs synthesized)",
+  "q": "You Sanger-sequence a strand whose TEMPLATE reads 3'-TACCGATG-5' (the primer binds just off its 3' end). Predict the order of bands you will see on the gel from BOTTOM (fastest) to TOP, i.e. list the terminating base at each rung of the ladder in order.",
+  "worked": "Polymerase copies the template antiparallel and 5'→3', so the synthesized strand is the complement read left-to-right as the template is written 3'→5': template 3'-T A C C G A T G-5' gives synth 5'-A T G G C T A C-3' (T→A, A→T, C→G, C→G, G→C, A→T, T→A, G→C). The synthesized strand's 5'-most base is on the shortest fragment (bottom band); each next base adds one rung going up. So bottom→top the terminating bases are A, T, G, G, C, T, A, C.",
+  "answer": "Bottom→top band order: A, T, G, G, C, T, A, C (= synthesized strand 5'-ATGGCTAC-3'). Bottom band = A (first/5'-most base added), top band = C.",
+  "tags": [
+   "sanger-sequencing",
+   "sequence-reading",
+   "directionality",
+   "figure-interpretation"
+  ],
+  "id": "L2-P021"
+ },
+ {
+  "type": "problem",
+  "topic": "Capillary chromatogram read-out",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.5 (fluorescent ddNTP / chromatogram) + transcript Lec2T §4.3",
+  "q": "A modern automated Sanger run uses four fluorescently labeled ddNTPs in ONE tube and separates products by capillary electrophoresis past a detector. The colored peaks come off the detector in this order: green, blue, blue, red, black, green. Given the color key A=green, C=blue, G=black, T=red, what is the synthesized sequence and its polarity, and how does elution order relate to fragment size?",
+  "worked": "In capillary electrophoresis the SMALLEST fragment reaches the detector first, so the first peak corresponds to the 5'-most (first-added) base of the synthesized strand; peaks then appear in order of increasing fragment length. So the elution order directly spells the synthesized strand 5'→3'. Decode by color: green=A, blue=C, blue=C, red=T, black=G, green=A → A C C T G A, read 5'→3'.",
+  "answer": "Synthesized strand: 5'-ACCTGA-3'. Smallest fragment elutes first, so peak order = synthesized strand 5'→3' (the template would be its antiparallel complement, 5'-TCAGGT-3').",
+  "tags": [
+   "sanger-sequencing",
+   "figure-interpretation",
+   "directionality",
+   "technique"
+  ],
+  "id": "L2-P022"
+ },
+ {
+  "type": "problem",
+  "topic": "ddNTP:dNTP ratio & ladder logic",
+  "diff": 2,
+  "target_s": 18,
+  "src": "reading 7.5 (small fraction ddNTP → ladder) + transcript Lec2T §4.3",
+  "q": "In one Sanger tube you want a readable ladder for a template that directs synthesis of the 7-nt sequence 5'-GATTACA-3'. Explain why the reaction uses mostly normal dNTPs plus only a SMALL fraction of ddNTPs, and state how many distinct fragment LENGTHS this template can generate across the ladder.",
+  "worked": "If every nucleotide were a ddNTP, synthesis would terminate at the very first base and you'd get only one product — no sequence information. Using mostly dNTPs with a small percentage of ddNTPs makes termination RANDOM: at each position, most strands extend but a minority incorporate a ddNTP and stop. Across the whole reaction this yields a population of fragments terminated at every position — one of each length. For a 7-nt synthesized stretch, termination can occur after base 1, 2, 3, 4, 5, 6, or 7, giving 7 distinct fragment lengths, each ending in the ddNTP matching that position (G, A, T, T, A, C, A).",
+  "answer": "Mostly dNTPs + a small % ddNTPs makes termination random, so strands stop at every position → a complete ladder rather than one truncated product. A 7-nt read gives 7 distinct fragment lengths (terminating in G, A, T, T, A, C, A from shortest to longest).",
+  "tags": [
+   "sanger-sequencing",
+   "mechanism",
+   "technique",
+   "calculation"
+  ],
+  "id": "L2-P023"
+ },
+ {
+  "type": "problem",
+  "topic": "Sanger vs Illumina termination",
+  "diff": 3,
+  "target_s": 20,
+  "src": "transcript Lec2T §4.4 (Illumina reversible chain termination, restore 3'-OH)",
+  "q": "High-throughput 'sequencing-by-synthesis' (Illumina) also uses chain terminators, yet unlike Sanger it reads millions of fragments and needs no size-separated gel ladder. What single chemical difference in its terminators makes this possible, and what extra step per cycle does it require?",
+  "worked": "Sanger uses ddNTPs that are IRREVERSIBLY terminated (permanent loss of the 3'-OH), so each strand stops for good and you must sort a population of different-length fragments by size to read the order. Illumina instead uses REVERSIBLE terminators: each incoming base is blocked at the 3' position AND carries a removable fluorescent tag, so exactly one base is added, imaged for its color, then the block and dye are chemically cleaved to REGENERATE the 3'-OH — allowing the next base to add. Because you read the color at each cycle in place, you sequence one base at a time on each cluster without ever running a size ladder, and you do this across millions of fragments in parallel, then computationally overlap the reads into contigs.",
+  "answer": "Reversible (not permanent) terminators: each base is 3'-blocked + dye-labeled, added one at a time, imaged, then chemically unblocked to restore the 3'-OH for the next base. The extra per-cycle step is that deblock/dye-cleavage. This replaces Sanger's size-sorted ladder with in-place, massively parallel base-by-base reads.",
+  "tags": [
+   "sequencing-tech",
+   "compare-contrast",
+   "mechanism",
+   "technique"
+  ],
+  "id": "L2-P024"
  }
 ]

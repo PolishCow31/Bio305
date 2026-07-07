@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.bio305.contentwatch</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/usr/bin/python3</string>
+    <string>/Users/christian/Sites/Bio305/engine/watch-folders.py</string>
+  </array>
+  <key>WorkingDirectory</key><string>/Users/christian/Sites/Bio305/engine</string>
+  <key>EnvironmentVariables</key>
+  <dict>
+    <key>PATH</key><string>/Users/christian/.npm-global/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin</string>
+  </dict>
+  <key>StartInterval</key><integer>3600</integer>
+  <key>RunAtLoad</key><false/>
+  <key>StandardOutPath</key><string>/Users/christian/Sites/Bio305/engine/watch.out.log</string>
+  <key>StandardErrorPath</key><string>/Users/christian/Sites/Bio305/engine/watch.err.log</string>
+</dict>
+</plist>

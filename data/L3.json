@@ -1,0 +1,1151 @@
+[
+ {
+  "type": "concept",
+  "topic": "G-U base pairing",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec3T.md §2 (EXAM SIGNAL — explicit 'need you to remember')",
+  "q": "Archbold flagged this as something you WILL need repeatedly: in RNA, G can base-pair with U, but in DNA G and T cannot pair. What chemical fact makes G-U possible in RNA, and why does it matter functionally?",
+  "a": "Uracil (RNA's pyrimidine) can hydrogen-bond with guanine, giving RNA a promiscuous 'wobble' pair on top of the standard A-U and G-C. In DNA, pairing is essentially invariant (A-T, G-C) — G/T don't pair. The extra annealing option lets RNA fold back on itself into variable hairpins and complex 3-D structures. She stressed it 'becomes important multiple times in the next couple days' — it comes back for tRNA/translation and splicing.",
+  "tags": [
+   "rna-chemistry",
+   "base-pairing",
+   "mechanism",
+   "dna-vs-rna"
+  ],
+  "id": "L3-C001"
+ },
+ {
+  "type": "concept",
+  "topic": "Why RNA is chemically special",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3T.md §2; L3-reading §8.1 (ribose 2'-OH vs deoxyribose)",
+  "q": "Name the three chemical/structural features that distinguish RNA from DNA, and state which one is responsible for RNA being far more chemically reactive (and labile).",
+  "a": "(1) Uracil in place of thymine; (2) usually single-stranded; (3) an extra 2'-OH (hydroxyl on the 2' carbon of the ribose). The 2'-OH is what makes RNA much more reactive and unstable — DNA's deoxyribose lacks it. Consequence: being single-stranded plus G-U pairing lets RNA fold into hairpins/3-D structures, so RNA is both informational AND enzymatic/structural, unlike 'boring' double-helix DNA.",
+  "tags": [
+   "rna-chemistry",
+   "dna-vs-rna",
+   "nucleotide-chemistry",
+   "compare-contrast"
+  ],
+  "id": "L3-C002"
+ },
+ {
+  "type": "recall",
+  "topic": "Uracil vs thymine",
+  "diff": 1,
+  "target_s": 10,
+  "src": "L3-reading §8.1 (Fig 8.1); Lec3T.md §2",
+  "q": "Structurally, what single group distinguishes thymine from uracil, and what is uracil's complementary base pairing partner?",
+  "a": "Thymine has a methyl group (CH3) at the 5 carbon of the pyrimidine ring; uracil lacks it (uracil = 'demethylated thymine'). In all other respects they're similar. Uracil's standard complementary partner is adenine (A-U).",
+  "tags": [
+   "rna-chemistry",
+   "nucleotide-chemistry",
+   "base-pairing",
+   "dna-vs-rna"
+  ],
+  "id": "L3-R001"
+ },
+ {
+  "type": "concept",
+  "topic": "Only mRNA is polyadenylated",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec3T.md §EXAM SIGNALS (clicker D)",
+  "q": "On the 'which statement is TRUE' clicker, one distractor was 'all RNAs are polyadenylated.' Why is that false — which single RNA class gets a poly-A tail, and name the others that do NOT?",
+  "a": "False — only mRNA is polyadenylated. tRNA, rRNA, snRNA, and microRNA are NOT. (This is one of three reasons the whole item resolved to 'none of the above.') A companion trap in the same question: there aren't '3 classes of mRNA' — there are three RNA polymerases and many RNA classes.",
+  "tags": [
+   "rna-types",
+   "polyadenylation",
+   "exceptions",
+   "compare-contrast"
+  ],
+  "id": "L3-C003"
+ },
+ {
+  "type": "concept",
+  "topic": "snRNA vs snoRNA",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec3T.md §3 (RNA types table)",
+  "q": "Both snRNA and snoRNA are small and easy to confuse. Distinguish them by location and job.",
+  "a": "snRNA (small NUCLEAR RNA) = the U1/U2/U5-type components of the spliceosome; its job is splicing. snoRNA (small NUCLEOLAR RNA) works in the nucleolus doing RNA processing — chemical modifications to rRNAs being made there in bulk. Memory hook: 'nucleolar/no-lo' → rRNA mods; 'nuclear' → splicing.",
+  "tags": [
+   "rna-types",
+   "compare-contrast",
+   "rna-processing",
+   "mechanism"
+  ],
+  "id": "L3-C004"
+ },
+ {
+  "type": "recall",
+  "topic": "RNA type functions",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec3T.md §3; L3-reading §8.1 (Table 8.1)",
+  "q": "Match each to its role: rRNA, tRNA, microRNA/small RNAs.",
+  "a": "rRNA = ribosome component (structural/catalytic/alignment roles in translation). tRNA = adaptor in translation (carries amino acids to the ribosome, base-pairs to mRNA). microRNA/small RNAs = host defense + gene regulation (a whole lecture later; regulate mRNA stability/translation by base-pairing).",
+  "tags": [
+   "rna-types",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L3-R002"
+ },
+ {
+  "type": "concept",
+  "topic": "Central dogma corrected",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec3T.md §1 + §EXAM SIGNALS ('Crick right, Watson wrong')",
+  "q": "Whose central-dogma diagram was WRONG and how, whose was right, what discovery overturned it and in what year, and name the two enzymes that carry out the newly-allowed step?",
+  "a": "Watson's diagram (his 1965 textbook, p. 298) was wrong — he drew the arrows strictly one-way and claimed RNA is NEVER a template for DNA. Overturned in 1971 by the discovery of reverse transcriptase. Crick was right: sequence info still flows unidirectionally INTO protein (never back out). The updated diagram adds an RNA→DNA arrow. Two enzymes doing RNA→DNA: reverse transcriptase (retroviruses/RNA viruses) and telomerase (an RNA-dependent DNA polymerase carrying its own RNA template, from L2).",
+  "tags": [
+   "central-dogma",
+   "who-what-when",
+   "mechanism",
+   "telomere"
+  ],
+  "id": "L3-C005"
+ },
+ {
+  "type": "concept",
+  "topic": "RNA↔DNA vs protein info flow",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec3T.md §1",
+  "q": "Why is RNA→DNA allowed in the updated central dogma but the reverse-into-nucleic-acid direction from protein is still forbidden?",
+  "a": "Because RNA and DNA have the SAME sequence-information content — a nucleotide-to-nucleotide correspondence — so a sequence can be copied back and forth between them without loss (reverse transcriptase, telomerase). Information is only LOST when it moves into protein; protein sequence is never copied back into RNA/DNA. So Crick's rule — sequence flows one-way into protein — still stands ~75 years later.",
+  "tags": [
+   "central-dogma",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L3-C006"
+ },
+ {
+  "type": "concept",
+  "topic": "Non-sequence information",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3T.md §1",
+  "q": "The classic central dogma is about sequence information. Give the two examples Archbold used of NON-sequence (heritable) information, and say what makes prions in particular fit this category.",
+  "a": "(1) Prions — a protein folded a specific way that is self-templating: it forces other copies of the same protein into the same fold. That's STRUCTURAL information, not sequence — no nucleotide sequence is being copied, yet the state propagates. (2) Chemical modifications of DNA/RNA (the field of epigenetics) — layered on top of the sequence, they change function WITHOUT changing the underlying sequence.",
+  "tags": [
+   "central-dogma",
+   "exceptions",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L3-C007"
+ },
+ {
+  "type": "recall",
+  "topic": "-10 / -35 consensus sequences",
+  "diff": 2,
+  "target_s": 15,
+  "src": "L3-reading Sec 8.2 'Bacterial Promoters' + Table 8.2 (s70); Lec3T 5.1",
+  "q": "For the standard E. coli sigma-70 promoter, give the 6-bp consensus sequence AND approximate position of both conserved elements (written 5'->3' on the coding strand).",
+  "a": "-35 element: 5'-TTGACA-3' (~35 bp upstream of +1).  -10 element = the Pribnow box: 5'-TATAAT-3' (~10 bp upstream of +1). The two are separated by ~25 bp (variable spacer). Both are written as the coding/nontemplate strand sequence.",
+  "tags": [
+   "promoter",
+   "sequence-reading",
+   "directionality"
+  ],
+  "id": "L3-R003"
+ },
+ {
+  "type": "concept",
+  "topic": "Why the -10 element is AT-rich",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3T 5.1 ('Why AT-rich? AT = 2 H-bonds -> easier to melt'); L3-reading open-promoter complex",
+  "q": "The -10 Pribnow box is AT-rich (TATAAT). Mechanistically, why does natural selection favor AT-richness at THIS specific spot rather than, say, the -35 element?",
+  "a": "Because the -10 is where the DNA is physically melted to form the open promoter complex. A-T pairs have only 2 hydrogen bonds (vs 3 for G-C), so an AT-rich stretch is easier to pull apart/unwind. Same logic as the AT-rich DNA at the replication origin (OriC). The -35 doesn't get melted - it's a recognition/binding handle for sigma - so it isn't under the same pressure to be AT-rich.",
+  "tags": [
+   "promoter",
+   "mechanism",
+   "compare-contrast",
+   "rna-chemistry"
+  ],
+  "id": "L3-C008"
+ },
+ {
+  "type": "concept",
+  "topic": "Spacing / counting from +1",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3T 5.1 ('spacing varies... -10/-35 are estimates'); L3-reading Sec 8.2 ('spacing... is stable' but sequences between are variable)",
+  "q": "A classmate insists you can find the Pribnow box by counting exactly 10 nucleotides upstream from the +1 site. Why is that not reliable, and what are the '-10' and '-35' labels really telling you?",
+  "a": "Wrong - the labels are approximate averages, not exact counts. The spacing between the consensus elements and +1 varies gene-to-gene (sometimes an extra base is inserted), so counting back exactly 10 won't always land you on the box. The '-10'/'-35' names mean 'roughly 10/35 bp upstream of +1.' Count back ~10 and you land WITHIN the Pribnow box, not on a fixed nucleotide. What's conserved is the sequence content and the approximate relative positions, not an exact distance.",
+  "tags": [
+   "promoter",
+   "exceptions",
+   "sequence-reading"
+  ],
+  "id": "L3-C009"
+ },
+ {
+  "type": "recall",
+  "topic": "TSS / +1 nucleotide",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec3T 4 ('+1 nucleotide, determined empirically'); L3-reading Fig 8.3",
+  "q": "What is the '+1 nucleotide,' and how is its position determined?",
+  "a": "The +1 nucleotide is the first transcribed nucleotide - the transcription start site (TSS), the 5' start of the RNA. It's determined empirically/experimentally by lining the first base of the mRNA back onto the DNA. Nucleotides upstream of it get negative numbers (there is no '0'; numbering goes -1, then +1).",
+  "tags": [
+   "gene-anatomy",
+   "who-what-when",
+   "directionality"
+  ],
+  "id": "L3-R004"
+ },
+ {
+  "type": "concept",
+  "topic": "Coding vs template strand",
+  "diff": 2,
+  "target_s": 20,
+  "src": "Lec3T 4 + 5.3 (template read 3'->5', mRNA = reverse complement = coding strand w/ U for T); L3-reading Sec 8.2",
+  "q": "A gene's template strand is 3'-TACGGATT-5' (read in the direction the polymerase reads it). Give the mRNA sequence and state how it relates to the coding (nontemplate) strand.",
+  "a": "mRNA = 5'-AUGCCUAA-3'. RNA polymerase reads the template 3'->5' and builds the transcript 5'->3' as the antiparallel complement. The mRNA is the reverse complement of the template, which makes it IDENTICAL in sequence to the coding (nontemplate/sense) strand - except every T is a U. That's why gene sequences are written as the coding strand: just swap U for T to get the mRNA.",
+  "tags": [
+   "gene-anatomy",
+   "directionality",
+   "sequence-reading",
+   "compare-contrast"
+  ],
+  "id": "L3-C010"
+ },
+ {
+  "type": "concept",
+  "topic": "UTRs (5' and 3')",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3T 4 ('really easy to forget - don't'); L3-reading Sec 8.2 (5'/3' UTR flank start/stop codons)",
+  "q": "Are the 5' and 3' UTRs transcribed? Are they translated? Why does Archbold flag them as 'really easy to forget'?",
+  "a": "Transcribed: YES. Translated: NO - that's the whole point of 'untranslated region.' They sit inside the mRNA (5' UTR before the start codon, 3' UTR after the stop codon) but are not part of the ORF/protein. Easy to forget because they're not coding, yet they're functionally important: they control WHEN, WHERE, and HOW MANY copies of the coding sequence get translated (stability/translatability). Don't drop them off your transcript diagram.",
+  "tags": [
+   "gene-anatomy",
+   "exceptions",
+   "compare-contrast"
+  ],
+  "id": "L3-C011"
+ },
+ {
+  "type": "concept",
+  "topic": "Upstream / downstream (per-gene frame)",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec3T 4 (canoe analogy) + 5.6 ('upstream/downstream always relative to the specific gene's TSS')",
+  "q": "Two adjacent E. coli genes are transcribed off opposite DNA strands. A given point is 'downstream' of gene A. Is it necessarily downstream of gene B? Explain using Archbold's framing.",
+  "a": "No. 'Upstream' and 'downstream' are defined PER GENE - relative to that gene's own +1/TSS and the direction its polymerase travels, not as a global coordinate on the DNA. (Her canoe/boating analogy: past the start in the direction you're paddling = downstream; behind you = upstream.) Since gene B runs the opposite direction off the other strand, its downstream points the other way, so the same physical spot can be downstream of A but upstream of B. It's not a global state variable.",
+  "tags": [
+   "gene-anatomy",
+   "directionality",
+   "exceptions"
+  ],
+  "id": "L3-C012"
+ },
+ {
+  "type": "recall",
+  "topic": "ORF / coding region",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec3T 4 ('ORF/coding sequence = start codon -> stop codon'); L3-reading Sec 8.2",
+  "q": "What defines the boundaries of the ORF (open reading frame / coding sequence) within a transcript, and what does it carry?",
+  "a": "The ORF runs from the start codon to the stop codon - it is the coding region that carries the amino-acid (protein) information. It's flanked by the 5' UTR (before the start codon) and the 3' UTR (after the stop codon). The ORF is what gets translated; the UTRs don't.",
+  "tags": [
+   "gene-anatomy",
+   "compare-contrast"
+  ],
+  "id": "L3-R005"
+ },
+ {
+  "type": "concept",
+  "topic": "Which strand is the template?",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3T 5.6 ('Either DNA strand can be the template... black = one way, red = the other')",
+  "q": "Is one specific DNA strand ('the top strand') always the template for every gene on a chromosome? Justify.",
+  "a": "No. EITHER strand can serve as the template, and it's decided per gene. Gene 1 may be read off one strand while neighboring genes 2/3 are read off the opposite strand (shown for E. coli vs B. subtilis: black genes one way, red genes the other). The template is whichever strand orients so the polymerase builds 5'->3' in that gene's transcription direction. This is exactly why 'upstream/downstream' must be defined relative to each gene, not the chromosome.",
+  "tags": [
+   "gene-anatomy",
+   "directionality",
+   "exceptions",
+   "compare-contrast"
+  ],
+  "id": "L3-C013"
+ },
+ {
+  "type": "problem",
+  "topic": "Deriving the -10 consensus from data",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3-reading Genetic Analysis 8.1 (per-position counts T A T A A T; mutation-in-consensus vs spacer effects)",
+  "q": "You align the -10 regions of several E. coli promoters. Reading 5'->3' toward +1, the most common base at each of the six positions is T, A, T, A, A, T (each appearing in the majority of the aligned genes). (1) What is the -10 consensus you report? (2) Predict the transcriptional effect of a point mutation INSIDE this box versus one in the spacer between -10 and -35.",
+  "worked": "Consensus rule: at each column pick the single most-frequent base -> T-A-T-A-A-T = TATAAT. Function ties to location: -10/-35 bind RNA pol, so disrupting a consensus base disrupts binding/initiation (drops transcription); the spacer only sets distance, so its exact bases don't bind tightly and mutating them barely matters.",
+  "answer": "",
+  "tags": [
+   "promoter",
+   "calculation",
+   "sequence-reading",
+   "figure-interpretation"
+  ],
+  "id": "L3-P001"
+ },
+ {
+  "type": "recall",
+  "topic": "Holoenzyme composition",
+  "diff": 1,
+  "target_s": 12,
+  "src": "L3 transcript §5.2 + L3 reading (Bacterial RNA Polymerase / Fig 8.4)",
+  "q": "In E. coli, what exactly makes up the RNA polymerase holoenzyme? Name the core subunits and what gets added to form it.",
+  "a": "Holoenzyme = core enzyme + σ (sigma) factor. The core is 5 subunits: 2× α (αI + αII), β, β′, and ω (omega). Adding a σ (e.g. σ70) to that 5-subunit core makes the fully active holoenzyme (core ~390 kD → holoenzyme ~430 kD).",
+  "tags": [
+   "sigma-factor",
+   "transcription-initiation",
+   "mechanism"
+  ],
+  "id": "L3-R006"
+ },
+ {
+  "type": "concept",
+  "topic": "Core vs sigma: who stays, who swaps",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L3 transcript §5.2 + L3 reading (Table 8.2, alternative sigma subunits)",
+  "q": "During the four phases of bacterial transcription (promoter ID → initiation → elongation → termination), which part of the holoenzyme stays associated the whole time and which is the swappable piece — and why does that division of labor matter?",
+  "a": "The CORE (2α/β/β′/ω) stays associated for all four phases — it's the catalytic engine. σ70 is the swappable piece: it's only needed to find the promoter and initiate, then it dissociates. Swapping in different σ subunits lets one core enzyme be retargeted to entirely different promoter sets (σ70 housekeeping, σ32 heat shock, σ54 nitrogen, σ28 chemotaxis) without changing the catalytic machinery.",
+  "tags": [
+   "sigma-factor",
+   "compare-contrast",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L3-C014"
+ },
+ {
+  "type": "concept",
+  "topic": "Sigma-70's specific jobs",
+  "diff": 2,
+  "target_s": 16,
+  "src": "L3 transcript §5.2",
+  "q": "Beyond just 'recognizing the promoter,' name the specific mechanical jobs σ70 performs at the −10/−35 during initiation.",
+  "a": "σ70 (1) recognizes and binds the −10/−35 consensus, bringing the polymerase to the right spot; (2) helps MELT/open the DNA at the AT-rich −10 (Pribnow box); and (3) positions the complex so the polymerase feeds the template strand and coding strand into SEPARATE channels — the template gets read while the coding strand is held out of the way.",
+  "tags": [
+   "sigma-factor",
+   "promoter",
+   "mechanism"
+  ],
+  "id": "L3-C015"
+ },
+ {
+  "type": "concept",
+  "topic": "Why the −10 is AT-rich",
+  "diff": 2,
+  "target_s": 16,
+  "src": "L3 transcript §5.1 + L3 reading (Bacterial Promoters, Pribnow box)",
+  "q": "The −10 element (Pribnow box, ~TATAAT) is AT-rich. Why is that AT-richness functionally important, and what's the direct parallel from DNA replication?",
+  "a": "AT base pairs have only 2 hydrogen bonds (vs 3 for GC), so an AT-rich stretch is easier to melt/unwind. The −10 is exactly where the DNA gets pulled open to form the open promoter complex, so it 'wants' to be easy to separate. Same problem/solution as replication's OriC, which is also AT-rich so it can be melted to start.",
+  "tags": [
+   "promoter",
+   "rna-chemistry",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L3-C016"
+ },
+ {
+  "type": "concept",
+  "topic": "Why −10/−35 positions are estimates",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L3 transcript §5.1 + L3 reading (Genetic Analysis 8.1 / spacing not critical)",
+  "q": "You're told to find a bacterial promoter's −10 element by counting exactly 10 bp upstream of +1. Why is that counting approach unreliable, and what should you actually expect?",
+  "a": "The positions are ESTIMATES, not exact addresses. The spacing between −10, −35, and +1 varies gene-to-gene (sometimes an extra base gets inserted), and the sequences between/around them are highly variable spacers. So counting back exactly 10 won't reliably land you on the box — but counting back ~10 will land you WITHIN the Pribnow box. The consensus is defined by nucleotide content + relative location, tolerant of small spacing shifts.",
+  "tags": [
+   "promoter",
+   "figure-interpretation",
+   "exceptions",
+   "sequence-reading"
+  ],
+  "id": "L3-C017"
+ },
+ {
+  "type": "recall",
+  "topic": "Closed → open promoter complex",
+  "diff": 2,
+  "target_s": 14,
+  "src": "L3 reading (Transcription Initiation / Foundation Fig 8.6, closed vs open promoter)",
+  "q": "Bacterial initiation goes through two DNA-binding states before the +1 nucleotide is transcribed. Name them in order and say what physically changes between them.",
+  "a": "(1) Closed promoter complex — holoenzyme binds the double-stranded −10/−35 promoter but the DNA is still fully duplexed. (2) Open promoter complex — the holoenzyme unwinds ~18 bp of DNA around the −10 to expose the template. Only after the open complex forms does the polymerase move to +1 and start RNA synthesis.",
+  "tags": [
+   "transcription-initiation",
+   "promoter",
+   "mechanism"
+  ],
+  "id": "L3-R007"
+ },
+ {
+  "type": "concept",
+  "topic": "When sigma leaves (and the 'partially correct' figure)",
+  "diff": 3,
+  "target_s": 18,
+  "src": "L3 transcript §5.3 + L3 reading (Transcription Elongation, sigma dissociates after 8–10 nt)",
+  "q": "At what point does σ dissociate from the transcription complex, and why is the textbook drawing of σ still attached during elongation only 'partially correct'?",
+  "a": "σ dissociates right as elongation begins — after the first ~8–10 RNA nucleotides are joined — and the core enzyme carries on alone. The textbook drawing that keeps σ attached is only 'partially correct' because σ CAN linger transiently to reload more polymerases onto the promoter when many copies of a transcript are needed; but if only a few copies are needed it leaves entirely. Sustained association through elongation is not the general case.",
+  "tags": [
+   "sigma-factor",
+   "transcription-elongation",
+   "exceptions",
+   "mechanism"
+  ],
+  "id": "L3-C018"
+ },
+ {
+  "type": "concept",
+  "topic": "Supercoiling during transcription",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L3 transcript §5.4",
+  "q": "As the transcription bubble moves along DNA, what supercoiling forms ahead vs behind it, and how does the cell relieve it without shredding the chromosome?",
+  "a": "Positive supercoiling builds up AHEAD of the moving bubble (overwound), negative supercoiling accumulates BEHIND it (underwound) — the same pattern as at a replication fork. Topoisomerases (type I and type II) relieve both, upstream and downstream, by making CONTROLLED breaks that are rejoined with no net change to the DNA material — preventing catastrophic random fragmentation from torsional stress.",
+  "tags": [
+   "supercoiling",
+   "transcription-elongation",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L3-C019"
+ },
+ {
+  "type": "concept",
+  "topic": "Rifampicin = proof of one polymerase",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3 reading (Bacterial RNA Polymerase, rifampicin rifS/rifR)",
+  "q": "Rifampicin was the key evidence that E. coli uses a SINGLE RNA polymerase for all RNAs. What step does rifampicin block, and how did the rifS vs rifR result make the point?",
+  "a": "Rifampicin blocks RNA polymerase from catalyzing the FIRST phosphodiester bond of the chain (it stops initiation, not elongation). In rif-sensitive strains, synthesis of ALL three major RNAs (mRNA, tRNA, rRNA) is shut off together; a single point mutation in RNA polymerase makes rif-resistant strains keep transcribing all three. One drug hitting one enzyme knocks out all RNA classes → there is one core polymerase, retargeted only by different σ factors.",
+  "tags": [
+   "sigma-factor",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L3-C020"
+ },
+ {
+  "type": "recall",
+  "topic": "Two termination mechanisms",
+  "diff": 1,
+  "target_s": 8,
+  "src": "L3 transcript EXAM SIGNAL (\"you need to know both of them\") + L3-reading 8.2 (\"Two transcription termination mechanisms occur in bacteria. The most common is intrinsic termination... Less frequently... rho-dependent termination\")",
+  "q": "Bacterial transcription terminates by two mechanisms. Name both, and state which one is the more common (the \"default\") in bacteria.",
+  "a": "Intrinsic (rho-independent) termination and rho-dependent termination. Intrinsic is the more common / default mechanism; rho-dependent is used less frequently, by certain genes.",
+  "tags": [
+   "transcription-termination",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L3-R008"
+ },
+ {
+  "type": "recall",
+  "topic": "Intrinsic terminator features",
+  "diff": 2,
+  "target_s": 12,
+  "src": "L3 transcript 5.5 (intrinsic) + L3-reading 8.2 / Fig 8.7 (\"stem-loop structure followed immediately by a poly-U sequence near the 3' end of RNA\")",
+  "q": "Intrinsic (rho-independent) termination needs nothing but the transcript itself. What TWO sequence features appear in the RNA, and in what order 5'->3'?",
+  "a": "A hairpin (stem-loop) first, formed from a pair of inverted repeats folding back on themselves, followed immediately by a poly-U string at the 3' end. Order 5'->3': hairpin, then poly-U.",
+  "tags": [
+   "transcription-termination",
+   "rna-chemistry",
+   "directionality",
+   "mechanism"
+  ],
+  "id": "L3-R009"
+ },
+ {
+  "type": "concept",
+  "topic": "Why intrinsic terminates",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3 transcript 5.5 (hairpin gums the active site, poly-U weak + locally depletes U pool, hairpin tug) + L3-reading 8.2 (\"3' U-A region... contains the least stable of the complementary base pairs\"; RNA pol slows and destabilizes)",
+  "q": "You are transcribing a bacterial gene and the polymerase hits an intrinsic terminator. Walk through WHY it lets go: what does the hairpin do, why does the poly-U matter, and what finally pulls the transcript off?",
+  "a": "The hairpin gums up (stalls) the polymerase active site, so the enzyme pauses. The poly-U is the weakest hybrid possible (U-A = only 2 H-bonds) and locally depletes the U pool, making the polymerase pause/back up right where the RNA-DNA hybrid is already weakest. While it sits stalled, the hairpin's mechanical tug yanks the flimsy poly-U:poly-A hybrid apart, so the mRNA and polymerase dissociate. Termination comes purely from the message (the sequence), no extra protein.",
+  "tags": [
+   "transcription-termination",
+   "mechanism",
+   "rna-chemistry"
+  ],
+  "id": "L3-C021"
+ },
+ {
+  "type": "recall",
+  "topic": "Rho enzyme + loading site",
+  "diff": 2,
+  "target_s": 12,
+  "src": "L3 transcript 5.5 (rho-dependent; rut = rho utilization site, ATP) + L3-reading 8.2 / Fig 8.8 (rho binds rut, moves toward RNA pol, releases mRNA)",
+  "q": "For rho-dependent termination: what kind of enzyme is rho, where does it first load onto the transcript, and what fuels it?",
+  "a": "Rho is a helicase. It loads onto the nascent mRNA at the rut site (rho utilization site), then travels along the RNA toward the polymerase, using ATP to unwind/dissociate the RNA-DNA duplex when it catches up.",
+  "tags": [
+   "transcription-termination",
+   "mechanism",
+   "who-what-when"
+  ],
+  "id": "L3-R010"
+ },
+ {
+  "type": "concept",
+  "topic": "What bond rho breaks",
+  "diff": 2,
+  "target_s": 15,
+  "src": "L3 transcript clicker C (\"Rho is a helicase - it breaks the H-bonds of the RNA-DNA duplex, just like the replication helicase broke DNA-DNA\")",
+  "q": "On the clicker, the answer for how rho causes termination was \"it's a helicase.\" Concretely, which hydrogen bonds does rho break, and what earlier machine is this a direct analogy to?",
+  "a": "Rho breaks the H-bonds of the RNA-DNA hybrid (the transcript base-paired to the template strand), separating mRNA from the DNA. It's the direct analogy to the replication helicase, which broke the H-bonds of the DNA-DNA duplex at the fork - same job, different duplex (RNA-DNA here vs DNA-DNA there).",
+  "tags": [
+   "transcription-termination",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L3-C022"
+ },
+ {
+  "type": "concept",
+  "topic": "Intrinsic vs rho: where the info lives",
+  "diff": 3,
+  "target_s": 18,
+  "src": "L3 transcript 5.5 (intrinsic = \"terminated purely by the message,\" rho = \"needs an enzyme\") + L3-reading 8.2 (intrinsic depends only on DNA-encoded repeats; rho-dependent requires the specialized rho protein)",
+  "q": "Contrast intrinsic and rho-dependent termination on ONE axis: where does the \"stop\" information live, and does each need a trans-acting protein? Why does that make intrinsic the simpler mechanism?",
+  "a": "Intrinsic: everything needed is cis, encoded in the transcribed sequence itself (inverted repeats -> hairpin + poly-U); it needs NO dedicated termination protein - the RNA terminates itself. Rho-dependent: the sequence alone is not enough; it requires a trans-acting protein (the rho helicase) to load at the rut site and actively strip the transcript off. So intrinsic is simpler/cheaper - the message does the work, whereas rho-dependent must recruit and power a separate enzyme.",
+  "tags": [
+   "transcription-termination",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L3-C023"
+ },
+ {
+  "type": "concept",
+  "topic": "Shared stem-loop (rho too)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3-reading 8.2 / Fig 8.8 (rho-dependent: \"RNA polymerase pauses at the termination sequence as a stem-loop forms\" so rho catches up) vs intrinsic (hairpin + poly-U)",
+  "q": "A classmate says \"the hairpin/stem-loop is what tells intrinsic apart from rho-dependent - rho terminators have no stem-loop.\" Per the reading, is that fully correct? What actually distinguishes them?",
+  "a": "Not fully correct. Rho-dependent terminators ALSO form a stem-loop - the polymerase pauses there so the trailing rho protein can catch up. The real distinguisher is NOT presence/absence of a hairpin but whether a protein is required: intrinsic terminates from the transcript alone (hairpin + poly-U, no protein), while rho-dependent needs rho to have loaded at the rut site upstream and to actively release the RNA. (Intrinsic's hallmark is the poly-U tail right after the hairpin, which the rho pause site lacks.)",
+  "tags": [
+   "transcription-termination",
+   "compare-contrast",
+   "exceptions",
+   "figure-interpretation"
+  ],
+  "id": "L3-C024"
+ },
+ {
+  "type": "concept",
+  "topic": "What templates the poly-U",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3-reading 8.2 (\"a string of adenines on the template DNA strand that begins at the 5' end of the inverted repeat 2 region\"; \"inverted repeat, a DNA sequence repeated in opposite directions but with the same 5'-to-3' polarity\") + L3 transcript 6.9 (poly-A tail template-independent, no string of U's in the DNA)",
+  "q": "Directionality check: the intrinsic terminator ends in a poly-U string on the mRNA. What must the TEMPLATE DNA strand carry to produce it, and what does \"inverted repeat\" mean in 5'->3' terms?",
+  "a": "The template strand carries a string of adenines (poly-A) at that position; because the template is read 3'->5' while the RNA is built 5'->3', that poly-A lays down the complementary poly-U (U-A pairs, 2 H-bonds - why it is so weak). \"Inverted repeat\" = a sequence repeated in the opposite direction but with the SAME 5'->3' polarity, so once transcribed the two copies are complementary to each other and fold back into the stem. Note there is NO poly-U templated in rho terminators - and unlike the poly-A TAIL added later in eukaryotes (template-independent, no U's in the DNA), this poly-A is genuinely encoded in the DNA template.",
+  "tags": [
+   "transcription-termination",
+   "directionality",
+   "sequence-reading",
+   "rna-chemistry"
+  ],
+  "id": "L3-C025"
+ },
+ {
+  "type": "recall",
+  "topic": "Three eukaryotic RNA polymerases",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec3 digest 6.1 (three RNA polymerases) + L3 reading 8.3 (Pol I/II/III products)",
+  "q": "Eukaryotes use three RNA polymerases instead of bacteria's one. Match each to its main products: RNA Pol I, RNA Pol II, RNA Pol III.",
+  "a": "Pol I -> most rRNA. Pol II -> mRNA (plus miRNA, snoRNA, snRNA, and TERC, the telomerase RNA). Pol III -> 5S rRNA, tRNA, and snRNA. (Bacteria do it all with one core + swappable sigma; eukaryotes split the job across three enzymes.)",
+  "tags": [
+   "rna-types",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast"
+  ],
+  "id": "L3-R011"
+ },
+ {
+  "type": "concept",
+  "topic": "Pol II makes more than mRNA",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec3 digest EXAM SIGNALS clicker 'which is TRUE = D none' + 6.1",
+  "q": "A clicker asks which is TRUE; one option says 'there are 3 classes of mRNA, one per polymerase.' Why is that false, and what besides mRNA does RNA Pol II transcribe?",
+  "a": "False: the three polymerases don't make three classes of mRNA. Only Pol II makes mRNA, and it makes several other RNAs too. Beyond mRNA, Pol II transcribes microRNA, snoRNA, snRNA, and TERC (the RNA component of telomerase). The '3 polymerases' split RNA classes broadly (Pol I=rRNA, III=tRNA/5S), not mRNA into three.",
+  "tags": [
+   "rna-types",
+   "exceptions",
+   "prokaryote-vs-eukaryote"
+  ],
+  "id": "L3-C026"
+ },
+ {
+  "type": "recall",
+  "topic": "TBP / TFIID",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec3 digest EXAM SIGNALS (TBP) + 6.3; L3 reading 8.3 (TFIID = TBP + TAF)",
+  "q": "Archbold said she WILL expect you to remember this one factor because 'the name tells you the job.' What is TBP, where does it bind (and roughly where on the DNA), and what larger complex is it part of?",
+  "a": "TBP = TATA-Binding Protein. It binds the TATA box (~ -25 relative to +1). It's a subunit of TFIID (TFIID = TBP + TAFs, the TATA-associated factors); TFIID binding the TATA box forms the initial committed complex that starts pre-initiation-complex assembly.",
+  "tags": [
+   "general-transcription-factors",
+   "transcription-initiation",
+   "promoter",
+   "who-what-when"
+  ],
+  "id": "L3-R012"
+ },
+ {
+  "type": "concept",
+  "topic": "GTFs vs sigma; splitting the job",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3 digest 6.2 + 6.5 (regulatory vs general TFs, the sigma job split)",
+  "q": "In bacteria, sigma answers where, when, and why to transcribe. In eukaryotes that job is split. Which factors take over 'where is the start site,' how do they differ structurally from sigma, and who handles 'when/why'?",
+  "a": "General/basal transcription factors (GTFs/BTFs) take over sigma's 'find the start site' (where) job. Structural difference: unlike sigma, they are NOT part of the polymerase; they assemble as their own complex that the polymerase joins. 'When/why' is handled by a separate class of regulatory transcription factors (covered in Unit 2). So: GTFs = where, regulatory TFs = when + why.",
+  "tags": [
+   "general-transcription-factors",
+   "sigma-factor",
+   "compare-contrast",
+   "prokaryote-vs-eukaryote",
+   "transcription-initiation"
+  ],
+  "id": "L3-C027"
+ },
+ {
+  "type": "concept",
+  "topic": "Pre-initiation complex + 'poised'",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3 digest EXAM SIGNALS (TFII->PIC; 'poised') + 6.3; L3 reading 8.3 (committed complex -> PIC of six GTFs, Pol II poised)",
+  "q": "Archbold said don't memorize the order or positions of the TFII factors, but 'if you see TFII-something, you better think ___.' Fill that blank, name what a skeletal version of this complex must show, and state what Pol II is called once it's fully assembled.",
+  "a": "Think pre-initiation complex (PIC). A skeletal PIC diagram must show: the TFII factors + Pol II core, sitting on the TATA box, with the +1 start marked and upstream/downstream oriented. Once the full PIC assembles (minimal A/B/D/F + Pol II, then E and H added), Pol II is 'poised' (her diver-on-the-board image) between initiation and elongation, ready to be released from the GTFs so the PIC dissociates and elongation begins.",
+  "tags": [
+   "transcription-initiation",
+   "general-transcription-factors",
+   "figure-interpretation",
+   "mechanism"
+  ],
+  "id": "L3-C028"
+ },
+ {
+  "type": "concept",
+  "topic": "CTD as processing platform",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec3 digest 6.6 (CTD -> co-transcriptional processing) + analogies; L3 reading 8.4 (CTD heptad repeats, phosphorylation)",
+  "q": "What is the CTD, and by what mechanism does it recruit capping, splicing, and polyadenylation machinery in the correct sequence as the mRNA is made?",
+  "a": "CTD = C-terminal domain (carboxyl-terminal domain) of Pol II, at the point where mRNA emerges; it's a tail of heptad repeats rich in Ser/Thr/Pro (mostly serines). Mechanism: its phosphorylation state (which phosphates are added/removed) changes its electrostatic signature, which attracts or repels specific processing complexes IN ORDER. Her analogy: a road-crew trailer/mobile platform where complexes land, grab the extruding mRNA, work, and leave. It couples transcription to processing.",
+  "tags": [
+   "transcription-elongation",
+   "rna-processing",
+   "mechanism",
+   "prokaryote-vs-eukaryote"
+  ],
+  "id": "L3-C029"
+ },
+ {
+  "type": "concept",
+  "topic": "Co-transcriptional processing ORDER",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec3 digest EXAM SIGNALS textbook warnings (processing is co-transcriptional; true order) + 6.6",
+  "q": "Archbold warned the textbook is organized from an 'incorrect mindset' on RNA processing. What is the mistaken mental model, what actually happens, and what is the correct order of the three processing steps?",
+  "a": "Wrong model (the misleading 'pre-mRNA with all its introns drawn, then processed' diagram): build the entire pre-mRNA first, then cap/splice/polyadenylate it afterward. Reality: processing is CO-TRANSCRIPTIONAL — each step happens as the mRNA is extruded from Pol II, introns removed one at a time as they emerge. Correct order: (1) 5' capping -> (2) splicing -> (3) polyadenylation + termination.",
+  "tags": [
+   "rna-processing",
+   "five-prime-cap",
+   "splicing",
+   "polyadenylation"
+  ],
+  "id": "L3-C030"
+ },
+ {
+  "type": "concept",
+  "topic": "EMSA / band-shift assay",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3 digest 6.4 (EMSA/band-shift) — flagged HW/quiz/exam; L3 reading Research Technique 8.1 (band shift)",
+  "q": "You have a suspected promoter fragment and want to show a transcription factor binds it. Describe the band-shift (EMSA) assay: what you compare, the readout, and what result a binding-disrupting mutation gives.",
+  "a": "Run two identical DNA samples on a gel: control (no protein) vs experimental (protein added). Readout is migration/mobility: naked DNA runs fast; protein-bound DNA of the same length is heavier, so it migrates slower and the band shifts up. That shift = a DNA-protein interaction. A mutation that disrupts binding abolishes the shift (the band runs like naked DNA again). EMSA proves binding occurs but NOT where on the fragment.",
+  "tags": [
+   "technique",
+   "promoter",
+   "figure-interpretation",
+   "mechanism"
+  ],
+  "id": "L3-C031"
+ },
+ {
+  "type": "concept",
+  "topic": "DNase footprinting",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3 digest 6.4 (DNase footprint) — flagged HW/quiz/exam; L3 reading Research Technique 8.1 (end-label + DNase I + gap)",
+  "q": "A footprint (protection) assay is used to find WHERE a protein binds a DNA fragment. Walk through the procedure and explain what feature on the gel marks the binding site.",
+  "a": "End-label the DNA at one end (e.g. 32P), split into control (no protein) vs experimental (+ protein), then add DNase I, which randomly cuts unprotected DNA -> a ladder of every fragment size. Where the protein sits, that stretch is shielded from cleavage, so those fragment sizes are missing: a GAP in the ladder = the footprint = the protein's binding location. (Her tide analogy: the tide pulls sand from around your feet, but the sand under your feet is protected.)",
+  "tags": [
+   "technique",
+   "promoter",
+   "figure-interpretation",
+   "mechanism"
+  ],
+  "id": "L3-C032"
+ },
+ {
+  "type": "concept",
+  "topic": "EMSA vs footprint (which to use)",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3 digest 6.4 (two flavors you need to know) ; L3 reading Research Technique 8.1 (band shift verifies binding; footprint identifies exact location)",
+  "q": "Archbold said you need to know BOTH direct-binding assays. Contrast EMSA vs DNase footprinting: what question does each answer, and which one tells you the exact binding location?",
+  "a": "Both detect a DNA-protein interaction, but answer different questions. EMSA/band-shift = does a protein bind this fragment at all? (yes = shifted band) — it does NOT locate the site. DNase footprint = WHERE on the fragment does it bind? (the protected gap in the ladder pinpoints the location). So run EMSA first to confirm binding, then footprint to map exactly where. Footprint is the one that gives position.",
+  "tags": [
+   "technique",
+   "compare-contrast",
+   "figure-interpretation",
+   "promoter"
+  ],
+  "id": "L3-C033"
+ },
+ {
+  "type": "recall",
+  "topic": "5' cap: enzyme + product",
+  "diff": 1,
+  "target_s": 8,
+  "src": "L3 transcript §6.7; L3 reading 'Capping 5' Pre-mRNA' (~line 2214)",
+  "q": "During Pol II elongation, which enzyme adds the 5' cap, and what is the capping nucleotide/base called?",
+  "a": "Guanylyl transferase (the capping-enzyme complex) adds a 7-methylguanosine (m7G) cap to the 5' end of the pre-mRNA.",
+  "tags": [
+   "five-prime-cap",
+   "rna-processing",
+   "mechanism"
+  ],
+  "id": "L3-R013"
+ },
+ {
+  "type": "concept",
+  "topic": "5' cap: four functions",
+  "diff": 2,
+  "target_s": 15,
+  "src": "L3 transcript §6.7 + EXAM SIGNALS clicker E; L3 reading (~line 2258)",
+  "q": "On the clicker, the function of the 5' cap was 'E — all of the above.' What are the four functions the m7G cap serves? (This is the answer Archbold flagged as exam-important.)",
+  "a": "The 5' cap (1) promotes nuclear export, (2) blocks 5'->3' exonuclease digestion (protects the mRNA), (3) promotes translation, and (4) promotes splicing. All four = clicker E.",
+  "tags": [
+   "five-prime-cap",
+   "rna-processing",
+   "mechanism"
+  ],
+  "id": "L3-C034"
+ },
+ {
+  "type": "concept",
+  "topic": "5' cap: 'backwards' linkage",
+  "diff": 2,
+  "target_s": 16,
+  "src": "L3 transcript §6.7 ('backwards'); L3 reading (5'-to-5' triphosphate linkage, ~line 2216)",
+  "q": "Archbold says the cap guanine is stuck on 'backwards' so the 5' end 'looks different' from a naked end. What is unusual about the bond that joins the m7G to the transcript, and why does that odd geometry matter functionally?",
+  "a": "The m7G is joined by a 5'-to-5' triphosphate linkage (not the normal 5'->3' phosphodiester), so the added guanine points the opposite way. Because the 5' end now looks unlike any naked/uncapped 5' end, it acts as a distinct signal that export, translation, and splicing complexes recognize, and it hides the end from 5' exonucleases.",
+  "tags": [
+   "five-prime-cap",
+   "mechanism",
+   "directionality",
+   "compare-contrast"
+  ],
+  "id": "L3-C035"
+ },
+ {
+  "type": "concept",
+  "topic": "5' cap: 3-step mechanism vs m7G",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3 reading, Fig 8.17 three-step capping (~lines 2221-2233); L3 transcript §6.7",
+  "q": "Your textbook breaks 5' capping into steps. Starting from the triphosphate 5' end (phosphates alpha/beta/gamma), outline how guanylyl transferase builds the cap, and identify which enzyme actually makes it '7-methyl'-guanosine.",
+  "a": "(1) Guanylyl transferase removes the gamma phosphate from the mRNA 5' end (leaving 2 phosphates). (2) A GTP loses its gamma + beta phosphates -> guanine monophosphate. (3) Guanylyl transferase joins that GMP to the mRNA end via the 5'-to-5' triphosphate linkage. Then a SEPARATE methyl transferase adds a CH3 to the N7 (7-nitrogen) of the new guanine -> 7-methylguanosine (m7G) (and may 2'-O-methylate nearby nucleotides). So guanylyl transferase adds the G; the methyltransferase makes it 'm7.'",
+  "tags": [
+   "five-prime-cap",
+   "mechanism",
+   "nucleotide-chemistry",
+   "figure-interpretation"
+  ],
+  "id": "L3-C036"
+ },
+ {
+  "type": "recall",
+  "topic": "Splicing: snRNA -> site map",
+  "diff": 2,
+  "target_s": 12,
+  "src": "L3 transcript §6.8 (minimal mechanism U1/U2/U5, EXAM SIGNAL)",
+  "q": "In the minimal splicing mechanism Archbold requires, match each snRNP to the intron site it binds: U1, U2, U5 -> 5' donor / branch-point A / 3' acceptor.",
+  "a": "U1 binds the 5' donor site (start of the intron); U2 binds the branch point (the specific branch-point A); U5 binds the 3' acceptor site (end of the intron).",
+  "tags": [
+   "splicing",
+   "mechanism",
+   "rna-types"
+  ],
+  "id": "L3-R014"
+ },
+ {
+  "type": "recall",
+  "topic": "Splicing: branch-point A location",
+  "diff": 2,
+  "target_s": 12,
+  "src": "L3 transcript §6.8 ('~20-40 nt upstream'); L3 reading branch site (~lines 2694-2696)",
+  "q": "Where in the intron is the branch-point adenine located relative to the 3' acceptor site, and which snRNP recognizes it?",
+  "a": "The branch-point A sits ~20-40 nucleotides upstream of the 3' acceptor (splice) site, within a pyrimidine-rich branch-site consensus. U2 binds it. (It is the nucleophile for the 1st transesterification.)",
+  "tags": [
+   "splicing",
+   "mechanism",
+   "sequence-reading",
+   "figure-interpretation"
+  ],
+  "id": "L3-R015"
+ },
+ {
+  "type": "concept",
+  "topic": "Splicing: two transesterifications",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L3 transcript §6.8 (two transesterification reactions); L3 reading (~lines 2705-2712, 2'-5' bond)",
+  "q": "Splicing out an intron requires exactly two transesterification reactions. In order, name the nucleophile (attacking group) and its target for each, and state what covalent outcome each produces.",
+  "a": "Reaction 1: the branch-point A (its 2'-OH) attacks the 5' donor site -> the intron's 5' end detaches from the upstream exon and bonds to the branch-point A, forming the lariat and freeing the donor exon's 3'-OH. Reaction 2: that freed donor exon (its 3'-OH) attacks the 3' acceptor site -> the two exons are joined and the lariat intron is released. Two new covalent bonds, two steps, always in this order.",
+  "tags": [
+   "splicing",
+   "mechanism",
+   "directionality",
+   "figure-interpretation"
+  ],
+  "id": "L3-C037"
+ },
+ {
+  "type": "concept",
+  "topic": "Splicing: the lariat / clicker B",
+  "diff": 3,
+  "target_s": 18,
+  "src": "L3 transcript §6.8 ('never...float free') + clicker B; L3 reading Fig 8.22",
+  "q": "TRUE or FALSE: at some point during splicing the intron is simply cut out on both ends and the two exons float free until they are ligated. Give the verdict and the correct picture (this is the clicker-B lariat scenario).",
+  "a": "FALSE. There is NEVER a moment where the intron is excised and the exons float free. It is always the two-step lariat process: the branch-A first attacks the 5' donor to form the lariat (5' end of intron bonded to the branch point) with the exons still held aligned by the spliceosome, and only then does the freed 5' exon attack the 3' acceptor to join the exons and release the lariat. Clicker B = the spliceosome components are aligning the donor + acceptor sites for the 2nd transesterification.",
+  "tags": [
+   "splicing",
+   "mechanism",
+   "figure-interpretation",
+   "exceptions"
+  ],
+  "id": "L3-C038"
+ },
+ {
+  "type": "recall",
+  "topic": "Splicing: invariant intron ends + lariat fate",
+  "diff": 2,
+  "target_s": 14,
+  "src": "L3 reading splice-signal consensus (GU...AG, ~lines 2686-2693; lariat degraded ~line 2712); L3 transcript §6.8",
+  "q": "At the two ends of an intron, what near-invariant dinucleotides mark the 5' donor and the 3' acceptor, and what happens to the lariat after the exons are joined?",
+  "a": "The 5' donor (splice) site begins with a nearly invariant GU at the 5'-most end of the intron; the 3' acceptor site ends with a nearly invariant AG at the 3'-most end. After the exons are ligated, the released lariat intron is degraded to its nucleotides (it was only intervening information).",
+  "tags": [
+   "splicing",
+   "sequence-reading",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L3-R016"
+ },
+ {
+  "type": "concept",
+  "topic": "Poly-A polymerase: template-independent",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec3T §6.9 (three poly-A facts, #1) + EXAM SIGNALS",
+  "q": "You sequence the DNA template strand near a gene's 3' end and find NO run of T's that could specify the poly-A tail. A classmate says the tail must therefore come from a hidden downstream template. Is she right, and what does poly(A) polymerase actually use as instructions?",
+  "a": "She's wrong. Poly(A) polymerase is TEMPLATE-INDEPENDENT — it needs no DNA (or RNA) template. It just adds adenines onto the exposed 3'-OH after cleavage, still building 5'→3', but with no instructions read from anywhere. There is deliberately no string of T's in the DNA templating the tail; the enzyme only knows one job: add A's. (Archbold: 'the chuckiest of chucks.')",
+  "tags": [
+   "polyadenylation",
+   "mechanism",
+   "exceptions",
+   "directionality"
+  ],
+  "id": "L3-C039"
+ },
+ {
+  "type": "recall",
+  "topic": "Poly-A tail length sets half-life",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec3T §6.9 (three poly-A facts, #2) + EXAM SIGNALS",
+  "q": "Two mRNAs are identical except one has a long poly-A tail and one a short one. Which persists longer in the cytoplasm and makes more protein, and what general rule does this illustrate?",
+  "a": "The long-tailed mRNA persists longer and makes more protein. Rule (one of the three poly-A facts she said to know): poly-A TAIL LENGTH sets mRNA stability / half-life — longer tail → mRNA survives longer → more rounds of translation; short tail → quickly degraded, little protein.",
+  "tags": [
+   "polyadenylation",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L3-R017"
+ },
+ {
+  "type": "concept",
+  "topic": "Poly-A signal ≠ poly-A tail",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3T §6.9 (three poly-A facts, #3; CPSF/CstF/cleavage factors) + EXAM SIGNALS",
+  "q": "On a pre-mRNA you see an A-rich poly-A SIGNAL sequence and, later, the poly-A TAIL. A test statement claims 'the signal sequence is the template that gets copied into the tail.' TRUE or FALSE, and name the two factors that read the signal vs the downstream element.",
+  "a": "FALSE. The poly-A signal sequence ≠ the poly-A tail — the signal is only a RECOGNITION site, never a template. CPSF binds the upstream A-rich poly-A signal; CstF binds the downstream U-rich element; cleavage factors I + II cut between them, then poly(A) polymerase (template-independent) builds the tail on the new 3'-OH. (Signal ≠ tail is one of her three flagged poly-A facts.)",
+  "tags": [
+   "polyadenylation",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L3-C040"
+ },
+ {
+  "type": "concept",
+  "topic": "Torpedo termination (Pol II)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec3T §6.9 torpedo termination",
+  "q": "After the pre-mRNA is cleaved at the poly-A site, RNA Pol II keeps transcribing and makes a residual downstream RNA. Walk through how the 'torpedo' model uses that leftover transcript to actually stop Pol II — and why the leftover being UNCAPPED is the key.",
+  "a": "Cleavage leaves a new downstream RNA whose 5' end is UNCAPPED (it 'missed' the cap the real message got). The torpedo nuclease latches onto that naked, unprotected 5' end and chews it 5'→3' FASTER than Pol II moves. It catches up to Pol II, then breaks the RNA-DNA bonds in the active site → the whole complex blows apart = true termination. The cap normally blocks exonucleases, so only the uncapped residual transcript is vulnerable — that's what makes it a valid target. (Analogy: torpedo hits the ship and blows it up.)",
+  "tags": [
+   "transcription-termination",
+   "mechanism",
+   "five-prime-cap"
+  ],
+  "id": "L3-C041"
+ },
+ {
+  "type": "recall",
+  "topic": "hnRNPs regulate splice-site choice",
+  "diff": 2,
+  "target_s": 13,
+  "src": "Lec3T §6.10 (hnRNPs) + EXAM SIGNALS ('isoform')",
+  "q": "What are hnRNPs (full name), what do they physically do at a splice site, and why does a liver cell and a neuron make different isoforms from the same gene?",
+  "a": "hnRNPs = heterogeneous nuclear ribonucleoproteins — the splicing factors. They bind intron/exon sequences and either EXPOSE or MASK the 5' donor / branch-point / 3' acceptor sites, steering which exons the spliceosome uses. Different cell types carry different hnRNP sets → different sites hidden/revealed → different splice choices → different isoforms from one gene.",
+  "tags": [
+   "alternative-splicing",
+   "splicing",
+   "mechanism"
+  ],
+  "id": "L3-R018"
+ },
+ {
+  "type": "concept",
+  "topic": "SMA: SMN1/SMN2 + ASO therapy",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec3T §6.10 SMA story (SMN1/SMN2/exon-7/ASO) — 'the payoff story'",
+  "q": "SMA is caused by loss of SMN1, yet patients still carry a near-identical SMN2 gene that can't compensate. Explain (a) WHY SMN2 fails to rescue at the splicing level, and (b) how antisense oligonucleotide (ASO) therapy fixes it.",
+  "a": "(a) SMN2 is mis-spliced: hnRNPs bind near EXON 7 and hide it → exon-7 SKIPPING → a truncated, nonfunctional protein, so SMN2 can't cover for the missing SMN1. (b) ASOs are small RNAs that stick exactly where those hnRNPs would bind, BLOCKING them → exon 7 is now INCLUDED → SMN2 makes functional protein that substitutes for SMN1. (Real drug: nusinersen/Spinraza-class; approved.)",
+  "tags": [
+   "alternative-splicing",
+   "splicing",
+   "mechanism"
+  ],
+  "id": "L3-C042"
+ },
+ {
+  "type": "concept",
+  "topic": "Calcitonin vs CGRP alternative splicing",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec3T §6.10 calcitonin/CGRP example",
+  "q": "One gene yields calcitonin in thyroid cells but CGRP in neurons. Which exons does each cell type include, and what general principle about 'one gene → many proteins' does this illustrate?",
+  "a": "Thyroid (C) cells splice exons 1-2-3-4 → calcitonin (CT). Brain/neuronal cells SKIP exon 4 and use exons 5+6 (mature mRNA = exons 1,2,3,5,6) → CGRP (calcitonin gene-related peptide). Same gene, two products with different jobs (plus a downstream protein-cleavage difference) — a textbook case of cell-type-specific alternative splicing generating distinct isoforms.",
+  "tags": [
+   "alternative-splicing",
+   "figure-interpretation",
+   "compare-contrast"
+  ],
+  "id": "L3-C043"
+ },
+ {
+  "type": "concept",
+  "topic": "FGFR2 mutually-exclusive exons 8 vs 9",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3T §6.10 FGFR2 example (exon 8/9; FGF10/FGF7)",
+  "q": "FGFR2 is a membrane receptor whose pre-mRNA can include exon 8 OR exon 9. What part of the protein does this choice change, and what's the functional consequence for the cell?",
+  "a": "Choosing exon 8 vs exon 9 swaps a segment of the EXTRACELLULAR ligand-binding domain. That changes which FGF ligands the receptor binds (e.g. FGF10 vs FGF7) → different signals received → very different cellular outcomes. Same gene, two receptor isoforms with distinct ligand specificity — mutually-exclusive exon choice as an isoform switch.",
+  "tags": [
+   "alternative-splicing",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L3-C044"
+ },
+ {
+  "type": "concept",
+  "topic": "Monocistronic vs polycistronic",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec3T §5.6 cistrons + §6.10 isoforms; EXAM SIGNALS ('obligate monocistronic')",
+  "q": "A test statement reads: 'Because eukaryotes can produce many proteins from one gene by alternative splicing, eukaryotic mRNAs are polycistronic.' TRUE or FALSE — and distinguish polycistronic from what alternative splicing does.",
+  "a": "FALSE — and it conflates two different things. Polycistronic = ONE transcript carries MULTIPLE cistrons (coding sequences) translated into several proteins; prokaryotes can do this, but eukaryotes are OBLIGATE MONOCISTRONIC for this class (one coding sequence per mature mRNA). Alternative splicing makes many DIFFERENT mRNAs (each still monocistronic) from one gene — it does not put multiple ORFs on a single transcript. The two are unrelated mechanisms.",
+  "tags": [
+   "prokaryote-vs-eukaryote",
+   "gene-anatomy",
+   "compare-contrast",
+   "exceptions"
+  ],
+  "id": "L3-C045"
+ },
+ {
+  "type": "concept",
+  "topic": "Only mRNA is polyadenylated",
+  "diff": 2,
+  "target_s": 17,
+  "src": "Lec3T EXAM SIGNALS iClicker table ('which is TRUE' → D, none of the above)",
+  "q": "The exam asks which is TRUE: (i) there are 3 classes of mRNA, (ii) all RNAs are polyadenylated, (iii) in eukaryotes protein synthesis can begin before transcription ends. She confirmed the answer is 'none of the above' — give the one-line reason each is wrong.",
+  "a": "(i) Wrong — there aren't '3 classes of mRNA'; there are 3 RNA POLYMERASES, and many RNA classes. (ii) Wrong — ONLY mRNA gets a poly-A tail; tRNA/rRNA/snRNA/miRNA do not. (iii) Wrong — co-transcriptional translation is PROKARYOTIC (no nucleus); eukaryotes finish transcription and export the mRNA first. So 'none of the above' is correct.",
+  "tags": [
+   "polyadenylation",
+   "prokaryote-vs-eukaryote",
+   "rna-types",
+   "exceptions"
+  ],
+  "id": "L3-C046"
+ },
+ {
+  "type": "problem",
+  "topic": "Locate -10/-35, transcribe, label UTR/coding",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec3 digest §5.1, §4 (mRNA=coding w/ U) + L3-reading Fig 8.5 / Genetic Analysis 8.1",
+  "q": "You are studying an E. coli gene. The double-stranded region is shown; the +1 nucleotide (first transcribed base) is marked with a caret (^).\n\ncoding (nontemplate) 5'-TTGACAAGGCTTAACCGGTTACGTATAATGCACTG^GACTTATGAAAGGGTAACACGT-3'\ntemplate            3'-AACTGTTCCGAATTGGCCAATGCATATTACGTGAC CTGAATACTTTCCCATTGTGCA-5'\n\n(a) Identify the -35 and -10 (Pribnow) boxes on the coding strand. (b) Write the mRNA 5'->3'. (c) Label the 5' UTR, the coding sequence (with start/stop), and the 3' UTR.",
+  "worked": "Promoter consensus is written on the coding strand 5'->3'. Scan for the two boxes: 5'-TTGACA-3' at the very 5' end = the -35 box; 5'-TATAAT-3' further downstream = the -10 Pribnow box (AT-rich so it melts on 2 H-bonds). Here the gap between the two boxes is 17 bp of spacer (real E. coli spacers run ~17 bp; the reading also notes the -10 and -35 centers sit ~25 bp apart) and the exact spacing varies gene-to-gene, which is why +1 must be found empirically, not counted. Transcription starts at the marked +1. The mRNA has the SAME sequence as the coding strand from +1 onward, with U replacing T (RNA pol reads the template 3'->5' and builds 5'->3'). Coding-strand transcript region = GACTTATGAAAGGGTAACACGT -> mRNA 5'-GACUUAUGAAAGGGUAACACGU-3'. Now parse it: the 5' UTR runs from +1 up to (not including) the start codon = GACUU. The first AUG = start codon; reading in-frame: AUG(Met) AAA(Lys) GGG(Gly) UAA(STOP). Everything after the stop = 3' UTR = CACGU. (Double-check by re-reading the template CTGAATACTTTCCCATTGTGCA 3'->5' -> complementary bases give GACUUAUGAAAGGGUAACACGU, matching.)",
+  "answer": "-35 box = 5'-TTGACA-3'; -10 Pribnow box = 5'-TATAAT-3' (17 bp of spacer between the boxes). mRNA = 5'-GACUUAUGAAAGGGUAACACGU-3'. 5' UTR = GACUU; coding = AUG-AAA-GGG-UAA (Met-Lys-Gly-Stop); 3' UTR = CACGU.",
+  "tags": [
+   "promoter",
+   "sequence-reading",
+   "directionality",
+   "gene-anatomy",
+   "mechanism"
+  ],
+  "id": "L3-P002"
+ },
+ {
+  "type": "problem",
+  "topic": "Derive the -10 consensus from a promoter alignment",
+  "diff": 2,
+  "target_s": 16,
+  "src": "L3-reading Genetic Analysis 8.1 (mirrors Discussion-3 promoter problem)",
+  "q": "You align the -10 regions of six bacterial promoters (coding strand, 5'->3'), each already framed to the 6-bp box:\n\ngene 1  T A T A A T\ngene 2  T A G A A T\ngene 3  T A T G A T\ngene 4  C A T A A T\ngene 5  T A T A C T\ngene 6  T A A A A T\n\nWhat is the -10 consensus sequence? (A consensus = the most common nucleotide at each position.)",
+  "worked": "A consensus sequence is built column-by-column: take the single most frequent base in each position across all aligned promoters (Genetic Analysis 8.1 method). Tally each of the 6 columns:\ncol1: T,T,T,C,T,T -> T (5/6)\ncol2: A,A,A,A,A,A -> A (6/6)\ncol3: T,G,T,T,T,A -> T (4/6)\ncol4: A,A,G,A,A,A -> A (5/6)\ncol5: A,A,A,A,C,A -> A (5/6)\ncol6: T,T,T,T,T,T -> T (6/6)\nReading the winners left-to-right (which runs toward +1): T-A-T-A-A-T. This is the canonical Pribnow box. Note that no single gene has to match the consensus perfectly (gene 4 starts with C, gene 3 has G at position 3) — the consensus is a statistical summary, not a real single sequence.",
+  "answer": "5'-TATAAT-3' (the -10 Pribnow box consensus). Positions are conserved statistically; individual promoters may deviate at any one base.",
+  "tags": [
+   "promoter",
+   "figure-interpretation",
+   "sequence-reading",
+   "calculation"
+  ],
+  "id": "L3-P003"
+ },
+ {
+  "type": "problem",
+  "topic": "Transcribe when the labeled top strand is the TEMPLATE",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec3 digest §4, §5.3 (template read 3'->5', mRNA built 5'->3'); exam-style directionality trap",
+  "q": "For a particular gene, the strand shown on TOP is the TEMPLATE strand:\n\ntemplate (top) 5'-TACCGGATTACGCATGCTAAGGTCA-3'\n\nTranscription of this gene runs across this whole segment. Write the mRNA 5'->3', and give the coding (sense) strand 5'->3'.",
+  "worked": "Trap: the mRNA is NOT this strand with U-for-T, because this strand is the TEMPLATE, and it is written 5'->3'. RNA polymerase reads the template 3'->5' and builds the mRNA 5'->3', so the mRNA is complementary AND antiparallel to the template = the reverse complement of the template, with U for T. Template 5'-TACCGGATTACGCATGCTAAGGTCA-3'. Complement = ATGGCCTAATGCGTACGATTCCAGT; reverse that -> TGACCTTAGCATGCGTAATCCGGTA. Swap T->U for the RNA: mRNA = 5'-UGACCUUAGCAUGCGUAAUCCGGUA-3'. The coding (sense) strand is the complement of the template (runs antiparallel to it), i.e. the same sequence as the mRNA but with T: 5'-TGACCTTAGCATGCGTAATCCGGTA-3'.",
+  "answer": "mRNA = 5'-UGACCUUAGCAUGCGUAAUCCGGUA-3' (reverse complement of the template, U for T). Coding/sense strand = 5'-TGACCTTAGCATGCGTAATCCGGTA-3'.",
+  "tags": [
+   "directionality",
+   "sequence-reading",
+   "mechanism",
+   "gene-anatomy"
+  ],
+  "id": "L3-P004"
+ },
+ {
+  "type": "problem",
+  "topic": "Identify sense vs antisense from the mRNA",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec3 digest §4 (coding=sense=mRNA-with-T; template=antisense read 3'->5')",
+  "q": "A single DNA strand is given (5'->3'), along with the mRNA transcribed from this gene (5'->3'):\n\nstrand X : 5'-ATGGCACTTAGCTAGGCTAA-3'\nmRNA     : 5'-AUGGCACUUAGCUAGGCUAA-3'\n\nIs strand X the sense (coding) strand or the antisense (template) strand? Write the OTHER strand with its polarity labeled.",
+  "worked": "The mRNA always has the same sequence and polarity as the SENSE (coding) strand, differing only by U-for-T. Compare: mRNA AUGGCACUUAGCUAGGCUAA with U->T = ATGGCACTTAGCTAGGCTAA. That is identical to strand X. Therefore strand X IS the sense (coding) strand. The template (antisense) strand is what RNA pol actually read; it is the complement of strand X, antiparallel to it. Complement of 5'-ATGGCACTTAGCTAGGCTAA-3' is TACCGTGAATCGATCCGATT, and because it must run antiparallel it is written 3'-TACCGTGAATCGATCCGATT-5' beneath strand X. (Reading that template 3'->5' regenerates the mRNA, confirming it.)",
+  "answer": "Strand X is the SENSE (coding) strand (mRNA = X with U for T). Template (antisense) strand = 3'-TACCGTGAATCGATCCGATT-5'.",
+  "tags": [
+   "directionality",
+   "sequence-reading",
+   "compare-contrast",
+   "gene-anatomy"
+  ],
+  "id": "L3-P005"
+ },
+ {
+  "type": "problem",
+  "topic": "Which statement about transcription is TRUE",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec3 digest clicker table (row: 'Which statement is TRUE' -> D none of the above)",
+  "q": "You are reviewing transcription. Exactly one of these is TRUE. Which one, and why are the others false?\n1) Eukaryotes use three distinct RNA polymerases, each transcribing a different set of RNAs.\n2) All classes of cellular RNA receive a poly-A tail.\n3) In eukaryotes, ribosomes begin translating an mRNA before its transcription is finished.\n4) In bacteria, transcription and translation cannot occur at the same time.",
+  "worked": "Go one at a time. (1) TRUE — Pol I makes most rRNA, Pol II makes mRNA (plus miRNA/snoRNA/snRNA and TERC), Pol III makes 5S rRNA/tRNA/snRNA. This is the real eukaryotic setup. (2) FALSE — only mRNA is polyadenylated; tRNA, rRNA, snRNA, miRNA are not (and even most histone mRNAs are exceptions). (3) FALSE — co-transcriptional translation is a PROKARYOTIC feature; eukaryotes wall transcription inside the nucleus, finish and process the mRNA, then export it before any translation. (4) FALSE — bacteria have no nucleus, so ribosomes read the mRNA as it is still being made (this coupling is exactly what eukaryotes cannot do). So only statement 1 is true. (This mirrors the clicker where the analogous 'mRNA/all-RNA/coupled-translation' trio was all wrong -> answer D, none; here statement 1 is the correctly-worded true version.)",
+  "answer": "Statement 1 is TRUE (three eukaryotic RNA polymerases). 2 is false (only mRNA is polyadenylated); 3 is false (coupled translation is prokaryotic, not eukaryotic); 4 is false (bacteria DO couple transcription and translation).",
+  "tags": [
+   "prokaryote-vs-eukaryote",
+   "transcription-termination",
+   "polyadenylation",
+   "compare-contrast"
+  ],
+  "id": "L3-P006"
+ },
+ {
+  "type": "problem",
+  "topic": "Which statement about the two bacterial terminators is FALSE",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec3 digest §5.5 + clicker row (rho = helicase, breaks RNA-DNA hybrid, answer C); 'know BOTH terminations'",
+  "q": "You study bacterial transcription termination. Exactly one statement is FALSE. Which one, and correct it?\n1) In intrinsic (rho-independent) termination, an inverted-repeat hairpin plus a poly-U run destabilizes the paused polymerase — everything needed is in the RNA sequence.\n2) The poly-U stretch matters because U-A pairs (2 H-bonds) form the weakest part of the RNA-DNA hybrid.\n3) Rho is a helicase that loads at the rut (rho utilization) site and unwinds the RNA-DNA duplex using ATP.\n4) Rho-dependent termination needs no protein beyond RNA polymerase itself.",
+  "worked": "Check each against the mechanism. (1) TRUE — intrinsic termination is encoded entirely in the sequence: transcribing inverted repeats folds an RNA hairpin, followed by a poly-U string; the hairpin stalls the polymerase and the tug pops the weak hybrid apart. (2) TRUE — U-A base pairs have only 2 H-bonds, so the poly-U:poly-A hybrid is the least stable region and separates first (same reason -10 and OriC are AT-rich). (3) TRUE — rho is an RNA-dependent helicase; it binds the rut site on the nascent RNA, translocates to the paused polymerase, and uses ATP to break the RNA-DNA hybrid H-bonds (the clicker answer: rho breaks RNA-DNA bonds, analogous to the replication helicase breaking DNA-DNA). (4) FALSE — that describes INTRINSIC termination. Rho-dependent termination is defined by requiring the extra rho protein; the correction is 'rho-dependent termination REQUIRES the rho protein.' You are expected to know BOTH mechanisms.",
+  "answer": "Statement 4 is FALSE. Rho-dependent termination REQUIRES the rho protein (a helicase acting at the rut site); it is the INTRINSIC mechanism that needs nothing beyond the encoded hairpin + poly-U and the polymerase.",
+  "tags": [
+   "transcription-termination",
+   "mechanism",
+   "sigma-factor",
+   "exceptions"
+  ],
+  "id": "L3-P007"
+ },
+ {
+  "type": "problem",
+  "topic": "Reason out where an EMSA vs DNase-footprint band lands",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec3 digest §6.4 (EMSA + DNase footprint, 'know both'); L3-reading Research Technique 8.1",
+  "q": "You suspect a transcription factor binds a promoter fragment. You run BOTH direct-binding assays with a control (naked DNA) lane and an experimental (+protein) lane. Predict the result in each, and say what each assay tells you that the other does not.\n(a) EMSA (band-shift). (b) DNase I footprint (both lanes are end-labeled, then digested with DNase I).",
+  "worked": "(a) EMSA: same-length DNA runs at a rate set by its mass. Naked DNA (control) runs FAST; protein-bound DNA (experimental) is heavier, so it migrates SLOWER and its band shifts UP relative to control. A shift = a protein is bound somewhere on the fragment. If a binding-disrupting mutation is introduced, the shift disappears. What it CAN'T tell you: WHERE on the fragment the protein sits. (b) DNase footprint: end-label the DNA (one end), then add DNase I, which cuts unprotected DNA randomly, generating a ladder of every length. In the control lane you get a COMPLETE ladder. In the +protein lane, the stretch under the bound protein is shielded from cutting, so those bands are missing — a GAP in the ladder = the footprint (tide-pulls-the-sand-around-your-feet-but-not-under-them). What it adds over EMSA: it pinpoints the exact location/length of the binding site. So EMSA answers 'does it bind?'; the footprint answers 'where does it bind?'",
+  "answer": "EMSA: control DNA runs fast; +protein band shifts UP (slower) — shows a protein binds, but not where. DNase footprint: control gives a full ladder; +protein leaves a GAP (protected bases) — pinpoints WHERE the protein binds. EMSA = yes/no binding; footprint = location.",
+  "tags": [
+   "technique",
+   "figure-interpretation",
+   "promoter",
+   "general-transcription-factors"
+  ],
+  "id": "L3-P008"
+ },
+ {
+  "type": "problem",
+  "topic": "Predict the alternatively spliced product per cell type (CT/",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec3 digest §6.10 (calcitonin/CGRP; isoform; thyroid vs neuron) + L3-reading Fig 8.24",
+  "q": "The CT/CGRP gene makes ONE pre-mRNA (exons 1-2-3-4-5-6, with a poly-A site inside exon 4 and another after exon 6) in both thyroid and neuronal cells, yet each tissue makes a different hormone. (a) Which exons appear in the mature mRNA in thyroid cells, and which product? (b) Which exons in neuronal cells, and which product? (c) What is the one-word term for each of these two protein products from a single gene?",
+  "worked": "This is alternative splicing driven by cell-type-specific splicing factors (hnRNPs) that expose or mask donor/branch/acceptor sites, coupled to alternative poly-A site choice. Thyroid cells: splice to keep exons 1-2-3-4 and use the poly-A site WITHIN exon 4, so exons 5 and 6 are excluded -> translation gives calcitonin (CT), a calcium-regulating hormone. Neuronal (brain) cells: exon 4 is skipped (treated like an intron) and exons 1-2-3-5-6 are joined, using the downstream poly-A site after exon 6 -> translation gives CGRP (calcitonin gene-related peptide). Because both proteins arise from the same DNA sequence via different splicing, each is called an isoform (the term she flagged as required). One gene -> two tissue-specific jobs.",
+  "answer": "(a) Thyroid: exons 1-2-3-4 (poly-A in exon 4) -> calcitonin (CT). (b) Neuron: exons 1-2-3-5-6 (exon 4 skipped, poly-A after exon 6) -> CGRP. (c) Each product is an ISOFORM of the CT/CGRP gene.",
+  "tags": [
+   "alternative-splicing",
+   "splicing",
+   "figure-interpretation",
+   "polyadenylation"
+  ],
+  "id": "L3-P009"
+ }
+]

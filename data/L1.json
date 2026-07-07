@@ -1196,5 +1196,349 @@
    "figure-interpretation",
    "exceptions"
   ]
+ },
+ {
+  "type": "concept",
+  "topic": "GC content & Tm",
+  "diff": 2,
+  "target_s": 20,
+  "src": "L1.md 2.4 / L1-reading 1.2 (A-T=2, G-C=3 H-bonds)",
+  "q": "Two dsDNA molecules of equal length are heated to separate the strands. One is 30% GC, the other is 70% GC. Which requires the higher temperature to denature (melt), and why?",
+  "a": "The 70% GC molecule. Each G-C pair has 3 hydrogen bonds vs 2 for each A-T pair, so higher GC content means more H-bonds holding the duplex together (base-stacking of the GC pairs adds further stability). More GC -> higher melting temperature (Tm) -> harder to melt. This is why 'GC-rich DNA is more stable.'",
+  "tags": [
+   "base-pairing",
+   "dna-structure",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L1-C022"
+ },
+ {
+  "type": "concept",
+  "topic": "hydrophobic interior & base stacking",
+  "diff": 2,
+  "target_s": 22,
+  "src": "L1-reading 1.2 (bases hydrophobic, orient to interior; stacking twists ladder)",
+  "q": "The bases sit on the INSIDE of the double helix and the sugar-phosphate backbones on the outside. What property of the bases drives this arrangement, and what stabilizing interaction does their stacking provide?",
+  "a": "The nitrogenous bases are hydrophobic (water-avoiding), so they orient toward the water-free interior of the duplex while the charged/polar sugar-phosphate backbone faces the water outside. Stacking the flat bases on top of one another creates base-stacking interactions, and that stacking is what twists the ladder into a helix and adds stability beyond the H-bonds alone.",
+  "tags": [
+   "dna-structure",
+   "nucleotide-chemistry",
+   "mechanism"
+  ],
+  "id": "L1-C023"
+ },
+ {
+  "type": "recall",
+  "topic": "major vs minor groove",
+  "diff": 2,
+  "target_s": 15,
+  "src": "L1.md 2.4 / L1-reading Ch 7.2 (major/minor groove, proteins read bases)",
+  "q": "The B-form double helix has a wider and a narrower groove running along it. Name them, and state their functional significance.",
+  "a": "The major groove (wider) and the minor groove (narrower). They are where DNA-binding proteins (e.g. transcription factors) make direct contact with and 'read' the base sequence from the outside of the helix without unwinding it. (Ch 7.2 reading-only detail; the base edges are partially exposed in the grooves.)",
+  "tags": [
+   "dna-structure",
+   "mechanism"
+  ],
+  "id": "L1-R041"
+ },
+ {
+  "type": "concept",
+  "topic": "B / A / Z forms",
+  "diff": 2,
+  "target_s": 25,
+  "src": "L1-reading Ch 7.2 / Table 7.1 (B common, 10.5 bp/turn; A/Z alternates; Z left-handed)",
+  "q": "DNA can adopt B-, A-, and Z-form. Which form is the common physiological one, roughly what are its diameter and rise per turn, and how does Z-form differ in handedness?",
+  "a": "B-form is the common physiological form: right-handed, diameter ~2 nm (20 A), one full turn ~3.4 nm (34 A) at ~10.5 bp/turn. A-form is an alternate right-handed form (more compact, ~11 bp/turn). Z-form is LEFT-handed (a zig-zag backbone) - the key distinguishing feature. On an exam, 'the common form of DNA' = B-form, right-handed.",
+  "tags": [
+   "dna-structure",
+   "compare-contrast",
+   "exceptions"
+  ],
+  "id": "L1-C024"
+ },
+ {
+  "type": "recall",
+  "topic": "physical basis of 5'/3' polarity",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L1-reading 1.2 (5'=phosphate, 3'=OH ends establish polarity)",
+  "q": "Beyond 'the strands run in opposite directions,' what CHEMICAL feature actually distinguishes a strand's 5' end from its 3' end and makes the two ends non-equivalent?",
+  "a": "The 5' end terminates in a free 5' phosphate group (on the 5' carbon of the sugar); the 3' end terminates in a free 3' hydroxyl (OH) group (on the 3' carbon). Because the two ends carry chemically different groups, they are readily distinguished - that difference IS strand polarity, and it dictates that synthesis adds nucleotides only to the 3'-OH end (5'->3' growth).",
+  "tags": [
+   "nucleotide-chemistry",
+   "directionality",
+   "dna-structure"
+  ],
+  "id": "L1-R042"
+ },
+ {
+  "type": "problem",
+  "topic": "Chargaff: single strand vs whole duplex",
+  "diff": 3,
+  "target_s": 120,
+  "src": "authored, hand-verified (Chargaff per-strand vs whole-molecule)",
+  "q": "In a DNA duplex, you measure the composition of ONE strand (call it strand W): A = 30%, T = 15%, G = 35%, C = 20%. (a) Does Chargaff's rule (%A=%T, %G=%C) hold WITHIN strand W? (b) Give the base composition of its complementary strand. (c) Give the base composition of the whole double-stranded molecule.",
+  "worked": "Chargaff's rule (%A=%T, %G=%C) is a property of the DOUBLE-STRANDED molecule, forced by A-T and G-C pairing across strands - it is NOT guaranteed within any single strand. (a) Strand W has A!=T and G!=C, so intra-strand parity fails - that's normal. (b) The complement is antiparallel and base-paired: each A in W faces a T, so complement %T = W's %A = 30; complement %A = W's %T = 15; complement %C = W's %G = 35; complement %G = W's %C = 20. (c) Average the two strands: %A_duplex = (A_W + A_comp)/2 = (30+15)/2 = 22.5; likewise %T = 22.5, %G = (35+20)/2 = 27.5, %C = 27.5. Note A=T and G=C now hold for the duplex, but the four bases are NOT 25% each.",
+  "answer": "",
+  "tags": [
+   "base-pairing",
+   "calculation",
+   "exceptions",
+   "directionality"
+  ],
+  "id": "L1-P021"
+ },
+ {
+  "type": "problem",
+  "topic": "H-bond count from %GC and length",
+  "diff": 2,
+  "target_s": 90,
+  "src": "authored, hand-verified (H-bonds = 3*GC + 2*AT pairs)",
+  "q": "A linear double-stranded DNA molecule is 1000 bp long and 60% GC. How many hydrogen bonds hold the entire duplex together (assume every base pair is a standard Watson-Crick pair)?",
+  "worked": "60% GC of 1000 bp = 600 G-C pairs; the remaining 40% = 400 A-T pairs. Each G-C pair contributes 3 H-bonds and each A-T pair contributes 2. Total = 600(3) + 400(2) = 1800 + 800 = 2600 hydrogen bonds.",
+  "answer": "",
+  "tags": [
+   "base-pairing",
+   "calculation",
+   "dna-structure"
+  ],
+  "id": "L1-P022"
+ },
+ {
+  "type": "problem",
+  "topic": "phosphodiester bond & strand ends",
+  "diff": 2,
+  "target_s": 90,
+  "src": "L1-reading 1.2 (phosphodiester 5'-P to 3'-OH; backbone/polarity)",
+  "q": "You link three deoxyribonucleotides into a short single strand. (a) Between which two carbons of adjacent sugars does each phosphodiester bond form? (b) How many phosphodiester bonds are in this 3-nucleotide strand? (c) At the 3' end of the finished strand, which chemical group is free and available for adding the next nucleotide?",
+  "worked": "(a) A phosphodiester bond covalently joins the 3'-OH of one nucleotide's deoxyribose to the 5'-phosphate on the next nucleotide's deoxyribose, so it bridges the 3' carbon and the 5' carbon of adjacent sugars. (b) A strand of n nucleotides has n-1 internucleotide bonds; for n=3 that is 2. (c) With the 5' phosphate at one terminus, the opposite terminus exposes the unreacted 3'-OH; incoming nucleotides are always added onto that 3'-OH, which is why strands elongate 5'->3'.",
+  "answer": "",
+  "tags": [
+   "nucleotide-chemistry",
+   "directionality",
+   "mechanism",
+   "calculation"
+  ],
+  "id": "L1-P023"
+ },
+ {
+  "type": "concept",
+  "topic": "Griffith control logic",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L1.md §2.2 / C015; Lec1r 7.1 (lines 3033-3037)",
+  "q": "In Griffith's experiment, live R (nonvirulent) + heat-killed S (virulent) kills the mouse and live S is recovered from it. Why does recovering live S prove that MATERIAL was transferred from the dead cells, rather than a spontaneous R→S mutation?",
+  "a": "A spontaneous mutation can flip R↔S WITHIN one serotype but cannot change the serotype itself (e.g. type II cannot mutate into type III). The recovered virulent cells match the serotype of the DEAD S strain, not the live R strain — so their type-specific information had to be taken up from the heat-killed cells. That is transformation (transfer of a heritable 'transforming principle'), not chance reversion.",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L1-C025"
+ },
+ {
+  "type": "concept",
+  "topic": "Avery vs Hershey-Chase (trap)",
+  "diff": 2,
+  "target_s": 20,
+  "src": "L1.md §2.2 Traps / C017; Lec1r 7.1",
+  "q": "Avery-MacLeod-McCarty (1944) IDENTIFIED DNA as the transforming principle and Hershey-Chase (1952) CONFIRMED it. What is the KEY methodological difference between the two experiments — the classic mix-up trap?",
+  "a": "Avery-MacLeod-McCarty used ENZYMATIC process of elimination: they selectively destroyed each candidate (protease for protein, RNase for RNA, DNase for DNA) and found transformation was abolished only when DNA was destroyed. Hershey-Chase used RADIOACTIVE LABELING: ³²P tagged DNA and ³⁵S tagged protein in bacteriophage, then tracked which entered the host. Different approach, same conclusion. (Also watch the dates: Avery 1944 came 8 years BEFORE Hershey-Chase 1952, not after.)",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "compare-contrast",
+   "technique"
+  ],
+  "id": "L1-C026"
+ },
+ {
+  "type": "concept",
+  "topic": "Hershey-Chase isotope design",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L1.md §2.2; Lec1r 7.1 (lines 3185-3191)",
+  "q": "In Hershey-Chase, why does ³²P specifically label DNA while ³⁵S specifically labels protein — what chemical feature of each molecule makes the labels mutually exclusive?",
+  "a": "Phosphorus is found in the sugar-phosphate BACKBONE of DNA but not in protein (amino acids contain no phosphate), so ³²P marks DNA only. Sulfur is found in certain amino acids (cysteine/methionine) but not in DNA (no sulfur in nucleotides), so ³⁵S marks protein only. This clean chemical separation is exactly what lets one experiment track DNA and protein independently.",
+  "tags": [
+   "hereditary-material",
+   "mechanism",
+   "nucleotide-chemistry",
+   "technique"
+  ],
+  "id": "L1-C027"
+ },
+ {
+  "type": "concept",
+  "topic": "Hershey-Chase blender/centrifuge",
+  "diff": 3,
+  "target_s": 20,
+  "src": "L1.md §2.2; Lec1r 7.1 (lines 3276-3284)",
+  "q": "What was the purpose of the blender (agitation) step and the centrifugation step in Hershey-Chase, and what result told them DNA was the genetic material?",
+  "a": "After phage infect the bacteria, the BLENDER shears the empty phage coats ('ghosts') off the outside of the bacterial cells; CENTRIFUGATION then pellets the heavier bacteria while the lighter phage ghosts stay in the supernatant. Result: ³²P (DNA) was found in the pellet/bacteria while ³⁵S (protein) stayed in the supernatant with the ghosts. Since only DNA entered the cell to direct new phage production, DNA — not protein — is the hereditary material.",
+  "tags": [
+   "hereditary-material",
+   "technique",
+   "mechanism",
+   "figure-interpretation"
+  ],
+  "id": "L1-C028"
+ },
+ {
+  "type": "recall",
+  "topic": "Each experiment's ceiling",
+  "diff": 2,
+  "target_s": 15,
+  "src": "L1.md §2.2 Traps / C002, C017; Lec1r 7.1",
+  "q": "State the exact conclusion ceiling of each experiment: what did Griffith establish, and what did he NOT establish that Avery (and later Hershey-Chase) had to add?",
+  "a": "Griffith (1928) established only that A transforming principle EXISTS — heritable material passes from dead virulent cells into live cells — but NOT its chemical identity. Avery-MacLeod-McCarty (1944) then identified that principle as DNA; Hershey-Chase (1952) confirmed DNA (not protein) with independent methodology. Griffith's ceiling is 'something is transferred,' not 'DNA is the gene.'",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "compare-contrast"
+  ],
+  "id": "L1-R043"
+ },
+ {
+  "type": "recall",
+  "topic": "Griffith S/R virulence",
+  "diff": 2,
+  "target_s": 15,
+  "src": "L1.md §2.2 / C015; Lec1r 7.1 (lines 3025-3028)",
+  "q": "In Griffith's Pneumococcus, what physically distinguishes the S (smooth) strain from the R (rough) strain, and why is only S virulent?",
+  "a": "S ('smooth') cells have an intact polysaccharide CAPSULE that hides them from the host immune system, making them virulent. R ('rough') cells carry a mutated polysaccharide (capsule) gene, so they have a weak/absent capsule, are cleared by the immune system, and are therefore nonvirulent. The colony surface texture (smooth vs rough) reflects the capsule.",
+  "tags": [
+   "hereditary-material",
+   "mechanism",
+   "who-what-when"
+  ],
+  "id": "L1-R044"
+ },
+ {
+  "type": "concept",
+  "topic": "Avery in vitro method",
+  "diff": 3,
+  "target_s": 22,
+  "src": "L1.md §2.2 / C018; Lec1r 7.1 (lines 3122-3129)",
+  "q": "Avery's group needed to test WHICH molecule was the transforming principle. What experimental setup made that selective-destruction test possible, and who developed it?",
+  "a": "Martin Dawson (working with Oswald Avery) developed an IN VITRO transformation procedure — mixing live R cells with a purified cell-free extract of heat-killed type III S in a test tube, instead of relying on Griffith's whole-mouse assay. Working in a tube let Avery-MacLeod-McCarty then treat the extract with a specific destroying agent (protease, RNase, or DNase) and see which one blocked transformation. Only DNase abolished it → the transforming principle is DNA.",
+  "tags": [
+   "hereditary-material",
+   "technique",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L1-C029"
+ },
+ {
+  "type": "recall",
+  "topic": "Three-experiment timeline",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L1.md §2.2 timeline / C017; Lec1r 7.1",
+  "q": "Name the three experiments that established DNA as the hereditary molecule, in order, WITH years and the lead scientist(s) of each.",
+  "a": "1) Griffith, 1928 (transformation — a transforming principle exists). 2) Avery, MacLeod & McCarty, 1944 (that principle is DNA, by enzymatic elimination). 3) Hershey & Chase, 1952 (confirmed DNA via ³²P/³⁵S phage labeling). The textbook frames them as 'three experiments conducted between 1928 and 1952.'",
+  "tags": [
+   "hereditary-material",
+   "who-what-when",
+   "compare-contrast"
+  ],
+  "id": "L1-R045"
+ },
+ {
+  "type": "concept",
+  "topic": "gel electrophoresis mechanism",
+  "diff": 3,
+  "target_s": 30,
+  "src": "L1.md 2.5 + C013; slides 39-40",
+  "q": "Gel electrophoresis separates linear nucleic acids by size even though a long DNA and a short DNA have nearly the SAME charge-to-mass ratio. Explain the mechanism that makes size (not charge) the thing that separates them.",
+  "a": "Every nucleotide adds one negative phosphate AND roughly equal mass, so charge-per-length is about constant across fragments — charge alone can't separate them. The separation comes from the gel itself acting as a molecular sieve (a mesh of pores): the current pulls all fragments toward the + electrode, but larger fragments are physically held back / snagged more as they thread through the pores, so in a fixed run time smaller fragments travel farther. Result: farther from the origin = smaller = higher mobility.",
+  "tags": [
+   "gel-electrophoresis",
+   "mechanism",
+   "technique"
+  ],
+  "id": "L1-C030"
+ },
+ {
+  "type": "concept",
+  "topic": "the two innovations",
+  "diff": 3,
+  "target_s": 35,
+  "src": "L1.md 2.5 + C019; Lec1r 1.4 (p17)",
+  "q": "A gel run with a GENERAL stain (e.g. ethidium bromide) shows every band but can't pick out one specific molecule among thousands. Name the TWO innovations that turn a gel into a Southern/Northern/Western blot, and state exactly what each one does.",
+  "a": "(1) Blotting -- transferring the separated molecules off the fragile gel onto a durable membrane, giving a permanent record you can then treat and probe. \"Blot\" = the gel-to-membrane transfer itself. (2) Molecular probes -- a traceable, labeled molecule that binds ONE specific target: a single-stranded labeled nucleic acid that finds its complement by hybridization (for DNA/RNA), or an antibody that binds an epitope (for protein). Together they add specificity a general stain can't: blotting immobilizes, the probe picks out the one target.",
+  "tags": [
+   "blotting",
+   "compare-contrast",
+   "technique",
+   "mechanism"
+  ],
+  "id": "L1-C031"
+ },
+ {
+  "type": "concept",
+  "topic": "Southern vs Northern vs Western",
+  "diff": 3,
+  "target_s": 40,
+  "src": "L1.md 2.5 + C020; slides 42-48",
+  "q": "All three blots share the same backbone (gel -> transfer to membrane -> labeled probe). For Southern, Northern, and Western, give the target molecule AND the one prep step that is UNIQUE to that blot (with the reason).",
+  "a": "Southern = DNA: uniquely DIGESTED with restriction enzymes first (DNA is cut into defined fragments; you also denature with alkali so the probe can hybridize). Northern = RNA: NO restriction digestion -- you don't cut RNA with restriction enzymes -- run intact to read expression/splice isoforms. Western = protein: uniquely DENATURED and coated in uniform negative charge with SDS (so proteins migrate by size like nucleic-acid polymers), then detected with ANTIBODIES, not a nucleic-acid probe. The restriction-digest step (Southern-only) and the SDS step (Western-only) are the classic discriminators.",
+  "tags": [
+   "blotting",
+   "compare-contrast",
+   "technique",
+   "exceptions"
+  ],
+  "id": "L1-C032"
+ },
+ {
+  "type": "recall",
+  "topic": "Western blot prep",
+  "diff": 2,
+  "target_s": 18,
+  "src": "L1.md 2.5 + R028; slide 48",
+  "q": "Proteins vary in charge, shape, and size. What must be done to a protein sample BEFORE electrophoresis so it migrates by size like DNA, and what is used to detect the target afterward?",
+  "a": "Treat with SDS: it denatures the protein (unfolds it) and coats it in a uniform negative charge, so charge-to-mass is roughly constant and the protein migrates by size alone (like a nucleic-acid polymer). Detection afterward uses an antibody that binds a specific epitope on the target protein -- not a complementary nucleic-acid probe.",
+  "tags": [
+   "blotting",
+   "technique",
+   "mechanism"
+  ],
+  "id": "L1-R046"
+ },
+ {
+  "type": "concept",
+  "topic": "hybridization / probe specificity",
+  "diff": 3,
+  "target_s": 30,
+  "src": "L1.md 2.5 + R031/C010; Lec1r 1.4",
+  "q": "In a Southern or Northern blot, what physical event is 'hybridization,' what gives a nucleic-acid probe its specificity, and what is one consequence of the fact that PARTIAL matches still hybridize?",
+  "a": "Hybridization = a single-stranded labeled probe binding its target on the membrane by complementary base pairing (the probe finding its complement). The specificity IS complementary base pairing -- the probe only sticks where the sequence matches. Because partial matches still hybridize, one probe can pull down related-but-nonidentical sequences (e.g. a gene family on a Southern) or detect multiple RNA splice isoforms across tissues on a Northern. So a probe is SPECIFIC (sequence-based) whereas a stain is GENERAL (labels any molecule of the class).",
+  "tags": [
+   "blotting",
+   "mechanism",
+   "base-pairing",
+   "technique"
+  ],
+  "id": "L1-C033"
+ },
+ {
+  "type": "problem",
+  "topic": "gel band interpretation",
+  "diff": 2,
+  "target_s": 75,
+  "src": "L1.md P020 (PR Archbold Su23, verified)",
+  "q": "You run DNA fragments on a gel. Band 1 sits near the wells/origin (top, by the - electrode); Band 2 has migrated farther toward the + electrode. Which ONE statement is NOT consistent with the gel? (1) Band 2 has lower molecular mass than Band 1. (2) Band 2 has higher electrophoretic mobility than Band 1. (3) Band 1 must carry a negative charge. (4) Band 2 has a higher molecular mass than Band 1. (5) Band 1 is closer to the origin of migration.",
+  "worked": "Rule: farther from origin = smaller = lower molecular mass = higher mobility. Band 2 ran farther -> Band 2 is the smaller/faster/lower-mass fragment; Band 1 (near origin) is the larger/slower one. Test each: (1) Band 2 lower mass -> TRUE. (2) Band 2 higher mobility -> TRUE. (3) any migrating DNA band is negatively charged (backbone) -> TRUE. (4) Band 2 higher mass -> contradicts 'Band 2 is smaller' -> FALSE = the answer. (5) Band 1 nearer origin -> TRUE (it's the upper band).",
+  "answer": "Statement 4 -- it is NOT consistent. Band 2 migrated farther, so it is the SMALLER fragment (lower mass, higher mobility), making (4) 'Band 2 has a higher molecular mass' false. All others check out: (1) true (farther = smaller), (2) true (farther = higher mobility), (3) true (DNA's phosphate backbone is negative, which is why it moves toward +), (5) true (Band 1 is the upper, less-migrated band). Trap: 'closer to the origin' = LARGER, not smaller.",
+  "tags": [
+   "gel-electrophoresis",
+   "figure-interpretation",
+   "technique"
+  ],
+  "id": "L1-P024"
  }
 ]

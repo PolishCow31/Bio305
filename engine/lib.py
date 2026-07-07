@@ -2,7 +2,7 @@
 """CyBio305 content-engine shared helpers.
 Persistent routines (critic-fleet, watch-folders) share these. All generation shells to
 `claude -p` (covered by the Max subscription; no API key). No secrets live here."""
-import os, re, json, sys, subprocess, hashlib, time, glob
+import os, re, json, subprocess, hashlib, time
 
 HOME     = os.path.expanduser("~")
 SITE     = os.path.join(HOME, "Sites/Bio305")
@@ -37,11 +37,17 @@ def claude_json(prompt, timeout=240, tries=2):
                                  timeout=timeout).stdout.strip()
             # tolerate ```json fences and leading prose
             out = re.sub(r"^```(json)?|```$", "", out.strip(), flags=re.M).strip()
-            for opn, cls in (("[", "]"), ("{", "}")):
+            # 1) try the whole cleaned string (handles {"findings":[...]} correctly)
+            try: return json.loads(out)
+            except Exception: pass
+            # 2) fall back to the LONGEST balanced {..} or [..] span
+            cands = []
+            for opn, cls in (("{", "}"), ("[", "]")):
                 i, j = out.find(opn), out.rfind(cls)
-                if 0 <= i < j:
-                    try: return json.loads(out[i:j+1])
-                    except Exception: continue
+                if 0 <= i < j: cands.append(out[i:j+1])
+            for c in sorted(cands, key=len, reverse=True):
+                try: return json.loads(c)
+                except Exception: continue
         except subprocess.TimeoutExpired:
             log("claude_timeout", attempt=attempt)
         except Exception as e:
