@@ -37,10 +37,14 @@ export async function onRequest(ctx){
     // ---- SYNC (whole-blob LWW) ----
     if(route==="sync" && request.method==="GET"){
       if(!appOK()) return json({error:"unauthorized"},401,origin);
-      const account = new URL(request.url).searchParams.get("account") || "default";
+      const url = new URL(request.url);
+      const account = url.searchParams.get("account") || "default";
+      const since = url.searchParams.get("since");
       const raw = await KV.get("profile:"+account);
       const d = raw ? JSON.parse(raw) : {blob:null,updatedAt:0};
-      return json({blob:d.blob, updatedAt:d.updatedAt},200,origin);
+      // Cheap poll: when the client's last-seen clock matches, skip shipping the blob.
+      if(since!=null && Number(since)===d.updatedAt) return json({changed:false,updatedAt:d.updatedAt},200,origin);
+      return json({changed:true, blob:d.blob, updatedAt:d.updatedAt},200,origin);
     }
     if(route==="sync" && request.method==="POST"){
       if(!appOK()) return json({error:"unauthorized"},401,origin);

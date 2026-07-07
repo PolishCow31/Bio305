@@ -4,19 +4,38 @@ const Store = (function(){
   const KEY = "bio305.v1";
   const EXAM_I = new Date(2026,6,20).getTime();   // Mon Jul 20 2026 (month is 0-based)
   const DAY = 86400000;
-  // Adaptive tag weights: miss a tag -> its cards surface sooner; master it -> shown far less (never 0).
-  const TAG_DEF=1.0, TAG_MISS=0.6, TAG_HARD=0.15, TAG_MAX=4.0, TAG_FLOOR=0.45;
+  // Adaptive tag-weight baseline; the miss/hard/decay params live in sync-core (bumpTagInto),
+  // single-sourced so live grading and merge-replay can never drift.
+  const TAG_DEF=1.0;
+  // Sync timing: poll while visible, throttle pushes well under the KV write cap.
+  const POLL_INTERVAL=10000, PUSH_MIN=20000;
+  // Stable per-device id: makes every event globally unique so the merge can dedup precisely.
+  const DEV = (()=>{ try{ let d=localStorage.getItem("bio305.dev");
+    if(!d){ d="d"+Math.random().toString(36).slice(2,10)+Date.now().toString(36); localStorage.setItem("bio305.dev",d); }
+    return d; }catch(e){ return "d-mem"; } })();
   let cards = [], units = [], byId = {};
   let tagList = [], tagIndex = {}, health = null;   // taxonomy + critic-fleet findings
-  let state = load();   // { srs:{id:{...}}, sessions:[], settings:{}, tagW:{} }
-  let _suppressPush = false;
+  let state = load();   // { srs:{id:{...hist:[{ts,lat,grade,correct,dev,kind}]}}, sessions:[], settings:{updatedAt}, tagW:{}, schema }
+  let _suppressPush = false, dirty = false;
 
   function load(){
-    try{ const s = JSON.parse(localStorage.getItem(KEY)); if(s&&s.srs){ if(!s.tagW) s.tagW={}; return s; } }catch(e){}
-    return { srs:{}, sessions:[], settings:{theme:"dark"}, tagW:{} };
+    try{ const s = JSON.parse(localStorage.getItem(KEY)); if(s&&s.srs){ return migrate(s); } }catch(e){}
+    return { srs:{}, sessions:[], settings:{theme:"dark",updatedAt:Date.now()}, tagW:{}, schema:2 };
+  }
+  // Non-destructive migration to schema 2 (adds sync scaffolding; never rewrites events).
+  // Legacy events lack dev/kind: dedup falls back to a legacy key (they're single-origin) and
+  // replay infers kind from the card once decks are loaded, so no event needs mutating here.
+  function migrate(s){
+    if(!s.tagW) s.tagW={};
+    if(!s.settings) s.settings={theme:"dark"};
+    if(s.settings.updatedAt==null) s.settings.updatedAt=Date.now();
+    if(s.schema!==2) s.schema=2;
+    return s;
   }
   function save(){ try{ localStorage.setItem(KEY, JSON.stringify(state)); }catch(e){}
-    if(!_suppressPush && cloudConfigured()) schedulePush(); }
+    // A non-suppressed save is a LOCAL change -> mark dirty + schedule a push. Remote-absorption
+    // saves are wrapped in _suppressPush, so they never schedule a push (the no-echo rule).
+    if(!_suppressPush){ dirty=true; if(cloudConfigured()) schedulePush(); } }
 
   async function init(){
     // Always fetch content fresh (no-store) so a newly-live lecture / added cards show immediately;
@@ -39,14 +58,7 @@ const Store = (function(){
   // ---- adaptive tag weights ----
   function tw(id){ if(state.tagW[id]==null) state.tagW[id]=TAG_DEF; return state.tagW[id]; }
   function bumpTags(card, g){                       // g: 1=again/wrong 2=hard 3=good 4=easy
-    (card.tags||[]).forEach(t=>{
-      let w = tw(t);
-      if(g<=1)       w = Math.min(TAG_MAX, w + TAG_MISS);
-      else if(g===2) w = Math.min(TAG_MAX, w + TAG_HARD);
-      else if(g===3) w = w + (TAG_DEF  - w)*0.18;   // ease back toward baseline
-      else           w = w + (TAG_FLOOR- w)*0.25;   // mastered -> below baseline, still >0
-      state.tagW[t] = Math.round(w*1000)/1000;
-    });
+    if(card) SyncCore.bumpTagInto(state.tagW, card.tags||[], g);   // delegate -> single source of truth
   }
   function tagBoost(card){ const ts=card.tags||[]; if(!ts.length) return TAG_DEF; let s=0; ts.forEach(t=>s+=tw(t)); return s/ts.length; }
   const tagLabel = id => (tagIndex[id]&&tagIndex[id].label) || id;
@@ -102,19 +114,9 @@ const Store = (function(){
   // ---- grading a flip card (Anki 1-4) ----
   function grade(id, g, latencyMs){
     const s = srs(id);
-    const correct = g>=2;
-    if(g===1){ s.lapses++; s.ease=Math.max(1.3,s.ease-0.2); s.ivl=0; s.due=Date.now()+45*1000; }
-    else{
-      if(g===2){ s.ease=Math.max(1.3,s.ease-0.15); s.ivl = s.reps===0?1:Math.max(1,s.ivl*1.2); }
-      else if(g===3){ s.ivl = s.reps===0?1:Math.max(1,s.ivl*s.ease); }
-      else if(g===4){ s.ease+=0.05; s.ivl = s.reps===0?2:Math.max(2,s.ivl*s.ease*1.3); }
-      s.reps++;
-      const capDays = Math.max(1, Math.ceil((EXAM_I-Date.now())/DAY)); // exam-aware: never schedule past Exam I
-      s.ivl = Math.min(s.ivl, capDays);
-      s.due = Date.now() + s.ivl*DAY;
-    }
-    s.seen = true;
-    s.hist.push({ts:Date.now(),lat:Math.round(latencyMs),grade:g,correct});
+    const ts = Date.now();
+    SyncCore.applyFlip(s, g, ts, EXAM_I);   // same math as before; single source shared with replay
+    s.hist.push({ts, lat:Math.round(latencyMs), grade:g, correct:g>=2, dev:DEV, kind:"flip"});
     bumpTags(get(id), g);
     save();
   }
@@ -140,11 +142,9 @@ const Store = (function(){
   }
   function logProblem(id, correct, latencyMs){
     const s = srs(id);
-    s.seen=true; s.reps++; if(!correct) s.lapses++;
-    const capDays = Math.max(1, Math.ceil((EXAM_I-Date.now())/DAY));
-    s.ivl = correct ? Math.min(capDays, s.reps===1?2:Math.max(2,(s.ivl||2)*2)) : 0;
-    s.due = correct ? Date.now()+s.ivl*DAY : Date.now()+60*1000;
-    s.hist.push({ts:Date.now(),lat:Math.round(latencyMs),grade:correct?3:1,correct});
+    const ts = Date.now();
+    SyncCore.applyProblem(s, correct, ts, EXAM_I);
+    s.hist.push({ts, lat:Math.round(latencyMs), grade:correct?3:1, correct, dev:DEV, kind:"problem"});
     bumpTags(get(id), correct?3:1);
     save();
   }
@@ -231,28 +231,64 @@ const Store = (function(){
   function cloudConfigured(){ const c=cfg(); return !!(c.apiBase && c.account && c.appSecret); }
   function setCloud(apiBase,account,appSecret){
     state.settings.cloud={apiBase:(apiBase||"").replace(/\/+$/,""),account:account||"default",appSecret:appSecret||""};
+    state.settings.updatedAt=Date.now();   // settings changed -> win LWW on merge
     _suppressPush=true; save(); _suppressPush=false;
   }
   function saveMeta(){ try{ localStorage.setItem(SYNC_KEY,JSON.stringify(syncMeta)); }catch(e){} }
+  let _onSync=null; function onSync(fn){ _onSync=fn; }   // app registers a re-render hook
+  // PULL: cheap `since` poll; on change, MERGE remote into local (suppressed save -> no echo push).
   async function pull(){
     if(!cloudConfigured()) return false; const c=cfg();
-    const r=await fetch(c.apiBase+"/sync?account="+encodeURIComponent(c.account),{headers:{"x-app-secret":c.appSecret}});
+    const r=await fetch(c.apiBase+"/sync?account="+encodeURIComponent(c.account)+"&since="+(syncMeta.updatedAt||0),
+      {headers:{"x-app-secret":c.appSecret}});
     if(!r.ok) return false; const d=await r.json();
-    if(d.blob && d.updatedAt>syncMeta.updatedAt){
-      const s=JSON.parse(d.blob);
-      if(s&&s.srs){ _suppressPush=true; state=s; save(); _suppressPush=false; syncMeta.updatedAt=d.updatedAt; saveMeta(); return true; }
+    if(d.changed===false) return false;
+    if(d.blob && (d.updatedAt||0) > (syncMeta.updatedAt||0)){
+      let remote; try{ remote=JSON.parse(d.blob); }catch(e){ return false; }
+      if(remote && remote.srs){
+        _suppressPush=true; state=SyncCore.mergeState(state, remote, byId, cards.length, EXAM_I); save(); _suppressPush=false;
+        syncMeta.updatedAt=d.updatedAt; saveMeta();
+        if(_onSync) try{ _onSync(); }catch(e){}
+        return true;
+      }
     }
     return false;
   }
+  // PUSH: merge-before-write so a push can NEVER clobber. If remote is unreadable (offline), skip
+  // and stay dirty for the next window rather than risk overwriting the other device.
   async function push(){
     if(!cloudConfigured()) return false; const c=cfg();
-    const r=await fetch(c.apiBase+"/sync",{method:"POST",
+    let remote=null;
+    try{ const r=await fetch(c.apiBase+"/sync?account="+encodeURIComponent(c.account),{headers:{"x-app-secret":c.appSecret}});
+      if(!r.ok) return false; const d=await r.json(); if(d.blob){ remote=JSON.parse(d.blob); } }
+    catch(e){ return false; }
+    if(remote && remote.srs){ _suppressPush=true; state=SyncCore.mergeState(state, remote, byId, cards.length, EXAM_I); save(); _suppressPush=false; }
+    const r2=await fetch(c.apiBase+"/sync",{method:"POST",
       headers:{"content-type":"application/json","x-app-secret":c.appSecret},
       body:JSON.stringify({account:c.account,blob:JSON.stringify(state)})});
-    if(!r.ok) return false; const d=await r.json(); syncMeta.updatedAt=d.updatedAt||Date.now(); saveMeta(); return true;
+    if(!r2.ok) return false; const d2=await r2.json(); syncMeta.updatedAt=d2.updatedAt||Date.now(); saveMeta();
+    dirty=false; return true;
   }
-  let pushT=null;
-  function schedulePush(){ if(!cloudConfigured())return; clearTimeout(pushT); pushT=setTimeout(()=>push().catch(()=>{}),2500); }
+  // THROTTLE: push at most once per PUSH_MIN while dirty (keeps writes well under the KV cap).
+  let pushT=null, lastPush=0;
+  function schedulePush(){
+    if(!cloudConfigured() || pushT) return;
+    const since=Date.now()-lastPush;
+    pushT=setTimeout(runPush, since>=PUSH_MIN ? 1500 : (PUSH_MIN-since));
+  }
+  async function runPush(){ pushT=null; lastPush=Date.now(); if(dirty){ try{ await push(); }catch(e){} } }
+  function flushPush(){ if(!cloudConfigured()) return; if(pushT){clearTimeout(pushT);pushT=null;} if(dirty){ lastPush=Date.now(); push().catch(()=>{}); } }
+  // POLL LOOP: pull now, then every POLL_INTERVAL while visible (no reads when hidden); immediate
+  // pull on refocus; flush the pending push when backgrounded/closed. Idempotent.
+  let _syncStarted=false;
+  function startSync(){
+    if(_syncStarted || !cloudConfigured()) return; _syncStarted=true;
+    pull().catch(()=>{});
+    setInterval(()=>{ if(typeof document==="undefined"||document.visibilityState==="visible") pull().catch(()=>{}); }, POLL_INTERVAL);
+    if(typeof document!=="undefined") document.addEventListener("visibilitychange", ()=>{
+      if(document.visibilityState==="visible") pull().catch(()=>{}); else flushPush(); });
+    if(typeof window!=="undefined"){ window.addEventListener("pagehide", flushPush); window.addEventListener("beforeunload", flushPush); }
+  }
   async function deepGrade(card,student){
     if(!cloudConfigured()) throw new Error("cloud not set up"); const c=cfg();
     const r=await fetch(c.apiBase+"/grade",{method:"POST",
@@ -278,5 +314,6 @@ const Store = (function(){
     cardStat, topicStats, overview, daysToExam, exportJSON, importJSON, md,
     tagStats, hotTags, taxonomy, tagLabel, tagBoost, priority, systemHealth,
     settings:()=>state.settings,
-    cloudConfigured, setCloud, cloudCfg:cfg, pull, push, deepGrade, pollGrade, localGrade };
+    cloudConfigured, setCloud, cloudCfg:cfg, pull, push, deepGrade, pollGrade, localGrade,
+    startSync, onSync };
 })();

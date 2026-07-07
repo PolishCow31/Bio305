@@ -12,7 +12,7 @@
     document.querySelector('meta[name=theme-color]').setAttribute("content", t==="light"?"#FBF7EE":"#00274C"); }
   document.getElementById("theme-btn").onclick = ()=>{
     const t = document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";
-    applyTheme(t); Store.settings().theme=t; Store.save();
+    applyTheme(t); Store.settings().theme=t; Store.settings().updatedAt=Date.now(); Store.save();
   };
 
   // ---------- tag helpers ----------
@@ -76,7 +76,7 @@
     smart.onclick=()=>go("/review/smart");
     const dueBtn = el(`<button class="btn alt">Due <span class="cnt">${due}</span></button>`);
     dueBtn.onclick=()=>go("/review"); if(!due) dueBtn.disabled=true;
-    const blitz = el(`<button class="btn alt">⚡ Blitz</button>`); blitz.onclick=()=>go("/review/blitz");
+    const blitz = el(`<button class="btn alt">Blitz</button>`); blitz.onclick=()=>go("/review/blitz");
     const probBtn = el(`<button class="btn alt">Problems →</button>`); probBtn.onclick=()=>go("/problems");
     cta.append(smart, dueBtn, blitz, probBtn); app.appendChild(cta);
 
@@ -156,7 +156,7 @@
     const prog = Math.round(sess.done/(sess.done+sess.queue.length-sess.i||1)*100);
     app.innerHTML="";
     const stage = el(`<div class="review-stage ${sess.blitz?'blitz':''}">
-      <div class="rev-top"><span class="rev-label">${esc(sess.label)}${sess.blitz?' · ⚡':''}</span>
+      <div class="rev-top"><span class="rev-label">${esc(sess.label)}${sess.blitz?' · blitz':''}</span>
         <span class="rev-prog"><i style="width:${prog}%"></i></span>
         <span class="x" title="End">✕</span></div>
       ${hud()}
@@ -357,7 +357,7 @@
     }
     // export/import
     const io=el(`<div class="panel"><h2>Backup</h2>
-      <p style="color:var(--ink-soft);font-size:14px;margin:0 0 12px">Stats live on this device until cloud sync ships. Export to move between phone &amp; laptop.</p>
+      <p style="color:var(--ink-soft);font-size:14px;margin:0 0 12px">Cloud sync keeps your devices in step automatically. Export is a manual backup you can save or re-import.</p>
       <div class="cta-row" style="margin:0">
         <button class="btn alt" id="exp">Export progress</button>
         <button class="btn alt" id="imp">Import</button></div></div>`);
@@ -410,7 +410,7 @@
     app.appendChild(el(`<div class="sec-h">Settings</div>`));
     const p = el(`<div class="panel"><h2>Cloud sync &amp; deep grading</h2>
       <p style="color:var(--ink-soft);font-size:14px;margin:0 0 14px">Enter once per device to sync progress across phone &amp; laptop and enable LLM grading of typed answers. ${Store.cloudConfigured()?'<b style="color:var(--good)">Connected.</b>':'Not connected — running local-only.'}</p>
-      <label class="fld">API URL<input id="s-api" placeholder="https://bio305-api.&lt;sub&gt;.workers.dev" value="${c.apiBase||''}"></label>
+      <label class="fld">API URL<input id="s-api" placeholder="https://bio305-api.pages.dev/api" value="${c.apiBase||''}"></label>
       <label class="fld">Account<input id="s-acct" placeholder="christian" value="${c.account||''}"></label>
       <label class="fld">Passcode<input id="s-sec" type="password" placeholder="app secret" value="${c.appSecret||''}"></label>
       <div class="cta-row" style="margin:14px 0 0"><button class="btn" id="s-save">Save &amp; sync</button>
@@ -421,8 +421,8 @@
     $("#s-save").onclick=async()=>{
       Store.setCloud($("#s-api").value.trim(),$("#s-acct").value.trim(),$("#s-sec").value.trim());
       status.textContent="Saving & syncing…";
-      try{ const got=await Store.pull(); await Store.push();
-        status.innerHTML='<b style="color:var(--good)">Connected.</b> '+(got?'Pulled newer cloud data.':'Pushed this device’s progress.'); }
+      try{ const got=await Store.pull(); await Store.push(); Store.startSync();
+        status.innerHTML='<b style="color:var(--good)">Connected.</b> '+(got?'Merged newer cloud data.':'Pushed this device’s progress.')+' Live sync on.'; }
       catch(e){ status.innerHTML='<b style="color:var(--bad)">Failed: '+(e.message||e)+'</b>'; }
     };
     $("#s-test").onclick=async()=>{
@@ -433,11 +433,21 @@
     };
   }
 
+  // Re-render passive dashboards when a remote sync lands — but never nuke an active review
+  // session or a problem the user is mid-typing.
+  function handleRemoteSync(){
+    if(sess) return;
+    const ae=document.activeElement;
+    if(ae && (ae.tagName==="TEXTAREA"||ae.tagName==="INPUT")) return;
+    const v=(location.hash.replace(/^#\/?/,"")||"home").split("/")[0];
+    if(v==="home"||v==="stats"||v==="health") route();
+  }
+
   // ---------- boot ----------
   Store.init().then(async ()=>{
     applyTheme(Store.settings().theme||"dark");
     const gd=document.getElementById("goal-days"); if(gd) gd.textContent=Store.daysToExam()+" days";
-    if(Store.cloudConfigured()){ try{ await Store.pull(); }catch(e){} }
+    Store.onSync(handleRemoteSync); Store.startSync();   // live merge sync (no-op until cloud configured)
     window.addEventListener("hashchange", route);
     route();
     // Keyboard: space = flip; 1/2/3/4 = grade; n = next tag drill; review screen only.
