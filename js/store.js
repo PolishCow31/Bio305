@@ -19,14 +19,17 @@ const Store = (function(){
     if(!_suppressPush && cloudConfigured()) schedulePush(); }
 
   async function init(){
-    units = await fetch("data/units.json").then(r=>r.json());
+    // Always fetch content fresh (no-store) so a newly-live lecture / added cards show immediately;
+    // the service worker's network-first handler still serves these from cache when offline.
+    const NS = {cache:"no-store"};
+    units = await fetch("data/units.json",NS).then(r=>r.json());
     // taxonomy (optional but expected) + critic-fleet findings (optional)
-    try{ const tg = await fetch("data/tags.json").then(r=>r.json()); tagList = tg.tags||[]; tagList.forEach(t=>tagIndex[t.id]=t); }catch(e){ tagList=[]; }
-    try{ health = await fetch("data/system-health.json",{cache:"no-store"}).then(r=>r.ok?r.json():null); }catch(e){ health=null; }
+    try{ const tg = await fetch("data/tags.json",NS).then(r=>r.json()); tagList = tg.tags||[]; tagList.forEach(t=>tagIndex[t.id]=t); }catch(e){ tagList=[]; }
+    try{ health = await fetch("data/system-health.json",NS).then(r=>r.ok?r.json():null); }catch(e){ health=null; }
     // Load EVERY live lecture's deck via units.json's file mapping — not just L1.
     const live = units.flatMap(u=>u.lectures).filter(l=>l.status==="live" && l.file);
     const decks = await Promise.all(live.map(l =>
-      fetch("data/"+l.file).then(r=>r.json()).then(cs=>{ cs.forEach(c=>c.lecture=l.n); return cs; })
+      fetch("data/"+l.file,NS).then(r=>r.json()).then(cs=>{ cs.forEach(c=>c.lecture=l.n); return cs; })
     ));
     cards = decks.flat();
     byId = {};

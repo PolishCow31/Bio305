@@ -202,7 +202,7 @@
   "target_s": 12,
   "src": "reading 7.4",
   "q": "What does DNA ligase do?",
-  "a": "Forms a **phosphodiester bond** to seal the single-stranded **nick** between adjacent DNA fragments — joining **Okazaki fragments** into a continuous strand (ATP-dependent).",
+  "a": "Forms a **phosphodiester bond** to seal the single-stranded **nick** between adjacent DNA fragments — joining **Okazaki fragments** into a continuous strand. Cofactor: in *E. coli* (bacteria) DNA ligase is **NAD⁺-dependent**; eukaryotic and T4-phage ligases use **ATP**.",
   "tags": [
    "primer-removal",
    "leading-lagging",
@@ -1073,22 +1073,6 @@
   "id": "L2-C022"
  },
  {
-  "type": "recall",
-  "topic": "oriC anatomy + why AT-rich",
-  "diff": 2,
-  "target_s": 18,
-  "src": "reading 7.4 (Fig 7.15, lines 357-386) / transcript §2.3",
-  "q": "Describe E. coli oriC: its size, base composition, its two repeat elements (with the 9-mer consensus), and the single-sentence reason its composition matters.",
-  "a": "oriC ≈ 245 bp and AT-rich. Two elements: three 13-mer tandem repeats (very AT-rich — the meltable 'DNA unwinding element') and four 9-mers (the DnaA boxes, consensus 5'-TTATCCACA-3'). It matters because A-T pairs have only 2 hydrogen bonds (vs 3 for G-C), so an AT-rich origin takes the LEAST energy to melt open — exactly what's needed to start strand separation.",
-  "tags": [
-   "replication-origin",
-   "sequence-reading",
-   "mechanism",
-   "base-pairing"
-  ],
-  "id": "L2-R033"
- },
- {
   "type": "concept",
   "topic": "Pol I vs II vs III",
   "diff": 2,
@@ -1245,20 +1229,6 @@
    "mechanism"
   ],
   "id": "L2-C030"
- },
- {
-  "type": "recall",
-  "topic": "Hayflick limit who/when",
-  "diff": 2,
-  "target_s": 15,
-  "src": "reading 7.4 / transcript §3.6",
-  "q": "What is the Hayflick limit — who described it and when, roughly how many divisions, and what is its molecular cause?",
-  "a": "The Hayflick limit is the cap on how many times a normal cell divides before it stops or dies — Leonard Hayflick, 1965, ~50-70 divisions for cultured vertebrate cells. Cause: progressive telomere shortening with each replication cycle.",
-  "tags": [
-   "telomere",
-   "who-what-when"
-  ],
-  "id": "L2-R036"
  },
  {
   "type": "concept",

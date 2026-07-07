@@ -1,214 +1,249 @@
 {
- "generatedAt": 1783392797692,
+ "generatedAt": 1783392985286,
  "stats": {
-  "cards": 149,
+  "cards": 268,
   "critics": 4,
   "tags": 45
  },
  "findings": [
   {
    "severity": "high",
-   "area": "exam reverse-engineering",
-   "cardId": "L2-C015",
-   "msg": "Multiple cards embed instructor answer-key tells (\"she flagged this as exam-important\", L2-C017 \"she said this is likely on the exam\", L2-P011/P012 \"Confirmed — answer B/C\"), showing the deck is built from one past exam's key rather than the curriculum.",
-   "fix": "Strip the meta annotations and justify inclusion by course learning objectives, not by what one exam asked.",
-   "lens": "relevance"
+   "area": "ligase cofactor",
+   "cardId": "L2-R013",
+   "msg": "Card calls DNA ligase '(ATP-dependent)', but in the E. coli replication context of this lecture bacterial DNA ligase uses NAD+, not ATP.",
+   "fix": "E. coli DNA ligase is NAD+-dependent; ATP-dependent ligases are the eukaryotic/phage-T4 ones.",
+   "lens": "correctness"
   },
   {
    "severity": "high",
-   "area": "single-assignment sourcing",
+   "area": "reverse-engineered from HW",
    "cardId": "L1-P012",
-   "msg": "L1-P012 and L1-C008 are pinned to a specific artifact (\"the HW1 gel\", \"resolves HW1 Q6\"), indicating reverse-engineering from one homework rather than the general gel-reading concept.",
-   "fix": "Rewrite as a generic gel-interpretation problem not tied to HW1.",
+   "msg": "Card is written against a specific graded item ('HW1 Q6', 'Figure-verified: Band 1 is the upper band'), and L1-C008 cross-references it the same way — this is reverse-engineered from one assignment, not the curriculum.",
+   "fix": "Rewrite as a generic gel-mobility concept card with no HW1/figure references.",
    "lens": "relevance"
   },
   {
    "severity": "high",
-   "area": "too-few-tags",
-   "cardId": "L1-R005",
-   "msg": "Only one tag (nucleotide-chemistry) despite covering sugar/phosphate/base structure.",
-   "fix": "Add dna-structure as a second tag.",
-   "lens": "tags"
-  },
-  {
-   "severity": "high",
-   "area": "too-few-tags",
-   "cardId": "L1-C012",
-   "msg": "Single tag (foundations); Occam's-razor test-taking card is under-indexed.",
-   "fix": "Add a second tag (e.g. compare-contrast) or reclassify.",
-   "lens": "tags"
-  },
-  {
-   "severity": "high",
-   "area": "duplicate",
-   "cardId": "L1-P020",
-   "msg": "L1-P012 and L1-P020 are the same gel item — Band 1 near wells / Band 2 farther / 'which statement is NOT consistent' — differing only in which band the trap option names.",
-   "fix": "Cut one, or repurpose it to test a different gel skill (e.g. estimating fragment size vs a ladder).",
-   "lens": "balance"
-  },
-  {
-   "severity": "high",
-   "area": "duplicate",
-   "cardId": "L1-P007",
-   "msg": "L1-C009 and L1-P007 both ask the identical question 'which Southern step is not needed in a Northern' with the same answer (restriction digestion).",
-   "fix": "Drop L1-P007 or reframe it around the alkali-denaturation step instead.",
-   "lens": "balance"
-  },
-  {
-   "severity": "warn",
-   "area": "topoisomerase",
-   "cardId": "L2-R016",
-   "msg": "\"Topoisomerases (a.k.a. gyrases)\" is wrong—gyrase is one specific bacterial type II topoisomerase, not a synonym for the whole class (type I cut one strand, type II both).",
-   "fix": "Drop the \"a.k.a. gyrases\" equivalence; note gyrase is the bacterial type II example.",
-   "lens": "correctness"
-  },
-  {
-   "severity": "warn",
-   "area": "history/date",
-   "cardId": "L2-R021",
-   "msg": "Telomerase discovery is dated 1987, but Greider & Blackburn identified telomerase activity in 1984 (published 1985 in Cell); telomere repeats were characterized earlier still.",
-   "fix": "Change discovery year to 1985.",
-   "lens": "correctness"
-  },
-  {
-   "severity": "warn",
-   "area": "technique/history",
-   "cardId": "L1-R037",
-   "msg": "Pauling's 1949 sickle-cell work used Tiselius moving-boundary (free-solution) electrophoresis, not gel electrophoresis, which was introduced later (Smithies, starch gel, 1955).",
-   "fix": "Say \"electrophoresis (moving-boundary),\" not \"gel electrophoresis.\"",
-   "lens": "correctness"
-  },
-  {
-   "severity": "warn",
-   "area": "off-topic (transmission genetics)",
-   "cardId": "L1-R036",
-   "msg": "Carothers 1913 grasshopper independent assortment (plus Wilson 1895 L1-R034, Sutton/Boveri L1-R035) is chromosome-theory/Mendelian history, not DNA structure/replication/transcription.",
-   "fix": "Move these to a transmission-genetics unit or drop for Unit 1.",
+   "area": "leaked exam answers",
+   "cardId": "L2-P012",
+   "msg": "Many cards bake in a specific past clicker/exam key ('Confirmed — answer B', 'answer C', 'clicker E', e.g. L2-P010/P011/P012, L3-C034) — that only makes sense if reverse-engineered from one exam.",
+   "fix": "Strip the 'answer X / confirmed in lecture' tags; keep the reasoning as standalone content.",
    "lens": "relevance"
   },
   {
-   "severity": "warn",
-   "area": "test-taking meta, not content",
-   "cardId": "L1-C012",
-   "msg": "An Occam's-razor \"how to pick the best multiple-choice answer\" card teaches exam strategy, not molecular genetics.",
-   "fix": "Remove; it's untied to any course concept.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "warn",
-   "area": "off-topic (evolution)",
-   "cardId": "L1-R030",
-   "msg": "Darwin's \"descent with modification\" is an evolution/variation aside with no molecular-genetics payload for this unit.",
-   "fix": "Cut or fold into a single foundations card.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "warn",
+   "severity": "high",
    "area": "too-few-tags",
    "cardId": "L1-R001",
-   "msg": "Single foundations tag; same on L1-R002 and L1-R004 (all <2).",
-   "fix": "Add a second relevant tag (e.g. who-what-when/compare-contrast) or confirm these are irreducibly single-domain.",
+   "msg": "Below the 2-tag minimum: L1-R001, L1-R002, L1-R004, L1-R005, and L1-C012 each carry a single tag.",
+   "fix": "Add a second tag (e.g. L1-R005 -> dna-structure; L1-R003-style compare-contrast for the definition cards; who-what-when/foundations pairings).",
    "lens": "tags"
   },
   {
-   "severity": "warn",
-   "area": "wrong-tag",
-   "cardId": "L2-P010",
-   "msg": "Tagged 'telomere' but the question is about prokaryotic replication (origins, ligase, Okazaki) — no telomere content.",
-   "fix": "Replace telomere with leading-lagging or primer-removal.",
-   "lens": "tags"
+   "severity": "high",
+   "area": "dup-oriC",
+   "cardId": "L2-R033",
+   "msg": "L2-R006 and L2-R033 are near-identical 'describe E. coli oriC (size/AT-rich/13-mers/9-mers/consensus)' recall cards.",
+   "fix": "Merge into one; repurpose R033 to test a distinct angle (e.g. DnaA-box spacing/phasing).",
+   "lens": "balance"
   },
   {
-   "severity": "warn",
-   "area": "duplicate",
-   "cardId": "L2-P011",
-   "msg": "L2-C014 and L2-P011 are the same card — 'why is reactivating telomerase dangerous → cancer risk' — with identical reasoning.",
-   "fix": "Keep the concept card; delete the problem card or make it a numeric ~80-90% recall.",
+   "severity": "high",
+   "area": "dup-Hayflick",
+   "cardId": "L2-R036",
+   "msg": "L2-R023 and L2-R036 both ask 'what is the Hayflick limit — who/when/~divisions/cause' with the same answer.",
+   "fix": "Delete one or convert R036 into the senescence-vs-apoptosis nuance.",
    "lens": "balance"
   },
   {
    "severity": "warn",
-   "area": "duplicate",
-   "cardId": "L2-P007",
-   "msg": "L2-C012 and L2-P007 both ask how the extended G-overhang becomes double-stranded, both answering 'next cell cycle as Okazaki fragments.'",
-   "fix": "Merge into one card.",
+   "area": "history date",
+   "cardId": "L3-C005",
+   "msg": "Reverse transcriptase was discovered in 1970 (Temin & Baltimore, independently), not 1971.",
+   "fix": "Change 'Overturned in 1971' to 1970.",
+   "lens": "correctness"
+  },
+  {
+   "severity": "warn",
+   "area": "promoter spacing",
+   "cardId": "L3-R003",
+   "msg": "The -35 and -10 elements are separated by a ~17 bp spacer (optimal 17), not '~25 bp'; this also contradicts L3-P002, which correctly says 17 bp.",
+   "fix": "Say separated by ~17 bp of spacer (~25 bp is the center-to-center distance, not the spacer).",
+   "lens": "correctness"
+  },
+  {
+   "severity": "warn",
+   "area": "off-topic test-taking",
+   "cardId": "L1-C012",
+   "msg": "'Occam's razor for picking multiple-choice answers' is exam-strategy meta, not molecular-genetics content untied to the DNA/replication/transcription curriculum.",
+   "fix": "Remove, or replace with an actual parsimony example from genetic analysis.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "instructor-specific framing",
+   "cardId": "L3-C029",
+   "msg": "Numerous L3 cards are keyed to one lecturer's asides ('Archbold said cross out the figure', 'she flagged as exam-important', L3-C005/C030/C034, L2-C015/C017) rather than the transferable concept.",
+   "fix": "Rephrase to state the biology directly; drop the 'she said' scaffolding.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "contrived puzzle",
+   "cardId": "L1-P014",
+   "msg": "Archaeal genome with invented bases Y/Z that 'pair only with each other' is a fabricated exam-style trick, not intro-course material.",
+   "fix": "Cut or demote to an optional extension card.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "redundant over-specific item",
+   "cardId": "L1-P020",
+   "msg": "The 'Band 1 near the wells, which statement is NOT consistent' gel question is repeated near-verbatim (L1-P012, L1-P020, L1-P024, L1-C008), suggesting all trace to one exam figure.",
+   "fix": "Collapse to a single canonical gel-interpretation card.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "missing-exceptions",
+   "cardId": "L1-P002",
+   "msg": "Chargaff-violation/strandedness inference cards L1-P002 and L1-P017 omit the 'exceptions' skill tag that sibling cards L1-P015/P018/C011/C016 use for identical reasoning.",
+   "fix": "Add exceptions to L1-P002 and L1-P017.",
+   "lens": "tags"
+  },
+  {
+   "severity": "warn",
+   "area": "missing-directionality",
+   "cardId": "L2-R018",
+   "msg": "End-replication-problem cards L2-R018 and L2-C010 omit 'directionality' though the no-upstream-3'-OH/3'-overhang logic is directional; sibling L2-R034/L2-C011 include it.",
+   "fix": "Add directionality to L2-R018 and L2-C010.",
+   "lens": "tags"
+  },
+  {
+   "severity": "warn",
+   "area": "missing-figure-interpretation",
+   "cardId": "L3-P002",
+   "msg": "L3-P002 has the reader parse a double-stranded diagram with a caret-marked +1 but lacks figure-interpretation, which the parallel L3-P003 carries.",
+   "fix": "Add figure-interpretation to L3-P002.",
+   "lens": "tags"
+  },
+  {
+   "severity": "warn",
+   "area": "dup-gel-band",
+   "cardId": "L1-P020",
+   "msg": "Three near-identical 'Band 1 near wells / Band 2 farther — which statement is NOT consistent' problems: L1-P012, L1-P020, L1-P024.",
+   "fix": "Keep one; the other two add no new reasoning.",
    "lens": "balance"
   },
   {
    "severity": "warn",
-   "area": "over-represented",
-   "msg": "L1 has ~15 pure who/when/date history cards (Miescher, Wilson, Sutton/Boveri, Carothers, Pauling, Southern, Astbury, plus dated Griffith/Avery/Hershey-Chase repeats), heavy relative to typical exam weight on mechanism over trivia.",
-   "fix": "Consolidate the date-recall cards into a couple of timeline cards and shift weight toward mechanism/interpretation.",
+   "area": "dup-promoter-AT",
+   "cardId": "L3-C016",
+   "msg": "L3-C008 and L3-C016 both ask 'why is the -10 Pribnow box AT-rich' with the same 2-vs-3 H-bond/melting answer.",
+   "fix": "Collapse to one card.",
+   "lens": "balance"
+  },
+  {
+   "severity": "warn",
+   "area": "dup-count-10",
+   "cardId": "L3-C017",
+   "msg": "L3-C009 and L3-C017 are the same card: 'why counting exactly 10 bp upstream to find the Pribnow box is unreliable.'",
+   "fix": "Remove one.",
+   "lens": "balance"
+  },
+  {
+   "severity": "warn",
+   "area": "dup-topo-ligase",
+   "cardId": "L2-C024",
+   "msg": "L2-C019 and L2-C024 both contrast topoisomerase/gyrase (supercoiling) vs ligase (nick sealing).",
+   "fix": "Keep the richer C024; drop C019 or refocus it.",
+   "lens": "balance"
+  },
+  {
+   "severity": "warn",
+   "area": "dup-consensus-align",
+   "cardId": "L3-P003",
+   "msg": "L3-P001 and L3-P003 are the same exercise: derive TATAAT -10 consensus by column-wise most-frequent base from an alignment.",
+   "fix": "Keep one problem instance.",
    "lens": "balance"
   },
   {
    "severity": "low",
-   "area": "history/date",
-   "cardId": "L2-R027",
-   "msg": "Thermus aquaticus was described by Brock & Freeze in 1969 (Yellowstone sampling mid-1960s); \"1965\" for the organism is imprecise.",
-   "fix": "Attribute 1969 to the T. aquaticus description, or drop the specific year.",
+   "area": "history date",
+   "cardId": "L2-R021",
+   "msg": "Telomerase enzyme activity was discovered/published in 1985 by Greider & Blackburn, not 1987.",
+   "fix": "Use 1985 for the telomerase discovery.",
    "lens": "correctness"
   },
   {
    "severity": "low",
-   "area": "generic trivia",
+   "area": "terminology",
+   "cardId": "L2-R016",
+   "msg": "'Topoisomerases (a.k.a. gyrases)' overstates the synonymy — DNA gyrase is one specific bacterial type-II topoisomerase, not a synonym for all topoisomerases.",
+   "fix": "Note gyrase is a specific type-II topoisomerase, not a general alias.",
+   "lens": "correctness"
+  },
+  {
+   "severity": "low",
+   "area": "history date",
    "cardId": "L2-R027",
-   "msg": "The \"Brock, Yellowstone, 1965\" collection detail for Taq is biographical trivia beyond the thermostability point that matters.",
-   "fix": "Keep the thermostable-from-Thermus-aquaticus fact; drop the collector/year.",
+   "msg": "Thermus aquaticus was isolated/described by Brock ~1969, not 1965 (his Yellowstone sampling began mid-1960s).",
+   "fix": "Cite ~1969 for T. aquaticus isolation.",
+   "lens": "correctness"
+  },
+  {
+   "severity": "low",
+   "area": "scope drift",
+   "cardId": "L1-R036",
+   "msg": "Chromosome-theory history (Wilson 1895, Sutton/Boveri 1903, Carothers 1913 grasshoppers — L1-R034/R035/R036) drifts from Unit 1's molecular scope into classical-genetics trivia.",
+   "fix": "Trim to the one or two names the syllabus actually names.",
    "lens": "relevance"
   },
   {
    "severity": "low",
-   "area": "contrived specificity",
-   "cardId": "L1-P014",
-   "msg": "The hypothetical archaeal \"extra bases Y and Z that pair only with each other\" is an invented scenario more puzzle-like than curricular.",
-   "fix": "Verify it reflects taught material; otherwise flag as enrichment, not core.",
+   "area": "trivia detail",
+   "cardId": "L2-R027",
+   "msg": "Detail like 'Brock, Yellowstone, 1965' collection of T. aquaticus is trivia beyond what the replication concept requires.",
+   "fix": "Keep 'thermostable, from a hot-spring bacterium'; drop the collector/date.",
    "lens": "relevance"
+  },
+  {
+   "severity": "low",
+   "area": "wrong-tag",
+   "cardId": "L3-C005",
+   "msg": "Central-dogma card L3-C005 carries an off-topic 'telomere' tag; content is about reverse transcriptase overturning the dogma, not telomere biology.",
+   "fix": "Drop telomere; mechanism/who-what-when already cover it.",
+   "lens": "tags"
+  },
+  {
+   "severity": "low",
+   "area": "wrong-tag",
+   "cardId": "L2-R013",
+   "msg": "DNA-ligase cards L2-R013/L2-C019 are tagged 'primer-removal', but ligase seals nicks after primer removal (Pol I does removal); the tag mislabels the enzyme's role.",
+   "fix": "Replace primer-removal with a more accurate grouping (leading-lagging/mechanism already present).",
+   "lens": "tags"
   },
   {
    "severity": "low",
    "area": "wrong-tag",
    "cardId": "L1-R013",
-   "msg": "Tagged 'calculation' but the card is pure recall of B-form dimensions with no computation (L1-R012 similarly mislabels 'calculation' for rule-statement).",
-   "fix": "Drop calculation; keep dna-structure.",
+   "msg": "L1-R013 tags 'calculation' for pure recall of B-form dimensions with no math performed; calculation should denote a worked computation.",
+   "fix": "Drop calculation (dna-structure suffices); reserve calculation for the problem cards.",
    "lens": "tags"
   },
   {
-   "severity": "low",
-   "area": "duplicate",
-   "cardId": "L2-R001",
-   "msg": "L1-R014 and L2-R001 both define 'semiconservative'; L2-R001 supersedes it by also listing the rejected models.",
-   "fix": "If cross-lecture repetition is intended keep both; otherwise retire L1-R014.",
-   "lens": "balance"
-  },
-  {
-   "severity": "low",
-   "area": "duplicate",
-   "cardId": "L2-P015",
-   "msg": "L1-P010 and L2-P015 are the same problem type (count phosphodiester + H-bonds in a duplex) with different sequences.",
-   "fix": "Fine as spaced practice; flag only if trimming.",
-   "lens": "balance"
-  },
-  {
-   "severity": "low",
-   "area": "duplicate",
-   "cardId": "L2-P012",
-   "msg": "L2-R027 and L2-P012 both resolve to 'Taq chosen because thermostable / survives 95°C.'",
-   "fix": "Acceptable recall/problem pairing; drop one if tightening.",
-   "lens": "balance"
+   "severity": "info",
+   "area": "internal consistency",
+   "cardId": "L1-R013",
+   "msg": "States ~10 bp/turn while L1-C024 states ~10.5 bp/turn; both are defensible (fiber vs solution) but the deck should be consistent.",
+   "fix": "Pick one value or note the 10 (fiber) vs 10.5 (solution) distinction.",
+   "lens": "correctness"
   },
   {
    "severity": "info",
-   "area": "coverage gap",
-   "msg": "Unit 1 nominally includes transcription, but the deck has zero transcription cards (only DNA structure, hereditary-material history, techniques, and replication).",
-   "fix": "Add transcription cards or note the unit scope excludes it.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "info",
-   "area": "deck-health",
-   "msg": "Cross-cutting skill tags (directionality, mechanism, who-what-when, compare-contrast, figure-interpretation, exceptions, calculation) are applied consistently across problem/concept cards; no systemic omission for this lens.",
-   "lens": "tags"
+   "area": "coverage-history",
+   "msg": "Griffith/Avery/Hershey-Chase 'who-what-when' history is over-represented in L1 (~15 cards: R016-018, C002-004, C015, C017-018, C025-029, R043-045) relative to typical exam weight, while translation and mechanistic depth are comparatively thin.",
+   "fix": "Prune redundant history recalls; reallocate toward mechanism/application.",
+   "lens": "balance"
   }
  ]
 }

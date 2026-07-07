@@ -1,6 +1,6 @@
 /* Bio 305 service worker — offline shell cache. Cache version bumps on deploy. */
-const C = "bio305-v11";
-const ASSETS = ["./","index.html","css/style.css?v=3","js/store.js?v=4","js/app.js?v=6",
+const C = "bio305-v12";
+const ASSETS = ["./","index.html","css/style.css?v=3","js/store.js?v=5","js/app.js?v=6",
   "data/units.json","data/tags.json","data/L1.json","data/L2.json","data/L3.json","img/blockm.svg",
   "img/favicon-32.png","img/icon-512.png","apple-touch-icon.png","manifest.json"];
 self.addEventListener("install", e=>{
@@ -11,11 +11,19 @@ self.addEventListener("activate", e=>{
 });
 self.addEventListener("fetch", e=>{
   if(e.request.method!=="GET") return;
-  // System-health is refreshed by the critic fleet between deploys — always go to network, never cache-stale.
-  if(e.request.url.indexOf("system-health.json")>=0){
+  const url = e.request.url;
+  // System-health is refreshed by the critic fleet between deploys — always network, never cache-stale.
+  if(url.indexOf("system-health.json")>=0){
     e.respondWith(fetch(e.request).catch(()=>new Response("null",{headers:{"content-type":"application/json"}})));
     return;
   }
+  // Content data (units/tags/decks): network-first so new lectures & cards appear immediately; cache = offline fallback.
+  if(/\/data\/.*\.json(\?|$)/.test(url)){
+    e.respondWith(fetch(e.request).then(resp=>{ const cp=resp.clone(); caches.open(C).then(c=>c.put(e.request,cp)); return resp; })
+      .catch(()=>caches.match(e.request)));
+    return;
+  }
+  // App shell: cache-first (versioned).
   e.respondWith(caches.match(e.request).then(r=> r || fetch(e.request).then(resp=>{
     const cp=resp.clone(); caches.open(C).then(c=>c.put(e.request,cp)); return resp;
   }).catch(()=>caches.match("index.html"))));
