@@ -1,0 +1,1112 @@
+[
+ {
+  "type": "concept",
+  "topic": "Amino acid anatomy",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §1; Lec4L.pdf p2-3",
+  "q": "What four parts does every amino acid share, and which one makes each of the 20 distinct?",
+  "a": "A central **α-carbon** bonded to: (1) an **amino group (–NH₂)**, (2) a **carboxyl group (–COOH)**, (3) a hydrogen, and (4) a variable **R-group (side chain)**. The **R-group** is what differs between the 20 amino acids and drives folding/function. Archbold: *don't memorize the 20* — know the categories.",
+  "tags": [
+   "amino-acids",
+   "mechanism",
+   "foundations"
+  ],
+  "id": "L4-C001"
+ },
+ {
+  "type": "concept",
+  "topic": "The peptide bond & N→C directionality",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §1",
+  "q": "Between which two groups does a peptide bond form, and what directionality does that give the growing chain?",
+  "a": "A peptide bond links one amino acid's **carboxyl (–COOH)** group to the next amino acid's **amino (–NH₂)** group. The chain is therefore built and read **N→C**: the first residue keeps a free **amino (N-) terminus**, the last a free **carboxyl (C-) terminus**. (Directional, like nucleic acids are 5′→3′.)",
+  "tags": [
+   "amino-acids",
+   "directionality",
+   "mechanism"
+  ],
+  "id": "L4-C002"
+ },
+ {
+  "type": "concept",
+  "topic": "Directionality parallel (mRNA ↔ protein)",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §1 (⚑ her favorite trap: directionality)",
+  "q": "Translation reads mRNA 5′→3′ and builds protein N→C. Which protein terminus lines up with the mRNA 5′ end, and which with the 3′ end?",
+  "a": "The **N-terminus** corresponds to the mRNA **5′** end (made first); the **C-terminus** corresponds to the mRNA **3′** end (made last). Archbold hammers directionality — remember: 5′ mRNA → N-terminus protein.",
+  "tags": [
+   "directionality",
+   "compare-contrast",
+   "central-dogma",
+   "mechanism"
+  ],
+  "id": "L4-C003"
+ },
+ {
+  "type": "recall",
+  "topic": "R-group categories",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §1; Lec4L.pdf p3",
+  "q": "She says NOT to memorize the 20 amino acids, but to know the general R-group categories. Name them.",
+  "a": "Aliphatic / small-hydrophobic; ring (aromatic); **acidic (negatively charged, −)**; **basic (positively charged, +)**. What the side chain does chemically drives 3-D folding and how the protein interacts with its environment. (Not a biochem class — categories, not structures.)",
+  "tags": [
+   "amino-acids",
+   "foundations"
+  ],
+  "id": "L4-R001"
+ },
+ {
+  "type": "recall",
+  "topic": "Four levels of protein structure",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec4T.md §2 (⚑ \"be familiar with these four terms\"); Lec4L.pdf p4",
+  "q": "Name the four levels of protein structure in order.",
+  "a": "**Primary → Secondary → Tertiary → Quaternary.** (She explicitly said you should be familiar with all four.)",
+  "tags": [
+   "protein-structure",
+   "amino-acids"
+  ],
+  "id": "L4-R002"
+ },
+ {
+  "type": "concept",
+  "topic": "Primary & secondary structure",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec4T.md §2; Lec4L.pdf p5",
+  "q": "Define primary and secondary structure, and name the two secondary-structure motifs.",
+  "a": "**Primary** = the amino-acid **sequence** (N→C order) — this is what a denatured protein on a Western blot is. **Secondary** = local, regular, repeating backbone shapes: **α-helices** and **β-pleated sheets** (backbone-driven, side-chain-influenced). *(Pauling, Corey & Branson worked these out.)*",
+  "tags": [
+   "protein-structure",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L4-C004"
+ },
+ {
+  "type": "concept",
+  "topic": "Tertiary & quaternary structure (hemoglobin)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §2; Lec4L.pdf p4",
+  "q": "Distinguish tertiary from quaternary structure, and give the recurring example of a quaternary protein.",
+  "a": "**Tertiary** = the overall 3-D (often globular) shape of a **single** polypeptide, driven by side-chain interactions across the sequence. **Quaternary** = a functional protein built from **multiple** polypeptide subunits (only some proteins have it). Example: **hemoglobin** — **4 subunits** (two pairs, from two coding sequences) coordinating an **iron** atom to carry O₂ from lungs to tissues.",
+  "tags": [
+   "protein-structure",
+   "compare-contrast"
+  ],
+  "id": "L4-C005"
+ },
+ {
+  "type": "concept",
+  "topic": "Why a TRIPLET code (the thought experiment)",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec4T.md §3; Lec4L.pdf p7",
+  "q": "Using only the numbers, argue why the genetic code had to be (at least) a triplet.",
+  "a": "4 nucleotides must encode 20 amino acids. **1 nt → 4** (too few). **2 nt → 4² = 16** (still short of 20). **3 nt → 4³ = 64** (enough, with room to spare). So a **triplet** code is the smallest that works — then proven experimentally.",
+  "tags": [
+   "genetic-code",
+   "calculation",
+   "mechanism"
+  ],
+  "id": "L4-C006"
+ },
+ {
+  "type": "concept",
+  "topic": "Non-overlapping (Fraenkel-Conrat, TMV)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §3; Lec4L.pdf p8",
+  "q": "What experiment showed the code is non-overlapping, and what result proved it?",
+  "a": "The **Fraenkel-Conrat** lab mutagenized **TMV (tobacco mosaic virus)**, making single-nucleotide changes, then broke the coat protein down amino-acid by amino-acid. A single-nucleotide change produced a **single amino-acid** change ⇒ codons **do not overlap** (if they overlapped, one nucleotide change would alter ~3 adjacent amino acids).",
+  "tags": [
+   "genetic-code",
+   "code-cracking",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L4-C007"
+ },
+ {
+  "type": "concept",
+  "topic": "Triplet + contiguous (Crick's proflavin frameshifts)",
+  "diff": 3,
+  "target_s": 25,
+  "src": "Lec4T.md §3; Lec4L.pdf p9-10 (Crick, Barnett, Brenner, Watts-Tobin 1961)",
+  "q": "How did Crick, Barnett, Brenner & Watts-Tobin (1961) prove the code is read in contiguous triplets from a fixed start? Name the mutagen and the logic.",
+  "a": "In the **T4 rII gene** they used **proflavin**, an **intercalator** that slips between bases so replication **inserts or deletes** one nucleotide (the \"FC0\" mutation). Findings: **1 insertion or 1 deletion → frameshift → mutant**; a **+1 combined with a −1 (a suppressor) → restores wild-type** (\"two wrongs make a right, the right two\"); and **three insertions (or three deletions) → wild-type again** (\"three wrongs make a right\"). Restoring function only with sets of **three** proves the reading unit is **3** AND that the message is read **contiguously** from a fixed start (no gaps/punctuation).",
+  "tags": [
+   "genetic-code",
+   "code-cracking",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L4-C008"
+ },
+ {
+  "type": "concept",
+  "topic": "Nirenberg — cracking the first codon",
+  "diff": 2,
+  "target_s": 20,
+  "src": "Lec4T.md §3; Lec4L.pdf p12-13 (Nirenberg, Matthaei, Khorana, Holley)",
+  "q": "How did Nirenberg assign the first codon, and what was it?",
+  "a": "He made a **synthetic mRNA** and flooded the system with **Mg²⁺** (tricks the ribosome into initiating anywhere, no start codon needed), with **one radioactively-labeled amino acid** per tube. **Poly-U → poly-Phe**, so **UUU = phenylalanine** (first codon cracked). Then poly-C = Pro, poly-A = Lys, poly-G = Gly. *(Nirenberg did his grad work at U-M.)*",
+  "tags": [
+   "code-cracking",
+   "who-what-when",
+   "technique",
+   "mechanism"
+  ],
+  "id": "L4-C009"
+ },
+ {
+  "type": "concept",
+  "topic": "The triplet-binding (filter) assay",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §3; Lec4L.pdf p14",
+  "q": "After homopolymers and copolymers, what assay resolved the remaining codon assignments, and what was the readout?",
+  "a": "The **triplet-binding / filter assay**: tiny **3-nucleotide mini-mRNAs** + ribosomes + charged tRNAs poured over a **filter**. A ribosome holding a **matched** charged tRNA stays on the filter; unmatched labeled amino acid flows through. **Radioactivity retained on the filter = that codon codes that amino acid.** (Took ~3 years to finish.)",
+  "tags": [
+   "code-cracking",
+   "technique",
+   "mechanism"
+  ],
+  "id": "L4-C010"
+ },
+ {
+  "type": "concept",
+  "topic": "How the STOP codons were found",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec4T.md §3; Lec4L.pdf p15",
+  "q": "How were the three stop codons deduced (the \"amber/opal\" nonsense-mutant logic)?",
+  "a": "**Nonsense mutants** of T4 (nicknamed **amber/opal**) made **prematurely truncated** proteins. Looking at the amino acid that *should* have come next, you find the **single point mutation** that turns that amino acid's codon into a stop. Doing this across mutants converges on the three stops: **UAG, UAA, UGA**.",
+  "tags": [
+   "code-cracking",
+   "genetic-code",
+   "mechanism"
+  ],
+  "id": "L4-C011"
+ },
+ {
+  "type": "recall",
+  "topic": "64 = 61 + 3",
+  "diff": 1,
+  "target_s": 8,
+  "src": "Lec4T.md §4; Lec4L.pdf p16",
+  "q": "Break the 64 codons into functional categories.",
+  "a": "**64 total = 61 sense** (amino-acid-coding) **+ 3 stop** (UAG, UAA, UGA).",
+  "tags": [
+   "genetic-code",
+   "calculation"
+  ],
+  "id": "L4-R003"
+ },
+ {
+  "type": "concept",
+  "topic": "Degenerate, redundant, NOT ambiguous",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §4; Lec4L.pdf p16",
+  "q": "The code is \"degenerate/redundant but not ambiguous.\" Translate that into precise statements.",
+  "a": "**Degenerate/redundant** = **multiple codons can specify the same amino acid** (a variable number — some amino acids have 1 codon, some 2, 4, or 6). **Not ambiguous** = any **single codon specifies exactly one** amino acid. There's a whole system (synthetases + wobble rules) to keep it unambiguous.",
+  "tags": [
+   "genetic-code",
+   "compare-contrast"
+  ],
+  "id": "L4-C012"
+ },
+ {
+  "type": "concept",
+  "topic": "Crick's adapter hypothesis",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §5; Lec4L.pdf p17",
+  "q": "What did Crick's \"adapter hypothesis\" predict, and where was he right vs wrong?",
+  "a": "He predicted an **adapter molecule** carries each amino acid to the mRNA template and base-pairs with it — **correct** (that adapter is **tRNA**). He guessed there'd be exactly **20** adapters (one per amino acid) — **wrong**: there are more (**31–41**, because of wobble).",
+  "tags": [
+   "trna",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L4-C013"
+ },
+ {
+  "type": "recall",
+  "topic": "tRNA structure",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §5; Lec4L.pdf p18",
+  "q": "Name tRNA's two business ends and what each does.",
+  "a": "(1) The **anticodon loop** — base-pairs the mRNA codon by complementarity (she writes it **3′→5′**). (2) The **3′ CCA end** — the **amino-acid attachment site** where the tRNA gets \"charged.\"",
+  "tags": [
+   "trna",
+   "directionality"
+  ],
+  "id": "L4-R004"
+ },
+ {
+  "type": "concept",
+  "topic": "Charging & aminoacyl-tRNA synthetases",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §5 (⚑ \"20 synthetases\"); Lec4L.pdf p19",
+  "q": "What is \"charging,\" how many aminoacyl-tRNA synthetases are there, and how does that maintain redundancy without ambiguity?",
+  "a": "**Charging** = attaching the correct amino acid to a tRNA's 3′ end, done by an **aminoacyl-tRNA synthetase**. There are only **20 synthetases — one per amino acid.** Each one charges **all** the tRNAs for its amino acid (e.g. the single Pro-synthetase puts proline on all ~4 proline tRNAs and *only* ever adds proline). So redundancy (many tRNAs) coexists with unambiguity (each is loaded with exactly one correct amino acid).",
+  "tags": [
+   "trna",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L4-C014"
+ },
+ {
+  "type": "concept",
+  "topic": "One anticodon → one amino acid",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec4T.md §EXAM SIGNALS (\"nobody is allowed to forget\")",
+  "q": "Archbold said this is the fact \"nobody is allowed to forget\": for any given anticodon, how many amino acids can be charged onto its tRNA?",
+  "a": "Exactly **one**. Because the code is unambiguous, a given anticodon maps to a single amino acid — the synthetase system guarantees it.",
+  "tags": [
+   "trna",
+   "genetic-code"
+  ],
+  "id": "L4-C015"
+ },
+ {
+  "type": "concept",
+  "topic": "The ribosome is a ribozyme",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec4T.md §6 (⚑ \"surprise\"); Lec4L.pdf p24",
+  "q": "What is the ribosome made of, and what is the surprising identity of its catalytic core?",
+  "a": "rRNA + proteins, in **two subunits**. Surprise: the **rRNA is catalytic**, not just scaffold — the **peptidyl transferase** activity that forms every peptide bond is carried out by the **23S rRNA (prokaryote) / 28S rRNA (eukaryote)**. So the ribosome is a **ribozyme**; the proteins mostly do alignment/structure.",
+  "tags": [
+   "ribosome",
+   "mechanism"
+  ],
+  "id": "L4-C016"
+ },
+ {
+  "type": "recall",
+  "topic": "Ribosome sizes (prokaryote vs eukaryote)",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §6; Lec4L.pdf p23-24",
+  "q": "Give the subunit and whole-ribosome Svedberg sizes + the rRNAs for prokaryotes and eukaryotes.",
+  "a": "**Prokaryote:** large **50S** + small **30S** = **70S**; rRNAs **23S + 5S** (large), **16S** (small). **Eukaryote:** **60S + 40S = 80S**; catalytic rRNA is the **28S**. Note **Svedberg (S) units are NOT additive** (50 + 30 = 70, not 80) — S is a sedimentation coefficient, not a mass.",
+  "tags": [
+   "ribosome",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast"
+  ],
+  "id": "L4-R005"
+ },
+ {
+  "type": "concept",
+  "topic": "Three phases + the pro/euk split",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §7; Lec4L.pdf p25",
+  "q": "Name translation's three phases, and state where prokaryotes and eukaryotes differ most (and least).",
+  "a": "**Initiation → elongation → termination** (both kingdoms). Prokaryotes: transcription and translation happen **simultaneously** (a **polysome** rides the nascent mRNA). Eukaryotes: transcribe/process in the nucleus, **translate in the cytoplasm**. **Initiation is where the two differ most; elongation and termination are nearly identical.**",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast"
+  ],
+  "id": "L4-C017"
+ },
+ {
+  "type": "concept",
+  "topic": "Prokaryotic initiation (Shine-Dalgarno / 16S)",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec4T.md §7.1 (⚑ \"need to know\"); Lec4L.pdf p26-27",
+  "q": "Walk through prokaryotic initiation: what sequence, what rRNA, which factors, which initiator tRNA?",
+  "a": "The mRNA's **Shine-Dalgarno** sequence (consensus ~**AGGAGG**, ~4–10 nt **upstream** of the start) **base-pairs with the 3′ end of the 16S rRNA** (in the **30S** subunit), positioning the start codon in the **P site**. **IF3** helps align; **IF1 + IF2** bring in the initiator tRNA — **fMet (N-formylmethionine)** — to the P site (the **30S initiation complex**). Only then does the **50S** subunit join.",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "mechanism",
+   "sequence-reading"
+  ],
+  "id": "L4-C018"
+ },
+ {
+  "type": "recall",
+  "topic": "Shine-Dalgarno — what/where",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §EXAM SIGNALS (⚑ \"absolutely need to know\")",
+  "q": "She said you \"absolutely need to know what a Shine-Dalgarno sequence is, what it does, and roughly where it is.\" Answer all three.",
+  "a": "**What:** a purine-rich consensus (~**AGGAGG**) in prokaryotic mRNA. **Does:** base-pairs the **16S rRNA** to recruit the small subunit and set the reading frame. **Where:** ~**4–10 nucleotides upstream** of the AUG start codon (it does NOT contain the start). Don't memorize the exact sequence.",
+  "tags": [
+   "translation-initiation",
+   "sequence-reading"
+  ],
+  "id": "L4-R006"
+ },
+ {
+  "type": "concept",
+  "topic": "Eukaryotic initiation (cap-and-scanning / Kozak)",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec4T.md §7.1 (⚑ \"remember this phrase\"); Lec4L.pdf p28",
+  "q": "Describe eukaryotic \"cap-and-scanning\" initiation and where the start codon is found.",
+  "a": "The **pre-initiation complex** forms first (eIF1, eIF3, eIF1A on the small subunit; then the **Met initiator tRNA**). **eIF4** binds the **5′ m7G cap**; the complex **loads at the cap and scans 5′→3′** until it reaches the **Kozak sequence** (which **contains the AUG start**). When the initiator anticodon matches that AUG, the large subunit joins → elongation.",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "mechanism"
+  ],
+  "id": "L4-C019"
+ },
+ {
+  "type": "recall",
+  "topic": "Kozak vs Shine-Dalgarno",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec4T.md §EXAM SIGNALS (⚑ \"the name you need to know\")",
+  "q": "Contrast the Kozak and Shine-Dalgarno sequences in one key positional way.",
+  "a": "The **Kozak** (eukaryotic) **contains the AUG start codon within it**; the **Shine-Dalgarno** (prokaryotic) sits **upstream** of the start and doesn't contain it. Both mark the correct start, but by different logic (scanning-to-Kozak vs base-pairing-then-position).",
+  "tags": [
+   "translation-initiation",
+   "compare-contrast"
+  ],
+  "id": "L4-R007"
+ },
+ {
+  "type": "concept",
+  "topic": "Polycistronic vs monocistronic (WHY)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec4T.md §7.1; Lec4L.pdf p29",
+  "q": "Why can prokaryotic mRNAs be polycistronic while eukaryotic mRNAs are monocistronic? Tie it to the initiation mechanism.",
+  "a": "Prokaryotes initiate at **any free Shine-Dalgarno**, and an mRNA can carry **several SD/AUG start sites** — so one mRNA can encode **multiple proteins** (**polycistronic**). Eukaryotes load **once at the 5′ cap** and scan to the **first** start — a single entry point means **one protein per mRNA** (**monocistronic**, \"one shot\").",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L4-C020"
+ },
+ {
+  "type": "recall",
+  "topic": "A / P / E sites",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec4T.md §7.2; Lec4L.pdf p31-33",
+  "q": "Name the ribosome's three tRNA sites and what each is for.",
+  "a": "**A** = **A**cceptor (decoding) site — incoming charged tRNA enters here. **P** = **P**eptidyl site — holds the tRNA with the growing peptide. **E** = **E**xit site — the deacylated tRNA leaves from here. Order of travel: **A → P → E**.",
+  "tags": [
+   "translation-elongation",
+   "ribosome"
+  ],
+  "id": "L4-R008"
+ },
+ {
+  "type": "concept",
+  "topic": "Elongation cycle",
+  "diff": 3,
+  "target_s": 25,
+  "src": "Lec4T.md §7.2; Lec4L.pdf p31-33",
+  "q": "Walk through one elongation cycle, naming the two elongation factors and the decoding step.",
+  "a": "(1) A **charged tRNA + EF-Tu·GTP** (eukaryotic **eEF1**) enters the **A site** as a **ternary complex**. (2) The **decoding center** (in the 30S) checks codon-anticodon pairing (it only verifies **2–3 hydrogen bonds**); a match → **GTP hydrolysis → EF-Tu dissociates**. (3) **Peptidyl transferase** (the **23S/28S rRNA**) forms the peptide bond, transferring the chain onto the A-site amino acid. (4) **EF-G·GTP** (eukaryotic **eEF2**) hydrolyzes GTP and **translocates** everything one codon: A→P, P→E, and the deacylated tRNA exits the E site. Repeat.",
+  "tags": [
+   "translation-elongation",
+   "mechanism"
+  ],
+  "id": "L4-C021"
+ },
+ {
+  "type": "concept",
+  "topic": "EF-Tu vs EF-G",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §7.2, §10 (mousetrap analogy)",
+  "q": "Distinguish the jobs of EF-Tu and EF-G (and their eukaryotic names).",
+  "a": "**EF-Tu** (euk **eEF1**) **delivers** each charged tRNA to the A site (as the ternary complex) and, on a correct match, GTP-hydrolyzes to let go. **EF-G** (euk **eEF2**) drives **translocation** — GTP hydrolysis snaps it into the A site \"**like a mousetrap spring**,\" shoving the tRNAs A→P→E by one codon.",
+  "tags": [
+   "translation-elongation",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L4-C022"
+ },
+ {
+  "type": "concept",
+  "topic": "The decoding center only checks 2–3 H-bonds",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §7.2, §8; Lec4L.pdf p31",
+  "q": "Where is the decoding center, and what exactly does it verify? Why does this detail matter for wobble?",
+  "a": "The **decoding center** is in the **30S (small) subunit's A site**. It only checks that the codon-anticodon pairing forms **2–3 hydrogen bonds** (\"looks fine, move it along\") — it does **not** demand perfect Watson-Crick geometry at every position. That tolerance at the 3rd position is exactly what **permits wobble** (e.g. G–U, which still gives 2 H-bonds).",
+  "tags": [
+   "translation-elongation",
+   "wobble",
+   "mechanism"
+  ],
+  "id": "L4-C023"
+ },
+ {
+  "type": "concept",
+  "topic": "Termination — RELEASE FACTORS, not tRNAs",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec4T.md §7.3 (⚑⚑ THE purple slide — \"I expect you to know this\"); Lec4L.pdf p34",
+  "q": "⚑ Her single loudest exam signal (in purple, \"people forget this every year\"): what recognizes a stop codon, and how does termination physically happen?",
+  "a": "**Release factors — proteins, NOT tRNAs — recognize stop codons.** In bacteria, **RF1/RF2** read UAG/UAA/UGA via a **tripeptide motif** (not an anticodon). The RF fits the A site but doesn't do peptide-bond chemistry; instead it brings a **water molecule** into the peptidyl transferase center → **hydrolysis** cleaves the finished peptide off the P-site tRNA → the protein is released. **tRNAs do NOT read stop codons — don't be the one who forgets.**",
+  "tags": [
+   "translation-termination",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L4-C024"
+ },
+ {
+  "type": "recall",
+  "topic": "Class II release factor",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec4T.md §7.3; Lec4L.pdf p34",
+  "q": "After the peptide is released, what does the class II release factor do (and using what)?",
+  "a": "The **class II release factor uses GTP** as an energy source to **dissociate the class I RF** and **recycle** the ribosome (split it back into subunits for reuse).",
+  "tags": [
+   "translation-termination",
+   "mechanism"
+  ],
+  "id": "L4-R009"
+ },
+ {
+  "type": "recall",
+  "topic": "How many tRNAs?",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec4T.md §8; Lec4L.pdf p35",
+  "q": "Give three tRNA counts: one-per-sense-codon, Crick's guess, and the actual range — and the one-word reason for the gap.",
+  "a": "One tRNA per sense codon → **61**; Crick's one-per-amino-acid → **20**; **actual = 31–41** (fewest 31, most 41, species-dependent). The reason is **wobble** — one tRNA can read more than one codon.",
+  "tags": [
+   "wobble",
+   "trna",
+   "calculation"
+  ],
+  "id": "L4-R010"
+ },
+ {
+  "type": "concept",
+  "topic": "What \"wobble\" is",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §8; Lec4L.pdf p37 (Weebles analogy)",
+  "q": "Define wobble precisely — which position, what physically happens, and why it's allowed.",
+  "a": "**Wobble** = the **5′ base of the anticodon** (the \"wobble position,\" which pairs the codon's **3′** base) has room in the decoding pocket to **shift/wobble** and make **non-standard base pairs** — allowed because the decoding center only requires **2–3 H-bonds** (her \"**Weebles** wobble but don't fall down\"). It's why fewer than 61 tRNAs can read all 61 sense codons.",
+  "tags": [
+   "wobble",
+   "mechanism"
+  ],
+  "id": "L4-C025"
+ },
+ {
+  "type": "recall",
+  "topic": "Wobble rules table (her orientation)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4L.pdf p40 (⚑ provided on the exam, her tRNA-5′ orientation); Lec4T.md §8",
+  "q": "Give Archbold's wobble table: for each **5′ anticodon base**, which **codon 3′ base(s)** can it pair?",
+  "a": "**A → U** · **C → G** · **G → U or C** · **U → A or G** · **I → U, C, or A**. (Her table is organized by the **tRNA 5′ anticodon** — the wobble position — which is the *opposite* orientation from the textbook's codon-3′ table.) A and C are boring (standard partner only); G, U, and especially I are the flexible ones.",
+  "tags": [
+   "wobble",
+   "sequence-reading",
+   "figure-interpretation"
+  ],
+  "id": "L4-R011"
+ },
+ {
+  "type": "concept",
+  "topic": "Inosine",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec4T.md §8; Lec4L.pdf p39",
+  "q": "What is inosine, how is it made, and why is it the wobble MVP?",
+  "a": "**Inosine (I)** is a **modified adenosine** — made **post-transcriptionally** by a **deaminase (A→I)**, only at the 5′ anticodon position. It hydrogen-bonds with **U, C, or A** (all give ~2 H-bonds), so a single I-containing tRNA can read **three** different codons — the most flexible wobble base.",
+  "tags": [
+   "wobble",
+   "nucleotide-chemistry",
+   "mechanism"
+  ],
+  "id": "L4-C026"
+ },
+ {
+  "type": "concept",
+  "topic": "G–U wobble",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §EXAM SIGNALS (clicker); Lec4L.pdf p38",
+  "q": "Beyond its standard partner, what can U base-pair with in RNA, and why is that \"legal\" at the wobble position?",
+  "a": "**U can also pair with G** (a **G–U wobble pair**), giving **2 hydrogen bonds** — enough for the decoding center to accept it. (This is the same RNA-only G–U pairing from L3; it's why a G in the anticodon 5′ position reads codons ending in C **or** U, and a U reads A **or** G.)",
+  "tags": [
+   "wobble",
+   "base-pairing",
+   "rna-chemistry"
+  ],
+  "id": "L4-C027"
+ },
+ {
+  "type": "concept",
+  "topic": "Legal vs illegal wobble",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec4T.md §8 (⚑ \"legal or illegal\"); Lec4L.pdf p41",
+  "q": "Wobble is useful, but some anticodons are \"illegal.\" What makes a wobble tRNA illegal, and what's the consequence she describes?",
+  "a": "A wobble tRNA is **illegal** if its flexibility would let it read **two codons that mean different things** — i.e. read a codon for a *different* amino acid, or read **past a stop codon** (adding an amino acid where translation should end). That yields \"**a trunk full of junk**\" — a giant nonfunctional protein → dead cell. So such tRNAs **don't exist** (\"that's called evolution\"). Legal wobble stays **within one amino-acid's codon family**.",
+  "tags": [
+   "wobble",
+   "exceptions",
+   "mechanism"
+  ],
+  "id": "L4-C028"
+ },
+ {
+  "type": "recall",
+  "topic": "Max / min tRNAs per box of four",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec4T.md §8 (⚑ \"you will need to know\"); Lec4L.pdf p44",
+  "q": "For reading codons, what are the maximum and minimum numbers of tRNAs she says you must be able to work out?",
+  "a": "To read a full \"**box of four**\" codons you'd need at most **5** anticodons (A, C, G, U, I wobble endings), but with wobble (G reads 2, U reads 2, I reads 3) as few as ~2–3 can cover it. Across a split family like **serine**, the **minimum is 3**. (Know how to derive max/min for any amino acid.)",
+  "tags": [
+   "wobble",
+   "calculation"
+  ],
+  "id": "L4-R012"
+ },
+ {
+  "type": "concept",
+  "topic": "Anticodon direction convention (3′→5′)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §EXAM SIGNALS (⚑ textbook warning); Lec4L.pdf p18",
+  "q": "Archbold writes tRNA anticodons in the OPPOSITE direction from the textbook and MCAT. Which way, and what's her rule when a sequence has no 5′/3′ label?",
+  "a": "She writes anticodons **3′→5′** (left-to-right), because the CCA/amino-acid end is the tRNA's **3′** end, so the anticodon reads 3′→5′ and the paired mRNA runs antiparallel. The textbook/MCAT write anticodons **5′→3′** (flip them before pairing). **Her no-label rule:** first look for positional info (a primer 3′-OH, a promoter/+1, the CCA end); **only if there is none, default to 5′ on the left.**",
+  "tags": [
+   "directionality",
+   "wobble",
+   "sequence-reading",
+   "exceptions"
+  ],
+  "id": "L4-C029"
+ },
+ {
+  "type": "concept",
+  "topic": "Pauling, Corey & BRANSON",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4T.md §9 (⚑ she calls this out); Lec4L.pdf p5",
+  "q": "Who determined protein secondary structure, how, and what credit point does Archbold make a point of?",
+  "a": "**Pauling, Corey & Branson** — using **X-ray crystallography + mathematical modeling** — described the **α-helix** and **β-sheet**. She stresses that **Herman Branson** (a Black physicist on a one-year sabbatical from **Howard University**) did the most work (the math modeling) and was **first author**, yet was written out as the \"Pauling-Corey model.\" Credit where it's due. *(Aside: Pauling **lost** the DNA-structure race — his model had **three** strands.)*",
+  "tags": [
+   "protein-structure",
+   "who-what-when"
+  ],
+  "id": "L4-C030"
+ },
+ {
+  "type": "concept",
+  "topic": "Why the code is (nearly) universal",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec4T.md §EXAM SIGNALS; Lec4L.pdf p16",
+  "q": "How universal is the genetic code for this class, and what's the asterisk?",
+  "a": "**Treat it as universal** — the same codon table applies across life for BIO 305. The asterisk: astonishingly rare tweaks exist (a codon reassigned to/from stop in some archaea/mitochondria), but she says *\"we're going to completely ignore that.\"* (Also: **archaea translation sections are skippable** per her.)",
+  "tags": [
+   "genetic-code",
+   "exceptions"
+  ],
+  "id": "L4-C031"
+ },
+ {
+  "type": "problem",
+  "topic": "Pro vs euk translation difference (HW Q1)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "L4-HW-solutions.md Q1 (3-skeptic verified)",
+  "q": "Which feature of translation DIFFERS between prokaryotes and eukaryotes? (A) initiation at an AUG codon (B) how the small ribosomal subunit finds the initiation site (C) peptidyl transferase location (D) the ribosome being a ribozyme.",
+  "worked": "Both initiate at AUG (A same). Peptidyl transferase is in the large subunit in both (C same). The ribosome is a ribozyme in both (D same). Only the *mechanism for locating the start* differs: prokaryotes use **Shine-Dalgarno ↔ 16S rRNA** base-pairing; eukaryotes use **5′-cap-and-scanning to a Kozak** sequence — the lecture's central pro/euk split.",
+  "answer": "**B** — the way the small subunit finds the initiation site.",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast"
+  ],
+  "id": "L4-P001"
+ },
+ {
+  "type": "problem",
+  "topic": "Engineered release factor (HW Q2)",
+  "diff": 3,
+  "target_s": 60,
+  "src": "L4-HW-solutions.md Q2 (3-skeptic verified)",
+  "q": "You engineer a release factor that binds GGA instead of a stop codon, to test whether it will terminate there. How do you produce the factor and design the test mRNA? (A–C) in vitro transcription variants … (D) produce it by in vitro **translation**, using a synthetic mRNA with **GGA before the STOP** codon.",
+  "worked": "Two independent locks. (1) A release factor is a **protein**, so you must make it by in vitro **translation** — in vitro *transcription* only makes the mRNA that encodes it, not a working factor (kills A/B/C). (2) Premature termination is only **detectable** as a truncated product if the ribosome hits **GGA before** the real stop; GGA after the stop is invisible.",
+  "answer": "**D** — in vitro translation + GGA placed before the stop codon.",
+  "tags": [
+   "translation-termination",
+   "technique",
+   "exceptions"
+  ],
+  "id": "L4-P002"
+ },
+ {
+  "type": "problem",
+  "topic": "Minimum tRNAs for phenylalanine (HW Q3)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "L4-HW-solutions.md Q3 (3-skeptic verified)",
+  "q": "Phenylalanine has two codons, UUU and UUC. What is the minimum number of tRNAs needed to translate both?",
+  "worked": "One tRNA with anticodon **5′-GAA-3′**. Its 5′-G is the wobble base pairing the codon's 3rd position; a wobble **G reads C and U**, so this single tRNA decodes **UUC and UUU** (both Phe).\n```\ncodon      5'-U U U/C-3'\nanticodon  3'-A A G  -5'   (= 5'-GAA-3'; G wobble → reads C or U)\n```",
+  "answer": "**1.**",
+  "tags": [
+   "wobble",
+   "trna",
+   "calculation",
+   "sequence-reading"
+  ],
+  "id": "L4-P003"
+ },
+ {
+  "type": "problem",
+  "topic": "Mutant analysis, residue 69 (HW Q4a)",
+  "diff": 3,
+  "target_s": 75,
+  "src": "L4-HW-solutions.md Q4 (3-skeptic verified)",
+  "q": "Residue 69 is Leu (WT). Five mutants each change it by ONE nucleotide to: Ser (#1), Val (#2), Trp (#3), Phe (#4), Met (#5). Leu has 6 codons — determine the WT Leu codon and each mutant codon.",
+  "worked": "The binding constraint is **Met = AUG** (Met's only codon), so WT Leu must be **one nucleotide from AUG** → only **UUG** or CUG qualify, and CUG can't reach Ser/Trp/Phe in one step ⇒ **WT = UUG**. One-nt neighbors of UUG: Ser **UCG** (pos2 U→C), Val **GUG** (pos1 U→G), Trp **UGG** (pos2 U→G), Phe **UUU** or **UUC** (pos3 G→U/C), Met **AUG** (pos1 U→A).",
+  "answer": "WT Leu = **UUG**; mutants: Ser=UCG, Val=GUG, Trp=UGG, Phe=UUU/UUC, Met=AUG.",
+  "tags": [
+   "genetic-code",
+   "sequence-reading",
+   "calculation",
+   "mechanism"
+  ],
+  "id": "L4-P004"
+ },
+ {
+  "type": "problem",
+  "topic": "Nonsense mutation at residue 69 (HW Q4b)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "L4-HW-solutions.md Q4 (3-skeptic verified)",
+  "q": "From WT Leu codon **UUG** at residue 69, what single-nucleotide **nonsense** mutation is possible, and what protein results?",
+  "worked": "UUG → **UAG** (pos2 U→A) is a single change to a stop codon → premature termination at residue 69 → a **truncated 68-residue protein**. It's the *unique* single-nt nonsense option (UAA and UGA each need two changes from UUG).",
+  "answer": "**UUG → UAG**, giving a truncated 68-residue protein (nonsense mutation).",
+  "tags": [
+   "genetic-code",
+   "mechanism",
+   "sequence-reading"
+  ],
+  "id": "L4-P005"
+ },
+ {
+  "type": "problem",
+  "topic": "Random poly(G,U) copolymer (HW Q5)",
+  "diff": 3,
+  "target_s": 75,
+  "src": "L4-HW-solutions.md Q5 (3-skeptic verified)",
+  "q": "A random RNA is made of only G and U in equal amounts. What fraction of incorporated amino acids is (a) Val, (b) Trp, (c) Leu, (d) Cys?",
+  "worked": "Each of 3 positions is G or U with p=½ → **8 equally likely triplets (⅛ each)**: GGG=Gly, GGU=Gly, GUG=Val, GUU=Val, UGG=Trp, UGU=Cys, UUG=Leu, UUU=Phe.",
+  "answer": "(a) Val = 2/8 = **1/4**; (b) Trp = **1/8**; (c) Leu = **1/8**; (d) Cys = **1/8**. (Also Gly 1/4, Phe 1/8 — sums to 1.)",
+  "tags": [
+   "code-cracking",
+   "calculation",
+   "genetic-code"
+  ],
+  "id": "L4-P006"
+ },
+ {
+  "type": "problem",
+  "topic": "Wobble legality — read the anticodon (HW Q6)",
+  "diff": 3,
+  "target_s": 60,
+  "src": "L4-HW-solutions.md Q6 (3-skeptic verified); Lec4L.pdf p40",
+  "q": "For each anticodon (written 5′→3′), give the codons read and decide legal/illegal: (i) UAU, (ii) UCA, (iii) GAA, (iv) ICU. (Wobble: G→C/U, U→A/G, I→U/C/A, C→G, A→U.)",
+  "worked": "(i) **UAU** → reads AUA (Ile) **and AUG (Met)** because the 5′-U wobbles to A and G → **two amino acids → ILLEGAL.** (ii) **UCA** → reads UGA (**stop**) and UGG (Trp) → reads through a stop → **ILLEGAL.** (iii) **GAA** → reads UUC and UUU, both **Phe** → **LEGAL** (the Phe reader). (iv) **ICU** → reads AGU, AGC (Ser) **and AGA (Arg)** because I wobbles to A → **two amino acids → ILLEGAL.**",
+  "answer": "UAU illegal (Ile+Met); UCA illegal (reads UGA stop); GAA legal (Phe); ICU illegal (Ser+Arg). Rule: G/I usually safe within a family; U (and sometimes I) is dangerous when it crosses a family boundary or hits a stop.",
+  "tags": [
+   "wobble",
+   "sequence-reading",
+   "exceptions",
+   "figure-interpretation"
+  ],
+  "id": "L4-P007"
+ },
+ {
+  "type": "problem",
+  "topic": "Replication vs translation — NOT similar (HW Q7)",
+  "diff": 2,
+  "target_s": 45,
+  "src": "L4-HW-solutions.md Q7 (3-skeptic verified)",
+  "q": "Which feature is NOT shared by DNA replication and translation? (A) synthesis in the 5′→3′ orientation (B) proofreading (C) building a polymer (D) involvement of RNA.",
+  "worked": "Replication makes a **nucleic acid 5′→3′**; translation makes a **polypeptide N→C** — a protein has no 5′/3′ ends (and the template-reading directions are opposite too). Both proofread (replication: 3′→5′ exonuclease; translation: synthetase editing + decoding-center rejection), both build polymers, both involve RNA (primers; mRNA/tRNA/rRNA).",
+  "answer": "**A** — \"synthesis in the 5′→3′ orientation\" is not shared (protein is N→C).",
+  "tags": [
+   "translation-elongation",
+   "compare-contrast",
+   "directionality",
+   "mechanism"
+  ],
+  "id": "L4-P008"
+ },
+ {
+  "type": "problem",
+  "topic": "Deduce the stop codon (lecture sample Q)",
+  "diff": 3,
+  "target_s": 60,
+  "src": "Lec4L.pdf p15; Lec4T.md iClicker (answer C confirmed)",
+  "q": "Several T4 mutants each stop the protein prematurely. The amino acid that *should* have come next in each is: Gln (CAA/CAG), Lys (AAA/AAG), Glu (GAA/GAG), Tyr (UAU/UAC), Trp (UGG). By Occam's razor (a single point mutation created each stop), what is the stop codon? (a) CAU (b) UAA (c) UAG (d) GAU",
+  "worked": "Find the stop codon reachable from **every** listed codon by ONE nucleotide change. **UAG**: CAG→UAG (C→U), AAG→UAG (A→U), GAG→UAG (G→U), UAC→UAG (C→G), UGG→UAG (G→A) — all one step. UAA fails for Trp (UGG→UAA needs 2 changes). CAU/GAU aren't stops.",
+  "answer": "**(c) UAG.**",
+  "tags": [
+   "code-cracking",
+   "genetic-code",
+   "sequence-reading"
+  ],
+  "id": "L4-P009"
+ },
+ {
+  "type": "problem",
+  "topic": "Minimum tRNAs for serine (lecture sample Q)",
+  "diff": 3,
+  "target_s": 60,
+  "src": "Lec4L.pdf p44; Lec4T.md §8 (min 3 confirmed)",
+  "q": "Serine has 6 codons: UCU, UCC, UCA, UCG (the UCN box) and AGU, AGC. What is the minimum number of tRNA genes needed to read all six?",
+  "worked": "The **UCN box** can't be read by one tRNA (no single wobble base reads U, C, A, **and** G at the 3rd position): an **I**-anticodon reads UCU/UCC/UCA (3 of 4), leaving **UCG**, which needs a second tRNA (a C-wobble anticodon reads G) → **2 tRNAs** for the box. The **AGU/AGC** pair is read by **one** G-wobble tRNA (reads U and C) → **1**. Total **2 + 1 = 3.**",
+  "answer": "**3** (option c).",
+  "tags": [
+   "wobble",
+   "calculation",
+   "sequence-reading"
+  ],
+  "id": "L4-P010"
+ },
+ {
+  "type": "problem",
+  "topic": "Met anticodon — only one legal (lecture sample Q)",
+  "diff": 3,
+  "target_s": 50,
+  "src": "Lec4L.pdf p45",
+  "q": "Met's only codon is 5′-AUG-3′. What anticodon(s) can a functioning tRNA-Met have? (A) 3′-UAC-5′ only (B) 3′-UAU-5′ only (C) both.",
+  "worked": "Pair antiparallel. **3′-UAC-5′** reads AUG cleanly (A–U, U–A, G–C at the wobble position via C, which reads G only) → reads AUG and *only* AUG. **3′-UAU-5′** has a 5′-**U** in the wobble position, which reads codon-3′ **A or G** → it would read AUG (Met) **and AUA (Ile)** → ambiguous/illegal. So only the C-ending anticodon is allowed.",
+  "answer": "**A — 3′-UAC-5′ only.**",
+  "tags": [
+   "wobble",
+   "sequence-reading",
+   "exceptions",
+   "directionality"
+  ],
+  "id": "L4-P011"
+ },
+ {
+  "type": "problem",
+  "topic": "Frameshift restoration count (iClicker)",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec4L.pdf p11; Lec4T.md iClicker (C = multiple of 3)",
+  "q": "What number of combined insertions/deletions can restore a wild-type phenotype? (A) 4 (B) 5 (C) 6 (D) 7 (E) 8",
+  "worked": "The reading frame is only preserved if the net change is a **multiple of 3** (whole codons added/removed, everything up- and downstream stays in frame). Among the options, only **6** is a multiple of 3.",
+  "answer": "**(C) 6.**",
+  "tags": [
+   "genetic-code",
+   "code-cracking",
+   "calculation"
+  ],
+  "id": "L4-P012"
+ },
+ {
+  "type": "problem",
+  "topic": "Discussion Q1 — find & translate the ORF",
+  "diff": 3,
+  "target_s": 90,
+  "src": "Lec4D.pdf Q1 (re-derived + skeptic-checked)",
+  "q": "Coding strand 5′→3′: …CUCGCA**AGGAGG**ACAATAAT **ATG**TTAAGTGGTAGTCTC**TAG**CCG… (DNA). It has an ORF encoding 6 amino acids. Is it prokaryotic or eukaryotic (and why), and what is the peptide?",
+  "worked": "Upstream of the start is **AGGAGG** — a **Shine-Dalgarno** sequence → **prokaryotic** (a eukaryote would have a 5′ cap + Kozak, not an SD). The ORF from **ATG**: ATG-TTA-AGT-GGT-AGT-CTC-TAG. Transcribe (T→U): AUG UUA AGU GGU AGU CUC UAG. Translate: **Met-Leu-Ser-Gly-Ser-Leu-**(stop).",
+  "answer": "**Prokaryotic** (Shine-Dalgarno AGGAGG upstream); peptide = **Met-Leu-Ser-Gly-Ser-Leu** (6 aa).",
+  "tags": [
+   "translation-initiation",
+   "sequence-reading",
+   "directionality",
+   "prokaryote-vs-eukaryote"
+  ],
+  "id": "L4-P013"
+ },
+ {
+  "type": "problem",
+  "topic": "Discussion Q2 — translate a processed mRNA",
+  "diff": 2,
+  "target_s": 60,
+  "src": "Lec4D.pdf Q2 (re-derived + skeptic-checked)",
+  "q": "Processed mRNA: 5′cap-CUCG**AUG**CCUAAGAUGUGAAGAAUAGA-aaaaaaa. What peptide does the ribosome make?",
+  "worked": "Capped/poly-A → eukaryotic → scan from the cap to the **first AUG**: AUG-CCU-AAG-AUG-UGA. AUG=Met, CCU=Pro, AAG=Lys, AUG=Met, **UGA=stop**.",
+  "answer": "**Met-Pro-Lys-Met** (then stop).",
+  "tags": [
+   "translation-initiation",
+   "sequence-reading"
+  ],
+  "id": "L4-P014"
+ },
+ {
+  "type": "problem",
+  "topic": "Discussion Q3 — classify the mutation",
+  "diff": 2,
+  "target_s": 50,
+  "src": "Lec4D.pdf Q3 (re-derived + skeptic-checked)",
+  "q": "The Q2 mRNA is mutated so it now reads 5′cap-CUCGAUGCCU**U**AGAUGUGA…. Give the new peptide and the mutation type (silent / missense / nonsense / frameshift).",
+  "worked": "From the first AUG: AUG-CCU-**UAG**. The third codon changed from AAG (Lys) to **UAG (stop)** — a single-base substitution (A→U) creating a premature stop. Translation ends after residue 2.",
+  "answer": "Peptide = **Met-Pro** (truncated); mutation = **nonsense**.",
+  "tags": [
+   "genetic-code",
+   "sequence-reading",
+   "mechanism"
+  ],
+  "id": "L4-P015"
+ },
+ {
+  "type": "problem",
+  "topic": "Poly(AGG) gives three homopolymers",
+  "diff": 3,
+  "target_s": 60,
+  "src": "Lec4L.pdf p13",
+  "q": "In the code-cracking work (Khorana's repeating copolymers), a repeating **poly(AGG)** (…AGGAGGAGG…) yielded three different homopolymer products (all-Arg, all-Gly, all-Glu). Why three?",
+  "worked": "With no fixed start and Mg²⁺-forced initiation \"anywhere,\" the ribosome can begin in any of **three reading frames** on the repeat. Frame 1 reads **AGG-AGG-…** (one amino acid), frame 2 reads **GGA-GGA-…**, frame 3 reads **GAG-AGG…→ GAG-GAG** — i.e. AGG, GGA, and GAG — each a different codon repeated, so each frame makes a different single-amino-acid polymer.",
+  "answer": "Three reading frames on the AGG repeat give three codons (AGG, GGA, GAG) → three homopolymers (Arg, Gly, Glu).",
+  "tags": [
+   "code-cracking",
+   "sequence-reading",
+   "genetic-code"
+  ],
+  "id": "L4-P016"
+ },
+ {
+  "type": "problem",
+  "topic": "Anticodons for lysine (discussion Q4)",
+  "diff": 3,
+  "target_s": 75,
+  "src": "Lec4D.pdf Q4 (re-derived + skeptic-checked)",
+  "q": "Lysine codons are AAA and AAG. List the tRNA anticodons that could read them; mark which is Watson-Crick-only, which wobbles, and whether any would illegally read a non-Lys codon.",
+  "worked": "Anticodons pair antiparallel (5′ anticodon base = wobble, pairs codon 3′). **5′-UUU-3′**: 3′-end U–A, U–A, and 5′-U wobbles to read A **and G** at codon position 3 → reads **AAA + AAG** (both Lys) → **wobble, legal.** **5′-CUU-3′**: 5′-C reads **G only** → reads **AAG** only → **Watson-Crick-only, legal.** A 5′-UUU is the efficient single-tRNA solution. (No wobble here crosses into a non-Lys codon or a stop, so none are illegal.)",
+  "answer": "5′-UUU-3′ (wobble; reads both AAA & AAG) and 5′-CUU-3′ (WC-only; reads AAG). Minimum tRNAs for Lys = **1** (the 5′-UUU wobble tRNA). None illegal.",
+  "tags": [
+   "wobble",
+   "sequence-reading",
+   "trna",
+   "exceptions"
+  ],
+  "id": "L4-P017"
+ },
+ {
+  "type": "recall",
+  "topic": "The prokaryotic initiator tRNA",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §7.1; Lec4L.pdf p27",
+  "q": "What is the prokaryotic initiator amino acid/tRNA, which factor delivers it, and how does it differ from the eukaryotic initiator?",
+  "a": "Prokaryotes start with **fMet (N-formylmethionine)**, delivered to the P site by **IF2** (with IF1). Eukaryotes use a regular **Met** initiator tRNA (not formylated). Both still start at **AUG** — the initiator amino acid is methionine-based in both, just formylated in bacteria.",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote"
+  ],
+  "id": "L4-R013"
+ },
+ {
+  "type": "recall",
+  "topic": "Initiation factors (IF vs eIF)",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec4T.md §7.1; Lec4L.pdf p27-28",
+  "q": "Name the key initiation factors on each side and their general job.",
+  "a": "**Prokaryotic:** **IF1, IF2, IF3** — position the mRNA/start, bring the fMet-tRNA, and block premature 50S joining until the frame is set. **Eukaryotic:** **eIF1, eIF3, eIF1A** (pre-initiation complex on the small subunit) + **eIF4** (binds the 5′ cap for scanning). They're proteins that set the correct reading frame before the large subunit joins.",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "compare-contrast"
+  ],
+  "id": "L4-R014"
+ },
+ {
+  "type": "recall",
+  "topic": "Svedberg (S) units",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec4T.md §6; Lec4L.pdf p23",
+  "q": "What does an \"S\" (as in 70S, 16S) measure, and why isn't 50S + 30S = 80S?",
+  "a": "**S = Svedberg unit**, a **sedimentation coefficient** (how fast a particle sediments in a centrifuge) — it reflects size AND shape, not mass. Because it's not a simple mass, S values **don't add**: the 50S and 30S subunits together sediment as **70S**, not 80S.",
+  "tags": [
+   "ribosome",
+   "calculation"
+  ],
+  "id": "L4-R015"
+ },
+ {
+  "type": "concept",
+  "topic": "Polysome / coupled transcription-translation",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §7; Lec4L.pdf p25",
+  "q": "What is a polysome, and why can prokaryotes translate an mRNA before it's even finished being transcribed?",
+  "a": "A **polysome** is **multiple ribosomes translating one mRNA at once**. In prokaryotes there's no nucleus, so **transcription and translation are coupled** (simultaneous) — ribosomes load onto the 5′ end (at a Shine-Dalgarno) and begin translating while RNA polymerase is still transcribing the 3′ end. Eukaryotes can't: transcription/processing happen in the nucleus, translation in the cytoplasm.",
+  "tags": [
+   "translation-initiation",
+   "prokaryote-vs-eukaryote",
+   "mechanism"
+  ],
+  "id": "L4-C032"
+ },
+ {
+  "type": "concept",
+  "topic": "Where peptide bonds are made",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec4T.md §7.2; Lec4L.pdf p32",
+  "q": "In which subunit is the peptidyl transferase center, and what molecule actually catalyzes the peptide bond?",
+  "a": "The **peptidyl transferase center is in the LARGE subunit** (50S prokaryote / 60S eukaryote), and the catalyst is **rRNA** — the **23S (pro) / 28S (euk)** rRNA — not a protein. (This is the ribozyme fact, localized: decoding happens in the small subunit's A site; bond-making happens in the large subunit.)",
+  "tags": [
+   "translation-elongation",
+   "ribosome",
+   "mechanism"
+  ],
+  "id": "L4-C033"
+ },
+ {
+  "type": "concept",
+  "topic": "Reading frame & frameshift",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec4T.md §10 (\"the fat cat ate the big rat\")",
+  "q": "Use her sentence analogy to explain a reading frame and why a single insertion/deletion is so destructive.",
+  "a": "The code is read in fixed triplets from a start point — like \"**THE FAT CAT ATE THE BIG RAT**\" read three letters at a time. Delete one letter and everything downstream shifts into gibberish (\"THE ATA TET HEB IGR AT\") — a **frameshift**. Because the frame is contiguous, one indel corrupts **every codon after it**, which is why only indels in multiples of 3 preserve the message.",
+  "tags": [
+   "genetic-code",
+   "mechanism"
+  ],
+  "id": "L4-C034"
+ },
+ {
+  "type": "concept",
+  "topic": "Point-mutation types (translation view)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec4D.pdf Q3; Lec4T.md §3",
+  "q": "Define silent, missense, nonsense, and frameshift mutations by their effect on the protein.",
+  "a": "**Silent** = codon changes but still codes the **same amino acid** (degeneracy absorbs it). **Missense** = codon now codes a **different amino acid**. **Nonsense** = codon becomes a **stop** → truncated protein. **Frameshift** = an insertion/deletion **not** a multiple of 3 → the reading frame shifts → everything downstream is altered (usually with a premature stop).",
+  "tags": [
+   "genetic-code",
+   "mechanism",
+   "compare-contrast"
+  ],
+  "id": "L4-C035"
+ },
+ {
+  "type": "concept",
+  "topic": "Post-translational modification",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec4L.pdf p47-49; Lec4T.md §topic map",
+  "q": "After translation, how can a protein be further changed, and where does much of this happen in eukaryotes?",
+  "a": "Proteins undergo **post-translational modification** (chemical tags, cleavage, folding help) that can change their **localization or function**. In eukaryotes, the **endoplasmic reticulum (ER) and Golgi** are major sites for modification, sorting, and packaging — proteins with an **ER targeting sequence** are routed there during/after translation.",
+  "tags": [
+   "protein-structure",
+   "prokaryote-vs-eukaryote",
+   "mechanism"
+  ],
+  "id": "L4-C036"
+ },
+ {
+  "type": "concept",
+  "topic": "Codon bias",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec4L.pdf p46",
+  "q": "What is codon bias, and name a factor that correlates with which synonymous codon a species prefers?",
+  "a": "**Codon bias** = different species (and highly-expressed genes) preferentially use **some synonymous codons over others** for the same amino acid. It correlates with **tRNA abundance** (a common codon tends to have plentiful matching tRNA → faster/more accurate translation) and expression level. Example: arginine's six codons are used at very different frequencies in humans vs Drosophila vs E. coli.",
+  "tags": [
+   "genetic-code",
+   "prokaryote-vs-eukaryote",
+   "exceptions"
+  ],
+  "id": "L4-C037"
+ },
+ {
+  "type": "problem",
+  "topic": "Wobble legality: GUG anticodon (HW Q6)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "L4-HW-solutions.md Q6 (3-skeptic verified)",
+  "q": "Anticodon **5′-GUG-3′**: which codons does it read, what amino acid, and is it legal? (Wobble: G→U/C.)",
+  "worked": "Pair antiparallel: anticodon 5′-G-U-G-3′ vs codon 3′-...-5′. The 5′-G wobble reads codon-3′ **U or C**, and the other two positions fix the codon as **CAC / CAU** → both **Histidine**. One amino acid, no stop.",
+  "answer": "Reads **CAC, CAU → His**; **LEGAL** (G-wobble stays within His).",
+  "tags": [
+   "wobble",
+   "sequence-reading",
+   "figure-interpretation"
+  ],
+  "id": "L4-P018"
+ },
+ {
+  "type": "problem",
+  "topic": "Wobble legality: UCA anticodon (HW Q6)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "L4-HW-solutions.md Q6 (3-skeptic verified)",
+  "q": "Anticodon **5′-UCA-3′**: which codons does it read, and is it legal? (Wobble: U→A/G.)",
+  "worked": "The 5′-U wobble reads codon-3′ **A or G** → the codons are **UGA and UGG**. **UGA is a STOP codon** and UGG is Trp — so this tRNA would insert an amino acid where translation should terminate.",
+  "answer": "Reads **UGA (stop) + UGG (Trp)** → **ILLEGAL** (reads through a stop → \"trunk full of junk\").",
+  "tags": [
+   "wobble",
+   "exceptions",
+   "sequence-reading"
+  ],
+  "id": "L4-P019"
+ },
+ {
+  "type": "problem",
+  "topic": "Wobble legality: IAU vs why it's safe (HW Q6)",
+  "diff": 3,
+  "target_s": 45,
+  "src": "L4-HW-solutions.md Q6 (3-skeptic verified)",
+  "q": "Anticodon **5′-IAU-3′** (I = inosine): which codons does it read, what amino acid, and why is it legal even though inosine is the \"greediest\" wobble base? (Wobble: I→U/C/A.)",
+  "worked": "The 5′-I reads codon-3′ **U, C, or A** → codons **AUU, AUC, AUA** → all **Isoleucine**. Crucially, I can read U/C/A but **NOT G**, so it **cannot reach AUG (Met)** — it stays entirely within the Ile family.",
+  "answer": "Reads **AUU/AUC/AUA → Ile**; **LEGAL** (I stops short of AUG, so no Met contamination).",
+  "tags": [
+   "wobble",
+   "exceptions",
+   "sequence-reading"
+  ],
+  "id": "L4-P020"
+ },
+ {
+  "type": "problem",
+  "topic": "Same box, different legality: GCU vs ICU (HW Q6)",
+  "diff": 3,
+  "target_s": 55,
+  "src": "L4-HW-solutions.md Q6 (3-skeptic verified)",
+  "q": "Both anticodons target the AGN serine box. Why is **5′-GCU-3′** legal but **5′-ICU-3′** illegal? (Wobble: G→U/C; I→U/C/A.)",
+  "worked": "**GCU**: 5′-G reads codon-3′ **U or C** → AGC, AGU → both **Ser** → **legal**. **ICU**: 5′-I reads codon-3′ **U, C, or A** → AGC, AGU (Ser) **plus AGA** — and **AGA is Arginine**. Reading into a different amino acid makes it **illegal**. The extra reach of inosine (it also reads A) is exactly what crosses the Ser/Arg family boundary here.",
+  "answer": "**GCU = legal** (AGC/AGU → Ser only); **ICU = illegal** (also reads AGA → Arg). Same box, but inosine's A-reading breaks it.",
+  "tags": [
+   "wobble",
+   "exceptions",
+   "compare-contrast",
+   "sequence-reading"
+  ],
+  "id": "L4-P021"
+ }
+]

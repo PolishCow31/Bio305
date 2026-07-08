@@ -49,6 +49,17 @@
     {"id":"splicing","label":"splicing / spliceosome / lariat","kind":"content","lecture":3},
     {"id":"alternative-splicing","label":"alternative splicing / isoforms","kind":"content","lecture":3},
     {"id":"polyadenylation","label":"polyadenylation / poly-A tail","kind":"content","lecture":3},
-    {"id":"prokaryote-vs-eukaryote","label":"prokaryotic vs eukaryotic","kind":"content","lecture":3}
+    {"id":"prokaryote-vs-eukaryote","label":"prokaryotic vs eukaryotic","kind":"content","lecture":3},
+
+    {"id":"amino-acids","label":"amino acids / peptide bond","kind":"content","lecture":4},
+    {"id":"protein-structure","label":"protein structure (4 levels)","kind":"content","lecture":4},
+    {"id":"genetic-code","label":"the genetic code (properties)","kind":"content","lecture":4},
+    {"id":"code-cracking","label":"cracking the code (experiments)","kind":"content","lecture":4},
+    {"id":"trna","label":"tRNA & charging","kind":"content","lecture":4},
+    {"id":"ribosome","label":"ribosome / ribozyme","kind":"content","lecture":4},
+    {"id":"translation-initiation","label":"translation initiation","kind":"content","lecture":4},
+    {"id":"translation-elongation","label":"translation elongation","kind":"content","lecture":4},
+    {"id":"translation-termination","label":"translation termination (release factors)","kind":"content","lecture":4},
+    {"id":"wobble","label":"wobble & tRNA number","kind":"content","lecture":4}
   ]
 }
