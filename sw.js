@@ -1,5 +1,5 @@
 /* Bio 305 service worker — offline shell cache. Cache version bumps on deploy. */
-const C = "bio305-v16";
+const C = "bio305-v17";
 const ASSETS = ["./","index.html","css/style.css?v=3","js/sync-core.js?v=1","js/store.js?v=6","js/app.js?v=8",
   "data/units.json","data/tags.json","data/L1.json","data/L2.json","data/L3.json","data/L4.json","data/L5.json","data/L6.json","img/blockm.svg",
   "img/favicon-32.png","img/icon-512.png","apple-touch-icon.png","manifest.json"];

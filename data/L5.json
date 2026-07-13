@@ -596,5 +596,49 @@
    "compare-contrast"
   ],
   "id": "L5-C030"
+ },
+ {
+  "type": "problem",
+  "topic": "Molecular basis + type of a Glu→Gly change",
+  "diff": 2,
+  "target_s": 45,
+  "src": "Lec5L.pdf p10-11 (sample Q)",
+  "q": "A single-nucleotide change in the sense strand changes the protein from …Ala-Pro-Trp-Ser-**Glu**-Lys… to …Ala-Pro-Trp-Ser-**Gly**-Lys…. (a) What is the molecular basis (which base → which)? (b) What type of mutation is it?",
+  "worked": "Glu = GA**A** / GA**G**; Gly = G**G**A / G**G**G / GGU / GGC. The only single change from a Glu codon to a Gly codon is the **2nd base A→G** (GAA→GGA or GAG→GGG). Check the other options: A→T → GUA/GUG = Val; G→C at position 1 → CAA/CAG = Gln; G→T at position 1 → UAA/UAG = stop — none give Gly. Since the amino acid changed (Glu→Gly), it's **missense**.",
+  "answer": "(a) **A → G** (the 2nd base of the codon); (b) **missense**.",
+  "tags": [
+   "mutation-types",
+   "sequence-reading"
+  ],
+  "id": "L5-P008"
+ },
+ {
+  "type": "problem",
+  "topic": "Which repair uses DNA methylation?",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec5L.pdf p39; Lec5T.md §8 (clicker)",
+  "q": "Which DNA-repair mechanism uses DNA methylation to tell correct from incorrect nucleotides? (A) Eukaryotic mismatch repair (B) NER (C) Translesion synthesis (D) NHEJ (E) None of the above.",
+  "worked": "Methylation-based strand discrimination (MutH reading the **hemimethylated GATC**) is used by **PROKARYOTIC** mismatch repair — which isn't offered. **Eukaryotic** MMR lost a functional MutH → does **not** use methylation (it uses Okazaki fragments instead). NER, TLS, and NHEJ don't use methylation at all. So none of the listed options qualifies.",
+  "answer": "**E — none of the above** (methylation is used by *prokaryotic* MMR, which isn't listed).",
+  "tags": [
+   "mismatch-repair",
+   "prokaryote-vs-eukaryote"
+  ],
+  "id": "L5-P009"
+ },
+ {
+  "type": "concept",
+  "topic": "P-elements",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec5L.pdf p48",
+  "q": "What are P-elements, and how are they kept in check in the germline?",
+  "a": "**P-elements** are **Class II (cut-paste) DNA transposons** that spread through **Drosophila** populations relatively recently. They're **silenced during oogenesis** (an RNA-based germline silencing) so they don't wreak havoc in the next generation — a concrete example of the general rule that **most transposable elements end up silenced / non-autonomous**.",
+  "tags": [
+   "transposons",
+   "mechanism"
+  ],
+  "id": "L5-C031"
  }
 ]

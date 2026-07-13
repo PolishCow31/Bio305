@@ -614,5 +614,20 @@
    "technique"
   ],
   "id": "L6-C030"
+ },
+ {
+  "type": "concept",
+  "topic": "Engineering an in-frame deletion with CRISPR-Cas9",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec6HW.pdf Q3; Lec6L.pdf p50",
+  "q": "How would you use CRISPR-Cas9 to delete a whole functional region from the middle of a gene while keeping the C-terminus in frame?",
+  "a": "Design **two guide RNAs** targeting sites that **flank** the region → Cas9 makes **two double-strand breaks** → the segment between them drops out and the ends rejoin (by NHEJ). To keep the downstream (C-terminal) reading frame intact, the **total deleted length must be a multiple of 3** — otherwise the rejoined coding sequence is frameshifted. (Uses CRISPR as a targeted double-cut tool, exploiting the cell's own DSB repair to seal the gap.)",
+  "tags": [
+   "restriction-crispr",
+   "technique",
+   "mechanism"
+  ],
+  "id": "L6-C031"
  }
 ]
