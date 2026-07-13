@@ -176,19 +176,29 @@
     app.appendChild(stage);
     stage.querySelector(".x").onclick=()=>finishReview();
     const fc = stage.querySelector(".flash-card");
-    sess.shownTs = performance.now(); sess.flipped=false;
-    fc.onclick=()=>{ if(sess.flipped) return; sess.flipped=true; fc.classList.add("flipped"); showGrades(stage, id, c); };
+    sess.shownTs = performance.now(); sess.flipped=false; sess.flipLat=null;
+    const gradeHost = stage.querySelector(".grade-host");
+    fc.onclick=()=>{                                   // toggle front <-> back (tap or space)
+      sess.flipped = !sess.flipped;
+      fc.classList.toggle("flipped", sess.flipped);
+      if(sess.flipped){
+        // capture recall time + build the grade row ONCE (first flip); re-flips just re-show it
+        if(sess.flipLat==null){ sess.flipLat = performance.now()-sess.shownTs; showGrades(stage, id, c, sess.flipLat); }
+        gradeHost.style.display="";
+      } else {
+        gradeHost.style.display="none";                // flipping back to the front hides the answer + grades
+      }
+    };
   }
-  function showGrades(stage, id, c){
-    const lat = performance.now()-sess.shownTs;
+  function showGrades(stage, id, c, lat){
     const onpace = lat <= (c.target_s||10)*1000*1.25;
     const host = stage.querySelector(".grade-host");
     const paceTag = `<div class="pace ${onpace?'good':'slow'}">${(lat/1000).toFixed(1)}s ${onpace?'· on pace':'· slow (target '+(c.target_s||'—')+'s)'}</div>`;
     const row = el(`<div class="grade-wrap">${paceTag}<div class="grade-row">
-      <button class="grade again"><b>Again</b><small>1</small></button>
-      <button class="grade hard"><b>Hard</b><small>2</small></button>
-      <button class="grade good"><b>Good</b><small>3</small></button>
-      <button class="grade easy"><b>Easy</b><small>4</small></button></div></div>`);
+      <button class="grade again"><b>Again</b><small>1 · 7</small></button>
+      <button class="grade hard"><b>Hard</b><small>2 · 8</small></button>
+      <button class="grade good"><b>Good</b><small>3 · 9</small></button>
+      <button class="grade easy"><b>Easy</b><small>4 · 0</small></button></div></div>`);
     const gs=[1,2,3,4];
     [...row.querySelectorAll(".grade")].forEach((b,k)=>b.onclick=()=>{
       Store.grade(id, gs[k], lat);
@@ -450,13 +460,14 @@
     Store.onSync(handleRemoteSync); Store.startSync();   // live merge sync (no-op until cloud configured)
     window.addEventListener("hashchange", route);
     route();
-    // Keyboard: space = flip; 1/2/3/4 = grade; n = next tag drill; review screen only.
+    // Keyboard (review screen): space = flip toggle (front<->back); grade with 1/2/3/4 OR 7/8/9/0 (right hand).
     document.addEventListener("keydown", (e)=>{
       const fc=document.querySelector(".flash-card"); if(!fc) return;
       const t=(document.activeElement||{}).tagName; if(t==="INPUT"||t==="TEXTAREA") return;
-      if(e.code==="Space"){ e.preventDefault(); if(!fc.classList.contains("flipped")) fc.click(); return; }
+      // Robust space detection — some browsers/devices send an empty or nonstandard e.code, so check key + keyCode too.
+      if(e.code==="Space" || e.key===" " || e.key==="Spacebar" || e.keyCode===32){ e.preventDefault(); fc.click(); return; }
       if(fc.classList.contains("flipped")){
-        const i={"1":0,"2":1,"3":2,"4":3}[e.key];
+        const i={"1":0,"2":1,"3":2,"4":3,"7":0,"8":1,"9":2,"0":3}[e.key];   // 7/8/9/0 mirror 1/2/3/4 (Again/Hard/Good/Easy)
         if(i!==undefined){ e.preventDefault(); const g=document.querySelectorAll(".grade-row .grade")[i]; if(g) g.click(); }
       }
     });
