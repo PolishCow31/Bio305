@@ -1,0 +1,600 @@
+[
+ {
+  "type": "concept",
+  "topic": "Mutation as the source of diversity",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec5T.md §1",
+  "q": "Mutations come in three fitness flavors — name them, and which two actually drive biological diversity.",
+  "a": "**Deleterious** (breaks something), **neutral** (no functional consequence), and **beneficial** (a new capability). The **deleterious and beneficial** ones change the phenotype, so they're what natural selection acts on → the source of the biological diversity on Earth. Mutation is the *ultimate* source of all genetic variation.",
+  "tags": [
+   "mutation-origin",
+   "foundations"
+  ],
+  "id": "L5-C001"
+ },
+ {
+  "type": "concept",
+  "topic": "Germline vs somatic mutations",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §1",
+  "q": "Distinguish germline from somatic mutations by tissue and heritability.",
+  "a": "**Somatic** = mutation in **non-reproductive** tissue → passed to **daughter cells via mitosis** (can make a patch/clone of mutant cells) but **NOT to offspring**. **Germline** = mutation in reproductive-lineage cells → **can** be inherited by offspring (subject to the random shuffling of which DNA is passed on); if inherited, **every** cell of the offspring carries it.",
+  "tags": [
+   "mutation-origin",
+   "compare-contrast"
+  ],
+  "id": "L5-C002"
+ },
+ {
+  "type": "concept",
+  "topic": "Mutations are random — Luria-Delbrück",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec5T.md §2; Lec5L.pdf",
+  "q": "How did Luria & Delbrück prove mutations are random (not adaptive), and what result distinguished the two hypotheses?",
+  "a": "The **fluctuation test**: cultures of bacteria + **T1 phage**; some cells are virus-resistant. If resistance arises **randomly** (independent of the phage), it appears at **different generations** in different cultures → **different %** resistant per culture (big fluctuation). If it were **adaptive** (caused by the phage), resistance would appear only after adding phage → the **same %** across cultures. The data showed **fluctuation** → mutations are **random**, refuting the Lamarckian \"adapt-on-demand\" idea.",
+  "tags": [
+   "mutation-origin",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L5-C003"
+ },
+ {
+  "type": "concept",
+  "topic": "Coding vs regulatory mutations",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §3",
+  "q": "Why do regulatory mutations matter despite our focus on coding mutations, and roughly how much of the human genome even codes protein?",
+  "a": "Only ~**2%** of the human genome is protein-coding (~98% non-coding; bacteria are far denser, ~67%). So most mutable DNA is **regulatory** — mutations in **promoters, splice sites, poly-A signals**, etc. can change **expression or processing** and hit the phenotype just as hard as a coding change, even though the protein sequence is untouched.",
+  "tags": [
+   "mutation-types",
+   "compare-contrast"
+  ],
+  "id": "L5-C004"
+ },
+ {
+  "type": "concept",
+  "topic": "Transition vs transversion",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec5T.md §4; Lec5L.pdf",
+  "q": "Define transition and transversion point mutations.",
+  "a": "**Transition** = a base change **within a ring class**: purine↔purine (A↔G) or pyrimidine↔pyrimidine (C↔T). **Transversion** = a change that **crosses classes** (purine↔pyrimidine) — there are more ways to do a transversion. (The functional impact depends on how it changes the protein, not on which category.)",
+  "tags": [
+   "mutation-types",
+   "compare-contrast",
+   "nucleotide-chemistry"
+  ],
+  "id": "L5-C005"
+ },
+ {
+  "type": "concept",
+  "topic": "Indels & the frameshift rule",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §4",
+  "q": "What is an indel, and exactly when does it cause a frameshift?",
+  "a": "An **indel** = an **in**sertion or **del**etion of nucleotides. In a **coding sequence**, any indel that is **not a multiple of 3** shifts the reading frame → **frameshift** (every codon downstream is garbled, usually to a premature stop). ⚑ Indels in the ~98% **non-coding** DNA do **not** cause frameshifts — \"frameshift\" is a coding-sequence concept.",
+  "tags": [
+   "mutation-types",
+   "mechanism"
+  ],
+  "id": "L5-C006"
+ },
+ {
+  "type": "concept",
+  "topic": "Silent / missense / nonsense",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec5T.md §5; Lec5D.pdf",
+  "q": "Define the three point-mutation outcomes in a coding sequence.",
+  "a": "**Silent (synonymous):** codon changes but the **amino acid doesn't** (usually no effect; occasionally a subtle codon-bias effect). **Missense:** codon now specifies a **different amino acid** (\"a mistake in the message\"). **Nonsense:** codon becomes a **stop** → truncated protein (\"no sense a tRNA can read\" — and stops are read by **release factors**, not tRNAs).",
+  "tags": [
+   "mutation-types",
+   "mechanism"
+  ],
+  "id": "L5-C007"
+ },
+ {
+  "type": "recall",
+  "topic": "Missense vs nonsense mnemonic",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec5T.md §5",
+  "q": "Her trick for keeping missense vs nonsense straight?",
+  "a": "**Nonsense = NO sense** → no meaning a tRNA can interpret → it's a **stop** (truncation). **Missense** = a tRNA still reads it, just the **wrong (mistaken) message** → a different amino acid. (Colloquial \"nonsense = gobbledygook\" misleads; think \"no sense = no tRNA meaning.\")",
+  "tags": [
+   "mutation-types",
+   "compare-contrast"
+  ],
+  "id": "L5-R001"
+ },
+ {
+  "type": "concept",
+  "topic": "Reversion (same gene)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §6 (⚑ \"know for my exams\")",
+  "q": "⚑ What does Archbold specifically mean by a **reversion** in this class, and what three ways can it happen?",
+  "a": "A **reversion/revertant** = a **second mutation, in the SAME gene**, that restores the wild-type **phenotype**. Three routes: (a) a **true back-mutation** (exact reversal of the original change); (b) a **different-position** change that still yields the **same amino acid** (a synonymous change → same protein → wild-type function; \"wild-type\" here is defined by **phenotype**, not the exact nucleotide); (c) an **indel that restores the reading frame** (e.g. a +2 offsetting a −2, or deleting a 3rd base so the net is a multiple of 3).",
+  "tags": [
+   "reversion-suppressor",
+   "mechanism"
+  ],
+  "id": "L5-C008"
+ },
+ {
+  "type": "concept",
+  "topic": "Suppressor (different gene)",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec5T.md §6 (⚑ \"know for my exams\")",
+  "q": "⚑ What is a **suppressor** mutation in her class-specific definition, and what tool exploits it?",
+  "a": "A **suppressor** (aka **second-site reversion**) = a second mutation in a **DIFFERENT gene** that restores the wild-type **phenotype** (the first gene stays mutated). This is the basis of **suppressor screens**: mutate a mutant strain and look for wild-type-reverted offspring → the newly-mutated **second gene** is functionally related (works in the same pathway).",
+  "tags": [
+   "reversion-suppressor",
+   "mechanism"
+  ],
+  "id": "L5-C009"
+ },
+ {
+  "type": "concept",
+  "topic": "Reversion vs suppressor (the exam split)",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §6 (⚑ \"I expect you to know that difference\")",
+  "q": "⚑ In one line: how does Archbold split \"reversion\" from \"suppressor,\" and why note it?",
+  "a": "**Reversion = the restoring mutation is in the SAME gene; suppressor = it's in a DIFFERENT gene.** She flagged this hard (\"I expect you to know that difference for my exams\") because the **textbook lumps both under 'reversion'** — she deliberately splits them. Both restore the wild-type phenotype; the difference is one gene vs two.",
+  "tags": [
+   "reversion-suppressor",
+   "compare-contrast"
+  ],
+  "id": "L5-C010"
+ },
+ {
+  "type": "concept",
+  "topic": "Regulatory mutations — promoter & splicing",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §7; Lec5D.pdf",
+  "q": "Give two ways a regulatory mutation changes the outcome without touching the coding sequence.",
+  "a": "(1) **Promoter** mutation → weaker pre-initiation-complex/polymerase binding → **less transcription** → fewer mRNAs → less protein. (2) **Splice-site** mutation (3′ acceptor or 5′ donor) → can destroy the normal site or create a **cryptic splice site** → include/exclude sequence; if extra sequence lands in the coding region and isn't a multiple of 3, it causes a **frameshift**. (Recognition sites are consensus, so subtle changes may be tolerated, reduced, or abolished.)",
+  "tags": [
+   "mutation-types",
+   "mechanism",
+   "splicing"
+  ],
+  "id": "L5-C011"
+ },
+ {
+  "type": "concept",
+  "topic": "Proofreading",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec5T.md §8",
+  "q": "How does replicative proofreading correct a misincorporation, and when?",
+  "a": "The polymerase's **3′→5′ exonuclease** catches a mismatched terminal nucleotide **during replication**: it flips the base out of the active site to the exonuclease/palm, **clips it off**, and retries — usually before moving to the next nucleotide. Fast and frequent (from L2).",
+  "tags": [
+   "mismatch-repair",
+   "dna-polymerase",
+   "mechanism"
+  ],
+  "id": "L5-C012"
+ },
+ {
+  "type": "concept",
+  "topic": "Mismatch repair (prokaryotic)",
+  "diff": 3,
+  "target_s": 24,
+  "src": "Lec5T.md §8; Lec5L.pdf",
+  "q": "Walk through prokaryotic mismatch repair: which proteins, and how does it know which strand is wrong?",
+  "a": "For misincorporations proofreading missed: **MutS** recognizes the mismatch. **MutH** decides which strand is **new** by reading **GATC methylation** — the **parent** strand is methylated, the freshly-made strand **isn't yet** (a **hemimethylated** window right after replication). MutH nicks the **unmethylated (new)** strand; **MutL** + endonucleases excise back past the mismatch; **Pol III** re-synthesizes; ligase seals.",
+  "tags": [
+   "mismatch-repair",
+   "mechanism"
+  ],
+  "id": "L5-C013"
+ },
+ {
+  "type": "concept",
+  "topic": "Eukaryotic mismatch repair (no methylation)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §8 (⚑ clicker); Lec5D.pdf",
+  "q": "⚑ Do eukaryotes use DNA methylation for mismatch repair? If not, how do they find the new strand?",
+  "a": "**No.** Eukaryotes have a **MutH homolog that's non-functional** (too mutated), so they can't use the methylation mark. The leading theory: they identify the **new strand by its Okazaki fragments** (the strand with short pieces / nicks is the newly-made one → the one to correct). (Clicker: eukaryotic MMR does **not** use methylation.)",
+  "tags": [
+   "mismatch-repair",
+   "prokaryote-vs-eukaryote",
+   "exceptions"
+  ],
+  "id": "L5-C014"
+ },
+ {
+  "type": "concept",
+  "topic": "Polymerase slippage & repeat expansion",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §8; Lec5L.pdf",
+  "q": "How does polymerase slippage change repeat number, and what makes it worsen over generations?",
+  "a": "In a **repetitive sequence** the polymerase can dissociate and the new strand **re-anneals out of register** → the repeat gets **longer or shorter**. It's poorly repaired, so it snowballs — **anticipation**: the bigger the repeat, the more likely further slippage, so the repeat (and disease severity) **grows across generations**.",
+  "tags": [
+   "repeat-expansion",
+   "mismatch-repair",
+   "mechanism"
+  ],
+  "id": "L5-C015"
+ },
+ {
+  "type": "concept",
+  "topic": "Fragile X (repeat expansion)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec5T.md §8",
+  "q": "Use Fragile X to illustrate a repeat-expansion disease (gene, thresholds, anticipation).",
+  "a": "**Fragile X** — gene **FMR1**, a CGG-type trinucleotide repeat. **>200 repeats = full mutation** (affected boys; autism-linked). A **premutation (60–200)** — e.g. in grandfathers — isn't full Fragile X but can cause a later-life ataxia (FXTAS). The repeat can jump **60 → 200 → 800–1000** within ~two generations (anticipation). **Severity correlates with repeat number.** (Don't memorize the specific disease list — know the mechanism.)",
+  "tags": [
+   "repeat-expansion",
+   "mechanism"
+  ],
+  "id": "L5-C016"
+ },
+ {
+  "type": "concept",
+  "topic": "Spontaneous damage: depurination & deamination",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec5T.md §8",
+  "q": "Name two common spontaneous chemical lesions and their consequences.",
+  "a": "**Depurination** — the ribose–purine bond breaks (~**10,000×/day** in a human cell), leaving an **apurinic site** that tends to be filled with **A** (often wrong). **Deamination** — cytosine loses an amine → **uracil** (foreign to DNA); **5-methyl-cytosine → thymine** (a real sequence change). Both silently alter the information.",
+  "tags": [
+   "mutation-origin",
+   "mechanism"
+  ],
+  "id": "L5-C017"
+ },
+ {
+  "type": "concept",
+  "topic": "Base analogs & chemical mutagens",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §8",
+  "q": "How do base analogs (e.g. 5-bromouracil) and chemical mutagens (nitrous acid, EMS) cause mutations?",
+  "a": "**5-bromouracil** (a thymine analog) **tautomerizes** — it flips between a **keto** form (pairs A) and an **enol** form (pairs G) — so over replication rounds it converts **AT→GC**. **Chemical mutagens** (nitrous acid, EMS, hydroxylamine) chemically modify a base so it pairs differently → **transitions** (e.g. adenine→**hypoxanthine**, which pairs C). **Intercalators** (proflavin, ethidium bromide) wedge between bases → **indels** at replication.",
+  "tags": [
+   "mutation-origin",
+   "mechanism"
+  ],
+  "id": "L5-C018"
+ },
+ {
+  "type": "concept",
+  "topic": "Bulky / helix-distorting damage",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §8; Lec5D.pdf",
+  "q": "Give two lesions that distort the helix and block replication.",
+  "a": "**UV light → cyclobutane thymine dimers** (adjacent T's covalently bond → kink in the helix → replication block). **Aflatoxin → a bulky base adduct** on a base (huge added group → nothing can pair → replication block). Both are **helix-distorting** lesions repaired by **nucleotide excision repair**.",
+  "tags": [
+   "excision-repair",
+   "mutation-origin",
+   "mechanism"
+  ],
+  "id": "L5-C019"
+ },
+ {
+  "type": "concept",
+  "topic": "Photoreactivation (CPD photolyase)",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §8",
+  "q": "How does photoreactivation fix a thymine dimer, and who can't do it?",
+  "a": "**CPD photolyase** uses **blue light (~300–450 nm)** to directly **break** the cyclobutane thymine dimer (light energy undoes light-caused damage — an elegant direct reversal). Nearly all life has it (birds, reptiles, bacteria, fungi) — but **mammals have LOST it**, so we rely entirely on nucleotide excision repair for UV damage.",
+  "tags": [
+   "excision-repair",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L5-C020"
+ },
+ {
+  "type": "concept",
+  "topic": "Nucleotide excision repair (NER)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §8 (⚑ clicker: recognizes distortion); Lec5D.pdf",
+  "q": "⚑ What does NER recognize, how does it repair, and what disease results if it fails?",
+  "a": "NER scans for **helical distortion** (UV dimers, bulky adducts like aflatoxin) — **not** incorrect nucleotides. It cuts the phosphodiester backbone on **both sides** of the lesion, removes a **whole section of nucleotides**, then Pol + ligase refill. **Mammals depend entirely on NER** (no photolyase), so defects cause **xeroderma pigmentosum / Cockayne syndrome** → extreme UV sensitivity and high UV-cancer risk.",
+  "tags": [
+   "excision-repair",
+   "mechanism"
+  ],
+  "id": "L5-C021"
+ },
+ {
+  "type": "concept",
+  "topic": "Base excision repair (BER)",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec5T.md §8",
+  "q": "How does BER differ from NER — trigger and how much it removes?",
+  "a": "**BER** handles **specific damaged/altered single bases** (base analogs like hypoxanthine, 8-oxo-guanine — not helix distortions). A **DNA glycosylase** (≥12 in mammals, each specific to one lesion) excises just the **bad base** → AP site → endonuclease nicks/flaps → **short- or long-patch** synthesis → flap endonuclease + ligase. So **NER removes a section (distortion); BER removes one base (specific analog)** — both finish with polymerase + ligase.",
+  "tags": [
+   "excision-repair",
+   "mechanism"
+  ],
+  "id": "L5-C022"
+ },
+ {
+  "type": "concept",
+  "topic": "Translesion synthesis / SOS",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec5T.md §8; Lec5HW.pdf",
+  "q": "What is translesion synthesis, why is it error-prone, and what does it actually \"repair\"?",
+  "a": "A **last-resort bypass** of a **replication block**. **Pol III** (tight channel, proofreads) can't get over a bulky lesion and is swapped for a **bypass polymerase** — **Pol V** in prokaryotes (the \"**SOS**\" response), Pol η/gamma/kappa-family in eukaryotes. It has a **big channel, no proofreading, low processivity** (\"fat-tire beach bike — rolls over anything\"), slaps ~random bases across the lesion, then Pol III resumes. It repairs the **block** (avoids immediate death), **not** the lesion — hence **error-prone**. \"You didn't die today.\"",
+  "tags": [
+   "translesion-repair",
+   "mechanism",
+   "exceptions"
+  ],
+  "id": "L5-C023"
+ },
+ {
+  "type": "concept",
+  "topic": "NHEJ (double-strand break)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §9",
+  "q": "How does non-homologous end joining fix a double-strand break, why is it error-prone, and what's the telomere connection?",
+  "a": "**NHEJ**: **DNA-PKcs + Ku70/Ku80** bind both broken ends, **trim/fill** the jagged ends, and ligase **rejoins** them. **Error-prone** — it can lose DNA, and if two breaks occur at once, Ku doesn't check sequence → **reciprocal translocation**. ⚑ Callback: **telomeres exist to hide chromosome ends** from Ku/PKcs (so natural ends aren't \"repaired\" together) — ties to the L2 end-replication problem.",
+  "tags": [
+   "dsb-repair",
+   "mechanism",
+   "telomere"
+  ],
+  "id": "L5-C024"
+ },
+ {
+  "type": "concept",
+  "topic": "HR / synthesis-dependent strand annealing",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec5T.md §9",
+  "q": "How does homologous recombination repair a double-strand break, when can it happen, and why is it error-free?",
+  "a": "**HR (SDSA)** works only in **S/G2** when a **sister chromatid** (identical template) is present (checkpoints: G1/S, intra-S, G2/M). **Rad51** coats the intact strand → **D-loop + strand invasion** → polymerase copies from the intact template → ligase seals. Because it copies a perfect template, it's **error-free** (repetitive sequences can occasionally mispair).",
+  "tags": [
+   "dsb-repair",
+   "mechanism"
+  ],
+  "id": "L5-C025"
+ },
+ {
+  "type": "recall",
+  "topic": "NHEJ vs HR",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec5T.md §9; Lec5D.pdf",
+  "q": "Contrast NHEJ and HR in one line each (fidelity + requirement).",
+  "a": "**NHEJ** — glues broken ends back directly (Ku/DNA-PKcs); works anytime but is **error-prone** (no template). **HR** — copies the intact **sister chromatid** (Rad51); **error-free** but only available in **S/G2**.",
+  "tags": [
+   "dsb-repair",
+   "compare-contrast"
+  ],
+  "id": "L5-R002"
+ },
+ {
+  "type": "concept",
+  "topic": "Holliday junction & opposite-sense resolution",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec5T.md §9 (⚑ \"recognize the name + the phrase\")",
+  "q": "⚑ What is a Holliday junction, and what does \"opposite-sense resolution\" produce? (She said to recognize the name + phrase.)",
+  "a": "A **Holliday junction** is the four-strand crossed-DNA intermediate of homologous recombination (in meiosis, **Spo11** deliberately breaks a strand → strand invasion → the junction). It's cut (\"resolved\") in one of two ways: **same-sense** (leaves only a small **heteroduplex** patch) or **opposite-sense** → a **crossover** (the two homologs **exchange arms**). Opposite-sense resolution = the source of recombinant genetic diversity — central to **Unit 2 meiotic mapping**.",
+  "tags": [
+   "dsb-repair",
+   "mechanism"
+  ],
+  "id": "L5-C026"
+ },
+ {
+  "type": "recall",
+  "topic": "Prokaryotic homologous recombination",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec5T.md §9",
+  "q": "What system carries out homologous recombination in prokaryotes, and what triggers it?",
+  "a": "The **RecBCD** system; **RecA** detects the double-strand break and drives strand invasion. It underlies bacterial **transformation, conjugation, and transduction** (the L6 gene-transfer mechanisms).",
+  "tags": [
+   "dsb-repair",
+   "mechanism"
+  ],
+  "id": "L5-R003"
+ },
+ {
+  "type": "concept",
+  "topic": "Class I vs class II transposons",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec5T.md §10; Lec5L.pdf",
+  "q": "Contrast the two transposon classes by mechanism, and which expands genomes.",
+  "a": "**Class I retrotransposons = copy-paste** — transcribed to RNA, then **reverse transcriptase** makes a DNA copy inserted elsewhere; each hop makes a **new copy** → **genome expansion**. **Class II DNA transposons = cut-paste** — **transposase** excises the element and moves it (copy number ~stable). Class II is more common in **bacteria** (keeps genomes small); Class I dominates large eukaryotic genomes.",
+  "tags": [
+   "transposons",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L5-C027"
+ },
+ {
+  "type": "concept",
+  "topic": "LINEs, SINEs & TE genome fraction",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §10",
+  "q": "How much of the human genome is transposon-derived, and what are LINEs/SINEs?",
+  "a": "**~45–55%** of the human genome is transposon-derived — the **vast majority retrotransposons** (only ~3% is cut-paste DNA transposons). **LINEs and SINEs** (two retrotransposon families) together make up **~25%** of the genome. They're major drivers of genome evolution.",
+  "tags": [
+   "transposons",
+   "mechanism"
+  ],
+  "id": "L5-C028"
+ },
+ {
+  "type": "concept",
+  "topic": "Transposons as degenerate viruses",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec5T.md §10",
+  "q": "What is the likely evolutionary origin of retrotransposons vs DNA transposons?",
+  "a": "**Retrotransposons ≈ degenerate retroviruses** — they kept LTRs + reverse transcriptase but **lost the envelope protein**, so they can no longer leave the cell (stuck copying themselves within the genome). **DNA transposons ≈ degenerate DNA viruses.** Sequence similarity to real viruses (e.g. LINE-1 vs a retrovirus) supports this.",
+  "tags": [
+   "transposons",
+   "phage-biology",
+   "mechanism"
+  ],
+  "id": "L5-C029"
+ },
+ {
+  "type": "recall",
+  "topic": "Insertion sequences & composite transposons",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec5T.md §10",
+  "q": "Distinguish an IS element from a composite transposon.",
+  "a": "An **insertion sequence (IS)** is the simplest DNA transposon — just a **transposase** gene flanked by **terminal inverted repeats (TIRs)**. A **composite transposon** = **two IS elements flanking** other genes; because the whole thing moves as a unit, it **drags the genes between the IS elements** along (e.g. carrying antibiotic-resistance genes).",
+  "tags": [
+   "transposons",
+   "compare-contrast"
+  ],
+  "id": "L5-R004"
+ },
+ {
+  "type": "problem",
+  "topic": "Which repair pathways are error-prone? (HW Q1)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "Lec5HW.pdf Q1; Lec5T.md §8-9",
+  "q": "Which pair of DNA-repair pathways is **error-prone**? (A) BER + NER (B) HR + BER (C) Translesion synthesis + NHEJ (D) NHEJ + Mismatch repair (E) none.",
+  "worked": "**Translesion synthesis** uses a no-proofreading bypass polymerase (slaps in ~random bases) → error-prone. **NHEJ** glues ends with no template and can lose DNA / cause translocations → error-prone. BER, NER, MMR, and HR are all **high-fidelity** (template- or specificity-guided). So the error-prone pair is TLS + NHEJ.",
+  "answer": "**C** — Translesion synthesis + NHEJ.",
+  "tags": [
+   "translesion-repair",
+   "dsb-repair",
+   "compare-contrast"
+  ],
+  "id": "L5-P001"
+ },
+ {
+  "type": "problem",
+  "topic": "Why tolerate error-prone repair? (HW Q2)",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec5HW.pdf Q2; Lec5T.md §8",
+  "q": "Why does a cell tolerate error-prone repair mechanisms? (A) errors are the best way to make advantageous mutations (B) natural selection needs them (C) they can prevent immediate cell death (D) errors get proofread and fixed later (E) it doesn't — errors cause immediate death.",
+  "worked": "A **replication block** (or unrepaired double-strand break) is lethal **now**. Error-prone bypass (translesion synthesis) or quick end-joining (NHEJ) lets the cell **survive the immediate crisis**, accepting a few sequence errors as the lesser evil (\"you didn't die today\"). It's not *for* making mutations, and the errors aren't later proofread out.",
+  "answer": "**C** — they prevent immediate cell death.",
+  "tags": [
+   "translesion-repair",
+   "mechanism"
+  ],
+  "id": "L5-P002"
+ },
+ {
+  "type": "problem",
+  "topic": "What does mismatch repair fix? (HW Q3)",
+  "diff": 1,
+  "target_s": 30,
+  "src": "Lec5HW.pdf Q3; Lec5T.md §8",
+  "q": "The mismatch-repair pathway is responsible for fixing… (A) bases damaged by endogenous factors (B) bases damaged by chemical mutagens (C) bases damaged by radiation (D) replication errors (E) transcription errors.",
+  "worked": "MMR is the **backup to proofreading** — it catches **base-base mismatches left by the replicative polymerase** (MutS finds the mismatch, MutH/methylation or Okazaki fragments mark the new strand to correct). Chemical/radiation/endogenous **base damage** goes to BER or NER, not MMR.",
+  "answer": "**D** — replication errors.",
+  "tags": [
+   "mismatch-repair",
+   "mechanism"
+  ],
+  "id": "L5-P003"
+ },
+ {
+  "type": "problem",
+  "topic": "Why TEs sit in introns, not exons (HW Q4)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "Lec5HW.pdf Q4",
+  "q": "Why are transposable elements found much more often in introns than exons? (A) they prefer introns (B) they prefer exons (C) they insert into both, but negative selection acts against exon insertions more often (D) none.",
+  "worked": "Transposons insert roughly **randomly**. An insertion into an **exon** disrupts the protein-coding sequence (frameshift/disruption) → usually **deleterious** → **selected against**, so those organisms are lost. Intron insertions are usually tolerated (introns are spliced out). Over evolutionary time the **survivors** carry mostly **intron** insertions — a selection effect, not an insertion preference.",
+  "answer": "**C** — random insertion + negative selection against exon insertions.",
+  "tags": [
+   "transposons",
+   "mutation-types",
+   "mechanism"
+  ],
+  "id": "L5-P004"
+ },
+ {
+  "type": "problem",
+  "topic": "Why class I elements dominate big genomes (HW Q5)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "Lec5HW.pdf Q5; Lec5T.md §10",
+  "q": "Class I (retro) elements make up the largest fraction of very large genomes (human, maize, barley). What about their mechanism explains this?",
+  "worked": "Class I transposes by **copy-paste**: it's transcribed to RNA and **reverse-transcribed into a new DNA copy** that inserts elsewhere — the **original stays put**, so **every transposition increases copy number**. Class II is **cut-paste** (the element leaves its old site), so it **doesn't amplify**. Repeated copy-paste over evolutionary time balloons the retrotransposon fraction in large genomes.",
+  "answer": "Copy-paste (via an RNA intermediate) **amplifies** copy number each hop; cut-paste doesn't → class I accumulates.",
+  "tags": [
+   "transposons",
+   "mechanism"
+  ],
+  "id": "L5-P005"
+ },
+ {
+  "type": "problem",
+  "topic": "Classify OPRM1 mutations (discussion Q1)",
+  "diff": 3,
+  "target_s": 120,
+  "src": "Lec5D.pdf Q1 (re-derived + skeptic-checked)",
+  "q": "Exon-1 codons: AUG-CUU-GUA-AUU-GGU-ACU-CAU-CAA. Classify: (A) codon 5 GGU→GCU; (B) codon 5 GGU→GGC; (C) insert a U before codon 5's GGU; (D) delete the first C of codon 2; (E) point mutation in intron-1's 5′ splice site preventing removal; (F) promoter mutation blocking TBP binding.",
+  "worked": "(A) GGU→GCU = Gly→Ala → **missense**. (B) GGU→GGC = Gly→Gly → **silent/synonymous**. (C) +U at codon 5 → **frameshift** from codon 5 on (new frame reads Trp-Tyr-Ser-Ser…; downstream garbled — frameshifts usually hit a premature stop further along, though none appears in this short window). (D) delete C of codon 2 → reframe: AUG-**UUG-UAA**… = Met-Leu-**STOP** → **frameshift → premature stop / truncated protein**. (E) 5′-splice-site mutation → **intron 1 retained** → aberrant/truncated protein (and disrupts OPRM1's alternative splicing). (F) no TBP binding → **no transcription → loss of expression**.",
+  "answer": "A missense · B silent · C frameshift · D frameshift→premature stop (truncated) · E intron retention/splicing defect · F no expression.",
+  "tags": [
+   "mutation-types",
+   "sequence-reading",
+   "splicing"
+  ],
+  "id": "L5-P006"
+ },
+ {
+  "type": "problem",
+  "topic": "Diagnose a UV+aflatoxin hypermutator (discussion Q2)",
+  "diff": 3,
+  "target_s": 90,
+  "src": "Lec5D.pdf Q2 (re-derived + skeptic-checked)",
+  "q": "An E. coli strain has an increased mutation rate after **both** UV and aflatoxin. Which hypothesis do you investigate first, and which do you rule out? (A) loss of CPD photolyase (B) MutH that nicks both backbones (C) deletion of the NER recognition genes (D) PolV with 5× processivity.",
+  "worked": "UV makes **thymine dimers** and aflatoxin makes **bulky adducts** — **both are helix-distorting lesions repaired by NER**. **(C) losing NER recognition** knocks out repair of **both** → best single explanation → **investigate first**. **(A)** photolyase loss affects **UV only** (not aflatoxin) → can't explain both alone. **(B)** MutH is **mismatch repair** (replication errors) — unrelated to UV/aflatoxin damage → **rule out**. **(D)** PolV is the error-prone bypass polymerase that actually *makes* most UV/aflatoxin mutations (via translesion synthesis), so a hyperactive PolV could genuinely raise the rate too — a real runner-up — but NER loss (C) is the cleaner first hypothesis (one error-free pathway failing for *both* lesions), so investigate C first.",
+  "answer": "Investigate **C (NER loss)** first — it's the only pathway that handles **both** lesions; **rule out B** (MMR is irrelevant to UV/aflatoxin damage).",
+  "tags": [
+   "excision-repair",
+   "mutation-origin",
+   "mechanism"
+  ],
+  "id": "L5-P007"
+ },
+ {
+  "type": "concept",
+  "topic": "Repair-mechanism summary (damage / when / fidelity)",
+  "diff": 3,
+  "target_s": 30,
+  "src": "Lec5D.pdf Q3; Lec5T.md §8-9",
+  "q": "For each mechanism give (damage type / when it acts / error-prone?): Direct reversal, BER, NER, MMR, Translesion synthesis, NHEJ, SDSA.",
+  "a": "**Direct reversal** (photolyase): UV dimer / anytime / error-free. **BER**: a damaged single base (base analog) / anytime / error-free. **NER**: bulky helix distortion (UV, adducts) / anytime / error-free. **MMR**: base-base mismatch from replication / right after replication (hemimethylated window) / error-free. **Translesion synthesis**: a replication-blocking lesion / during replication / **error-prone**. **NHEJ**: double-strand break / anytime / **error-prone**. **SDSA (HR)**: double-strand break / **S/G2 only** (needs the sister) / error-free.",
+  "tags": [
+   "excision-repair",
+   "dsb-repair",
+   "compare-contrast"
+  ],
+  "id": "L5-C030"
+ }
+]

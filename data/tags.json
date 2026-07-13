@@ -71,6 +71,15 @@
     {"id":"phage-biology","label":"phage lytic / lysogenic","kind":"content","lecture":6},
     {"id":"restriction-crispr","label":"restriction-modification / CRISPR","kind":"content","lecture":6},
     {"id":"transposons","label":"transposable elements","kind":"content","lecture":6},
-    {"id":"bacterial-recombination","label":"bacterial recombination / plasmids","kind":"content","lecture":6}
+    {"id":"bacterial-recombination","label":"bacterial recombination / plasmids","kind":"content","lecture":6},
+
+    {"id":"mutation-types","label":"mutation types (point/indel)","kind":"content","lecture":5},
+    {"id":"mutation-origin","label":"mutation origin / mutagens","kind":"content","lecture":5},
+    {"id":"reversion-suppressor","label":"reversion vs suppressor","kind":"content","lecture":5},
+    {"id":"mismatch-repair","label":"mismatch repair","kind":"content","lecture":5},
+    {"id":"excision-repair","label":"NER / BER / photoreactivation","kind":"content","lecture":5},
+    {"id":"translesion-repair","label":"translesion synthesis / SOS","kind":"content","lecture":5},
+    {"id":"dsb-repair","label":"double-strand break repair / Holliday","kind":"content","lecture":5},
+    {"id":"repeat-expansion","label":"repeat expansion / slippage","kind":"content","lecture":5}
   ]
 }
