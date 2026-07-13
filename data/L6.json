@@ -1,0 +1,618 @@
+[
+ {
+  "type": "recall",
+  "topic": "Three modes of horizontal gene transfer",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec6L.pdf p7-8",
+  "q": "Name the three mechanisms of horizontal gene transfer in bacteria.",
+  "a": "**Transformation** (uptake of free/exogenous DNA), **Conjugation** (DNA transfer through a pilus between cells), and **Transduction** (DNA moved by a bacteriophage). All three move DNA *between* cells (horizontal), as opposed to binary-fission inheritance (vertical).",
+  "tags": [
+   "horizontal-gene-transfer",
+   "bacterial-recombination"
+  ],
+  "id": "L6-R001"
+ },
+ {
+  "type": "concept",
+  "topic": "Horizontal vs vertical gene transfer",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec6L.pdf p6-8",
+  "q": "Distinguish vertical from horizontal gene transfer in bacteria, and why horizontal transfer matters.",
+  "a": "**Vertical** = parent → offspring via **binary fission** (asexual, the normal mode). **Horizontal** = DNA moves *between* existing cells (transformation/conjugation/transduction), even across strains/species. Horizontal transfer is how traits like **antibiotic resistance** spread rapidly through a population without reproduction.",
+  "tags": [
+   "horizontal-gene-transfer",
+   "bacterial-recombination",
+   "compare-contrast"
+  ],
+  "id": "L6-C001"
+ },
+ {
+  "type": "concept",
+  "topic": "Transformation",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p8,38; Lec6R Ch6",
+  "q": "What is transformation, how was it discovered, and what must linear donor DNA do to survive in the recipient?",
+  "a": "**Transformation** = a bacterial cell actively takes up an **extracellular (exogenous)** piece of DNA — the DNA source is **not a living cell** (unlike conjugation). Discovered via **Griffith**: rough (non-virulent) bacteria picked up DNA from smooth strains and gained the immune-evading capsule/coat. Any **linear** DNA taken up must **recombine (integrate) into the circular genome** or it's degraded and lost.",
+  "tags": [
+   "transformation",
+   "horizontal-gene-transfer",
+   "hereditary-material"
+  ],
+  "id": "L6-C002"
+ },
+ {
+  "type": "concept",
+  "topic": "Cotransformation & mapping",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p38-39",
+  "q": "What is cotransformation, and how does it report gene distance?",
+  "a": "**Cotransformation** = two genes entering and recombining into the recipient in a **single** uptake event. Its **frequency depends on the distance between the genes** — genes close together are cotransformed often; far-apart genes almost never are (they'd need two independent events). So a high double-transformant frequency (well above the product of the single frequencies) means the genes are **linked/close**.",
+  "tags": [
+   "transformation",
+   "hfr-mapping",
+   "calculation"
+  ],
+  "id": "L6-C003"
+ },
+ {
+  "type": "problem",
+  "topic": "Transformation: linked or independent?",
+  "diff": 3,
+  "target_s": 60,
+  "src": "Lec6L.pdf p39",
+  "q": "Recipient lac⁻pho⁻ + sheared donor DNA (lac⁺pho⁺). Observed: 0.42% lac⁺pho⁻, 0.3% lac⁻pho⁺, **2.2% lac⁺pho⁺**, 97.08% lac⁻pho⁻. Are lac and pho linked or independent?",
+  "worked": "If they transformed **independently**, the expected double = P(lac⁺)·P(pho⁺) = (0.42+2.2)% · (0.3+2.2)% ≈ 2.62% · 2.5% ≈ **0.07%**. Observed double is **2.2%** — ~30× higher than independent prediction → they must enter together in one event → **cotransformed → linked**. (Options c/d about \"closer to oriT\" are wrong — oriT is a *conjugation* concept, irrelevant to transformation.)",
+  "answer": "**Linked** (2.2% ≫ 0.07% expected for independence).",
+  "tags": [
+   "transformation",
+   "calculation",
+   "figure-interpretation"
+  ],
+  "id": "L6-P001"
+ },
+ {
+  "type": "recall",
+  "topic": "Auxotroph vs prototroph",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec6L.pdf p9,12",
+  "q": "Define auxotroph and prototroph.",
+  "a": "A **prototroph** grows on **minimal media** (can synthesize all it needs). An **auxotroph** carries a mutation in a biosynthetic gene, so it **cannot grow without** a specific supplemented nutrient (e.g. a his⁻ auxotroph needs histidine added). Auxotrophic markers are the workhorses for detecting gene transfer (a rare prototroph = a recombination event).",
+  "tags": [
+   "bacterial-recombination",
+   "compare-contrast"
+  ],
+  "id": "L6-R002"
+ },
+ {
+  "type": "concept",
+  "topic": "Replica plating",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec6L.pdf p10-11",
+  "q": "What is replica plating used for, and how do you spot an auxotroph on it?",
+  "a": "**Replica plating** transfers a colony pattern from a master plate onto multiple plates with **different nutrient conditions** (velvet stamp). A colony that grows on complete/supplemented media but **fails to grow** on a plate lacking a specific nutrient is an **auxotroph** for that nutrient (it can't synthesize it) — that's how you identify which biosynthetic gene is mutated.",
+  "tags": [
+   "bacterial-recombination",
+   "technique",
+   "figure-interpretation"
+  ],
+  "id": "L6-C004"
+ },
+ {
+  "type": "concept",
+  "topic": "Lederberg-Tatum experiment",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec6L.pdf p12",
+  "q": "What did the Lederberg-Tatum experiment show, and what was the key observation?",
+  "a": "They mixed two different **auxotrophic** E. coli strains and, in **rare cases (~10⁻⁷)**, recovered **prototrophic** colonies that grew on minimal media — cells that had regained function at multiple loci. This meant genetic material was being **transferred/recombined between strains** (the discovery of **bacterial conjugation**), not just independent back-mutation (which would be far rarer at two loci at once).",
+  "tags": [
+   "conjugation",
+   "who-what-when",
+   "bacterial-recombination"
+  ],
+  "id": "L6-C005"
+ },
+ {
+  "type": "concept",
+  "topic": "Davis U-tube experiment",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p14",
+  "q": "What did the Davis U-tube experiment add to the Lederberg-Tatum result?",
+  "a": "Davis separated the two strains by a **filter** (U-tube) that let media/molecules pass but not cells. **No prototrophs formed** → the transfer requires **direct cell-to-cell contact**, not a diffusible substance (like DNA free in the medium or a soluble factor). This pointed to **conjugation** (a physical bridge).",
+  "tags": [
+   "conjugation",
+   "who-what-when",
+   "technique"
+  ],
+  "id": "L6-C006"
+ },
+ {
+  "type": "concept",
+  "topic": "Conjugation & the F factor",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec6L.pdf p15-17",
+  "q": "How does conjugation transfer DNA, and what makes a cell a donor?",
+  "a": "Conjugation moves DNA through a **pilus** (Latin \"hair\") connecting two cells. Donors carry the **F (fertility) factor** — a **plasmid** encoding the pilus and the transfer machinery. **Hayes & Cavalli-Sforza** showed transfer is **unidirectional**: **donor (F⁺, \"male\") → recipient (F⁻, \"female\")**. It's *not* really sexual (one-way), despite the terminology.",
+  "tags": [
+   "conjugation",
+   "mechanism"
+  ],
+  "id": "L6-C007"
+ },
+ {
+  "type": "recall",
+  "topic": "F factor structure",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec6L.pdf p17",
+  "q": "Name the key features of the F plasmid and roughly how long transfer takes.",
+  "a": "The F plasmid has an **oriT** (origin of *transfer* — where nicking/transfer begins), a **tra operon** (all the transfer genes, incl. pilus), and an **oriV** (origin of *replication*). Transfer of the F⁺ plasmid across the pilus takes **~10 minutes**; the DNA moves by **rolling-circle** replication and is **recircularized (ligated)** in the recipient.",
+  "tags": [
+   "conjugation",
+   "mechanism"
+  ],
+  "id": "L6-R003"
+ },
+ {
+  "type": "concept",
+  "topic": "F⁺ × F⁻ outcome",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p16,18",
+  "q": "In an F⁺ × F⁻ cross, what happens to the recipient — and how often does it pick up chromosomal genes?",
+  "a": "The recipient **almost always becomes F⁺** (it receives the F plasmid → can now build a pilus). It only **rarely (~10⁻⁴–10⁻⁵)** also receives **chromosomal genes** (becoming a prototroph). So F⁺ × F⁻ efficiently spreads the F factor itself but transfers other genes poorly. **Two F⁻ strains cannot conjugate** (neither is a donor).",
+  "tags": [
+   "conjugation",
+   "f-factor",
+   "mechanism"
+  ],
+  "id": "L6-C008"
+ },
+ {
+  "type": "problem",
+  "topic": "F⁻ × F⁻ recombination rate",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec6L.pdf p19",
+  "q": "You cross an F⁻ (met⁺thr⁺leu⁺, trp⁻iso⁻) with an F⁻ (met⁻thr⁻leu⁺, trp⁺iso⁺) and select prototrophs. Approximately what recombination rate do you expect? (A) 10⁻⁷ (B) 10⁻⁴ (C) 10⁻¹ (D) 0 (E) can't predict.",
+  "worked": "Conjugation is **unidirectional and requires a donor (F⁺ or Hfr)**. **Both strains are F⁻** → neither can build a pilus or initiate transfer → **no conjugation occurs**. (The auxotrophy details are a distractor.)",
+  "answer": "**D) 0** — two F⁻ cells can't conjugate.",
+  "tags": [
+   "conjugation",
+   "f-factor"
+  ],
+  "id": "L6-P002"
+ },
+ {
+  "type": "concept",
+  "topic": "Hfr strains (F integrated)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec6L.pdf p18,20-21",
+  "q": "What is an Hfr strain, how does it form, and how does its behavior differ from F⁺?",
+  "a": "**Hfr = High frequency of recombination.** The F factor has **integrated into the bacterial chromosome** (via homologous recombination at an **insertion sequence, IS**). Now conjugation drives the chromosome (starting at the integrated oriT) into the recipient → **high transfer of chromosomal genes**, but the recipient usually **stays F⁻** (the full F factor transfers **last** and the pilus usually breaks first). A plasmid that can integrate like this is an **episome**.",
+  "tags": [
+   "conjugation",
+   "hfr-mapping",
+   "mechanism"
+  ],
+  "id": "L6-C009"
+ },
+ {
+  "type": "concept",
+  "topic": "F⁺ vs Hfr transfer (the flip)",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p18,20",
+  "q": "Contrast what transfers efficiently in F⁺ × F⁻ vs Hfr × F⁻.",
+  "a": "**F⁺ × F⁻:** the **F factor** transfers efficiently (recipient → F⁺), chromosomal **genes rarely**. **Hfr × F⁻:** **chromosomal genes** transfer efficiently (up to ~1000× more prototrophs), but the recipient usually **stays F⁻** (F integrates into the chromosome and would only complete transfer after the whole genome, which almost never finishes).",
+  "tags": [
+   "conjugation",
+   "hfr-mapping",
+   "compare-contrast"
+  ],
+  "id": "L6-C010"
+ },
+ {
+  "type": "concept",
+  "topic": "Interrupted mating → time-of-entry mapping",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec6L.pdf p27-29",
+  "q": "How does interrupted-mating (Wollman/Jacob/Hayes) map bacterial genes, and what's the core rule?",
+  "a": "Mix Hfr donor + F⁻ recipient, let conjugation start, then at set times **disrupt the matings** (a blender) and plate on selective media. Genes enter the recipient **sequentially from the oriT**, so **the first gene to appear among recombinants is closest to the origin of transfer**; each gene's **time of entry (in minutes)** = its map position. Genetic distances in E. coli are literally measured in **minutes**. (Use a **counter-selective** marker like streptomycin resistance to kill the donor and score only recipients.)",
+  "tags": [
+   "hfr-mapping",
+   "technique",
+   "who-what-when"
+  ],
+  "id": "L6-C011"
+ },
+ {
+  "type": "recall",
+  "topic": "Bacterial map units",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec6L.pdf p29",
+  "q": "In what units are E. coli conjugation-map distances measured, and what does \"linked\" mean here?",
+  "a": "**Minutes** (time of entry) — or cM. Genes that **frequently transfer together** (enter close in time) are said to be **linked** (close on the chromosome). The whole E. coli chromosome is ~**100 minutes** around.",
+  "tags": [
+   "hfr-mapping",
+   "calculation"
+  ],
+  "id": "L6-R004"
+ },
+ {
+  "type": "concept",
+  "topic": "Multiple Hfr strains → whole map",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p25,30-31",
+  "q": "Why do you need multiple Hfr strains to map the whole circular chromosome?",
+  "a": "Each Hfr has the F factor integrated at a **different IS site** and a fixed **orientation**, so each transfers only the genes it reaches before the pilus breaks (~first 60–100 min), starting from *its* oriT and going *its* direction. Different Hfr strains have **different origins/orientations**, so overlapping their partial time-of-entry maps **tiles together the complete circular map**.",
+  "tags": [
+   "hfr-mapping",
+   "mechanism"
+  ],
+  "id": "L6-C012"
+ },
+ {
+  "type": "problem",
+  "topic": "Hfr mapping: flank the insertion",
+  "diff": 3,
+  "target_s": 90,
+  "src": "Lec6L.pdf p32 (re-derived + skeptic-checked)",
+  "q": "Three Hfr strains, interrupted-conjugation entry times (min): **Hfr1** a(10) d(26) c(37) b(54); **Hfr2** c(5) d(16) a(32) e(57); **Hfr3** a(2) e(27) b(32) c(49). Which genes lie to the left and right of the Hfr2 insertion (oriT)?",
+  "worked": "Read each strain's order from its oriT: Hfr1 = **a-d-c-b**; Hfr2 = **c-d-a-e** (this is a-d-c *reversed*, then e); Hfr3 = **a-e-b-c** (a, then wrapping around to b-c). Tiling these on a circle gives the order **b–c–d–a–e–(back to b)**. Hfr2 transfers **c first** going c→d→a→e, so its oriT sits **between b and c**, pointing toward c.",
+  "answer": "**B and C** flank the Hfr2 insertion (c is transferred first, b is on the other side). Circular order: b-c-d-a-e.",
+  "tags": [
+   "hfr-mapping",
+   "calculation",
+   "figure-interpretation"
+  ],
+  "id": "L6-P003"
+ },
+ {
+  "type": "concept",
+  "topic": "F′ plasmids & merozygotes",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec6L.pdf p36",
+  "q": "What is an F′ plasmid, how does it form, and what does transferring one create?",
+  "a": "F integration is **reversible**, but **excision is sometimes imprecise** (recombination between different IS sites) → the excised F plasmid carries a **chromosomal gene** with it = an **F′ plasmid** (\"super F⁺\"). Transferring an F′ to an F⁻ recipient gives it a chromosomal gene on the plasmid **plus** its own copy on the chromosome → a **merozygote (partial diploid)** — useful for dominance/complementation tests.",
+  "tags": [
+   "f-factor",
+   "bacterial-recombination",
+   "mechanism"
+  ],
+  "id": "L6-C013"
+ },
+ {
+  "type": "concept",
+  "topic": "R plasmids",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec6L.pdf p37",
+  "q": "What are R plasmids and why are they a public-health concern?",
+  "a": "**R plasmids** carry **resistance genes** (metabolize antibiotics, tolerate toxic metals, neutralize toxins). Because they spread **horizontally by conjugation**, antibiotic resistance can sweep through a bacterial population **fast**, without reproduction — a driver of multidrug-resistant infections.",
+  "tags": [
+   "conjugation",
+   "bacterial-recombination"
+  ],
+  "id": "L6-C014"
+ },
+ {
+  "type": "concept",
+  "topic": "Transduction & its discovery",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec6L.pdf p40",
+  "q": "What is transduction, and what experiment revealed it?",
+  "a": "**Transduction** = gene transfer via a **bacteriophage** intermediate. The **Lederberg-Zinder experiment** repeated the Davis U-tube setup in **Salmonella** and occasionally got transfer **even through the filter** — a filterable agent (a **phage**), not cell contact, was moving DNA. So a virus can carry bacterial genes from one cell to another.",
+  "tags": [
+   "transduction",
+   "who-what-when",
+   "phage-biology"
+  ],
+  "id": "L6-C015"
+ },
+ {
+  "type": "concept",
+  "topic": "Generalized transduction",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec6L.pdf p45",
+  "q": "How does generalized transduction happen, and which bacterial genes can it move?",
+  "a": "During the **lytic cycle**, when phage particles are being assembled, a **random fragment of bacterial DNA** is occasionally packaged into a capsid **instead of** phage DNA. That particle injects the bacterial DNA into a new cell, where it can recombine in. Because the packaged fragment is **random**, **any** bacterial gene can be transduced.",
+  "tags": [
+   "transduction",
+   "phage-biology",
+   "mechanism"
+  ],
+  "id": "L6-C016"
+ },
+ {
+  "type": "concept",
+  "topic": "Specialized transduction",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec6L.pdf p47",
+  "q": "How does specialized transduction differ from generalized — mechanism and which genes it moves?",
+  "a": "**Specialized** transduction requires the phage to have been a **prophage integrated at a specific site** (att sites, attP/attB) during the **lysogenic** cycle. On imprecise **excision**, it takes the **adjacent chromosomal genes** with it — so only genes **near the integration site** can be transferred (not random). Generalized = lytic + random fragment; specialized = lysogenic + flanking genes only.",
+  "tags": [
+   "transduction",
+   "phage-biology",
+   "mechanism"
+  ],
+  "id": "L6-C017"
+ },
+ {
+  "type": "concept",
+  "topic": "Cotransduction mapping",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p46",
+  "q": "How does cotransduction frequency map genes?",
+  "a": "Two genes are **cotransduced** when both fit in a single phage particle (~the phage's DNA capacity). The **closer** two genes are, the **more often** they're packaged together → **higher cotransduction frequency**. So cotransduction frequency is **inversely related to distance** — you can order genes and estimate spacing from it.",
+  "tags": [
+   "transduction",
+   "hfr-mapping",
+   "calculation"
+  ],
+  "id": "L6-C018"
+ },
+ {
+  "type": "problem",
+  "topic": "Cotransduction 3-factor mapping",
+  "diff": 3,
+  "target_s": 110,
+  "src": "Lec6D.pdf Part 2 (re-derived + skeptic-checked)",
+  "q": "Phage grown on **bio⁺arg⁺his⁺** donor → **bio⁻arg⁻his⁻** recipient. Selecting each marker: **Select bio⁺** → arg⁺his⁻ 0%, arg⁻his⁺ 10%, arg⁺his⁺ 4%. **Select arg⁺** → bio⁺his⁻ 0%, bio⁻his⁺ 54%, bio⁺his⁺ 2%. **Select his⁺** → bio⁺arg⁻ 14%, bio⁻arg⁺ 61%, bio⁺arg⁺ 5%. Order the genes and say which flank the middle gene is closer to.",
+  "worked": "Cotransduction% = fraction of selected transductants also carrying the other wild-type allele. bio–his = 10+4=14% (sel bio) / 14+5=19% (sel his). arg–his = 54+2=56% (sel arg) / 61+5=66% (sel his). bio–arg = 0+4... use sel bio: arg⁺ total = 0+4=4%; sel arg: bio⁺ total = 0+2=2%. So **arg–his highest (~56–66%), bio–his middle (~14–19%), bio–arg lowest (~2–4%)**. Lowest cotransduction = farthest apart = the two **ends** (bio and arg) → **his is in the middle**.",
+  "answer": "Order **bio – his – arg**; his (middle) is **closer to arg** (his–arg ~56–66% ≫ his–bio ~14–19%).",
+  "tags": [
+   "transduction",
+   "calculation",
+   "figure-interpretation"
+  ],
+  "id": "L6-P004"
+ },
+ {
+  "type": "recall",
+  "topic": "Bacteriophage",
+  "diff": 1,
+  "target_s": 8,
+  "src": "Lec6L.pdf p41",
+  "q": "What is a bacteriophage?",
+  "a": "A **virus that infects bacteria** (\"phage\"). All organisms are parasitized by viruses; bacteriophages are the bacterial-specific ones and are the vehicles of transduction.",
+  "tags": [
+   "phage-biology",
+   "transduction"
+  ],
+  "id": "L6-R005"
+ },
+ {
+  "type": "concept",
+  "topic": "Viral genome diversity",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec6L.pdf p42",
+  "q": "What kinds of genomes can viruses have?",
+  "a": "**Any** nucleic-acid type — **double- or single-stranded, DNA or RNA, linear or circular** — packaged in a **protein capsid**, with or without a **lipid envelope**. Examples: rotavirus (linear dsRNA), coronavirus (linear ssRNA), T4 phage (linear dsDNA, can circularize), papillomavirus (circular dsDNA). (Contrast: cellular genomes are always dsDNA.)",
+  "tags": [
+   "phage-biology",
+   "dna-vs-rna"
+  ],
+  "id": "L6-C019"
+ },
+ {
+  "type": "concept",
+  "topic": "Lytic cycle",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec6L.pdf p43",
+  "q": "Describe the lytic cycle and what a \"virulent\" phage is.",
+  "a": "In the **lytic cycle** the phage injects its genome, **hijacks host machinery** to make new virions, then **lyses (kills) the cell** to release them. A **virulent phage** can *only* do this — it's **always lytic**.",
+  "tags": [
+   "phage-biology",
+   "mechanism"
+  ],
+  "id": "L6-C020"
+ },
+ {
+  "type": "concept",
+  "topic": "Lysogenic cycle & prophage",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec6L.pdf p44",
+  "q": "Describe lysogeny: what a prophage is, how it's maintained, and one consequence for the host.",
+  "a": "In **lysogeny** the viral DNA **integrates into the host genome** (a **prophage**) or is maintained episomally, and is **replicated along with the chromosome** at each division. A prophage grants the host **immunity to superinfection** by the same phage, and can **re-enter the lytic cycle** under unfavorable conditions. A **temperate phage** can choose **either** cycle (lytic or lysogenic).",
+  "tags": [
+   "phage-biology",
+   "mechanism"
+  ],
+  "id": "L6-C021"
+ },
+ {
+  "type": "recall",
+  "topic": "Temperate vs virulent phage",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec6L.pdf p43-44",
+  "q": "Contrast temperate and virulent phages.",
+  "a": "A **virulent** phage only runs the **lytic** cycle (always kills the host). A **temperate** phage can go **either** lytic **or** lysogenic (integrate as a prophage and lie dormant, or replicate and lyse). Only temperate phages do **specialized transduction**.",
+  "tags": [
+   "phage-biology",
+   "compare-contrast"
+  ],
+  "id": "L6-R006"
+ },
+ {
+  "type": "concept",
+  "topic": "Restriction/modification",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p48-49",
+  "q": "How does a restriction/modification system defend bacteria, and how does the host avoid cutting its own DNA?",
+  "a": "**Restriction enzymes** cleave **specific recognition sequences** in incoming **foreign** DNA (e.g. phage), degrading it. The host protects its **own** DNA with a **modification enzyme** that chemically marks those same sequences — usually by **methylation** — so the restriction enzyme won't cut them. (~90% of prokaryotes have an R/M system.)",
+  "tags": [
+   "restriction-crispr",
+   "phage-biology",
+   "mechanism"
+  ],
+  "id": "L6-C022"
+ },
+ {
+  "type": "concept",
+  "topic": "CRISPR/Cas adaptive immunity",
+  "diff": 2,
+  "target_s": 20,
+  "src": "Lec6L.pdf p50; Lec6R Ch14.3",
+  "q": "How does CRISPR/Cas provide *adaptive* immunity against phage?",
+  "a": "Small pieces of **phage DNA** from a past infection are **stored** at **CRISPR loci** (Clustered Regularly Interspaced Palindromic Repeats) in the host genome. Short **RNAs transcribed** from those spacers guide a **Cas enzyme (e.g. Cas9)** to **recognize and cut** matching viral DNA in **future** infections. It's *acquired* (remembers past phages), unlike restriction/modification (innate).",
+  "tags": [
+   "restriction-crispr",
+   "mechanism"
+  ],
+  "id": "L6-C023"
+ },
+ {
+  "type": "concept",
+  "topic": "Restriction/mod vs CRISPR",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p48-50",
+  "q": "Contrast restriction/modification with CRISPR/Cas as phage defenses.",
+  "a": "**Restriction/modification = innate/general** — cuts any foreign DNA at a fixed recognition sequence, self protected by methylation; no memory. **CRISPR/Cas = adaptive/specific** — stores sequences from prior infections and targets those exact phages next time (immunological memory). (A third strategy: **abortive infection** = the infected cell commits suicide to protect the colony.)",
+  "tags": [
+   "restriction-crispr",
+   "compare-contrast"
+  ],
+  "id": "L6-C024"
+ },
+ {
+  "type": "concept",
+  "topic": "Transposons: autonomous vs non-autonomous (Ac/Ds)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec6L.pdf p1-4",
+  "q": "Using McClintock's maize elements, distinguish autonomous from non-autonomous transposable elements.",
+  "a": "**Barbara McClintock** discovered transposons in **maize**. The **Activator (Ac)** element is **autonomous** — it encodes its own **transposase** and can move **itself or** the **Dissociation (Ds)** element. **Ds** is **non-autonomous** — it has lost a functional transposase (by mutation/deletion), so it can only move **when Ac is present** to supply the enzyme. Most genomic TEs are non-autonomous/inactive (silenced).",
+  "tags": [
+   "transposons",
+   "who-what-when",
+   "mechanism"
+  ],
+  "id": "L6-C025"
+ },
+ {
+  "type": "concept",
+  "topic": "Linear DNA must integrate",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec6L.pdf p33,38",
+  "q": "Why must transferred linear DNA recombine into the recipient's chromosome to have any effect (in any of the three transfer modes)?",
+  "a": "E. coli **degrades linear DNA**, so incoming linear fragments (from transformation, conjugation, or transduction) are lost unless they **integrate into the circular chromosome**. Recombining a linear piece into a circle requires **at least two crossovers** (an even number) to keep the chromosome intact and circular.",
+  "tags": [
+   "bacterial-recombination",
+   "transformation",
+   "mechanism"
+  ],
+  "id": "L6-C026"
+ },
+ {
+  "type": "problem",
+  "topic": "Interpreting a bacterial genotype",
+  "diff": 2,
+  "target_s": 40,
+  "src": "Lec6HW.pdf Q2",
+  "q": "Which is TRUE of a strain that is **his⁺ lac⁺ gal⁻ ampR**? (A) unable to break down lactose (B) can use galactose as an energy source (C) auxotrophic for histidine (D) will grow on ampicillin (E) unable to synthesize histidine.",
+  "worked": "**his⁺** = can synthesize histidine → NOT auxotrophic (C, E false). **lac⁺** = can break down lactose (A false). **gal⁻** = CANNOT use galactose (B false). **ampR** = ampicillin-**resistant** → grows in the presence of ampicillin (D true).",
+  "answer": "**D** — it will grow on ampicillin.",
+  "tags": [
+   "bacterial-recombination",
+   "compare-contrast"
+  ],
+  "id": "L6-P005"
+ },
+ {
+  "type": "concept",
+  "topic": "Why F integration site sets transfer frequency",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p24-25",
+  "q": "In an Hfr cross the pilus usually breaks before the whole chromosome transfers. What does that imply about which genes get transferred most?",
+  "a": "Because transfer starts at the **oriT** and proceeds in one direction but the mating **breaks early** (rarely lasts past ~60–100 min), genes **near the origin (transferred first)** enter at **high frequency**, and genes far from the origin rarely make it. So the **location and orientation of the F insertion** determines which chromosomal genes an Hfr transfers well — and the F factor itself (transferred last) almost never completes.",
+  "tags": [
+   "hfr-mapping",
+   "conjugation",
+   "mechanism"
+  ],
+  "id": "L6-C027"
+ },
+ {
+  "type": "concept",
+  "topic": "Circular episome integration order (why orientation matters)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec6L.pdf p21-22",
+  "q": "A circular plasmid with genes A-E integrates between chromosomal genes pro and lac. Why can't you state the resulting gene order without more information?",
+  "a": "A **circular** plasmid integrates by a **single crossover** at one point, which **linearizes** it into the chromosome. The order the plasmid genes appear depends on **where** on the circle the crossover occurs **and the orientation** of insertion — a different crossover point/orientation gives a different linear order (e.g. A-B-C-D-E vs A-E-D-C-B). Without the crossover site + orientation, the order is **indeterminate**. (This is the same logic behind why each Hfr transfers a different gene order.)",
+  "tags": [
+   "bacterial-recombination",
+   "conjugation",
+   "mechanism"
+  ],
+  "id": "L6-C028"
+ },
+ {
+  "type": "recall",
+  "topic": "Episome",
+  "diff": 1,
+  "target_s": 8,
+  "src": "Lec6L.pdf p21",
+  "q": "What is an episome?",
+  "a": "A **plasmid that can integrate** into the bacterial chromosome (and later excise) — e.g. the **F factor**. It can exist either free (autonomous plasmid) or as part of the chromosome.",
+  "tags": [
+   "conjugation",
+   "bacterial-recombination"
+  ],
+  "id": "L6-R007"
+ },
+ {
+  "type": "concept",
+  "topic": "Generalized vs specialized transduction",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p45-47",
+  "q": "Give the two-line contrast between generalized and specialized transduction.",
+  "a": "**Generalized:** happens in the **lytic** cycle; a **random** bacterial DNA fragment is mispackaged → **any** gene can be moved. **Specialized:** happens via a **lysogenic** prophage; imprecise **excision** takes **flanking** genes → **only genes near the integration (att) site** can be moved.",
+  "tags": [
+   "transduction",
+   "compare-contrast"
+  ],
+  "id": "L6-C029"
+ },
+ {
+  "type": "concept",
+  "topic": "Selecting recipients in a cross (counter-selection)",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec6L.pdf p27-28",
+  "q": "In an interrupted-mating experiment (Hfr strS × F⁻ strR, where strS = streptomycin-sensitive and strR = resistant), why plate on streptomycin-containing media lacking the selected nutrients?",
+  "a": "You need to score **only the recipients**, not the donors. The Hfr donor is **streptomycin-sensitive (strS)**, so **streptomycin kills the donors**; the F⁻ recipient is **resistant (strR)** and survives. Plating without the nutrients also selects only recipients that received the donor's wild-type marker (recombinants). So streptomycin = **counter-selection against the donor**.",
+  "tags": [
+   "hfr-mapping",
+   "technique"
+  ],
+  "id": "L6-C030"
+ }
+]

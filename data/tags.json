@@ -60,6 +60,17 @@
     {"id":"translation-initiation","label":"translation initiation","kind":"content","lecture":4},
     {"id":"translation-elongation","label":"translation elongation","kind":"content","lecture":4},
     {"id":"translation-termination","label":"translation termination (release factors)","kind":"content","lecture":4},
-    {"id":"wobble","label":"wobble & tRNA number","kind":"content","lecture":4}
+    {"id":"wobble","label":"wobble & tRNA number","kind":"content","lecture":4},
+
+    {"id":"horizontal-gene-transfer","label":"horizontal gene transfer","kind":"content","lecture":6},
+    {"id":"transformation","label":"transformation","kind":"content","lecture":6},
+    {"id":"conjugation","label":"conjugation / F factor","kind":"content","lecture":6},
+    {"id":"f-factor","label":"F factor / F+ / F′","kind":"content","lecture":6},
+    {"id":"hfr-mapping","label":"Hfr / interrupted-mating mapping","kind":"content","lecture":6},
+    {"id":"transduction","label":"transduction / cotransduction","kind":"content","lecture":6},
+    {"id":"phage-biology","label":"phage lytic / lysogenic","kind":"content","lecture":6},
+    {"id":"restriction-crispr","label":"restriction-modification / CRISPR","kind":"content","lecture":6},
+    {"id":"transposons","label":"transposable elements","kind":"content","lecture":6},
+    {"id":"bacterial-recombination","label":"bacterial recombination / plasmids","kind":"content","lecture":6}
   ]
 }
