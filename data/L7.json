@@ -1,0 +1,556 @@
+[
+ {
+  "type": "concept",
+  "topic": "Why (and where) prokaryotes regulate genes",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec7L.pdf p12",
+  "q": "Why do bacteria regulate genes, and at which step is most prokaryotic regulation focused?",
+  "a": "So the cell can **adapt to its environment** (nutrients, temperature, etc.) — not all genes need to be on at once, and making unneeded proteins wastes energy. Because prokaryotic **translation is co-transcriptional**, most regulation targets **transcription initiation** (controlling whether/when RNA polymerase starts).",
+  "tags": [
+   "gene-regulation",
+   "foundations"
+  ],
+  "id": "L7-C001"
+ },
+ {
+  "type": "concept",
+  "topic": "Two protein–DNA interactions",
+  "diff": 2,
+  "target_s": 15,
+  "src": "Lec7L.pdf p13",
+  "q": "Transcriptional regulation depends on two kinds of protein–DNA interaction. What are they?",
+  "a": "(1) **WHERE transcription begins** — every gene needs a **promoter**, bound by the **σ (sigma) subunit** of RNA polymerase. (2) **IF and WHEN transcription occurs** — sequence-specific **regulatory transcription factors** (activators and repressors) bind sites near the promoter to switch it on/off.",
+  "tags": [
+   "gene-regulation",
+   "promoter",
+   "mechanism"
+  ],
+  "id": "L7-C002"
+ },
+ {
+  "type": "concept",
+  "topic": "Positive vs negative regulation",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec7L.pdf p14",
+  "q": "Define positive and negative transcriptional regulation, and what an operator is.",
+  "a": "**Positive:** an **activator** protein must **bind** for transcription to begin. **Negative:** a **repressor** protein must be **prevented from binding** for transcription to begin (its absence from the DNA allows transcription). An **operator** is the DNA **binding site for a repressor**.",
+  "tags": [
+   "gene-regulation",
+   "compare-contrast"
+  ],
+  "id": "L7-C003"
+ },
+ {
+  "type": "concept",
+  "topic": "Allosteric effectors as sensors",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec7L.pdf p16",
+  "q": "How does a regulatory transcription factor \"sense\" environmental conditions?",
+  "a": "It has two parts: a **DNA-binding domain** and an **allosteric site** (a pocket that binds a small metabolite/signal). When the signal binds the allosteric site, it triggers a **conformational change** in the DNA-binding domain — switching it between a **functional (bound)** and **nonfunctional (unbound)** mode. So the metabolite level controls whether the TF is on the DNA.",
+  "tags": [
+   "gene-regulation",
+   "mechanism"
+  ],
+  "id": "L7-C004"
+ },
+ {
+  "type": "recall",
+  "topic": "Inducible / uninducible / constitutive",
+  "diff": 1,
+  "target_s": 12,
+  "src": "Lec7L.pdf p18",
+  "q": "Define inducible, uninducible, and constitutive (as gene-expression states).",
+  "a": "**Inducible** = turned **on in response to** an environmental signal (normal regulated behavior). **Uninducible** = a mutation that **prevents induction** (the gene can't turn on). **Constitutive** = a mutation that causes **continuous expression even without the inducing signal** (always on).",
+  "tags": [
+   "gene-regulation",
+   "operon-mutants"
+  ],
+  "id": "L7-R001"
+ },
+ {
+  "type": "concept",
+  "topic": "Cis-acting vs trans-acting",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec7L.pdf p19 (⚑ the core skill for operon problems)",
+  "q": "Distinguish cis-acting elements from trans-acting factors, and how a mutation in each behaves in a merodiploid (partial diploid).",
+  "a": "**Cis-acting elements** are **DNA sequences** (promoter, operator) — a mutation affects **only genes on the same DNA molecule**. **Trans-acting factors** are **diffusible molecules** (usually proteins, e.g. a repressor) — a mutation affects genes **anywhere in the cell, on any DNA molecule**. So in a merodiploid: a **trans** factor from one copy can rescue/act on the other (often recessive); a **cis** defect can't be rescued in trans (often dominant for its own DNA).",
+  "tags": [
+   "cis-trans",
+   "operon-mutants",
+   "mechanism"
+  ],
+  "id": "L7-C005"
+ },
+ {
+  "type": "recall",
+  "topic": "Gain- vs loss-of-function",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec7D.pdf Q2",
+  "q": "Define gain-of-function and loss-of-function mutations.",
+  "a": "**Loss-of-function:** the gene product loses (some of) its activity (e.g. a repressor that can no longer bind DNA). **Gain-of-function:** the product gains a new/constitutive activity or can no longer be switched off (e.g. a super-repressor that binds the operator permanently). Loss-of-function alleles are usually recessive; gain-of-function usually dominant.",
+  "tags": [
+   "operon-mutants",
+   "mutation-types"
+  ],
+  "id": "L7-R002"
+ },
+ {
+  "type": "concept",
+  "topic": "The lac operon — job & components",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec7L.pdf p20-21",
+  "q": "What does the lac operon do, when is it induced, and name its structural genes + regulatory pieces.",
+  "a": "It lets E. coli use **lactose** — but only when **lactose is present AND glucose (the preferred fuel) is absent**. Structural genes (one polycistronic mRNA): **lacZ (β-galactosidase**, cleaves lactose → glucose + galactose), **lacY (permease**, imports lactose), **lacA (transacetylase)**. Regulatory: **P** (promoter), **O** (operator), and **lacI** (the repressor gene, separate).",
+  "tags": [
+   "lac-operon",
+   "mechanism"
+  ],
+  "id": "L7-C006"
+ },
+ {
+  "type": "concept",
+  "topic": "LacI repression",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec7L.pdf p22",
+  "q": "How does the LacI repressor shut the operon off in the absence of lactose?",
+  "a": "LacI is a **tetramer** that binds the **operator** and bends the DNA into a **loop**, physically **blocking RNA polymerase** from loading at the promoter → no transcription of Z/Y/A. This is **negative** regulation.",
+  "tags": [
+   "lac-operon",
+   "gene-regulation",
+   "mechanism"
+  ],
+  "id": "L7-C007"
+ },
+ {
+  "type": "concept",
+  "topic": "Induction by allolactose",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec7L.pdf p23 (⚑ slide mislabels the inducer)",
+  "q": "What is the actual inducer of the lac operon, and how does induction (relief of repression) work?",
+  "a": "The inducer is **allolactose** (a small-molecule isomer of lactose) — **not** the repressor. Allolactose binds the **allosteric site of LacI**, flipping its DNA-binding domain to the **non-binding** conformation → LacI **falls off the operator** → RNA polymerase can transcribe. This relief of repression is **induction**. *(The slide loosely calls the repressor \"an inducer\" — ignore that; the inducer is the ligand, allolactose.)*",
+  "tags": [
+   "lac-operon",
+   "gene-regulation",
+   "mechanism"
+  ],
+  "id": "L7-C008"
+ },
+ {
+  "type": "recall",
+  "topic": "IPTG & X-gal (the two tools)",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec7L.pdf p25-26",
+  "q": "What are IPTG and X-gal, and why is each useful for studying the lac operon?",
+  "a": "**IPTG** = a **gratuitous inducer** — it mimics allolactose (induces the operon) but **isn't metabolized** by β-gal, so it stays around and keeps induction constant. **X-gal** = a colorless substrate that β-galactosidase cleaves into a **blue** product — so **β-gal activity turns colonies blue** (a visual readout of operon expression).",
+  "tags": [
+   "lac-operon",
+   "technique"
+  ],
+  "id": "L7-R003"
+ },
+ {
+  "type": "concept",
+  "topic": "Merodiploids for cis/trans tests",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec7L.pdf p27",
+  "q": "How did researchers use F′ merodiploids to work out lac regulation?",
+  "a": "An **F′ plasmid** carrying a lac region + the chromosomal lac region makes a **merodiploid (partial diploid)** — two copies of the operon in one cell. By combining mutant and WT copies and scoring **dominant vs recessive** (β-gal via X-gal), they could tell whether a mutation acts in **cis** (only its own DNA) or **trans** (diffusible), which revealed the operator↔repressor relationship.",
+  "tags": [
+   "cis-trans",
+   "operon-mutants",
+   "technique"
+  ],
+  "id": "L7-C009"
+ },
+ {
+  "type": "concept",
+  "topic": "Oᶜ — operator constitutive (cis-dominant)",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec7L.pdf p28-30 (skeptic-checked)",
+  "q": "What is an Oᶜ mutation, is it cis or trans, and dominant or recessive? Why?",
+  "a": "**Oᶜ** = an **operator** mutation that **prevents LacI from binding** → the operon is transcribed **constitutively**. It's **cis-acting** (the operator only controls genes on its own molecule) and **DOMINANT**: adding a second WT operator (with repressor bound) on an F′ does **not** shut off the Oᶜ operon on the chromosome — each operator only governs its own adjacent genes.",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "lac-operon"
+  ],
+  "id": "L7-C010"
+ },
+ {
+  "type": "concept",
+  "topic": "I⁻ — repressor loss (trans-recessive)",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec7L.pdf p31-32 (skeptic-checked)",
+  "q": "What is an I⁻ mutation, is it cis or trans, dominant or recessive? Why?",
+  "a": "**I⁻** = a **loss-of-function** in the **LacI repressor** → nothing represses → **constitutive**. But the repressor is a **diffusible, trans-acting** protein, so a WT **I⁺** supplied on an F′ **diffuses and represses both operons** → I⁻ is **RECESSIVE** to WT (inducibility is restored in the merodiploid).",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "lac-operon"
+  ],
+  "id": "L7-C011"
+ },
+ {
+  "type": "concept",
+  "topic": "Iˢ — super-repressor (dominant)",
+  "diff": 3,
+  "target_s": 18,
+  "src": "Lec7L.pdf p33 (skeptic-checked)",
+  "q": "What is an Iˢ (super-repressor) mutation, and why is it dominant and uninducible?",
+  "a": "**Iˢ** = a **gain-of-function** repressor that can **no longer bind the inducer** (its allosteric/lactose site is altered). It stays clamped on the operator **even with inducer present** → **uninducible**. Because it's a **diffusible trans** protein, it represses **every** operon in the cell, including a WT one on an F′ → **DOMINANT**.",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "lac-operon"
+  ],
+  "id": "L7-C012"
+ },
+ {
+  "type": "problem",
+  "topic": "Merodiploid mutant #1 (slide)",
+  "diff": 3,
+  "target_s": 50,
+  "src": "Lec7L.pdf p34-35",
+  "q": "A lac mutant is **constitutive** alone, but a WT copy supplied in trans (on an F′) **restores inducibility** — the mutation is **diffusible / acts in trans**. What is mutated? (A) lacZ (B) Repressor (C) Operator (D) Promoter.",
+  "worked": "Constitutive (always on) points to a broken repressor OR a broken operator. It's **diffusible/trans** and **rescued by a WT copy in trans** → it must be the **diffusible repressor** (I⁻, recessive). A broken operator would be cis (non-diffusible) and not rescued in trans.",
+  "answer": "**B — Repressor** (I⁻, trans, recessive).",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "figure-interpretation"
+  ],
+  "id": "L7-P001"
+ },
+ {
+  "type": "problem",
+  "topic": "Merodiploid mutant #2 (slide)",
+  "diff": 3,
+  "target_s": 50,
+  "src": "Lec7L.pdf p36-37",
+  "q": "A lac mutant is **constitutive** and **stays constitutive even with a WT copy in trans** — it's **non-diffusible / acts in cis**. What is mutated? (A) lacZ (B) Repressor (C) Operator (D) Promoter.",
+  "worked": "Constitutive + **cis** + **not rescued in trans** (dominant) = the **operator** (Oᶜ). A WT operator elsewhere can't help — the operator only controls its own adjacent genes.",
+  "answer": "**C — Operator** (Oᶜ, cis, dominant).",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "figure-interpretation"
+  ],
+  "id": "L7-P002"
+ },
+ {
+  "type": "problem",
+  "topic": "Merodiploid mutant #3 (slide)",
+  "diff": 3,
+  "target_s": 50,
+  "src": "Lec7L.pdf p38-39",
+  "q": "A lac mutant is **uninducible** (white ± IPTG) and **dominantly makes a WT copy uninducible in trans** — it's **diffusible / acts in trans**. What is mutated? (A) lacZ (B) Repressor (C) Operator (D) Promoter.",
+  "worked": "Uninducible = never on. Diffusible/trans + **dominant** (shuts off a WT operon too) = a **super-repressor (Iˢ)** — a repressor that won't release even with inducer, and being diffusible, represses everything. (A promoter or lacZ defect would be cis/recessive.)",
+  "answer": "**B — Repressor** (Iˢ super-repressor, trans, dominant).",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "figure-interpretation"
+  ],
+  "id": "L7-P003"
+ },
+ {
+  "type": "concept",
+  "topic": "Catabolite repression",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec7L.pdf p40",
+  "q": "What is catabolite repression, and what does it accomplish for the lac operon?",
+  "a": "**Catabolite repression** = the operon is kept **off when glucose (the preferred fuel) is abundant**, even if lactose is present — the cell won't waste effort on lactose while glucose is around. So the lac operon is fully **ON only when lactose is high AND glucose is low**. (Removing the LacI repressor via induction is necessary but **not sufficient**.)",
+  "tags": [
+   "catabolite-repression",
+   "lac-operon",
+   "mechanism"
+  ],
+  "id": "L7-C013"
+ },
+ {
+  "type": "concept",
+  "topic": "CAP–cAMP positive control",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec7L.pdf p41-42",
+  "q": "How does CAP–cAMP turn the lac operon ON, and how does glucose control it?",
+  "a": "The lac promoter is weak — σ alone can't reliably start transcription. **CAP (catabolite activator protein)** is an **activator** that binds upstream and **recruits/stabilizes RNA polymerase** (bending the DNA to help unwind at the σ site). CAP can only bind DNA when bound to **cAMP**. **cAMP rises when glucose is LOW** — so **low glucose → high cAMP → CAP-cAMP active → operon ON** (provided lactose has removed the repressor). This is **positive** regulation layered on top of the negative LacI control.",
+  "tags": [
+   "catabolite-repression",
+   "gene-regulation",
+   "mechanism"
+  ],
+  "id": "L7-C014"
+ },
+ {
+  "type": "recall",
+  "topic": "The four glucose/lactose states",
+  "diff": 2,
+  "target_s": 14,
+  "src": "Lec7L.pdf p43",
+  "q": "For the four combinations of glucose/lactose, when is the lac operon ON?",
+  "a": "Only **low glucose + high lactose** → **ON** (high cAMP → CAP active; lactose → repressor off). All other combos are essentially OFF: high glucose (low cAMP, CAP off) keeps it off regardless of lactose; no lactose keeps the repressor on. Lactose controls the **repressor**; glucose controls **CAP-cAMP**.",
+  "tags": [
+   "catabolite-repression",
+   "lac-operon"
+  ],
+  "id": "L7-R004"
+ },
+ {
+  "type": "concept",
+  "topic": "The trp operon (repressible)",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec7L.pdf p44-46",
+  "q": "What kind of operon is trp, how is it regulated by tryptophan, and what's the \"corepressor\"?",
+  "a": "The trp operon makes the enzymes that **synthesize tryptophan** (anabolic/biosynthetic) — so it should be **on when trp is LOW, off when trp is high** (opposite logic from lac). It's **repressible**: **tryptophan itself is the corepressor** — when trp is abundant, trp binds the trp **repressor**, activating it to bind the operator and **shut the operon off**. (Gene order on the chromosome mirrors the reaction order in the pathway.)",
+  "tags": [
+   "trp-operon",
+   "compare-contrast",
+   "mechanism"
+  ],
+  "id": "L7-C015"
+ },
+ {
+  "type": "concept",
+  "topic": "Lac vs trp operon",
+  "diff": 2,
+  "target_s": 16,
+  "src": "Lec7L.pdf p44-46; Lec7HW.pdf Q8",
+  "q": "Give the core contrast between the lac and trp operons (and one thing they share).",
+  "a": "**lac** = **catabolic** (breaks lactose down) + **inducible** (default off, turned on by its substrate's inducer). **trp** = **anabolic/biosynthetic** (makes tryptophan) + **repressible** (default on, turned off by its product as corepressor). **Shared:** both use a **repressor + operator** (negative control). Only **trp** also uses **attenuation**.",
+  "tags": [
+   "lac-operon",
+   "trp-operon",
+   "compare-contrast"
+  ],
+  "id": "L7-C016"
+ },
+ {
+  "type": "problem",
+  "topic": "Most efficient trp regulation (slide)",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec7L.pdf p44",
+  "q": "The most energy-efficient way to regulate tryptophan-synthesis enzymes is to: (A) keep them always on (B) make them only when trp is abundant, as a set (C) make them only when trp is scarce, as a set (D) regulate each enzyme separately.",
+  "worked": "You only need to **make trp when you're short of it**, and the enzymes act in one pathway so it's efficient to make them **together (as a set)** from one polycistronic operon. Making them when trp is abundant (B) is backwards; always-on (A) wastes energy; separate regulation (D) loses the coordination advantage.",
+  "answer": "**C — only when trp is scarce, produced as a set.**",
+  "tags": [
+   "trp-operon",
+   "gene-regulation"
+  ],
+  "id": "L7-P004"
+ },
+ {
+  "type": "problem",
+  "topic": "trp repressor that can't bind DNA (slide)",
+  "diff": 3,
+  "target_s": 45,
+  "src": "Lec7L.pdf p47",
+  "q": "Assume the **repressor** is the only regulator of the trp operon. You have a repressor mutant that **cannot bind DNA under any circumstances**. Increased trp levels should: (A) have no effect (B) increase transcription (C) decrease transcription.",
+  "worked": "Normally high trp → trp binds the repressor → repressor binds the operator → transcription **decreases**. If the repressor **can't bind DNA at all**, it can never repress — so raising trp does **nothing** to transcription (the only regulator is broken).",
+  "answer": "**A — no effect** (the repressor can't act, so trp level is irrelevant to it).",
+  "tags": [
+   "trp-operon",
+   "operon-mutants"
+  ],
+  "id": "L7-P005"
+ },
+ {
+  "type": "concept",
+  "topic": "Attenuation — the discovery",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec7L.pdf p48 (Yanofsky)",
+  "q": "What observation told Yanofsky there was a **second** trp control mechanism beyond the repressor?",
+  "a": "In a **trpR⁻ mutant** (no functional repressor), trp mRNA levels **still responded to tryptophan** — they fell when trp was plentiful. Since the repressor was gone, a **second, negative mechanism** had to exist. Mapping mutations that abolished it (max trp mRNA even with trp) placed it **between the operator and trpE** — the **attenuator**.",
+  "tags": [
+   "attenuation",
+   "trp-operon",
+   "who-what-when"
+  ],
+  "id": "L7-C017"
+ },
+ {
+  "type": "concept",
+  "topic": "Attenuation — the mechanism",
+  "diff": 3,
+  "target_s": 25,
+  "src": "Lec7L.pdf p49-51; Lec7D.pdf Q4",
+  "q": "How does trp attenuation work, and why can it only happen in prokaryotes?",
+  "a": "The mRNA **leader** encodes a short **leader peptide** with **two trp codons**, and the RNA can fold into two alternative stem-loops. Because prokaryotic **translation is co-transcriptional**, the **ribosome's position on the leader** (set by trp-tRNA availability) decides which fold forms: **high trp → ribosome zips through the trp codons → the 3-4 (terminator) stem-loop forms → transcription stops early (attenuated)**; **low trp → ribosome stalls at the trp codons → the 2-3 (antiterminator) stem-loop forms → transcription continues**. Eukaryotes can't do this — transcription (nucleus) and translation (cytoplasm) are **separated**, so there's no coupling.",
+  "tags": [
+   "attenuation",
+   "trp-operon",
+   "mechanism",
+   "prokaryote-vs-eukaryote"
+  ],
+  "id": "L7-C018"
+ },
+ {
+  "type": "recall",
+  "topic": "The attenuator terminator stem-loop",
+  "diff": 2,
+  "target_s": 12,
+  "src": "Lec7L.pdf p50-51",
+  "q": "The 3-4 stem-loop that halts transcription during attenuation resembles what structure from earlier in the course?",
+  "a": "An **intrinsic (rho-independent) terminator** — a GC-rich RNA hairpin (often followed by a U-run) that causes RNA polymerase to fall off (from L3 transcription termination). The \"terminator\" attenuator loop is exactly this kind of hairpin.",
+  "tags": [
+   "attenuation",
+   "transcription-termination"
+  ],
+  "id": "L7-R005"
+ },
+ {
+  "type": "problem",
+  "topic": "Swap the leader trp codons for Phe codons (HW Q9)",
+  "diff": 3,
+  "target_s": 60,
+  "src": "Lec7HW.pdf Q9",
+  "q": "In the trp leader you replace the trp codons **UGG UGG** with **UUU UUU UUC** (Phe codons). How does the trp operon now behave? (B) regulated by both Phe and Trp concentrations.",
+  "worked": "Attenuation senses whichever amino acid the **leader codons** require, via ribosome stalling. Now the leader codons call for **Phe**, so **attenuation responds to Phe levels** (low Phe → ribosome stalls → antiterminator → transcription). But the **trp repressor** still senses **trp** (it's unchanged). So the operon is now controlled by **both** Phe (attenuation) and Trp (repressor).",
+  "answer": "**B — regulated by the concentrations of both Phe and Trp.**",
+  "tags": [
+   "attenuation",
+   "trp-operon",
+   "sequence-reading"
+  ],
+  "id": "L7-P006"
+ },
+ {
+  "type": "concept",
+  "topic": "Alternative sigma factors",
+  "diff": 2,
+  "target_s": 18,
+  "src": "Lec7L.pdf p53-56",
+  "q": "How do bacteria coordinately switch on large sets of scattered genes (e.g. heat shock, sporulation), and what are anti-sigma factors?",
+  "a": "By swapping in **alternative σ (sigma) factors** — each σ directs RNA polymerase to a **different set of promoters**, so producing a new σ turns on a whole **regulon** at once (e.g. a heat-shock σ, or the sporulation σ cascade in B. subtilis). **Anti-sigma factors** hold a σ inactive until conditions call for it (e.g. σ32 is blocked by an anti-σ at low temperature). This handles coordinated responses that operons (single loci) can't.",
+  "tags": [
+   "sigma-factors",
+   "gene-regulation",
+   "mechanism"
+  ],
+  "id": "L7-C019"
+ },
+ {
+  "type": "problem",
+  "topic": "How operons coordinate expression (HW Q1)",
+  "diff": 1,
+  "target_s": 30,
+  "src": "Lec7HW.pdf Q1",
+  "q": "How do bacterial operons coordinate expression of multiple proteins in one pathway? (A) each gene has its own identical promoter (B) alternative splicing (C) simultaneous transcription/translation (D) polycistronic mRNAs (E) each gene encodes the next gene's TF.",
+  "worked": "An operon transcribes several structural genes into **one polycistronic mRNA** from a single promoter/operator, so they're all made together in one regulated event. (Alternative splicing is eukaryotic; co-transcription/translation is true but isn't the *coordination* mechanism.)",
+  "answer": "**D — polycistronic mRNAs.**",
+  "tags": [
+   "gene-regulation",
+   "lac-operon"
+  ],
+  "id": "L7-P007"
+ },
+ {
+  "type": "problem",
+  "topic": "What's altered in lacIˢ (HW Q2)",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec7HW.pdf Q2",
+  "q": "Which is true of a lacIˢ (super-repressor) mutant? (A) the I protein's DNA-binding domain is altered (B) the operon start codon → stop (C) lactose causes an allosteric change in I (D) the lactose-binding site on I is altered (E) none.",
+  "worked": "A super-repressor **can't be induced** — it stays on the operator even with inducer. That means it can no longer **bind the inducer**, so its **inducer/lactose-binding (allosteric) site is altered**. (If its **DNA-binding** domain were broken it couldn't repress at all — that's I⁻, the opposite.)",
+  "answer": "**D — the lactose (inducer)-binding site on the I protein is altered.**",
+  "tags": [
+   "operon-mutants",
+   "lac-operon"
+  ],
+  "id": "L7-P008"
+ },
+ {
+  "type": "problem",
+  "topic": "lacZ with glucose + lactose (HW Q3)",
+  "diff": 2,
+  "target_s": 40,
+  "src": "Lec7HW.pdf Q3",
+  "q": "With **both glucose and lactose** present, what's the temporal pattern of lacZ transcription? (A) initially low, increases as glucose is used up (B) initially high, decreases as lactose runs out (C) initially low, decreases (D) circadian (E) always high with lactose.",
+  "worked": "Glucose present → **low cAMP → CAP off → catabolite repression → lacZ low** at first (the cell burns glucose first — **diauxie**). Once glucose is exhausted, **cAMP rises → CAP-cAMP activates the operon → lacZ transcription increases** (lactose is still there and has removed the repressor).",
+  "answer": "**A — initially low, then increases as glucose is used up.**",
+  "tags": [
+   "catabolite-repression",
+   "lac-operon"
+  ],
+  "id": "L7-P009"
+ },
+ {
+  "type": "problem",
+  "topic": "Nature of a lacX⁻ mutant (HW Q4-5)",
+  "diff": 3,
+  "target_s": 70,
+  "src": "Lec7HW.pdf Q4-5",
+  "q": "A new mutant lacX⁻: **alone** it's constitutive (blue ±IPTG); with **lacX⁺ supplied in trans** (F′) the cell becomes **inducible** (white −IPTG, blue +IPTG). (4) Cis or trans? (5) What's the likely defect?",
+  "worked": "lacX⁻ is constitutive, but a WT copy **in trans rescues inducibility** → lacX⁻ is **recessive** and its product is **diffusible/trans**. A diffusible factor whose loss makes the operon constitutive = the **repressor**, and losing repression means it can no longer bind the operator DNA → the defect is in a **protein's DNA-binding domain** (or the DNA it binds).",
+  "answer": "(4) **B — diffusible, acts in trans**; (5) **A — it affects a DNA sequence bound by a protein OR a protein's DNA-binding domain** (a loss-of-function repressor).",
+  "tags": [
+   "operon-mutants",
+   "cis-trans"
+  ],
+  "id": "L7-P010"
+ },
+ {
+  "type": "problem",
+  "topic": "Merodiploid EMS mutants (HW Q6)",
+  "diff": 3,
+  "target_s": 90,
+  "src": "Lec7HW.pdf Q6 (skeptic-checked)",
+  "q": "Strain A = F′(all lac WT) / chromosome(all lac deleted). EMS mutants of strain A; then the F′ is moved into WT E. coli. Explain each: (a) constitutive β-gal, and the recipient becomes constitutive too; (b) no β-gal even induced, and the recipient can't make β-gal either; (c) very little β-gal even induced, but the recipient is normal.",
+  "worked": "(a) constitutive **+ dominant** (imposes constitutivity on a WT operon) but only makes sense in **cis** → an **Oᶜ operator** mutation (can't bind repressor; a WT repressor in the recipient can't fix it because the operator is cis). (b) uninducible **+ dominant** in trans → an **Iˢ super-repressor** (diffuses and shuts off the recipient's WT operon too). (c) reduced expression **+ recessive** (recipient normal) → a **cis promoter-down mutation** (weak transcription of its own operon only).",
+  "answer": "(a) **Oᶜ** operator (cis, dominant); (b) **Iˢ** super-repressor (trans, dominant); (c) **promoter-down** mutation (cis, recessive). *Sharp-exam nuance: (a) is canonically Oᶜ, but a dominant-negative repressor (I⁻ᵈ, poisons WT tetramers) is also dominant+constitutive — you tell them apart by cis vs trans dominance: **Oᶜ makes only its own operon constitutive (cis); I⁻ᵈ makes both (trans)** → differentially-mark lacZ to test. For (c), a weak (hypomorphic) lacZ allele fits equally — both are recessive cis reductions.*",
+  "tags": [
+   "operon-mutants",
+   "cis-trans",
+   "lac-operon"
+  ],
+  "id": "L7-P011"
+ },
+ {
+  "type": "problem",
+  "topic": "Effects of specific lac mutations (HW Q7)",
+  "diff": 3,
+  "target_s": 75,
+  "src": "Lec7HW.pdf Q7 (skeptic-checked)",
+  "q": "Effect on β-gal expression of: (a) inactivating lacI; (b) LacI can't bind lactose; (c) LacI can't bind DNA; (d) an operator mutation that blocks LacI binding; (e) adding high cAMP to WT cells in glucose + lactose minimal media.",
+  "worked": "(a) no repressor → **constitutive**. (b) repressor can't sense inducer → stays on operator → **uninducible (super-repressor)**. (c) repressor can't bind operator → **constitutive**. (d) operator can't be bound → **constitutive (Oᶜ)**. (e) excess cAMP lets **CAP-cAMP activate** despite glucose, and lactose has removed the repressor → operon **ON (high β-gal)**.",
+  "answer": "(a) constitutive; (b) uninducible; (c) constitutive; (d) constitutive; (e) high β-gal (cAMP overrides catabolite repression).",
+  "tags": [
+   "operon-mutants",
+   "lac-operon",
+   "catabolite-repression"
+  ],
+  "id": "L7-P012"
+ },
+ {
+  "type": "problem",
+  "topic": "Why attenuation is prokaryote-only (discussion Q4)",
+  "diff": 2,
+  "target_s": 35,
+  "src": "Lec7D.pdf Q4 (challenge)",
+  "q": "Attenuation regulates amino-acid-biosynthesis operons in prokaryotes but **not** eukaryotes. What basic feature of prokaryotic transcription (absent in eukaryotes) is the reason?",
+  "worked": "Attenuation depends on a **ribosome translating the leader peptide while the mRNA is still being transcribed** — the ribosome's position dictates which RNA stem-loop forms. That only works if **transcription and translation are coupled/simultaneous**, which is true in prokaryotes (no nucleus). Eukaryotes transcribe in the nucleus and translate later in the cytoplasm, so there's no coupling.",
+  "answer": "**Coupled (co-transcriptional) translation** — the ribosome translating the nascent mRNA as it's transcribed.",
+  "tags": [
+   "attenuation",
+   "prokaryote-vs-eukaryote",
+   "mechanism"
+  ],
+  "id": "L7-P013"
+ }
+]

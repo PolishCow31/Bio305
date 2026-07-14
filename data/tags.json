@@ -80,6 +80,15 @@
     {"id":"excision-repair","label":"NER / BER / photoreactivation","kind":"content","lecture":5},
     {"id":"translesion-repair","label":"translesion synthesis / SOS","kind":"content","lecture":5},
     {"id":"dsb-repair","label":"double-strand break repair / Holliday","kind":"content","lecture":5},
-    {"id":"repeat-expansion","label":"repeat expansion / slippage","kind":"content","lecture":5}
+    {"id":"repeat-expansion","label":"repeat expansion / slippage","kind":"content","lecture":5},
+
+    {"id":"gene-regulation","label":"gene regulation (pos/neg)","kind":"content","lecture":7},
+    {"id":"cis-trans","label":"cis-acting vs trans-acting","kind":"content","lecture":7},
+    {"id":"lac-operon","label":"lac operon","kind":"content","lecture":7},
+    {"id":"operon-mutants","label":"operon mutant / merodiploid analysis","kind":"content","lecture":7},
+    {"id":"catabolite-repression","label":"catabolite repression / CAP-cAMP","kind":"content","lecture":7},
+    {"id":"trp-operon","label":"trp operon (repressible)","kind":"content","lecture":7},
+    {"id":"attenuation","label":"attenuation / leader peptide","kind":"content","lecture":7},
+    {"id":"sigma-factors","label":"alternative sigma factors","kind":"content","lecture":7}
   ]
 }
