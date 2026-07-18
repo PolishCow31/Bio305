@@ -1,0 +1,551 @@
+{
+ "id": "exam1b",
+ "title": "Exam I · Practice Paper B",
+ "covers": "Lectures 1-6",
+ "minutes": 60,
+ "points": 48,
+ "questions": [
+  {
+   "id": "A-L1-1",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Reading an agarose gel",
+   "tags": [
+    "gel-electrophoresis",
+    "figure-interpretation",
+    "technique"
+   ],
+   "stem": "You are characterising the plasmids carried by three bioluminescent *Vibrio fischeri* isolates taken from the light organ of a bobtail squid. You digest each plasmid preparation to completion with *Eco*RI, load one digest per lane on a 1% agarose gel alongside a commercial size ladder, run it until the dye front nears the bottom, then soak the gel in ethidium bromide before photographing. The wells sit at the top, next to the negative electrode.\n\nRows are listed in order of increasing migration away from the wells; a blank cell means no band in that lane at that position.\n\n| Migration | Size (from ladder) | Ladder | Lane 1 | Lane 2 | Lane 3 |\n|---|---|---|---|---|---|\n| nearest the wells | 10 kb | band | | | band |\n| | 6 kb | band | band | | |\n| | 3 kb | band | | | band |\n| farthest from the wells | 1 kb | band | | band | |\n\nWhich statement about this gel is **INCORRECT**?",
+   "options": [
+    "The DNA in Lane 2 has a greater electrophoretic mobility than the DNA in Lane 1.",
+    "Because the gel was soaked in ethidium bromide rather than hybridised to a labelled probe, only those fragments whose sequence is complementary to the ethidium bromide will be visible.",
+    "Lane 3 contains two fragments, the larger of which is approximately 10 kb.",
+    "Every fragment on this gel carried a net negative charge during the run, because of the phosphate groups of the sugar-phosphate backbone.",
+    "If the Lane 1 and Lane 2 digests were combined and run together in a single well, that lane would show two distinct bands."
+   ],
+   "answer": 1,
+   "why": "Ethidium bromide is an **intercalating stain, not a probe**: it wedges between the stacked base pairs of any double-stranded DNA regardless of sequence, so it reveals every fragment on the gel. Sequence-specific detection is what a **probe** does. A stain is a small molecule with no sequence at all, so there is nothing for a fragment to be complementary to.",
+   "wrong": [
+    "TRUE, so not the answer. Lane 2's fragment travelled farther in the same run, which is the definition of greater electrophoretic mobility — the smaller molecule (1 kb versus 6 kb) threads through the agarose faster.",
+    "",
+    "TRUE, so not the answer. Lane 3 shows two bands aligning with the ladder's 10 kb and 3 kb markers. Reading unknown sizes against a ladder of known fragments is the entire reason the ladder is run alongside.",
+    "TRUE, so not the answer. Nucleic acids migrate toward the positive electrode because the backbone phosphates are negatively charged at running-buffer pH. The charge comes from the **backbone**, not the bases, which is why every fragment moves the same direction regardless of base composition.",
+    "TRUE, so not the answer. A 6 kb and a 1 kb fragment differ enough to resolve as two clearly separate bands in one lane. Loading two samples together does not merge their fragments."
+   ],
+   "pts": 3,
+   "t": 150,
+   "work": false,
+   "src": "L1 — size-versus-mobility, where the charge comes from, the ladder as benchmark, and the stain-versus-probe distinction (stains label everything, probes are specific)."
+  },
+  {
+   "id": "A-L1-2",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Restriction digest of a circular plasmid",
+   "tags": [
+    "restriction-crispr",
+    "gel-electrophoresis",
+    "calculation"
+   ],
+   "stem": "You have isolated a **circular** plasmid, pLUX-3, from a luminescent bacterial strain. The plasmid is 9.0 kb. The enzyme *Xba*I recognises 5′-TCTAGA-3′, and sequencing shows this site occurs at exactly three positions, cutting at coordinates 1,000, 4,000 and 6,000 (numbered clockwise from an arbitrary origin). You digest to completion and run the products beside a size ladder.\n\nWhich BEST describes the banding pattern you expect?",
+   "options": [
+    "Three bands, at 2.0, 3.0 and 4.0 kb, with the 4.0 kb band lying closest to the well.",
+    "Three bands, at 1.0, 2.0 and 3.0 kb, with the 3.0 kb band at roughly double intensity because two fragments of that size co-migrate.",
+    "Three bands, at 2.0, 3.0 and 4.0 kb, with the 2.0 kb band lying closest to the well.",
+    "Four separately resolved bands, at 1.0, 2.0, 3.0 and 3.0 kb.",
+    "A single 9.0 kb band, because a circular plasmid must first be linearised by a different enzyme before *Xba*I can cleave it."
+   ],
+   "answer": 0,
+   "why": "Cutting a **circular** molecule at n positions yields **n** fragments, not the n+1 a linear molecule gives, because a circle has no free ends. Three sites give three fragments: 1,000→4,000 = 3.0 kb, 4,000→6,000 = 2.0 kb, and 6,000 round past the origin to 1,000 = (9,000−6,000)+1,000 = 4.0 kb. They sum to 9.0 kb, as they must. Larger fragments migrate more slowly, so 4.0 kb sits closest to the well.",
+   "wrong": [
+    "",
+    "This is the right answer to the wrong question — it is exactly the pattern from a **linear** 9.0 kb molecule, which would give four fragments (1.0, 3.0, 2.0, 3.0) with the two 3.0 kb co-migrating. But a circle has no free ends, so the terminal 1.0 and 3.0 kb stretches join into a single 4.0 kb arc.",
+    "The three sizes are right but the migration is backwards. Smaller fragments weave through the matrix faster and travel farther, so the smallest (2.0 kb) finishes farthest from the well and the largest (4.0 kb) stays closest.",
+    "Two errors at once: it applies the linear n+1 rule to a circle, and even granting that, two fragments of identical size cannot resolve into two bands — they co-migrate as one band of double intensity.",
+    "Restriction endonucleases cleave circular DNA perfectly well; no prior linearisation is needed. The reasoning is also self-defeating, since linearising with 'a different enzyme' would itself be a restriction digest of the intact circle."
+   ],
+   "pts": 3,
+   "t": 210,
+   "work": true,
+   "worked": "**The rule to hold:** a **linear** molecule cut at n sites gives **n+1** fragments; a **circular** molecule cut at n sites gives **n** fragments, because there are no free ends to leave dangling.\n\nThree cuts on a circle → three arcs. Walk the circle:\n\n- 1,000 → 4,000 = **3.0 kb**\n- 4,000 → 6,000 = **2.0 kb**\n- 6,000 → round past the origin → 1,000 = (9,000 − 6,000) + 1,000 = **4.0 kb**\n\nCheck: 3.0 + 2.0 + 4.0 = 9.0 kb ✓ (the fragments must always sum to the full plasmid).\n\n**Now the migration.** Bigger = slower = nearer the well. So from the well downward: 4.0, then 3.0, then 2.0. The 4.0 kb band is closest to the well.",
+   "src": "L1 — using a given recognition site to analyse data: circular versus linear fragment counts, fragment arithmetic, and size-versus-migration."
+  },
+  {
+   "id": "A-L1-3",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Interpreting a three-blot panel",
+   "tags": [
+    "blotting",
+    "figure-interpretation",
+    "technique"
+   ],
+   "stem": "You are studying a recessive mutation, *shimmer-1*, in the zebrafish gene *shimmer*, which encodes a 74 kDa cytoplasmic protein. You collect genomic DNA, total RNA and total protein from wild-type and homozygous *shimmer-1* fish and run three blots. The Southern uses *Eco*RI-digested genomic DNA and a radiolabelled full-length *shimmer* cDNA probe; the Northern uses the same probe; the Western uses a monoclonal antibody against an epitope within the first 40 amino acids.\n\n| Blot | Wild type | *shimmer-1* homozygote |\n|---|---|---|\n| Southern (genomic DNA, *Eco*RI) | one band, 8.0 kb | one band, 8.0 kb |\n| Northern (total RNA) | one band, 2.4 kb | one band, 3.1 kb |\n| Western (total protein) | one band, 74 kDa | one band, 19 kDa |\n\nWhich hypothesis is BEST supported?",
+   "options": [
+    "A large deletion removing several exons from the *shimmer* locus.",
+    "A point mutation in the TATA box of the *shimmer* promoter.",
+    "A mutation in the polyadenylation signal that prevents cleavage at the 3′ end of the transcript.",
+    "A missense mutation in the fourth exon that substitutes a single amino acid.",
+    "A mutation in the 5′ splice site of the first intron, causing that intron to be retained in the mature mRNA and introducing a premature in-frame stop codon."
+   ],
+   "answer": 4,
+   "why": "Read the three blots as three independent constraints. The **Southern is unchanged**, so nothing large was added or removed at the locus. The **Northern is 0.7 kb longer**, so the mature mRNA has *gained* sequence. The **protein is truncated to 19 kDa** even though the antibody targets the extreme N-terminus, so translation starts normally and stops early. Intron retention carrying an in-frame stop is the only listed lesion that lengthens the mRNA, leaves the restriction fragment untouched, and truncates from the far end.",
+   "wrong": [
+    "A deletion removing several exons would shift the *Eco*RI fragment the probe detects, and the mutant Southern band does not move. A deletion would also **shorten** the transcript, whereas this one is 0.7 kb longer.",
+    "Crippling the TATA box would cripple transcription, so the mutant Northern should lose signal rather than shift size. A promoter mutation offers no route to a transcript 0.7 kb **longer**, and none at all to a discrete truncated protein retaining the N-terminal epitope.",
+    "This is the strongest wrong answer: a poly-A signal mutation does cause read-through and a longer transcript, which fits the Northern. But it leaves the entire coding sequence intact, so the protein would still be full length. **The Western is what refutes it.**",
+    "A single amino-acid substitution changes neither mRNA length nor protein mass by any amount a blot could resolve, so it predicts a normal 2.4 kb Northern and a normal 74 kDa Western. Both predictions fail.",
+    ""
+   ],
+   "pts": 3,
+   "t": 240,
+   "work": false,
+   "src": "L1 — SNoW DRoP applied: triangulating all three blots to localise a lesion."
+  },
+  {
+   "id": "A-L1-4",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Chargaff calculation",
+   "tags": [
+    "base-pairing",
+    "calculation",
+    "dna-vs-rna"
+   ],
+   "stem": "You have sequenced a newly isolated bacteriophage, phiPC-1, which carries a linear **double-stranded DNA** genome 40,000 base pairs in length, built from only the four standard DNA bases. You hydrolyse a preparation of the purified genome and find that guanine accounts for 22% of the total bases.\n\nApproximately how many adenine residues does one complete double-stranded phiPC-1 genome contain?",
+   "options": [
+    "8,800",
+    "11,200",
+    "17,600",
+    "It is impossible to determine, because Chargaff's rules do not apply to viral genomes.",
+    "22,400"
+   ],
+   "answer": 4,
+   "why": "In double-stranded DNA %G = %C, so G at 22% forces C to 22% and G+C to 44%, leaving A+T = 56% and therefore **%A = %T = 28%**. A genome of 40,000 base **pairs** contains **80,000 individual bases**, so adenine = 0.28 × 80,000 = **22,400**.",
+   "wrong": [
+    "8,800 = 0.22 × 40,000, which makes both available mistakes at once: it uses guanine's 22% instead of deriving adenine's 28%, and it counts 40,000 bases when 40,000 base pairs contain 80,000.",
+    "11,200 = 0.28 × 40,000. The Chargaff step is right — adenine really is 28% — but each base **pair** contributes two bases. **Forgetting to double is the single most common error on this style of question.**",
+    "17,600 = 0.22 × 80,000. The base count is right but it applies guanine's percentage rather than adenine's. Chargaff pairs each base with its **complement**; it never licenses swapping in a non-complementary base's percentage, and it certainly does not make all four equal.",
+    "Chargaff's rules follow from complementary base pairing, so they hold for any double-stranded genome whatever it came from. What actually breaks them is a genome being **single-stranded**. Being RNA is not the disqualifier either — double-stranded RNA still obeys %A = %U and %G = %C.",
+    ""
+   ],
+   "pts": 3,
+   "t": 180,
+   "work": true,
+   "worked": "**Step 1 — use Chargaff.** In a duplex, %G = %C. Given %G = 22, then %C = 22, so G+C = 44%.\n\n**Step 2 — get A.** The four percentages sum to 100, so A+T = 100 − 44 = 56%. And %A = %T, so **%A = 28%**.\n\n**Step 3 — the conversion everyone drops.** The genome is 40,000 base **PAIRS**. Each pair is two bases, so the total number of bases is **80,000**.\n\n**Step 4 — multiply.** 0.28 × 80,000 = **22,400 adenines**.\n\nSanity check: A = T = 22,400 and G = C = 0.22 × 80,000 = 17,600. Total = 22,400 + 22,400 + 17,600 + 17,600 = 80,000 ✓",
+   "src": "L1 — Chargaff applied quantitatively, the base-pairs-versus-bases conversion, and when Chargaff legitimately applies (double-stranded, not 'not viral')."
+  },
+  {
+   "id": "A-L1-5",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Logic of the transforming-principle experiments",
+   "tags": [
+    "hereditary-material",
+    "figure-interpretation",
+    "exceptions"
+   ],
+   "stem": "*Bacillus mortifer* occurs as a virulent encapsulated strain (**E**) and an avirulent non-encapsulated strain (**N**). Injecting live N cells is harmless, and injecting heat-killed E cells is also harmless. You prepare a cell-free extract of heat-killed E cells, treat separate aliquots as shown, combine each with live N cells where indicated, and inject into mice. From every mouse that dies you recover large numbers of live **encapsulated** bacteria from the blood.\n\n| Tube | Enzyme pre-treatment of extract | Live N cells added | Mouse |\n|---|---|---|---|\n| 1 | none | yes | dies |\n| 2 | protease | yes | dies |\n| 3 | ribonuclease | yes | dies |\n| 4 | deoxyribonuclease | yes | lives |\n| 5 | none | no | lives |\n| 6 | deoxyribonuclease | no | lives |\n\nWhich conclusion is **NOT** supported by these data?",
+   "options": [
+    "The component of the heat-killed E extract that confers virulence on N cells is DNA.",
+    "Because the extract was cell-free, these data show that the transforming DNA enters N cells through a dedicated membrane transport channel.",
+    "The change acquired by the N cells is heritable, since large numbers of encapsulated bacteria are recovered from the mice that died.",
+    "Neither protein nor RNA is required for the transforming activity of this extract under these conditions.",
+    "Tube 5 controls for the possibility that the heat-killed E extract is lethal on its own, without any transformation of the N cells."
+   ],
+   "answer": 1,
+   "why": "**Nothing in this design examines how DNA crosses the recipient cell envelope.** Every tube manipulates the *donor extract* — which class of macromolecule gets destroyed — and then reads out whether transformation happened. The recipient cells are only ever added or withheld, never altered or observed. Identifying *which molecule* transforms is the ceiling of this design; a specific uptake mechanism is an extra claim bolted onto a result that cannot test it.",
+   "wrong": [
+    "Supported. Activity survives protease (tube 2) and ribonuclease (tube 3) but is abolished by deoxyribonuclease (tube 4). Destroying one class of macromolecule at a time and seeing which destruction abolishes the effect is exactly the elimination logic that identifies the transforming principle as DNA.",
+    "",
+    "Supported. Recovering large numbers of encapsulated bacteria means the N cells were not merely coated in carried-over capsule material — a passive coating would be diluted away by division. The cells acquired the phenotype and transmitted it through many rounds of replication.",
+    "Supported, and note the careful wording. Tubes 2 and 3 show transformation still occurring after protein and RNA are destroyed, so neither is necessary **for this extract**. That is a bounded claim about this experiment, not the much broader and false claim that RNA can never carry genetic information.",
+    "Supported. Tube 5 delivers untreated extract with **no** live N cells and the mouse survives, showing the dead-cell extract cannot kill on its own. The death in tube 1 therefore depends on live recipients being present and changed."
+   ],
+   "pts": 3,
+   "t": 210,
+   "work": false,
+   "src": "L1 — Avery-MacLeod-McCarty logic on a Griffith-style assay, including each experiment's ceiling: what a result does and does not license you to conclude."
+  },
+  {
+   "id": "B-L3-1",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "EMSA interpretation",
+   "tags": [
+    "emsa-footprinting",
+    "figure-interpretation",
+    "promoter"
+   ],
+   "stem": "You are characterising Cinder, a candidate transcription factor you believe activates the *emberwing* gene in the beetle *Photinus fictus*. You radiolabel a 260 bp fragment of the promoter, incubate it with increasing amounts of purified Cinder, and resolve on a non-denaturing gel, imaging the radiolabel. You also test a second 260 bp probe carrying three point substitutions (length unchanged).\n\n| Lane | Probe | Cinder | Bands detected |\n|---|---|---|---|\n| 1 | wild type | none | one fast-migrating band |\n| 2 | wild type | 1× | strong fast band + faint slow band |\n| 3 | wild type | 5× | faint fast band + strong slow band |\n| 4 | substituted | 5× | one fast-migrating band only |\n| 5 | substituted | none | one fast-migrating band only |\n\nWhich conclusion is BEST supported?",
+   "options": [
+    "The experiment cannot be interpreted, because a mobility shift can only be scored after the samples have been digested with DNase I.",
+    "These data establish the precise boundaries of the Cinder binding site within the 260 bp fragment.",
+    "The slow-migrating species in lanes 2 and 3 is free Cinder protein that has entered the gel independently of the probe.",
+    "Cinder is a sequence-specific nuclease that cleaves the wild-type probe, and the cleavage products form the slow-migrating band.",
+    "Cinder binds the wild-type fragment, and the wild-type sequence at those three positions is required for stable complex formation."
+   ],
+   "answer": 4,
+   "why": "Naked DNA migrates fastest; a protein-DNA complex containing the same-length fragment is larger and is retarded, so it shifts up. Lanes 1-3 show dose-dependent conversion of free probe into the slower complex (the free band weakens as the complex strengthens), and the substituted probe forms no complex even at the highest dose, so that sequence is required for stable binding.",
+   "wrong": [
+    "DNase I digestion belongs to footprinting. EMSA deliberately omits any nuclease step — it scores the native mobility of an intact complex, and adding DNase I would destroy the very species being measured.",
+    "EMSA reports only *that* a complex formed; it carries no positional information about where on the 260 bp fragment Cinder sits, and the stem never says where the substitutions lie. Mapping boundaries requires a DNase footprint.",
+    "The gel is imaged through the radiolabel, which is on the DNA, so unbound protein is invisible. If the slow band were protein alone, the free-probe band would not weaken from lane 2 to lane 3 — but it does, showing probe is being consumed into a complex.",
+    "Cleavage would generate **shorter** fragments, which migrate **faster**, not slower, and would give multiple bands. The probe in lanes 4 and 5 is intact and co-migrates with naked DNA, and the gel is non-denaturing precisely so intact complexes survive.",
+    ""
+   ],
+   "pts": 3,
+   "t": 190,
+   "work": false,
+   "src": "L3 — EMSA: shift means binding, dose dependence, and the limit that EMSA cannot localise a site."
+  },
+  {
+   "id": "B-L3-2",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "DNase footprinting",
+   "tags": [
+    "emsa-footprinting",
+    "figure-interpretation",
+    "general-transcription-factors",
+    "prokaryote-vs-eukaryote"
+   ],
+   "stem": "You are mapping the proteins that assemble on the promoter of *nightjar*, an RNA polymerase II gene from the frog *Xenopus fictus*. The promoter contains a TATAAA element centred near −27 and a CAAT box near −80. You label the coding strand at its 5′ end, split into two tubes — one with no protein, one with a purified nuclear fraction — digest each briefly with DNase I, and resolve on a sequencing gel. Positions are relative to the transcription start site.\n\n| Cut position | Control | + Protein fraction |\n|---|---|---|\n| −85 | band | band |\n| −75 | band | band |\n| −65 | band | band |\n| −55 | band | band |\n| −45 | band | band |\n| −38 | band | band |\n| −31 | band | absent |\n| −28 | band | absent |\n| −25 | band | absent |\n| −22 | band | absent |\n| −18 | band | band |\n| −12 | band | band |\n| −6 | band | band |\n\nWhat is the BEST interpretation?",
+   "options": [
+    "The fraction contains sigma-70 bound to the Pribnow box, which sits about 10 bp upstream of the transcription start site.",
+    "The protein binds the CAAT box, because bands are present from −85 to −75 in both lanes.",
+    "The fraction contains TBP; the protected region corresponds to the TATA box roughly 25 bp upstream of the transcription start site.",
+    "The protein cleaved the DNA between −31 and −22 and removed that segment from the fragment.",
+    "The protected region lies within the 5′ UTR, so the fraction most likely contains a protein that binds the mature mRNA rather than the promoter DNA."
+   ],
+   "answer": 2,
+   "why": "DNase I cuts unprotected DNA at random, so the control lane is a full ladder; wherever a protein is bound, cleavage is blocked and those fragment lengths go missing, producing a **gap**. The gap spans −31 to −22, centred on the TATAAA element near −27, and the protein that binds the TATA box of a Pol II promoter is **TBP** (the TATA-binding subunit of TFIID).",
+   "wrong": [
+    "Sigma-70 and the Pribnow box are **prokaryote-only** terms; this is a eukaryotic Pol II gene, which uses general transcription factors and TBP rather than a sigma factor. The protected region is also at −31 to −22, not −10, and the bands near −12 and −6 are unchanged.",
+    "This inverts the logic of the assay. A band still **present** in the +protein lane means DNase I could cut there, i.e. the DNA was accessible. The CAAT region is identical in both lanes, so nothing is bound there — protection shows up as **missing** bands.",
+    "",
+    "The protein protects the DNA from cleavage; DNase I is what cuts. The data rule excision out: because the label sits at the upstream end, severing the fragment near −31 would truncate every labelled molecule and eliminate all bands downstream — yet bands at −18, −12 and −6 are still present.",
+    "The 5′ UTR begins at +1, so positions −31 to −22 are upstream of the start site and are never transcribed at all. The substrate here is end-labelled double-stranded DNA, not mRNA."
+   ],
+   "pts": 3,
+   "t": 205,
+   "work": false,
+   "src": "L3 — footprint gap equals binding site; TATA/TBP at about −25, plus the prokaryote-only −10/Pribnow terminology trap."
+  },
+  {
+   "id": "B-L3-3",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Intrinsic versus rho-dependent termination",
+   "tags": [
+    "transcription-termination",
+    "mechanism",
+    "compare-contrast"
+   ],
+   "stem": "You are dissecting transcription termination in *E. coli*. You place each of four terminator regions between a strong promoter and a *lacZ* reporter and measure read-through (high reporter activity means termination failed). Each construct is assayed in wild-type cells and in a strain carrying a temperature-sensitive *rho* allele whose product loses ATP hydrolysis at 42 °C while retaining RNA binding; all assays are at 42 °C. Construct II is the only one containing a rut site.\n\n| Construct | Terminator region |\n|---|---|\n| I | Intact inverted repeat followed by a run of 8 U residues in the RNA |\n| II | A rut site; no inverted repeat and no U-rich tract |\n| III | Intact inverted repeat, but the run of 8 U residues replaced by 8 G residues |\n| IV | Downstream arm of the inverted repeat scrambled so no hairpin can form; run of 8 U residues retained |\n\nFor which construct(s) does read-through increase substantially in the *rho* mutant?",
+   "options": [
+    "Constructs I and II",
+    "Constructs III and IV",
+    "Constructs I, III and IV",
+    "Construct II only",
+    "All four constructs"
+   ],
+   "answer": 3,
+   "why": "Only a rho-dependent terminator needs rho's ATP-driven helicase activity, and construct II is the only one with a rut site for rho to load onto — so it alone terminates in wild-type cells and fails when rho cannot hydrolyse ATP. Construct I is a classic intrinsic terminator needing no protein factor, while III and IV are already broken in wild-type cells and contain no rut site.",
+   "wrong": [
+    "Construct I is intrinsic: everything it needs — the hairpin and the weak poly-U tract — is encoded in the RNA itself, so disabling rho leaves it unaffected.",
+    "Neither contains a rut site, so rho is mechanistically irrelevant to both. Both are also already non-functional in wild-type cells (III lost the poly-U, IV lost the hairpin), so read-through is high in both strains and there is no increase to attribute to rho.",
+    "This compounds two errors: construct I is rho-independent, and III and IV lack a rut site and are already failing in wild type.",
+    "",
+    "This would require every terminator to be rho-dependent. Only construct II carries a rut site, and the intrinsic mechanism terminates with no protein factor at all — which is precisely why both mechanisms have to be learned separately."
+   ],
+   "pts": 3,
+   "t": 210,
+   "work": false,
+   "src": "L3 — 'You need to know both of them.' Intrinsic needs hairpin AND poly-U; rho is an ATP-driven helicase loading at the rut site."
+  },
+  {
+   "id": "B-L3-4",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Splicing mechanism ordering",
+   "tags": [
+    "splicing",
+    "mechanism",
+    "rna-processing"
+   ],
+   "stem": "You are studying removal of intron 4 from the *sablewing* pre-mRNA in a cultured human cell line. Some steps that may occur are listed below.\n\n1. The 2′-OH of the branch-point adenosine attacks the phosphodiester bond at the 5′ (donor) splice site, forming the lariat.\n2. U1 snRNP binds the 5′ (donor) splice site and U2 snRNP binds the branch-point sequence.\n3. The released lariat intron is debranched and degraded.\n4. The newly freed 3′-OH of the upstream exon attacks the phosphodiester bond at the 3′ (acceptor) splice site, joining the two exons.\n5. The U4, U5 and U6 snRNPs join to form the spliceosome.\n6. The intron is released as a linear molecule, leaving the two exons unattached in the nucleoplasm until they are later re-ligated.\n\nWhich represents the correct order of some of these steps?",
+   "options": [
+    "2 > 5 > 4 > 1 > 3",
+    "2 > 5 > 1 > 4 > 3",
+    "1 > 2 > 5 > 4 > 3",
+    "2 > 5 > 6 > 4 > 3",
+    "2 > 5 > 6 > 1 > 3"
+   ],
+   "answer": 1,
+   "why": "Recognition precedes chemistry: U1 and U2 mark the donor site and the branch point, then U4/U5/U6 join to complete the spliceosome. The two transesterifications then occur in a fixed order — the branch-point A attacks the 5′ site to form the lariat and free the upstream exon's 3′-OH, and that freed 3′-OH then attacks the 3′ site to join the exons and release the lariat, which is finally debranched and degraded.",
+   "wrong": [
+    "This reverses the two transesterifications. The upstream exon's 3′-OH does not exist as a free reactive group until the branch-point attack has cut the 5′ splice site — step 4's own wording, 'the newly freed 3′-OH,' presupposes step 1 has happened.",
+    "",
+    "This puts the chemistry before the machinery. The branch-point adenosine cannot attack the 5′ site until the spliceosome has assembled and positioned the donor site and branch point against one another.",
+    "**Step 6 never happens.** Splicing never passes through a state in which the intron has been excised as a linear molecule with the exons floating free — the intron leaves only as a lariat, and only in the same reaction that joins the exons. This chain also debranches a lariat that was never formed.",
+    "This includes the false linear-excision step 6, then forms the lariat afterwards, which is backwards, and it never includes step 4, so the exons are never actually joined."
+   ],
+   "pts": 3,
+   "t": 175,
+   "work": false,
+   "src": "L3 — the minimal splicing mechanism she requires, including the never-linear-excision misconception."
+  },
+  {
+   "id": "B-L3-5",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Co-transcriptional processing and the poly-A tail",
+   "tags": [
+    "rna-processing",
+    "five-prime-cap",
+    "polyadenylation",
+    "mechanism"
+   ],
+   "stem": "You are following the maturation of the transcript of *glimmer*, a 40 kb human gene containing 11 introns transcribed by RNA polymerase II. You purify the transcript at several stages and characterise its 5′ end, its introns and its 3′ end. Which statement about the processing of this transcript is **INCORRECT**?",
+   "options": [
+    "The poly-A tail is added by poly(A) polymerase without a template; the gene contains no corresponding run of T residues on the template strand specifying the tail.",
+    "The 5′ cap is added to the nascent transcript before the first intron is removed.",
+    "The length of the poly-A tail helps set how long the mature mRNA persists in the cytoplasm.",
+    "All 11 introns must be removed and the transcript released from RNA polymerase II before the 5′ cap can be added.",
+    "The poly-A signal sequence is transcribed into the pre-mRNA and recognised as a cleavage signal; the signal itself is not the poly-A tail."
+   ],
+   "answer": 3,
+   "why": "Processing is **co-transcriptional** and runs cap → splice → cleave-and-polyadenylate, all while the transcript is still being extruded from Pol II. The cap goes on when the nascent RNA is only about 20-30 nucleotides long — long before any intron is removed and long before release — so this statement inverts the order on both counts.",
+   "wrong": [
+    "TRUE. Poly(A) polymerase is template-independent: it adds A residues onto the exposed 3′-OH with no instructions, and there is no complementary run of T residues specifying the tail.",
+    "TRUE, and it is the first processing step. Capping occurs at roughly 20-30 nucleotides, well before any intron's 3′ splice site has even been transcribed.",
+    "TRUE. Tail length sets stability and half-life — a longer tail keeps the message around longer and yields more protein.",
+    "",
+    "TRUE, and it is the distinction worth guarding: the poly-A **signal** is a sequence transcribed into the pre-mRNA and bound as a recognition site, whereas the **tail** is the untemplated string of A residues added after cleavage."
+   ],
+   "pts": 3,
+   "t": 165,
+   "work": false,
+   "src": "L3 — the co-transcriptional order she called 'the point', plus the three poly-A facts."
+  },
+  {
+   "id": "B-L6-1",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Interrupted-mating Hfr mapping",
+   "tags": [
+    "hfr-mapping",
+    "conjugation",
+    "calculation",
+    "figure-interpretation"
+   ],
+   "stem": "You are mapping the chromosome of *Rhodobacter ludibundus*, a soil bacterium whose conjugation system behaves exactly as *E. coli*'s does. Four Hfr strains were derived independently from a single F⁺ parent, and each was mated to an F⁻ recipient auxotrophic for all six markers *A* through *F* and streptomycin-resistant; all four donors are streptomycin-sensitive. Samples were withdrawn every minute for one hour, the matings disrupted in a blender, and the cells plated on streptomycin-containing selective media. The table gives the time in minutes at which each donor allele first appeared among recombinants. A dash means that allele never appeared during the hour.\n\n| | *A* | *B* | *C* | *D* | *E* | *F* |\n|---|---|---|---|---|---|---|\n| **Hfr1** | 7 | 57 | 40 | — | — | 26 |\n| **Hfr2** | — | 22 | 5 | 52 | 38 | — |\n| **Hfr3** | 23 | — | — | 35 | 49 | 4 |\n| **Hfr4** | 58 | 8 | 25 | — | — | 39 |\n\nWhat is the order of these six genes on the chromosome?",
+   "options": [
+    "*C, B, E, D, A, F*",
+    "*A, B, C, D, E, F*",
+    "*C, B, D, E, A, F*",
+    "*C, B, E, D, F, A*",
+    "The order cannot be determined; the four fragments do not overlap enough to close the circle."
+   ],
+   "answer": 0,
+   "why": "Writing gene-to-gene intervals for each strain and tiling the four fragments (flipping Hfr3, which runs in the opposite orientation) gives a single circle: *A*–19–*F*–14–*C*–17–*B*–16–*E*–14–*D*–12–back to *A*, a 92-minute map. Because a circular map can be read starting from any gene, that circle is offered here as *C, B, E, D, A, F*.",
+   "wrong": [
+    "",
+    "Alphabetical order is not the answer to anything here. It fails immediately against Hfr1, which delivers *A* at 7 and then *F* at 26 — *F* is the second gene from that origin, not the sixth.",
+    "This transposes *E* and *D*. Hfr2 delivers *E* at 38 and *D* at 52, so *E* precedes *D* from that origin, and Hfr3 independently confirms the *D*–*E* interval at 14 minutes once flipped.",
+    "This transposes *A* and *F* where the circle closes. Three separate strains fix *A*–*F* = 19 with *A* preceding *F* (Hfr1 reads *A*→*F*; Hfr3 and Hfr4 read *F*→*A*, the same block backwards). Placing *F* first contradicts all three.",
+    "The fragments do overlap, and every interval is measured at least once: *A*–*F* by Hfr1/3/4, *F*–*C* by Hfr1/4, *C*–*B* by Hfr1/2/4, *B*–*E* by Hfr2, *E*–*D* by Hfr2/3, *D*–*A* by Hfr3. The circle closes cleanly at 92 minutes."
+   ],
+   "pts": 3,
+   "t": 300,
+   "work": true,
+   "worked": "**Step 1 — read each strain's arrival order and write gene-to-gene intervals.** (Her tip: record intervals *between* genes, not just distance from the origin — shared intervals reveal the overlaps.)\n\n- Hfr1: *A*(7) *F*(26) *C*(40) *B*(57) → *A*–*F* 19, *F*–*C* 14, *C*–*B* 17\n- Hfr2: *C*(5) *B*(22) *E*(38) *D*(52) → *C*–*B* 17, *B*–*E* 16, *E*–*D* 14\n- Hfr3: *F*(4) *A*(23) *D*(35) *E*(49) → *F*–*A* 19, *A*–*D* 12, *D*–*E* 14\n- Hfr4: *B*(8) *C*(25) *F*(39) *A*(58) → *B*–*C* 17, *C*–*F* 14, *F*–*A* 19\n\n**Step 2 — tile, flipping any strain that runs backwards.** Take Hfr1 as reference: *A*-*F*-*C*-*B*. Hfr4 reads *B*-*C*-*F*-*A*, the same block backwards — confirms the intervals, adds nothing new. Hfr2 opens *C*–*B* = 17 in the same direction, so it extends the chain: *A*-*F*-*C*-*B*-*E*-*D*. Hfr3 reads *F*-*A* but the chain has *A*-*F*, so **Hfr3 must be flipped**. Flipped it reads *E*-*D*-*A*-*F*, and it supplies the one interval nothing else measures — ***D*–*A* = 12**.\n\n**Step 3 — close the circle.** *A*–19–*F*–14–*C*–17–*B*–16–*E*–14–*D*–12–back to *A*. Total = **92 minutes**. She often asks for that number instead of the order — be ready for either.\n\n**Step 4 — match an option.** The circle *A-F-C-B-E-D* can be read from any starting gene, so it is the same answer as *C, B, E, D, A, F*.\n\n**Check the dashes.** Every blank must be a gene arriving after the 60-minute cutoff. Hfr1: *E* at 73, *D* at 87. Hfr2: *A* at 64, *F* at 83. Hfr3: *B* at 65, *C* at 82. Hfr4: *D* at 70, *E* at 84. All sixteen filled times and all eight blanks reproduce exactly.",
+   "src": "L6 — the mapping question she guaranteed twice. Solution confirmed unique by exhaustive search over all 60 distinct circular orders."
+  },
+  {
+   "id": "B-L6-2",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "The plus/minus and R/S notation convention",
+   "tags": [
+    "bacterial-recombination",
+    "technique",
+    "compare-contrast"
+   ],
+   "stem": "You have isolated a mutant of *Pseudomonas festiva* with the genotype *leu*⁻ *thr*⁺ *gal*⁺ *lac*⁻ *str*ᴿ *tet*ˢ, and you want to grow a pure culture of it. Every mutation in this strain is loss-of-function. Each plate below is carbon-free minimal salts to which exactly one carbon source and the listed supplements have been added — nothing else. On which plate will this strain form colonies?",
+   "options": [
+    "Minimal salts with galactose as the sole carbon source, plus leucine and streptomycin.",
+    "Minimal salts with galactose as the sole carbon source, plus threonine and streptomycin.",
+    "Minimal salts with lactose as the sole carbon source, plus leucine and streptomycin.",
+    "Minimal salts with galactose as the sole carbon source, plus leucine and tetracycline.",
+    "Minimal salts with lactose as the sole carbon source, plus leucine, threonine and streptomycin."
+   ],
+   "answer": 0,
+   "why": "This plate satisfies all three requirements at once: *gal*⁺ means the cell can catabolise galactose, so it has a usable carbon source; *leu*⁻ means leucine must be supplied, and it is; and *str*ᴿ means streptomycin does not stop it.",
+   "wrong": [
+    "",
+    "Galactose and streptomycin are both fine, but the amino acid is the wrong one. *thr*⁺ means the cell already makes its own threonine, so adding it accomplishes nothing, while *leu*⁻ means leucine is genuinely required and is absent.",
+    "*lac*⁻ means the lactose gene is broken, so the cell cannot break lactose down. Lactose is the only carbon source offered, so despite the leucine and the harmless streptomycin there is nothing here the cell can eat.",
+    "Carbon source and amino acid are both correct, but *tet*ˢ means the strain is tetracycline-sensitive — tetracycline blocks its ribosomes and no colonies form.",
+    "This is the trap for treating ⁺/⁻ as meaning the same thing for every gene. Piling on more amino acids cannot rescue a carbon-source problem: the cell is still *lac*⁻ and still cannot metabolise the only carbon source present."
+   ],
+   "pts": 3,
+   "t": 150,
+   "work": true,
+   "worked": "**Step 1 — sort the six markers into classes and translate each into a plate requirement.**\n\n| Marker | Class | Reading | Consequence |\n|---|---|---|---|\n| *leu*⁻ | amino-acid biosynthesis | gene broken | **cannot** make leucine → must be supplied |\n| *thr*⁺ | amino-acid biosynthesis | gene works | makes its own → adding it is useless |\n| *gal*⁺ | sugar catabolism | gene works | **can** break galactose down → can grow on it |\n| *lac*⁻ | sugar catabolism | gene broken | **cannot** use lactose → lactose is not food |\n| *str*ᴿ | antibiotic | resistant | grows with streptomycin present |\n| *tet*ˢ | antibiotic | sensitive | does not grow with tetracycline present |\n\n**Step 2 — the trap.** The ⁺/⁻ sign means *opposite* things for the two ⁺/⁻ classes. For an amino acid, ⁺ means you do **not** need it added. For a sugar, ⁺ means you **can** use it. The single rule underneath is **⁺ = gene works, ⁻ = gene broken** — but biosynthesis is anabolic and sugar use is catabolic, so the growth consequence flips.\n\n**Step 3 — apply all three at once.** You need a usable carbon source (galactose, not lactose), leucine present, and no tetracycline. Streptomycin is optional — neither helps nor hurts a *str*ᴿ strain. Only one option satisfies all three.",
+   "src": "L6 — the notation convention she flagged as making the homework unreadable if you miss it."
+  },
+  {
+   "id": "B-L6-3",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Cotransduction three-factor mapping",
+   "tags": [
+    "transduction",
+    "calculation",
+    "figure-interpretation",
+    "phage-biology"
+   ],
+   "stem": "A transducing phage is grown on a wild-type *arg*⁺ *leu*⁺ *thi*⁺ donor of *Salmonella lusoria*, and the lysate is used to infect an *arg*⁻ *leu*⁻ *thi*⁻ recipient. In three experiments you select for a single wild-type marker, then score the two unselected donor alleles. Each percentage is a fraction of the transductants recovered in that experiment.\n\n| Experiment I — select *thi*⁺ | Experiment II — select *leu*⁺ | Experiment III — select *arg*⁺ |\n|---|---|---|\n| *leu*⁻ *arg*⁻ 23% | *thi*⁻ *arg*⁻ 45% | *leu*⁻ *thi*⁻ 75% |\n| *leu*⁺ *arg*⁻ 52% | *thi*⁺ *arg*⁻ 52% | *leu*⁻ *thi*⁺ 22% |\n| *leu*⁻ *arg*⁺ 22% | *thi*⁻ *arg*⁺ 0% | *leu*⁺ *thi*⁻ 0% |\n| *leu*⁺ *arg*⁺ 3% | *thi*⁺ *arg*⁺ 3% | *leu*⁺ *thi*⁺ 3% |\n\nWhich conclusion is BEST supported?",
+   "options": [
+    "The order is *thi* – *leu* – *arg*, and *leu* lies closer to *thi*.",
+    "The order is *leu* – *thi* – *arg*, and *thi* lies closer to *arg*.",
+    "The order is *leu* – *thi* – *arg*, and *thi* lies closer to *leu*.",
+    "The order is *leu* – *arg* – *thi*, and *arg* lies closer to *leu*.",
+    "No order can be assigned, because no *leu*⁺ *arg*⁺ *thi*⁻ transductants were recovered in experiments II or III."
+   ],
+   "answer": 2,
+   "why": "The three pairwise cotransduction frequencies are *leu*–*thi* 55%, *thi*–*arg* 25% and *leu*–*arg* 3%. The lowest pair is the farthest apart, so *leu* and *arg* are the outside genes and *thi* is in the middle; *thi* is cotransduced with *leu* more than twice as often as with *arg*, so it sits nearer *leu*.",
+   "wrong": [
+    "This makes *leu* the middle gene, which would require *leu* to have the two highest pairwise frequencies. It does not — *leu*–*arg* is 3%, the lowest value in the table. A middle gene is never a member of the lowest-frequency pair.",
+    "The order is right but the proximity is backwards. *thi* travels with *leu* 55% of the time and with *arg* only 25%, and higher cotransduction means closer.",
+    "",
+    "This makes *arg* the middle gene. It fails the same test: *arg*'s pairing with *leu* is the 3% minimum, so *arg* is an outside gene.",
+    "The zero classes are the most informative data here, not a reason the problem is unsolvable. *leu*⁺ *arg*⁺ *thi*⁻ is the two outer markers without the middle one, which needs four crossovers instead of two; its absence is precisely what confirms *thi* sits between them."
+   ],
+   "pts": 3,
+   "t": 260,
+   "work": true,
+   "worked": "**Step 1 — convert each experiment into pairwise frequencies.** For a given pair, add the two classes containing the other donor allele.\n\n- ***leu*–*thi***: Exp I gives 52 + 3 = **55%**; Exp II gives 52 + 3 = **55%**. Agree.\n- ***thi*–*arg***: Exp I gives 22 + 3 = **25%**; Exp III gives 22 + 3 = **25%**. Agree.\n- ***leu*–*arg***: Exp II gives 0 + 3 = **3%**; Exp III gives 0 + 3 = **3%**. Agree.\n\n**Step 2 — lowest frequency means farthest apart.** Two genes are cotransduced only if they fit in one phage head, so frequency falls as distance grows. *leu*–*arg* at 3% is by far the lowest, so those are the two ends and ***thi* is the middle gene***: order **leu – thi – arg**.\n\n**Step 3 — which flank is it closer to?** *thi* with *leu* is 55%, with *arg* is 25%. Higher means closer, so ***thi* is much closer to *leu***.\n\n**Step 4 — confirm with the zero classes.** In both Exp II and Exp III the *leu*⁺ *arg*⁺ *thi*⁻ class is 0%. That is the two *outer* markers inherited *without* the middle one, impossible with a single pair of crossovers — it needs four, one pair on each side of *thi*. Four crossovers are vanishingly rare, which is exactly why the class is empty, and that asymmetry independently confirms the order.",
+   "src": "L6 — cotransduction as map distance plus the four-crossover argument. Mirrors the Discussion 6 problem, which is itself a recycled real exam item."
+  },
+  {
+   "id": "B-L6-4",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Generalized versus specialized transduction",
+   "tags": [
+    "transduction",
+    "phage-biology",
+    "mechanism",
+    "compare-contrast"
+   ],
+   "stem": "You have isolated two bacteriophages that infect *Erwinia jocosa*. Phage **Zeta**: lysates prepared after lytic growth on a wild-type donor transfer any of the fifteen auxotrophic markers you test, each at roughly 10⁻⁶ per plaque-forming unit, and the donor never has to have been a lysogen. Phage **Omicron**: lysates transfer only *gal* and *bio* — the two genes flanking its attachment site — at roughly 10⁻⁴, and only when induced from a lysogen. Lysates from lytically infecting a non-lysogenic host with Omicron yield no transductants at all. Which statement is **INCORRECT**?",
+   "options": [
+    "Omicron would transfer a marker located far from its attachment site if the lysate were prepared after a purely lytic infection of a non-lysogenic host.",
+    "Omicron acquires *gal* or *bio* by an imprecise excision of its prophage from the attachment site.",
+    "The frequency difference is consistent with Omicron's particles arising from a specific, relatively frequent excision error, while Zeta's arise from rare random mispackaging.",
+    "Because a Zeta transducing particle carries host DNA in place of the phage genome, a cell infected by one of these particles is usually not lysed.",
+    "Zeta produces transducing particles by packaging a random fragment of host DNA in place of its own genome during the lytic cycle."
+   ],
+   "answer": 0,
+   "why": "This is the incorrect statement, and the stem refutes it directly: Omicron lysates from lytic infection of a non-lysogen give **no transductants at all**. Specialized transducing particles are generated only by aberrant excision of an *integrated* prophage, so with no integration there is no transduction — and the mechanism could never reach a distant marker regardless.",
+   "wrong": [
+    "",
+    "Correct. Omicron is temperate, its prophage sits between *gal* and *bio*, and an occasional imprecise loop-out takes the neighbouring DNA with it — which is why those and only those two markers move.",
+    "Correct. A specific excision error at a defined site is far likelier than a random packaging accident that happens to capture one particular gene, matching 10⁻⁴ against 10⁻⁶.",
+    "Correct. A generalized transducing particle carries bacterial DNA instead of the phage genome, so it delivers DNA but no instructions for making virions; the recipient survives, which is what lets it be recovered as a transductant.",
+    "Correct, and it is the definition of generalized transduction. Zeta moves all fifteen markers with no lysogeny requirement, the signature of random host fragments being mispackaged during lytic assembly."
+   ],
+   "pts": 3,
+   "t": 150,
+   "work": false,
+   "src": "L6 — distinguishing the two transduction modes from experimental data rather than vocabulary."
+  },
+  {
+   "id": "B-L6-5",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Episomal integration and gene order",
+   "tags": [
+    "conjugation",
+    "f-factor",
+    "bacterial-recombination",
+    "mechanism"
+   ],
+   "stem": "*Vibrio hilaris* carries a conjugative episome whose five genes read, clockwise around the circular plasmid, *A* → *B* → **IS1** → *C* → *D* → *E* → and back around to *A*. The chromosome carries a single matching IS1 copy lying between the chromosomal genes *mal* and *trp*. A single crossover between the two IS1 copies integrates the entire plasmid, converting the strain to an Hfr. You sequence across the integrated region and find that *C* is the first plasmid gene encountered travelling from *mal*. What is the gene order across the integrated region?",
+   "options": [
+    "*mal* – *A* – *B* – *C* – *D* – *E* – *trp*",
+    "*mal* – *B* – *A* – *E* – *D* – *C* – *trp*",
+    "*mal* – *C* – *B* – *A* – *E* – *D* – *trp*",
+    "*mal* – *C* – *D* – *E* – *A* – *B* – *trp*",
+    "The order cannot be determined without knowing the orientation of the plasmid relative to the chromosome."
+   ],
+   "answer": 3,
+   "why": "Integration opens the plasmid circle at the IS and splices the whole loop into the chromosome, so you enter at the IS, travel all the way around the circle, and leave at the IS. Entering on the *C* side, the path is *C* → *D* → *E* → and then wraps past the top of the circle into *A* → *B* before returning to the IS and rejoining the chromosome at *trp*.",
+   "wrong": [
+    "This recites the plasmid genes in alphabetical order and ignores where the IS sits. The IS lies between *B* and *C*, so the integrated segment must begin and end at that point — *A* cannot be first in from *mal* and *E* cannot be last before *trp*.",
+    "This uses the correct wrap-around method but the opposite orientation — what you would get if the plasmid had gone in the other way, entering at *B*. The stem rules it out by stating that *C* is the first plasmid gene from *mal*.",
+    "This starts correctly at *C* but travels the wrong way round. Going backwards from *C* runs straight into the IS, which is the exit, not a route to *B*. *C* and *B* sit on opposite sides of the IS, so once integrated they end up at opposite ends of the inserted segment and can never be neighbours.",
+    "",
+    "The orientation is given. Stating that *C* is first from *mal* fixes which way the circle was inserted, which is exactly the information needed."
+   ],
+   "pts": 3,
+   "t": 200,
+   "work": true,
+   "worked": "**Step 1 — draw the plasmid as a circle and mark the IS.** Clockwise: *A*, *B*, **IS1**, *C*, *D*, *E*, back to *A*. The IS is both the on-ramp and the off-ramp — the only point where chromosome and plasmid join.\n\n**Step 2 — enter.** A single crossover between the two IS copies opens the circle at that one point and splices the whole loop in. Come in from *mal*, cross at the IS, land on the plasmid. The stem says the first plasmid gene on that side is *C*, which fits — *C* sits immediately on one side of the IS.\n\n**Step 3 — go all the way around.** Once on the circle you cannot turn around; you must travel the entire loop before getting off. From *C*: *C* → *D* → *E* → *A* → *B*. **The wrap past *E* into *A* and *B* is the whole trick** — stopping at *E* because it looks like the end of the list is the most common error on this question type.\n\n**Step 4 — exit.** After *B* you are back at the IS, the off-ramp, and rejoin the chromosome at *trp*.\n\nOrder: ***mal* – *C* – *D* – *E* – *A* – *B* – *trp***\n\n**Orientation check.** Had it integrated the other way, you would enter at *B* and trace *B* → *A* → *E* → *D* → *C*. Those are the only two possible answers, and the sentence fixing *C* as first from *mal* chooses between them. On the exam that information usually comes from the arrows in the figure — read them before you start tracing.",
+   "src": "L6 — the on-ramp/off-ramp trace. Her words: 'you are going to be doing a lot for the homework for this lecture. This is really important.'"
+  },
+  {
+   "id": "B-L6-6",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Recombinant classes and the four-crossover rule",
+   "tags": [
+    "hfr-mapping",
+    "conjugation",
+    "bacterial-recombination",
+    "calculation"
+   ],
+   "stem": "You are mating an Hfr strain of *E. coli* that is *met*⁺ *arg*⁺ *his*⁺ *str*ˢ with an F⁻ strain that is *met*⁻ *arg*⁻ *his*⁻ *str*ᴿ. Preliminary interrupted matings establish that *his*⁺ is the last of the three markers to enter, so you select *his*⁺ recombinants on medium containing methionine, arginine and streptomycin but no histidine. You then replica-plate the selected colonies to score the two unselected markers:\n\n| Genotype of selected colonies | Number |\n|---|---|\n| *his*⁺ *met*⁺ *arg*⁺ | 310 |\n| *his*⁺ *met*⁻ *arg*⁺ | 68 |\n| *his*⁺ *met*⁻ *arg*⁻ | 41 |\n| *his*⁺ *met*⁺ *arg*⁻ | 4 |\n\nWhat is the BEST interpretation?",
+   "options": [
+    "*his* lies between *met* and *arg*, because *his*⁺ is present in every class of colony scored.",
+    "*met* lies between *arg* and *his*: the rare *met*⁺ *arg*⁻ class arose from a double crossover flanking *met*, so the order is oriT – *arg* – *met* – *his*.",
+    "*arg* lies between *met* and *his*: the rare *met*⁺ *arg*⁻ class required four crossovers, so the order from the origin of transfer is oriT – *met* – *arg* – *his*.",
+    "The *met*⁺ *arg*⁻ class is rare because *met* and *arg* are too far apart ever to be carried on the same transferred fragment.",
+    "No gene order can be assigned, because a single crossover would linearize the recipient chromosome and kill the cell."
+   ],
+   "answer": 2,
+   "why": "Viable recombinants need an **even** number of crossovers, and picking up the two *outside* markers while keeping the recipient's allele of the *middle* marker takes four rather than two — so that class is always rarest. Here the rarest class is *met*⁺ *arg*⁻ (4 colonies), which carries *met* and *his* but not *arg*, making *met* and *his* the outside pair and *arg* the middle gene.",
+   "wrong": [
+    "*his*⁺ appears in every class because *his*⁺ is what you selected for — by construction nothing without it could grow. A selected marker carries no positional information, and *his* cannot be in the middle anyway since it enters last.",
+    "If *met* were the middle gene, *his*⁺ *met*⁺ *arg*⁻ would need only a single pair of crossovers spanning *his* and *met* while excluding *arg* — an ordinary two-crossover event, which would make it one of the *common* classes. Its rarity is exactly what rules this order out.",
+    "",
+    "This contradicts the table it is meant to explain. The largest class by far is *his*⁺ *met*⁺ *arg*⁺ at 310, so *met* and *arg* plainly do arrive together on the same fragment most of the time.",
+    "The premise is true — a single crossover would linearize the chromosome and kill the cell — but the conclusion does not follow. That is precisely why recombinants arise from even numbers of crossovers, and comparing the two-crossover classes with the four-crossover class is what makes the map readable."
+   ],
+   "pts": 3,
+   "t": 220,
+   "work": true,
+   "worked": "**Step 1 — use what the selection already tells you.** *his*⁺ enters last, so the order ends in *his*: oriT – ? – ? – *his*. The open question is whether *met* or *arg* is the middle gene.\n\n**Step 2 — recombinants need an even number of crossovers.** Incoming donor DNA is linear and is degraded unless it recombines into the circular chromosome. A *single* crossover would linearize the whole chromosome and kill the cell, so every viable recombinant comes from at least **two** crossovers, one on each side of the swapped segment.\n\n**Step 3 — find the class that needs four.** Inheriting the two *outside* markers while keeping the recipient's own allele of the *middle* marker requires two separate double-crossover events — four in total. Each crossover is rare, so four is dramatically rarer than two, and that class is always the smallest number in the table. Scanning 310, 68, 41, **4** — the rarest is ***his*⁺ *met*⁺ *arg*⁻**.\n\n**Step 4 — read the middle gene off it.** That class carries *met*⁺ and the selected *his*⁺ but not *arg*⁺. So *met* and *his* are the outside markers and ***arg* is the middle gene***: **oriT – *met* – *arg* – *his***.\n\n**Step 5 — sanity-check a second way.** Of 423 selected colonies, *arg*⁺ appears in 310 + 68 = 378 (89%) but *met*⁺ in only 310 + 4 = 314 (74%). The marker co-inherited more often with the selected *his*⁺ is the one nearer *his* — that is *arg*. Both routes agree.",
+   "src": "L6 — two crossovers versus four, using the rarest recombinant class to find the middle gene."
+  }
+ ]
+}

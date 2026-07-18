@@ -10,6 +10,16 @@
    "points": 112,
    "minutes": 110,
    "blurb": "34 multiple choice at 3 points each plus 2 written multi-step problems. Slightly longer than the real paper on purpose. Weighted to what she actually repeats year on year: wobble and illegal anticodons (her biggest bucket), replication mechanics, the guaranteed interrupted-mating map, repair-pathway routing, blots and EMSA, Sanger gels, primer design, and the plus/minus notation trap."
+  },
+  {
+   "id": "exam1b",
+   "file": "exam1b.json",
+   "title": "Exam I · Practice Paper B",
+   "covers": "Lectures 1-6",
+   "questions": 16,
+   "points": 48,
+   "minutes": 60,
+   "blurb": "A shorter second sitting, heavier on Lecture 6 — the guaranteed interrupted-mating map (a fresh dataset, solution confirmed unique by exhaustive search), the on-ramp/off-ramp integration trace, cotransduction ordering, and the four-crossover rule. Plus gels and blots, EMSA versus footprinting, and splicing order."
   }
  ]
 }
