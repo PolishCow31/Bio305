@@ -60,6 +60,9 @@ const Store = (function(){
   function bumpTags(card, g){                       // g: 1=again/wrong 2=hard 3=good 4=easy
     if(card) SyncCore.bumpTagInto(state.tagW, card.tags||[], g);   // delegate -> single source of truth
   }
+  // Exam results feed the same adaptive weights as flashcards — a missed mock question makes
+  // that topic surface sooner in review. Exam questions aren't deck cards, so tags come raw.
+  function examBump(tags, g){ SyncCore.bumpTagInto(state.tagW, tags||[], g); save(); }
   function tagBoost(card){ const ts=card.tags||[]; if(!ts.length) return TAG_DEF; let s=0; ts.forEach(t=>s+=tw(t)); return s/ts.length; }
   const tagLabel = id => (tagIndex[id]&&tagIndex[id].label) || id;
 
@@ -215,12 +218,23 @@ const Store = (function(){
   function md(t){
     if(!t) return "";
     let h = t.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+    // pipe tables — exam data blocks (time-of-entry, cotransduction, gel lanes) need real columns.
+    // Runs before inline formatting so cell contents still get bold/code treatment.
+    h = h.replace(/(?:^|\n)((?:[ \t]*\|.*\|[ \t]*(?:\n|$))+)/g, (m, block)=>{
+      const rows = block.trim().split("\n").map(r=>r.trim()).filter(Boolean);
+      if(rows.length<2 || !/^\|[\s:|-]+\|$/.test(rows[1])) return m;      // needs a header separator
+      const cells = r => r.replace(/^\||\|$/g,"").split("|").map(c=>c.trim());
+      const head = cells(rows[0]).map(c=>"<th>"+c+"</th>").join("");
+      const body = rows.slice(2).map(r=>"<tr>"+cells(r).map(c=>"<td>"+c+"</td>").join("")+"</tr>").join("");
+      return "\n<table><thead><tr>"+head+"</tr></thead><tbody>"+body+"</tbody></table>\n";
+    });
     h = h.replace(/\*\*(.+?)\*\*/g,"<b>$1</b>").replace(/(^|[^*])\*([^*]+?)\*/g,"$1<em>$2</em>")
          .replace(/`([^`]+?)`/g,"<code>$1</code>");
     // bullet lists
     h = h.replace(/(?:^|\n)- (.+)/g,(_,x)=>"\n<li>"+x+"</li>");
     h = h.replace(/(<li>[\s\S]*?<\/li>)/g,"<ul>$1</ul>").replace(/<\/ul>\s*<ul>/g,"");
     h = h.replace(/\n{2,}/g,"<br><br>").replace(/\n/g,"<br>").replace(/<br>(<ul>|<li>)/g,"$1");
+    h = h.replace(/(<br>)+(<table>)/g,"$2").replace(/(<\/table>)(<br>)+/g,"$1");   // tables own their spacing
     return h;
   }
 
@@ -312,7 +326,7 @@ const Store = (function(){
   return { init, save, units:()=>units, cards:()=>cards, get, reviewCards, problemCards,
     dueQueue, adaptiveQueue, lectureQueue, tagQueue, isDue, srs, grade, localCheck, logProblem, logSession,
     cardStat, topicStats, overview, daysToExam, exportJSON, importJSON, md,
-    tagStats, hotTags, taxonomy, tagLabel, tagBoost, priority, systemHealth,
+    tagStats, hotTags, taxonomy, tagLabel, tagBoost, examBump, priority, systemHealth,
     settings:()=>state.settings,
     cloudConfigured, setCloud, cloudCfg:cfg, pull, push, deepGrade, pollGrade, localGrade,
     startSync, onSync };

@@ -1,94 +1,488 @@
 {
-  "version": 1,
-  "note": "Controlled tag vocabulary for CyBio305 adaptive practice. kind: skill (cross-cutting) | content | history. Cards carry 2-5 tag ids. Skill tags recur across lectures so a miss pulls related cards sooner.",
-  "tags": [
-    {"id":"directionality","label":"5'→3' / antiparallel","kind":"skill"},
-    {"id":"sequence-reading","label":"read/transcribe a sequence","kind":"skill"},
-    {"id":"calculation","label":"quantitative / calculation","kind":"skill"},
-    {"id":"who-what-when","label":"history: who/what/when","kind":"history"},
-    {"id":"technique","label":"lab technique","kind":"skill"},
-    {"id":"mechanism","label":"molecular mechanism","kind":"skill"},
-    {"id":"compare-contrast","label":"compare / contrast","kind":"skill"},
-    {"id":"figure-interpretation","label":"interpret a figure/data","kind":"skill"},
-    {"id":"exceptions","label":"edge cases / exceptions","kind":"skill"},
-
-    {"id":"foundations","label":"genetics foundations","kind":"content","lecture":1},
-    {"id":"dna-structure","label":"DNA double-helix structure","kind":"content","lecture":1},
-    {"id":"nucleotide-chemistry","label":"nucleotide chemistry","kind":"content","lecture":1},
-    {"id":"base-pairing","label":"base pairing / Chargaff","kind":"content","lecture":1},
-    {"id":"dna-vs-rna","label":"DNA vs RNA","kind":"content","lecture":1},
-    {"id":"hereditary-material","label":"proof DNA is hereditary material","kind":"content","lecture":1},
-    {"id":"gel-electrophoresis","label":"gel electrophoresis","kind":"content","lecture":1},
-    {"id":"blotting","label":"Southern/Northern/Western blot","kind":"content","lecture":1},
-    {"id":"central-dogma","label":"central dogma / info flow","kind":"content","lecture":1},
-
-    {"id":"semiconservative","label":"semiconservative (Meselson-Stahl)","kind":"content","lecture":2},
-    {"id":"replication-origin","label":"origin of replication (OriC)","kind":"content","lecture":2},
-    {"id":"replication-fork","label":"replication fork machinery","kind":"content","lecture":2},
-    {"id":"leading-lagging","label":"leading vs lagging / Okazaki","kind":"content","lecture":2},
-    {"id":"dna-polymerase","label":"DNA polymerases","kind":"content","lecture":2},
-    {"id":"proofreading","label":"proofreading / fidelity","kind":"content","lecture":2},
-    {"id":"primer-removal","label":"primer removal / ligation","kind":"content","lecture":2},
-    {"id":"supercoiling","label":"supercoiling / topoisomerase","kind":"content","lecture":2},
-    {"id":"telomere","label":"telomere / telomerase / senescence","kind":"content","lecture":2},
-    {"id":"pcr","label":"PCR","kind":"content","lecture":2},
-    {"id":"sanger-sequencing","label":"Sanger sequencing","kind":"content","lecture":2},
-    {"id":"sequencing-tech","label":"high-throughput sequencing","kind":"content","lecture":2},
-
-    {"id":"rna-types","label":"types of RNA","kind":"content","lecture":3},
-    {"id":"rna-chemistry","label":"RNA chemistry / G-U / hairpins","kind":"content","lecture":3},
-    {"id":"gene-anatomy","label":"gene/transcript anatomy","kind":"content","lecture":3},
-    {"id":"promoter","label":"promoter / -10 / -35 / TATA","kind":"content","lecture":3},
-    {"id":"sigma-factor","label":"sigma factor / holoenzyme","kind":"content","lecture":3},
-    {"id":"transcription-initiation","label":"transcription initiation / PIC","kind":"content","lecture":3},
-    {"id":"transcription-elongation","label":"elongation / CTD","kind":"content","lecture":3},
-    {"id":"transcription-termination","label":"termination (intrinsic/rho)","kind":"content","lecture":3},
-    {"id":"general-transcription-factors","label":"general TFs / TBP / TFII","kind":"content","lecture":3},
-    {"id":"rna-processing","label":"co-transcriptional RNA processing","kind":"content","lecture":3},
-    {"id":"five-prime-cap","label":"5' cap","kind":"content","lecture":3},
-    {"id":"splicing","label":"splicing / spliceosome / lariat","kind":"content","lecture":3},
-    {"id":"alternative-splicing","label":"alternative splicing / isoforms","kind":"content","lecture":3},
-    {"id":"polyadenylation","label":"polyadenylation / poly-A tail","kind":"content","lecture":3},
-    {"id":"prokaryote-vs-eukaryote","label":"prokaryotic vs eukaryotic","kind":"content","lecture":3},
-
-    {"id":"amino-acids","label":"amino acids / peptide bond","kind":"content","lecture":4},
-    {"id":"protein-structure","label":"protein structure (4 levels)","kind":"content","lecture":4},
-    {"id":"genetic-code","label":"the genetic code (properties)","kind":"content","lecture":4},
-    {"id":"code-cracking","label":"cracking the code (experiments)","kind":"content","lecture":4},
-    {"id":"trna","label":"tRNA & charging","kind":"content","lecture":4},
-    {"id":"ribosome","label":"ribosome / ribozyme","kind":"content","lecture":4},
-    {"id":"translation-initiation","label":"translation initiation","kind":"content","lecture":4},
-    {"id":"translation-elongation","label":"translation elongation","kind":"content","lecture":4},
-    {"id":"translation-termination","label":"translation termination (release factors)","kind":"content","lecture":4},
-    {"id":"wobble","label":"wobble & tRNA number","kind":"content","lecture":4},
-
-    {"id":"horizontal-gene-transfer","label":"horizontal gene transfer","kind":"content","lecture":6},
-    {"id":"transformation","label":"transformation","kind":"content","lecture":6},
-    {"id":"conjugation","label":"conjugation / F factor","kind":"content","lecture":6},
-    {"id":"f-factor","label":"F factor / F+ / F′","kind":"content","lecture":6},
-    {"id":"hfr-mapping","label":"Hfr / interrupted-mating mapping","kind":"content","lecture":6},
-    {"id":"transduction","label":"transduction / cotransduction","kind":"content","lecture":6},
-    {"id":"phage-biology","label":"phage lytic / lysogenic","kind":"content","lecture":6},
-    {"id":"restriction-crispr","label":"restriction-modification / CRISPR","kind":"content","lecture":6},
-    {"id":"transposons","label":"transposable elements","kind":"content","lecture":6},
-    {"id":"bacterial-recombination","label":"bacterial recombination / plasmids","kind":"content","lecture":6},
-
-    {"id":"mutation-types","label":"mutation types (point/indel)","kind":"content","lecture":5},
-    {"id":"mutation-origin","label":"mutation origin / mutagens","kind":"content","lecture":5},
-    {"id":"reversion-suppressor","label":"reversion vs suppressor","kind":"content","lecture":5},
-    {"id":"mismatch-repair","label":"mismatch repair","kind":"content","lecture":5},
-    {"id":"excision-repair","label":"NER / BER / photoreactivation","kind":"content","lecture":5},
-    {"id":"translesion-repair","label":"translesion synthesis / SOS","kind":"content","lecture":5},
-    {"id":"dsb-repair","label":"double-strand break repair / Holliday","kind":"content","lecture":5},
-    {"id":"repeat-expansion","label":"repeat expansion / slippage","kind":"content","lecture":5},
-
-    {"id":"gene-regulation","label":"gene regulation (pos/neg)","kind":"content","lecture":7},
-    {"id":"cis-trans","label":"cis-acting vs trans-acting","kind":"content","lecture":7},
-    {"id":"lac-operon","label":"lac operon","kind":"content","lecture":7},
-    {"id":"operon-mutants","label":"operon mutant / merodiploid analysis","kind":"content","lecture":7},
-    {"id":"catabolite-repression","label":"catabolite repression / CAP-cAMP","kind":"content","lecture":7},
-    {"id":"trp-operon","label":"trp operon (repressible)","kind":"content","lecture":7},
-    {"id":"attenuation","label":"attenuation / leader peptide","kind":"content","lecture":7},
-    {"id":"sigma-factors","label":"alternative sigma factors","kind":"content","lecture":7}
-  ]
+ "version": 1,
+ "note": "Controlled tag vocabulary for CyBio305 adaptive practice. kind: skill (cross-cutting) | content | history. Cards carry 2-5 tag ids. Skill tags recur across lectures so a miss pulls related cards sooner.",
+ "tags": [
+  {
+   "id": "directionality",
+   "label": "5'→3' / antiparallel",
+   "kind": "skill"
+  },
+  {
+   "id": "sequence-reading",
+   "label": "read/transcribe a sequence",
+   "kind": "skill"
+  },
+  {
+   "id": "calculation",
+   "label": "quantitative / calculation",
+   "kind": "skill"
+  },
+  {
+   "id": "who-what-when",
+   "label": "history: who/what/when",
+   "kind": "history"
+  },
+  {
+   "id": "technique",
+   "label": "lab technique",
+   "kind": "skill"
+  },
+  {
+   "id": "mechanism",
+   "label": "molecular mechanism",
+   "kind": "skill"
+  },
+  {
+   "id": "compare-contrast",
+   "label": "compare / contrast",
+   "kind": "skill"
+  },
+  {
+   "id": "figure-interpretation",
+   "label": "interpret a figure/data",
+   "kind": "skill"
+  },
+  {
+   "id": "exceptions",
+   "label": "edge cases / exceptions",
+   "kind": "skill"
+  },
+  {
+   "id": "foundations",
+   "label": "genetics foundations",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "dna-structure",
+   "label": "DNA double-helix structure",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "nucleotide-chemistry",
+   "label": "nucleotide chemistry",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "base-pairing",
+   "label": "base pairing / Chargaff",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "dna-vs-rna",
+   "label": "DNA vs RNA",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "hereditary-material",
+   "label": "proof DNA is hereditary material",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "gel-electrophoresis",
+   "label": "gel electrophoresis",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "blotting",
+   "label": "Southern/Northern/Western blot",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "central-dogma",
+   "label": "central dogma / info flow",
+   "kind": "content",
+   "lecture": 1
+  },
+  {
+   "id": "semiconservative",
+   "label": "semiconservative (Meselson-Stahl)",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "replication-origin",
+   "label": "origin of replication (OriC)",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "replication-fork",
+   "label": "replication fork machinery",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "leading-lagging",
+   "label": "leading vs lagging / Okazaki",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "dna-polymerase",
+   "label": "DNA polymerases",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "proofreading",
+   "label": "proofreading / fidelity",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "primer-removal",
+   "label": "primer removal / ligation",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "supercoiling",
+   "label": "supercoiling / topoisomerase",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "telomere",
+   "label": "telomere / telomerase / senescence",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "pcr",
+   "label": "PCR",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "sanger-sequencing",
+   "label": "Sanger sequencing",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "sequencing-tech",
+   "label": "high-throughput sequencing",
+   "kind": "content",
+   "lecture": 2
+  },
+  {
+   "id": "rna-types",
+   "label": "types of RNA",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "rna-chemistry",
+   "label": "RNA chemistry / G-U / hairpins",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "gene-anatomy",
+   "label": "gene/transcript anatomy",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "promoter",
+   "label": "promoter / -10 / -35 / TATA",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "sigma-factor",
+   "label": "sigma factor / holoenzyme",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "transcription-initiation",
+   "label": "transcription initiation / PIC",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "transcription-elongation",
+   "label": "elongation / CTD",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "transcription-termination",
+   "label": "termination (intrinsic/rho)",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "general-transcription-factors",
+   "label": "general TFs / TBP / TFII",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "rna-processing",
+   "label": "co-transcriptional RNA processing",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "five-prime-cap",
+   "label": "5' cap",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "splicing",
+   "label": "splicing / spliceosome / lariat",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "alternative-splicing",
+   "label": "alternative splicing / isoforms",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "polyadenylation",
+   "label": "polyadenylation / poly-A tail",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "prokaryote-vs-eukaryote",
+   "label": "prokaryotic vs eukaryotic",
+   "kind": "content",
+   "lecture": 3
+  },
+  {
+   "id": "amino-acids",
+   "label": "amino acids / peptide bond",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "protein-structure",
+   "label": "protein structure (4 levels)",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "genetic-code",
+   "label": "the genetic code (properties)",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "code-cracking",
+   "label": "cracking the code (experiments)",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "trna",
+   "label": "tRNA & charging",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "ribosome",
+   "label": "ribosome / ribozyme",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "translation-initiation",
+   "label": "translation initiation",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "translation-elongation",
+   "label": "translation elongation",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "translation-termination",
+   "label": "translation termination (release factors)",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "wobble",
+   "label": "wobble & tRNA number",
+   "kind": "content",
+   "lecture": 4
+  },
+  {
+   "id": "horizontal-gene-transfer",
+   "label": "horizontal gene transfer",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "transformation",
+   "label": "transformation",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "conjugation",
+   "label": "conjugation / F factor",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "f-factor",
+   "label": "F factor / F+ / F′",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "hfr-mapping",
+   "label": "Hfr / interrupted-mating mapping",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "transduction",
+   "label": "transduction / cotransduction",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "phage-biology",
+   "label": "phage lytic / lysogenic",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "restriction-crispr",
+   "label": "restriction-modification / CRISPR",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "transposons",
+   "label": "transposable elements",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "bacterial-recombination",
+   "label": "bacterial recombination / plasmids",
+   "kind": "content",
+   "lecture": 6
+  },
+  {
+   "id": "mutation-types",
+   "label": "mutation types (point/indel)",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "mutation-origin",
+   "label": "mutation origin / mutagens",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "reversion-suppressor",
+   "label": "reversion vs suppressor",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "mismatch-repair",
+   "label": "mismatch repair",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "excision-repair",
+   "label": "NER / BER / photoreactivation",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "translesion-repair",
+   "label": "translesion synthesis / SOS",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "dsb-repair",
+   "label": "double-strand break repair / Holliday",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "repeat-expansion",
+   "label": "repeat expansion / slippage",
+   "kind": "content",
+   "lecture": 5
+  },
+  {
+   "id": "gene-regulation",
+   "label": "gene regulation (pos/neg)",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "cis-trans",
+   "label": "cis-acting vs trans-acting",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "lac-operon",
+   "label": "lac operon",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "operon-mutants",
+   "label": "operon mutant / merodiploid analysis",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "catabolite-repression",
+   "label": "catabolite repression / CAP-cAMP",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "trp-operon",
+   "label": "trp operon (repressible)",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "attenuation",
+   "label": "attenuation / leader peptide",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "sigma-factors",
+   "label": "alternative sigma factors",
+   "kind": "content",
+   "lecture": 7
+  },
+  {
+   "id": "emsa-footprinting",
+   "label": "EMSA / DNase footprinting",
+   "kind": "content"
+  }
+ ]
 }

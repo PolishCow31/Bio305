@@ -1,0 +1,1200 @@
+{
+ "id": "exam1a",
+ "title": "Exam I · Practice Paper A",
+ "covers": "Lectures 1-6",
+ "minutes": 110,
+ "points": 112,
+ "questions": [
+  {
+   "id": "A-CY-04",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Blot methodology",
+   "tags": [
+    "blotting",
+    "gel-electrophoresis",
+    "technique"
+   ],
+   "stem": "You are comparing three experiments in a colleague's notebook. In each, a macromolecule is separated by electrophoresis, transferred to a membrane, and detected. Which statement about these techniques is **INCORRECT**?",
+   "options": [
+    "A Southern blot requires the sample to be cut with restriction enzymes before loading, because genomic DNA is far too large to enter the gel as reproducible fragments.",
+    "A Southern blot will only produce a signal where the probe and the target sequence are a perfect match, which is why it cannot detect related genes in other species.",
+    "A Western blot uses a labelled antibody directed against an epitope, and the sample is treated with SDS so that all species carry a uniform negative charge.",
+    "A Northern blot does not require a restriction digestion step, because the RNA species being examined are already small enough to resolve.",
+    "In all three techniques the sample migrates away from the wells toward the positive electrode, with smaller species travelling farther through the gel."
+   ],
+   "answer": 1,
+   "why": "The incorrect statement is D. **Partial matches still hybridise.** Probe binding tolerates mismatches, and that tolerance is exactly why a Southern blot can be used at reduced stringency to find homologous, conserved sequences in other species — the classic zoo blot. Requiring a perfect match would make cross-species hybridisation impossible, which is the opposite of how the technique is actually used.",
+   "wrong": [
+    "This is correct. Genomic DNA is enormous, so it is digested into reproducible fragments before loading — and this digestion step is what distinguishes Southern from Northern.",
+    "",
+    "This is correct. SDS coats the denatured protein to give uniform charge-to-mass so separation reflects size, and detection is by antibody against an epitope.",
+    "This is correct, and it was an in-class question. RNA is already small, so no digestion is needed.",
+    "This is correct. Nucleic acids are negatively charged, SDS-coated proteins are made so, and the gel sieves by size — smaller species travel farther."
+   ],
+   "pts": 3,
+   "t": 155,
+   "work": false,
+   "src": "L1 — 'You will see a gazillion gel electrophoresis data sets this semester; if you don't know how to read one, you're going to be just screwed.'"
+  },
+  {
+   "id": "A-CY-05",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Chargaff and nucleic acid classification",
+   "tags": [
+    "base-pairing",
+    "dna-vs-rna",
+    "calculation"
+   ],
+   "stem": "You purify the genome of an uncharacterised virus and determine its base composition:\n\n| Base | Percentage |\n|---|---|\n| Adenine | 31% |\n| Guanine | 19% |\n| Uracil | 27% |\n| Cytosine | 23% |\n\nWhat is the BEST conclusion about this genome?",
+   "options": [
+    "It is double-stranded DNA, because the purine total equals the pyrimidine total.",
+    "It is single-stranded RNA, because uracil is present and the complementary base ratios are not equal.",
+    "It is double-stranded RNA, because uracil is present and Chargaff's rules apply to RNA duplexes.",
+    "It is single-stranded DNA, because the complementary base ratios are not equal.",
+    "No conclusion is possible without knowing the genome length."
+   ],
+   "answer": 1,
+   "why": "Run two independent tests. **Uracil is present and thymine is absent → RNA.** Then check Chargaff: A (31%) does not equal U (27%), and G (19%) does not equal C (23%). Base-pairing equalities only hold when every base has a partner, so violating them means the molecule is **not** a duplex. RNA plus a Chargaff violation gives **single-stranded RNA**.",
+   "wrong": [
+    "Uracil rules out DNA immediately. The purine/pyrimidine totals here happen to be 50/50 (A+G = 50, U+C = 50), which is exactly the trap — that coincidence tells you nothing, because the diagnostic test is whether **A=U and G=C individually**, and neither holds.",
+    "",
+    "Chargaff's rules do apply to any duplex, including double-stranded RNA — but this genome **violates** them, which is the whole point. If it were double-stranded you would need A=U and G=C.",
+    "Uracil is present, so this is not DNA. The reasoning about unequal ratios is correct and would give you the single-stranded conclusion, but the molecule is misidentified.",
+    "Length is irrelevant. Base composition is expressed as percentages, and the ratio tests are scale-free."
+   ],
+   "pts": 3,
+   "t": 150,
+   "work": true,
+   "worked": "**Test 1 — which nucleic acid?** Thymine present means DNA; uracil present means RNA. Here uracil is listed and thymine is not, so it is **RNA**.\n\n**Test 2 — one strand or two?** In any duplex every A pairs with a U (or T) and every G with a C, so the percentages must match: A = U and G = C. Check them: A = 31 vs U = 27, off by 4. G = 19 vs C = 23, off by 4. **Both fail**, so the molecule cannot be a duplex.\n\nCombine: **single-stranded RNA**.\n\n**The trap:** purines total 31 + 19 = 50 and pyrimidines total 27 + 23 = 50. That looks like Chargaff is satisfied, and option A is built on exactly that misreading. But the total-purines-equals-total-pyrimidines relation is a *consequence* of the individual pairings, not a substitute for them — a single strand can hit 50/50 by chance, as this one does. Always test A=U and G=C **individually**.",
+   "src": "L1 — the Chargaff-violation-implies-single-stranded inference, with her favourite total-purines coincidence as the distractor."
+  },
+  {
+   "id": "A-CY-15",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Hershey-Chase experimental logic",
+   "tags": [
+    "hereditary-material",
+    "who-what-when",
+    "figure-interpretation"
+   ],
+   "stem": "You are repeating the Hershey-Chase experiment with a newly isolated bacteriophage. You prepare two batches of phage, one labelled with ³²P and one with ³⁵S, allow each to infect *E. coli*, blend to shear off the empty phage coats, and centrifuge to pellet the bacteria. You find that **both** isotopes appear in the bacterial pellet in roughly equal proportion. Which is the BEST interpretation?",
+   "options": [
+    "The experiment confirms that DNA is the hereditary material, since ³²P entered the cells.",
+    "The blending step must have failed, because ³⁵S can only ever label DNA.",
+    "The experiment shows that protein is the hereditary material, since ³⁵S entered the cells.",
+    "This phage may inject protein along with its DNA, so the experiment as performed cannot distinguish which molecule carries heredity.",
+    "The result is impossible, because ³²P and ³⁵S cannot both label a single phage preparation."
+   ],
+   "answer": 3,
+   "why": "The whole logic of Hershey-Chase depends on the two labels **separating** — ³²P marks DNA (phosphate backbone, no sulfur) and ³⁵S marks protein (cysteine and methionine, no phosphorus), so if only ³²P enters the cell, only DNA entered. If **both** labels enter, that separation has broken down and the experiment no longer discriminates between the two candidates. The honest conclusion is that this design cannot answer the question for this phage.",
+   "wrong": [
+    "³²P entering is necessary but not sufficient. The inference only works because ³⁵S is supposed to stay **outside**; with sulfur inside too, protein is equally implicated and the result no longer singles out DNA.",
+    "³⁵S labels **protein**, not DNA — sulfur occurs in cysteine and methionine and is absent from nucleotides. A blending failure is one possible explanation for the result, but the option's stated reason is chemically backwards.",
+    "This makes the mirror-image error. ³⁵S entering does not establish protein as hereditary any more than ³²P entering establishes DNA, once both are present.",
+    "",
+    "The two isotopes are used in **separate parallel batches**, precisely so each macromolecule can be followed independently. Nothing about the result is impossible."
+   ],
+   "pts": 3,
+   "t": 175,
+   "work": false,
+   "src": "L1 — she tests these experiments as logic: 'so-and-so did this experiment, what did they discover, how did the experiment work, why does it matter.' Not dates."
+  },
+  {
+   "id": "A-CY-19",
+   "type": "mc",
+   "lecture": 1,
+   "section": "Multiple choice",
+   "topic": "Transformation and cotransformation linkage",
+   "tags": [
+    "transformation",
+    "calculation",
+    "bacterial-recombination"
+   ],
+   "stem": "You transform a bacterial strain that is *arg⁻ met⁻* with purified DNA from a wild-type donor and score the transformants:\n\n| Class | Frequency |\n|---|---|\n| arg⁺ only | 3.1% |\n| met⁺ only | 2.8% |\n| arg⁺ met⁺ together | 1.9% |\n\nWhat do these data indicate, and why?",
+   "options": [
+    "The two genes are unlinked, because the double transformants are less frequent than either single class.",
+    "No conclusion is possible without knowing the size of the donor DNA fragments.",
+    "The two genes are unlinked, because the frequency of each single transformant is under 5%.",
+    "The two genes are closely linked, because *arg* must lie nearer the origin of transfer than *met*.",
+    "The two genes are closely linked, because the observed double-transformant frequency vastly exceeds the frequency expected if the two events were independent."
+   ],
+   "answer": 4,
+   "why": "Test the double class against **independence**. If the two genes were on separate fragments, acquiring both would be the product of the two single probabilities: 0.031 × 0.028 ≈ 0.00087, or about **0.09%**. The observed 1.9% is more than **twenty times** that, which can only happen if the two genes usually arrive on the **same** fragment — that is, they are physically close.",
+   "wrong": [
+    "Comparing the double class to the single classes is the wrong comparison. The double will almost always be the smallest number even for tightly linked genes; what matters is how it compares to the **product** of the singles.",
+    "Fragment size would refine the map distance, but the linkage conclusion follows from the twenty-fold excess over independence without it.",
+    "The absolute magnitude of the single-transformant frequencies says nothing about linkage. It reflects how efficiently the cells take up DNA, which is a property of the experiment rather than of the map.",
+    "The conclusion is right but the reason belongs to a different experiment. **Origin of transfer is a conjugation concept** — there is no oriT in transformation, which is uptake of naked DNA.",
+    ""
+   ],
+   "pts": 3,
+   "t": 195,
+   "work": true,
+   "worked": "**Step 1 — state the null hypothesis.** If *arg* and *met* sit on different donor fragments, a cell must take up two separate pieces of DNA to become doubly transformed, and those are independent events.\n\n**Step 2 — compute the expected double frequency under independence.** Multiply the two single-transformant frequencies:\n\n0.031 × 0.028 = 0.000868 ≈ **0.09%**\n\n**Step 3 — compare to observation.**\n\nObserved 1.9% ÷ expected 0.09% ≈ **22-fold excess**\n\n**Step 4 — interpret.** An excess that large cannot be produced by two independent uptake events. The only way to get so many double transformants is for both genes to ride in on the **same fragment**, which requires them to be physically close on the chromosome. They are **linked**.\n\n**The general form:** expected double = P(A) × P(B). If observed ≫ expected, the markers are linked; if observed ≈ expected, they are independent. Note how small the expected number is — this is why the double class being the smallest observed class tells you nothing on its own.\n\n**Do not import conjugation vocabulary here.** There is no origin of transfer and no time-of-entry in a transformation experiment; the only distance signal is cotransformation frequency.",
+   "src": "L1/L6 — transformation linkage, which appears on her Su23 exam."
+  },
+  {
+   "id": "A-CY-10",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Meselson-Stahl",
+   "tags": [
+    "semiconservative",
+    "figure-interpretation",
+    "dna-polymerase"
+   ],
+   "stem": "You repeat the Meselson-Stahl experiment: cells are grown for many generations in heavy nitrogen, then shifted to light nitrogen at time zero. You collect samples and centrifuge each on a density gradient. After **two** rounds of replication in light medium you observe **two bands of equal intensity**, one at the hybrid position and one at the light position, and **no band at the heavy position**.\n\nWhich models does this single observation eliminate?",
+   "options": [
+    "Conservative only; dispersive remains consistent with the data.",
+    "Dispersive only; conservative remains consistent with the data.",
+    "Both conservative and dispersive.",
+    "Neither, since two bands are consistent with all three models at this generation.",
+    "Semiconservative only, leaving conservative and dispersive."
+   ],
+   "answer": 2,
+   "why": "**Conservative** predicts an intact heavy duplex persisting at every generation — a heavy band should still be visible, and none is. **Dispersive** predicts every molecule is a uniform blend, so all DNA sits in **one** band that creeps steadily lighter, never two discrete bands. Seeing exactly two discrete bands, hybrid and light, in equal amounts is the unique prediction of **semiconservative** replication at generation two.",
+   "wrong": [
+    "Dispersive does not survive. It predicts a single band of intermediate and steadily decreasing density, because every daughter molecule is a uniform mixture of old and new material. Two discrete bands are incompatible with that.",
+    "Conservative does not survive either. It requires the original all-heavy duplex to remain intact and reappear at the heavy position in every generation, and the stem states there is no heavy band.",
+    "",
+    "The three models make genuinely different predictions here, which is why generation two is the informative one. Generation one alone cannot separate semiconservative from dispersive — both predict a single hybrid band — but generation two does.",
+    "This inverts the result. Two equal bands at hybrid and light are exactly what semiconservative predicts after two rounds: of four duplexes, two are hybrid and two are fully light."
+   ],
+   "pts": 3,
+   "t": 175,
+   "work": true,
+   "worked": "Track four duplexes through two rounds under each model.\n\n**Semiconservative.** Each parental strand is retained and templates a new one. After round 1: two duplexes, both **hybrid**. After round 2: each hybrid separates into one heavy and one light strand, each templating a light partner, giving **two hybrid + two light** — equal intensities, no heavy. **Matches the data.**\n\n**Conservative.** The parental duplex stays wholly intact and an entirely new duplex is made alongside it. After round 2 you have **one heavy** duplex and three light ones. A heavy band must be present. **Contradicted** — there is no heavy band.\n\n**Dispersive.** Parental material is fragmented and interspersed through both daughters, so every molecule has the same intermediate density. After round 1 all DNA sits at hybrid density; after round 2 all of it sits at a single band **halfway between hybrid and light**. You get **one** band that shifts, never two. **Contradicted** — two discrete bands are observed.\n\n**The general point she makes:** generation 1 separates conservative from the other two; generation 2 separates semiconservative from dispersive. You need to know which generation is diagnostic for which comparison.",
+   "src": "L2 — Meselson-Stahl model discrimination, which generation distinguishes which pair of models."
+  },
+  {
+   "id": "A-CY-13",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Primer design and directionality",
+   "tags": [
+    "pcr",
+    "directionality",
+    "sequence-reading"
+   ],
+   "stem": "You want to PCR-amplify the entire double-stranded fragment below. Only the top strand is shown.\n\n`5′-ATGCGTACCTGAATCGGATCCTTAGCACGTTACCGATTGC-3′`\n\nWhich primer pair will amplify this fragment?",
+   "options": [
+    "5′-ATGCGTACCTGA-3′ and 5′-GTTACCGATTGC-3′",
+    "5′-AGTCCATGCGTA-3′ and 5′-GCAATCGGTAAC-3′",
+    "5′-ATGCGTACCTGA-3′ and 5′-GCAATCGGTAAC-3′",
+    "5′-TACGCATGGACT-3′ and 5′-GTTACCGATTGC-3′",
+    "5′-GCAATCGGTAAC-3′ and 5′-CAATCGGTAACG-3′"
+   ],
+   "answer": 2,
+   "why": "The forward primer is **identical to the 5′ end of the top strand** (it anneals to the bottom strand): `5′-ATGCGTACCTGA-3′`. The reverse primer must be the **reverse complement** of the top strand's 3′ end, so that it anneals to the top strand with its own 3′-OH pointing back inward. The top strand ends `…GTTACCGATTGC-3′`, whose reverse complement is `5′-GCAATCGGTAAC-3′`.",
+   "wrong": [
+    "The first primer is right, but the second is simply **copied from the top strand** rather than reverse-complemented. It has the same sequence as the region it is supposed to anneal to, so it cannot base pair there at all.",
+    "The second primer is correct but the first is not a sequence from either strand of this fragment. Check it against the top strand's 5′ end: the fragment starts ATGCGTACC, not AGTCCATGC.",
+    "",
+    "Both are wrong in the same way, and this is the classic trap. The first is the complement of the top strand's 5′ end without reversing, and the second is copied rather than reverse-complemented. Neither 3′-OH points inward.",
+    "Both primers anneal near the **same** end of the fragment and point the same direction, so there is no convergent synthesis and no exponential amplification."
+   ],
+   "pts": 3,
+   "t": 190,
+   "work": true,
+   "worked": "The rule: **the two primers' 3′-OH ends must point toward each other**, because polymerase can only extend a 3′-OH and only builds 5′→3′. If they point apart you get linear copying at best, never exponential amplification.\n\n**Forward primer.** It must anneal to the **bottom** strand and be extended rightward along the top strand's direction. A primer annealing to the bottom strand has the **same sequence as the top strand**. Take the top strand's first 12 bases:\n\n`5′-ATGCGTACCTGA-3′`\n\n**Reverse primer.** It must anneal to the **top** strand near its 3′ end and be extended leftward. A primer annealing to the top strand is the **reverse complement** of that region. Take the top strand's last 12 bases:\n\n`5′-GTTACCGATTGC-3′`\n\nComplement it: `CAATGGCTAACG`. Now **reverse** it: `5′-GCAATCGGTAAC-3′`. That reversal is the step people skip.\n\nCheck by annealing it back: `5′-GCAATCGGTAAC-3′` pairs antiparallel with `5′-GTTACCGATTGC-3′` — G:C, C:G, A:T, A:T, T:A, C:G, G:C, G:C, T:A, A:T, A:T, C:G. All twelve pair, and its 3′-OH sits over the interior of the fragment, pointing back toward the forward primer.\n\n**Her warning:** she often gives you only one strand and expects you to derive the other. If it is not a virus, assume double-stranded.",
+   "src": "L2 — 'Thinking about the directionality of your primers is going to be really, really important.' Her Su23 exam has a primer-pair-selection item."
+  },
+  {
+   "id": "A-CY-20",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Replication fork geometry",
+   "tags": [
+    "leading-lagging",
+    "replication-fork",
+    "directionality"
+   ],
+   "stem": "A circular bacterial chromosome has a single origin and replicates bidirectionally, producing a replication bubble with two forks. Consider **one** of those two forks. Which statement about that fork is **INCORRECT**?",
+   "options": [
+    "One daughter strand at this fork is synthesised continuously and the other discontinuously, because both are built 5′ to 3′ while the two template strands run in opposite directions.",
+    "Both daughter strands at this fork are extended by addition of nucleotides to a free 5′ phosphate.",
+    "The leading strand at this fork requires only a single priming event, after which synthesis can be continuous.",
+    "The lagging strand at this fork is made as a series of Okazaki fragments, each requiring its own RNA primer.",
+    "Removal of the RNA primers and joining of the fragments requires a polymerase with 5′ to 3′ exonuclease activity followed by DNA ligase."
+   ],
+   "answer": 1,
+   "why": "The incorrect statement is D. **Every DNA polymerase extends a free 3′-hydroxyl, never a 5′ phosphate.** Synthesis runs 5′→3′, meaning each new nucleotide's 5′ phosphate is joined to the growing chain's 3′-OH. This is the single most repeated rule of the unit — follow the 3′-OH.",
+   "wrong": [
+    "This is correct, and it is the reason the lagging strand exists at all. The two templates are antiparallel, but polymerase can only work one way, so one daughter runs toward the fork and the other away from it.",
+    "",
+    "This is correct. Once primed, the leading strand template unwinds continuously in the usable direction.",
+    "This is correct. Each Okazaki fragment is a separate priming and extension event.",
+    "This is correct for bacteria. Pol I's 5′→3′ exonuclease removes the RNA primer while filling behind it, and ligase seals the remaining nick. Pol I's 5′→3′ exonuclease is the only one of its kind among the three bacterial polymerases — all three proofread 3′→5′."
+   ],
+   "pts": 3,
+   "t": 165,
+   "work": false,
+   "src": "L2 — 'Follow the 3′ hydroxyl,' the declared through-line of the unit. Her Su23 exam has a lagging-strand geometry item."
+  },
+  {
+   "id": "A-L2-1",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Sanger gel: synthesized versus template strand",
+   "tags": [
+    "sanger-sequencing",
+    "directionality",
+    "figure-interpretation"
+   ],
+   "stem": "You are sequencing a fragment of the *lux9* gene from *Photonauta abyssi*, a bioluminescent deep-sea copepod. A classic four-tube Sanger reaction is run in adjacent lanes of a denaturing gel. Larger fragments migrate more slowly, so the top of the gel holds the longest products. The ten shortest bands, corresponding to the first ten nucleotides added immediately after the primer, are shown.\n\n| Band | ddG | ddA | ddT | ddC |\n|---|---|---|---|---|\n| 10 (top) | band | | | |\n| 9 | | band | | |\n| 8 | | | band | |\n| 7 | | | band | |\n| 6 | band | | | |\n| 5 | | | | band |\n| 4 | | | band | |\n| 3 | band | | | |\n| 2 | | band | | |\n| 1 (bottom) | | | | band |\n\nWhat is the sequence of the ten **template**-strand nucleotides that were copied to produce these bands, written 5′→3′?",
+   "options": [
+    "5′-CTAACGACTG-3′",
+    "5′-CAGTCGTTAG-3′",
+    "5′-GTCAGCAATC-3′",
+    "5′-GATTGCTGAC-3′",
+    "The template sequence cannot be determined from this gel, because the gel reports only the strand that was synthesized."
+   ],
+   "answer": 0,
+   "why": "Read the gel bottom up (shortest fragment = first base added) to get the **synthesized** strand 5′-CAGTCGTTAG-3′. The template is antiparallel and complementary, so written 5′→3′ it is the **reverse complement**: 5′-CTAACGACTG-3′.",
+   "wrong": [
+    "",
+    "This is the synthesized strand itself, read correctly bottom-to-top — but the question asks for the template. This is precisely the confusion she flagged.",
+    "This is the correct complement of each base but written in the wrong order. Because the strands are antiparallel, this string is the template read 3′→5′; relabelling it 5′→3′ reverses the actual sequence.",
+    "This is the synthesized strand read from the top of the gel downward. The shortest fragment terminated at the first nucleotide added, so it sits at the bottom.",
+    "Base pairing fully determines the template. Once the synthesized strand is known, its reverse complement is the template."
+   ],
+   "pts": 3,
+   "t": 190,
+   "work": true,
+   "worked": "**Step 1 — read bottom to top.** The smallest fragment migrated furthest and terminated at the first nucleotide added after the primer. Bands bottom→top: C, A, G, T, C, G, T, T, A, G.\n\n**Step 2 — that is the synthesized strand, 5′→3′:** 5′-CAGTCGTTAG-3′. A ddNTP has no 3′-OH, so each chain stops at the base whose lane the band sits in.\n\n**Step 3 — complement each base:** C→G, A→T, G→C, T→A, C→G, G→C, T→A, T→A, A→T, G→C = GTCAGCAATC. This is the template written **3′→5′**.\n\n**Step 4 — flip it to 5′→3′:** 5′-CTAACGACTG-3′.\n\nThe two traps are stopping at step 3 (option C) and answering with the synthesized strand (option A).",
+   "src": "L2 — 'Make sure you know the difference between the sequence of the synthesized strand and the template strand you read it from.'"
+  },
+  {
+   "id": "A-L2-3",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Meselson-Stahl at later generations",
+   "tags": [
+    "semiconservative",
+    "figure-interpretation",
+    "calculation"
+   ],
+   "stem": "You have isolated *Thermobacillus glacialis* from a subglacial lake. You grow it for many generations in ¹⁵N, then at time zero transfer to ¹⁴N. After each synchronous division you extract DNA and centrifuge to equilibrium on a CsCl gradient. Denser DNA rests closer to the bottom.\n\n| Generation | Band position(s), cm from bottom | Appearance |\n|---|---|---|\n| 0 | 1.0 | one band |\n| 1 | 1.5 | one band |\n| 2 | 1.5 and 2.0 | two bands of equal intensity |\n\nAssuming the same mechanism continues, what do you expect at **generation 4**?",
+   "options": [
+    "Two bands, at 1.5 and 2.0 cm, in a 7:1 ratio of light to hybrid, the hybrid band still containing the same two duplexes it contained at generation 1.",
+    "Three bands — at 1.0, 1.5 and 2.0 cm — with the 1.0 cm band still clearly visible.",
+    "Two bands, at 1.5 and 2.0 cm, in a 3:1 ratio of light to hybrid.",
+    "Two bands, at 1.5 and 2.0 cm, in a 15:1 ratio of light to hybrid.",
+    "A single band that has drifted to roughly 1.9 cm and continues to creep toward 2.0 cm with each further generation."
+   ],
+   "answer": 0,
+   "why": "Generations 1 and 2 are the semiconservative signature: all hybrid at generation 1, then a discrete light band appearing alongside an **undiminished** hybrid band at generation 2. Each of the two original ¹⁵N strands is conserved in one hybrid duplex forever, so at generation 4 each original cell has 16 duplexes: **2 hybrid and 14 light** — a 7:1 ratio.",
+   "wrong": [
+    "",
+    "No model predicts this. Conservative replication would give bands at 1.0 and 2.0 only and never a hybrid band. In any case generation 1 showed a single band at 1.5 with nothing at 1.0, proving no intact heavy duplex survives.",
+    "This is the correct answer one generation too early. Generation 3 has 8 duplexes (2 hybrid, 6 light) = 3:1; generation 4 doubles again.",
+    "This assumes only **one** duplex stays hybrid (16 − 1 = 15). Two parental ¹⁵N strands were conserved, not one, so two duplexes are hybrid at every generation.",
+    "This is the dispersive prediction — every duplex a uniform blend drifting steadily lighter, never resolving into separate bands. The generation-2 data already show two discrete bands, ruling dispersive out."
+   ],
+   "pts": 3,
+   "t": 170,
+   "work": true,
+   "worked": "Denser sits lower: 1.0 = heavy/heavy, 1.5 = hybrid, 2.0 = light/light.\n\n- Gen 0: 1 duplex — 1 heavy\n- Gen 1: 2 duplexes — 2 hybrid, 0 light\n- Gen 2: 4 duplexes — 2 hybrid, 2 light (matches the observed equal pair)\n- Gen 3: 8 duplexes — 2 hybrid, 6 light (3:1)\n- Gen 4: 16 duplexes — **2 hybrid, 14 light (7:1)**\n\nThe count of hybrid duplexes is pinned at **2 forever**, because there were exactly two parental ¹⁵N strands and each is conserved intact in one duplex. So the hybrid band never gains DNA while the light band keeps doubling. The trap is thinking the hybrid band fades away.",
+   "src": "L2 — her point that the hybrid band stays the same thickness while the light band thickens."
+  },
+  {
+   "id": "A-L2-4",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Telomeres and the end-replication problem",
+   "tags": [
+    "telomere",
+    "mechanism",
+    "exceptions"
+   ],
+   "stem": "Your lab studies chromosome-end maintenance in cultured human fibroblasts, and your PI has warned you that one figure in the assigned textbook chapter is drawn incorrectly. Considering the end-replication problem, telomerase, and the complex that caps the chromosome end, which statement is **FALSE**?",
+   "options": [
+    "Telomerase resolves the end-replication problem by filling in the C-rich strand complementary to the 3′ overhang, restoring a blunt, fully double-stranded chromosome end.",
+    "A 3′ overhang arises on the parental strand that templated the lagging strand, because once the terminal RNA primer is removed there is no upstream 3′-OH from which the gap could be filled.",
+    "Telomerase is an RNA-dependent DNA polymerase carrying its own RNA template, and like every other DNA polymerase it extends the G-rich strand only in the 5′→3′ direction.",
+    "An unprotected 3′ overhang can be misread as a double-strand break, so the end is folded into a T-loop and capped by the Shelterin complex, preventing end-to-end fusion of chromosomes.",
+    "Most differentiated somatic cells lack telomerase activity, so their telomeres shorten with each division until the cell becomes senescent; reactivation of telomerase is a hallmark of cancer."
+   ],
+   "answer": 0,
+   "why": "This is the statement she tells you to cross out of the textbook. **Telomerase never fills in the C-rich strand and never restores a blunt end** — it *extends* the G-rich 3′ overhang so the overhang becomes long enough to be tucked away and **hidden**. The end stays single-stranded; the problem is postponed, not solved.",
+   "wrong": [
+    "",
+    "True, and it is the origin of the problem. The terminal RNA primer sits at the extreme 5′ end of the new lagging strand; removing it leaves a gap with no upstream 3′-OH to extend from.",
+    "True. Telomerase is reverse-transcriptase-like, carries an internal RNA template, and obeys the universal 5′→3′ rule.",
+    "True. A bare overhang would be ligated to other chromosome ends by double-strand-break repair proteins; the T-loop plus Shelterin hides the end so this cannot happen.",
+    "True. Loss of telomerase underlies progressive shortening, senescence and the Hayflick limit, and inappropriate reactivation is closely associated with cancer."
+   ],
+   "pts": 3,
+   "t": 135,
+   "work": false,
+   "src": "L2 — the textbook telomere figure she says to cross off: the overhang is hidden, never filled in."
+  },
+  {
+   "id": "A-L2-5",
+   "type": "mc",
+   "lecture": 2,
+   "section": "Multiple choice",
+   "topic": "Diagnosing a defective replication enzyme",
+   "tags": [
+    "primer-removal",
+    "replication-fork",
+    "figure-interpretation"
+   ],
+   "stem": "You have isolated a temperature-sensitive lethal mutant of *E. coli*. At 30 °C it grows normally; at 42 °C the cells initiate replication but die shortly afterward. You shift a culture to 42 °C, pulse-label the newly made DNA, denature it, and analyse the single-stranded products.\n\n| Assay at 42 °C | Result |\n|---|---|\n| Total incorporation of labelled dNTPs | ~90% of wild type |\n| Size of new lagging-strand product | a ladder of discrete fragments, ~1,000-2,000 nt |\n| Alkali / RNase test for ribonucleotides in those fragments | none detected |\n| New leading-strand product | predominantly very long molecules, no fragment ladder |\n\nWhich enzyme has MOST likely been inactivated?",
+   "options": [
+    "DNA polymerase III",
+    "DNA polymerase I",
+    "DNA gyrase (topoisomerase)",
+    "Primase (DnaG)",
+    "DNA ligase"
+   ],
+   "answer": 4,
+   "why": "Near-normal total synthesis shows the replisome is building DNA fine, and the complete absence of ribonucleotides shows the RNA primers were successfully excised and replaced with DNA. The only remaining step is **sealing the DNA-DNA nicks**, so the lagging strand accumulates as unjoined Okazaki fragments of normal size.",
+   "wrong": [
+    "Pol III performs the bulk of elongation. Inactivating it would cut total incorporation drastically, and the leading strand would not be recovered as very long molecules.",
+    "If Pol I were dead, its unique 5′→3′ exonuclease could not excise the RNA primers, so the fragments would still carry ribonucleotides at their 5′ ends. The assay detected none.",
+    "Gyrase relieves supercoiling ahead of the fork; losing it stalls the fork and total synthesis would collapse well below 90%. Note also that although gyrase cuts and rejoins DNA, that rejoining is **not** the ligase reaction that seals Okazaki fragments — she flags this distinction specifically.",
+    "Without primase there would be no RNA primers and therefore no Okazaki fragments at all — lagging-strand synthesis would fail outright rather than give a normal-sized ladder.",
+    ""
+   ],
+   "pts": 3,
+   "t": 150,
+   "work": false,
+   "src": "L2 — Pol I removes primers via its unique 5′→3′ exonuclease, ligase seals the nick, and topoisomerase is not the ligase."
+  },
+  {
+   "id": "A-CY-07",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "EMSA and DNase footprinting",
+   "tags": [
+    "emsa-footprinting",
+    "figure-interpretation",
+    "technique"
+   ],
+   "stem": "You think a protein, Rvn1, binds a specific site in the *sedge* promoter. You run two experiments on the same end-labelled 200 bp promoter fragment.\n\n**Experiment 1 (native gel):**\n\n| Lane | Contents | Result |\n|---|---|---|\n| 1 | DNA alone | one fast-migrating band |\n| 2 | DNA + Rvn1 | one slower-migrating band |\n\n**Experiment 2 (denaturing ladder gel):**\n\n| Lane | Contents | Result |\n|---|---|---|\n| 1 | DNA + DNase I | continuous ladder of bands |\n| 2 | DNA + Rvn1 + DNase I | ladder with a gap spanning positions −45 to −28 |\n\nWhich statement BEST describes what each experiment establishes?",
+   "options": [
+    "Experiment 1 establishes that Rvn1 binds the fragment; Experiment 2 localises the binding site to positions −45 to −28.",
+    "Experiment 1 establishes where Rvn1 binds; Experiment 2 establishes that binding occurs at all.",
+    "Both experiments localise the binding site, and the shift in Experiment 1 confirms the −45 to −28 assignment independently.",
+    "Experiment 1 shows Rvn1 degrades the DNA; Experiment 2 shows it protects a region from that degradation.",
+    "Neither experiment can distinguish direct binding from an indirect effect, so no conclusion about Rvn1 is possible."
+   ],
+   "answer": 0,
+   "why": "Experiment 1 is an **EMSA (band shift)**: bound protein retards the DNA in a native gel, so the slower band answers **whether** Rvn1 binds — but a shift carries no positional information. Experiment 2 is a **DNase footprint**: bound protein shields the phosphodiester backbone beneath it, so those cleavage products are missing and the ladder shows a **gap**. The gap answers **where**, here −45 to −28.",
+   "wrong": [
+    "",
+    "This reverses the two assays. A band shift tells you binding happened but not where; the footprint gap is what gives coordinates.",
+    "Experiment 1 cannot confirm any position. The fragment is the same length whether or not protein is bound, so its mobility change reflects the added protein mass and shape, not the site's location.",
+    "Rvn1 is not a nuclease here. In Experiment 1 the DNA is intact and merely retarded; in Experiment 2 the cutting is done by the added DNase I, and Rvn1's role is to protect a stretch from it.",
+    "Both assays use purified components on a defined fragment, which is precisely the design that demonstrates direct binding. An indirect effect is what you would worry about in a cell-based assay such as a reporter-gene experiment."
+   ],
+   "pts": 3,
+   "t": 175,
+   "work": false,
+   "src": "L3 — her words: 'you will see these in a lot of homework questions, quiz questions, exam questions.'"
+  },
+  {
+   "id": "A-CY-08",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Transcription termination",
+   "tags": [
+    "transcription-termination",
+    "mechanism",
+    "compare-contrast"
+   ],
+   "stem": "You are studying two *E. coli* genes, *pel* and *quo*. Termination of *pel* transcription requires no protein other than RNA polymerase itself, whereas termination of *quo* fails completely in an extract depleted of a particular ATP-dependent enzyme. Which statement is **INCORRECT**?",
+   "options": [
+    "Termination of *pel* depends on an inverted repeat in the transcript that folds into a hairpin followed by a run of uridines.",
+    "The U-A base pairs in the *pel* transcript are comparatively weak, which helps the RNA-DNA hybrid come apart.",
+    "Termination of *quo* requires rho, which loads at a rut site on the nascent RNA and travels along it to reach the polymerase.",
+    "Rho terminates *quo* transcription by cleaving the nascent RNA endonucleolytically at the rut site.",
+    "Termination of *pel* is described as intrinsic because everything required is encoded in the transcribed sequence."
+   ],
+   "answer": 3,
+   "why": "The incorrect statement is D. **Rho is a helicase, not a nuclease.** It uses ATP to translocate along the nascent RNA and then unwinds the **RNA-DNA duplex** in the transcription bubble, releasing the transcript intact. It does not cut the RNA.",
+   "wrong": [
+    "This is correct and describes intrinsic termination: an inverted repeat produces a hairpin, followed by a poly-U tract.",
+    "This is correct. U-A pairs have only two hydrogen bonds, so the hybrid in the poly-U region is unusually unstable — which is why that tract sits where it does.",
+    "This is correct. Rho loads at the rut (rho utilisation) site and translocates along the RNA toward the polymerase.",
+    "",
+    "This is correct, and it is the reason for the name — intrinsic, or rho-independent, termination needs nothing beyond what the sequence itself specifies."
+   ],
+   "pts": 3,
+   "t": 160,
+   "work": false,
+   "src": "L3 — 'You need to know both of them.' Her clicker answer was that rho is a helicase breaking the RNA-DNA hydrogen bonds."
+  },
+  {
+   "id": "A-CY-21",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Splicing mechanism",
+   "tags": [
+    "splicing",
+    "mechanism",
+    "rna-processing"
+   ],
+   "stem": "You are reconstituting splicing in vitro with a pre-mRNA containing a single intron. You can add or omit individual snRNPs. Which statement about the mechanism is **INCORRECT**?",
+   "options": [
+    "U1 binds the 5′ donor site, U2 binds the branch point, and U5 binds the 3′ acceptor site.",
+    "The branch point is a specific adenine lying roughly 20 to 40 nucleotides upstream of the 3′ end of the intron.",
+    "The intron is first excised as a linear fragment, after which the two liberated exons are brought together and ligated.",
+    "The first transesterification forms the lariat, and the second joins the exons and releases it.",
+    "The lariat is subsequently debranched and degraded rather than being exported with the message."
+   ],
+   "answer": 2,
+   "why": "The incorrect statement is C. **There is never a moment when the intron sits free and the exons float apart.** The two transesterification reactions are chemically coupled: the branch-point adenine attacks the 5′ donor site, which simultaneously cuts the intron loose at that end **and** bonds it into a lariat while the upstream exon stays held in the spliceosome. Only then does the freed exon attack the 3′ acceptor site, joining the exons and releasing the lariat.",
+   "wrong": [
+    "This is correct and is the minimal assignment she asks for: U1 to the donor, U2 to the branch point, U5 to the acceptor.",
+    "This is correct. The branch point is a specific **adenine**, positioned some 20 to 40 nucleotides upstream of the intron's 3′ end.",
+    "",
+    "This is correct and is the right order. Reaction one makes the lariat; reaction two joins the exons and lets it go.",
+    "This is correct. The lariat is debranched and degraded; only the spliced message is exported."
+   ],
+   "pts": 3,
+   "t": 170,
+   "work": false,
+   "src": "L3 — 'You do need to know the minimal information needed to splice an intron out,' and her warning that the textbook's excise-then-ligate diagram is misleading."
+  },
+  {
+   "id": "A-CY-22",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Polyadenylation",
+   "tags": [
+    "polyadenylation",
+    "rna-processing",
+    "mechanism"
+   ],
+   "stem": "You are studying mRNA stability in a eukaryotic cell line. Which statement about the poly-A tail is **CORRECT**?",
+   "options": [
+    "The tail is templated by a run of thymines in the DNA, which is why its length is reproducible from transcript to transcript.",
+    "Poly(A) polymerase adds adenines without a template, and the length of the resulting tail helps set the message's half-life.",
+    "The poly-A signal sequence and the poly-A tail are the same feature, viewed at the DNA and RNA levels respectively.",
+    "All classes of cellular RNA are polyadenylated, which is what permits their export from the nucleus.",
+    "The tail is added before the 5′ cap, because processing proceeds from the 3′ end of the transcript toward the 5′ end."
+   ],
+   "answer": 1,
+   "why": "**Poly(A) polymerase is template-independent** — it still builds 5′→3′ onto a 3′-OH, but it needs no instructions and there is no run of thymines in the DNA specifying the tail. Tail **length sets mRNA stability and half-life**: a longer tail means the message persists longer and more protein is made from it.",
+   "wrong": [
+    "There is **no string of thymines in the DNA templating the tail**. This is the single most common misconception about polyadenylation, and it is why the enzyme is described as template-independent.",
+    "",
+    "They are distinct. The poly-A **signal** is a recognition sequence that tells the machinery where to cleave and begin adding; the **tail** is the untemplated stretch of adenines that follows. Confusing the two is a specific trap.",
+    "**Only mRNA is polyadenylated.** rRNA and tRNA are not, and export does not depend on a tail. This distractor was the reason one of her clicker answers was 'none of the above.'",
+    "The order is the reverse. Processing is **co-transcriptional** and proceeds 5′ to 3′ as the message is extruded: **cap first, then splicing, then cleavage and polyadenylation.** She warns that the textbook presents these steps out of order."
+   ],
+   "pts": 3,
+   "t": 165,
+   "work": false,
+   "src": "L3 — the three poly-A facts she said to make sure you know."
+  },
+  {
+   "id": "A-CY-23",
+   "type": "mc",
+   "lecture": 3,
+   "section": "Multiple choice",
+   "topic": "Co-transcriptional processing",
+   "tags": [
+    "rna-processing",
+    "five-prime-cap",
+    "prokaryote-vs-eukaryote"
+   ],
+   "stem": "A eukaryotic gene is being transcribed by RNA polymerase II. You can detect each processing event on the nascent transcript as it happens. In what order do the events occur, and why?",
+   "options": [
+    "Transcription runs to completion, then the finished pre-mRNA is capped, spliced and polyadenylated in the nucleoplasm as a separate stage.",
+    "Splicing occurs first, because introns must be removed before the cap can be added to the mature 5′ end.",
+    "Capping occurs first as the 5′ end emerges, then introns are removed as they are extruded, and cleavage with polyadenylation occurs last, all while transcription is still under way.",
+    "Polyadenylation occurs first to protect the transcript, followed by capping and then splicing.",
+    "Capping and polyadenylation occur simultaneously at the two ends, and splicing only begins once both are complete."
+   ],
+   "answer": 2,
+   "why": "Processing is **co-transcriptional**. The 5′ end emerges first and is **capped** almost immediately, which protects it from exonucleases and recruits later machinery. Introns are then **spliced** out as each is extruded from the polymerase, one at a time. **Cleavage and polyadenylation** come last, at the 3′ end, as transcription terminates. The order follows directly from which part of the transcript exists first.",
+   "wrong": [
+    "This is the older model, and she warns explicitly that the textbook is still organised around it, which puts the processing steps out of order. Processing happens **while** the polymerase is still transcribing, not as a separate stage afterward.",
+    "The cap is added to the 5′ end of the transcript as soon as it emerges, long before any intron has been fully extruded. Introns are not removed to expose the 5′ end — the 5′ end is simply the first thing made.",
+    "",
+    "Polyadenylation acts at the **3′** end, which is the last part of the transcript to be synthesised, so it cannot come first. The cap is what provides early protection at the 5′ end.",
+    "The two ends are not made at the same time. The 5′ end exists from the start of transcription and the 3′ end only at the end, so capping necessarily precedes polyadenylation by the whole length of the gene."
+   ],
+   "pts": 3,
+   "t": 160,
+   "work": false,
+   "src": "L3 — she called the co-transcriptional order 'the point' and flagged that the textbook has these steps scrambled. Prime best-answer distractor territory."
+  },
+  {
+   "id": "A-CY-01",
+   "type": "mc",
+   "lecture": 4,
+   "section": "Multiple choice",
+   "topic": "Translation termination — release factors",
+   "tags": [
+    "translation-termination",
+    "ribosome",
+    "mechanism"
+   ],
+   "stem": "You are characterising an *E. coli* strain carrying a temperature-sensitive lesion in a single gene. At the restrictive temperature the ribosomes stall on every message the instant they reach a UAA codon, and the nascent polypeptides remain covalently attached to the P-site tRNA. Charging of all tRNAs is normal, and elongation through the rest of the message is unaffected. Which statement BEST describes what has been disrupted?",
+   "options": [
+    "A tRNA whose anticodon normally base pairs with UAA has lost its ability to be charged, so termination cannot occur.",
+    "A release factor that recognises the stop codon and positions a water molecule for hydrolysis of the peptidyl-tRNA bond is non-functional.",
+    "The peptidyl transferase centre has lost its ability to form peptide bonds, so no further residues can be added.",
+    "The 16S rRNA can no longer base pair with the Shine-Dalgarno sequence, so the ribosome cannot be released from the message.",
+    "An aminoacyl-tRNA synthetase has become non-functional, so the ribosome has no substrate to add at the stop codon."
+   ],
+   "answer": 1,
+   "why": "Stop codons are read by **protein release factors**, not by tRNAs. RF1 and RF2 recognise the stop through a tripeptide motif and deliver a **water molecule** rather than an amino acid to the peptidyl transferase centre; hydrolysis of the peptidyl-tRNA bond is what frees the finished chain. Lose that factor and the ribosome sits at the stop with the peptide still tethered to the P-site tRNA — exactly the phenotype described.",
+   "wrong": [
+    "This is the single most common error on this topic. **No tRNA has an anticodon that reads a stop codon.** That is precisely why the cell needs release factors, and why a charging defect could never produce this phenotype.",
+    "",
+    "If peptide-bond formation were broken, elongation would fail everywhere, not specifically at the stop codon. The stem states elongation through the rest of the message is normal.",
+    "Shine-Dalgarno and 16S pairing govern **initiation** — positioning the start codon in the P site. They have no role in termination, and a defect there would prevent translation from starting at all.",
+    "The stem states charging of all tRNAs is normal, which rules this out. It also repeats the underlying error in option A: no amino acid is added at a stop codon in the first place."
+   ],
+   "pts": 3,
+   "t": 150,
+   "work": false,
+   "src": "L4 — the purple slide. Her words: 'People forget this every year on the exam... I guarantee a shocking number of people forget this every year.'"
+  },
+  {
+   "id": "A-CY-09",
+   "type": "mc",
+   "lecture": 4,
+   "section": "Multiple choice",
+   "topic": "Wobble legality",
+   "tags": [
+    "wobble",
+    "trna",
+    "genetic-code"
+   ],
+   "stem": "Using the wobble rules provided, consider a tRNA whose anticodon 5′ base is **U**, with the remaining two anticodon bases pairing so that the first two codon positions read **A** and **U** respectively. This tRNA would therefore read codons of the form **AU⁠_**, with the wobble position filled by whatever the 5′ U can pair with. Why does no such tRNA exist in the cell?",
+   "options": [
+    "Because a 5′ U in the anticodon cannot pair with anything at the wobble position.",
+    "Because inosine, not uridine, is the only base permitted at the 5′ anticodon position.",
+    "Because it would read a stop codon in addition to a sense codon.",
+    "Because it would read AUA and AUG, which specify different amino acids, making decoding ambiguous.",
+    "Because tRNAs are restricted to reading a single codon each, so no wobble base is permitted at that position."
+   ],
+   "answer": 3,
+   "why": "A 5′ U in the anticodon reads codon-3′ **A or G**. Combined with the first two positions AU, that tRNA would read **AUA** and **AUG**. AUA is **isoleucine** and AUG is **methionine** — two different amino acids from one tRNA, which violates the rule that the code is degenerate but never **ambiguous**. Such an anticodon is illegal, which is why methionine's only legal anticodon reads AUG alone.",
+   "wrong": [
+    "A 5′ U pairs perfectly well at the wobble position — with A or G. Its ability to pair is not the problem; what it pairs with is.",
+    "Inosine is one permitted wobble base, not the only one. G, C, A and U all occur at the 5′ anticodon position; inosine is simply the most permissive, reading U, C and A.",
+    "No stop codon is involved here. AUA and AUG are both sense codons. Reading through a stop is a genuine reason other anticodons are illegal, but it is not the reason in this case.",
+    "",
+    "The opposite is true — wobble exists precisely so that one tRNA can read multiple codons. That is fine as long as every codon it reads means the **same** amino acid."
+   ],
+   "pts": 3,
+   "t": 180,
+   "work": true,
+   "worked": "**Step 1 — expand the wobble base.** Anticodon 5′ U reads codon 3′ **A or G**.\n\n**Step 2 — build the codons.** First two codon positions are fixed at A and U, so the tRNA would read **AUA** and **AUG**.\n\n**Step 3 — look both up.** AUA = **isoleucine**. AUG = **methionine**.\n\n**Step 4 — apply the ambiguity test.** Legality has two conditions: the anticodon must be able to pair, *and* every codon it reaches must mean the same thing. Here condition two fails — one tRNA charged with one amino acid would insert it at codons specifying two different residues. The code is **degenerate** (many codons per amino acid) but never **ambiguous** (never many amino acids per codon).\n\n**Step 5 — the consequence.** Methionine's only legal anticodon is the one reading AUG alone. This is why the Met anticodon question has appeared as a clicker twice.\n\n**The general test:** expand the wobble base, list every codon reached, and reject the anticodon if those codons differ in meaning — including if any of them is a stop.",
+   "src": "L4 — 'Knowing the max and the minimum number of tRNAs for any specific amino acid is something you will need to know,' plus the legal-versus-illegal anticodon test."
+  },
+  {
+   "id": "A-CY-14",
+   "type": "mc",
+   "lecture": 4,
+   "section": "Multiple choice",
+   "topic": "Finding the ORF in a prokaryotic message",
+   "tags": [
+    "translation-initiation",
+    "sequence-reading",
+    "prokaryote-vs-eukaryote"
+   ],
+   "stem": "You are given the following mRNA. Use the genetic code table provided.\n\n`5′-GCUUAAGGAGGUAAUCAUGCCUAAGCGUUAAGCU-3′`\n\nWhich statement about this message is correct?",
+   "options": [
+    "It is eukaryotic, and the encoded peptide is Met-Pro-Lys-Arg.",
+    "It is prokaryotic, and the encoded peptide is Met-Pro-Lys-Arg.",
+    "It is prokaryotic, and the encoded peptide is Leu-Lys-Glu-Val.",
+    "It is prokaryotic, and translation begins at the very first AUG, giving a peptide of eight amino acids.",
+    "The reading frame cannot be determined without knowing which strand is the template."
+   ],
+   "answer": 1,
+   "why": "The sequence `AGGAGG` sits five nucleotides upstream of an AUG. That is a **Shine-Dalgarno** sequence, which is **prokaryotic** — it base pairs with the **16S rRNA** to position the start codon in the P site. Translating from that AUG: AUG CCU AAG CGU UAA = **Met-Pro-Lys-Arg**, then a stop.",
+   "wrong": [
+    "The peptide is right but the organism is not. A eukaryotic message would carry a 5′ cap and a **Kozak** sequence, and Kozak *contains* the start codon rather than sitting upstream of it. AGGAGG upstream is the prokaryotic signature.",
+    "",
+    "This is what you get by reading the wrong frame. The peptide must begin with methionine from an AUG start codon; any translation beginning with leucine has not been started at a start codon.",
+    "The AUG identified here **is** the first AUG, and translating from it gives four amino acids before the UAA stop, not eight. Counting past the stop codon is the error.",
+    "This is an mRNA, not a duplex — its sequence is given 5′→3′ and is read directly by the ribosome. No template strand is needed. Ambiguity about which strand is a transcription-level problem, not a translation-level one."
+   ],
+   "pts": 3,
+   "t": 195,
+   "work": true,
+   "worked": "**Step 1 — look for a ribosome-binding signal before hunting for AUG.** Scanning the sequence you find `AGGAGG` at positions 6-11. That is the **Shine-Dalgarno** consensus, so this is a **prokaryotic** message.\n\n**Step 2 — locate the start codon relative to it.** The next AUG begins at position 17. The gap between the end of the SD (position 11) and the A of AUG (position 17) is five nucleotides — squarely in the expected 4-10 nt window.\n\n**Step 3 — set the frame from that AUG and read in triplets.**\n\n`AUG` `CCU` `AAG` `CGU` `UAA`\n\n**Step 4 — translate.** AUG = Met, CCU = Pro, AAG = Lys, CGU = Arg, UAA = **stop**.\n\nPeptide = **Met-Pro-Lys-Arg**, four residues, written N to C.\n\n**Step 5 — remember what ends it.** UAA is read by a **release factor**, not by a tRNA.\n\n**The contrast to hold:** prokaryotes use SD + 16S pairing and can therefore load a ribosome at any internal SD, which is why their messages can be **polycistronic**. Eukaryotes use **cap-and-scanning** to the first Kozak-flanked AUG, load once, and are therefore **obligate monocistronic**.",
+   "src": "L4 — 'You absolutely need to know what a Shine-Dalgarno sequence is, what it does, and roughly where it is,' plus the 16S pairing she asks for by name. Her Su23 exam has an ORF-plus-SD item."
+  },
+  {
+   "id": "A-CY-18",
+   "type": "mc",
+   "lecture": 4,
+   "section": "Multiple choice",
+   "topic": "Protein structure levels",
+   "tags": [
+    "protein-structure",
+    "blotting",
+    "compare-contrast"
+   ],
+   "stem": "A single amino-acid substitution in the β-globin chain causes the mutant haemoglobin molecules to associate into long insoluble fibres. You run the mutant and wild-type proteins side by side on a denaturing SDS-PAGE gel with β-mercaptoethanol, blot, and probe with an anti-β-globin antibody. Both samples give a single band at the same molecular weight. Which statement BEST explains this?",
+   "options": [
+    "The mutation affects only the quaternary structure, which is why the two proteins have the same molecular weight.",
+    "The gel shows that the mutation does not change the protein at all, so the fibre formation must be caused by a second mutation elsewhere.",
+    "The antibody cannot distinguish mutant from wild-type protein, so the blot is uninformative about any level of structure.",
+    "Denaturation reduces the protein to its primary structure, so a single-residue substitution leaves the chain length, and therefore the migration, unchanged.",
+    "SDS-PAGE separates by charge rather than size, so a single substitution would not be expected to alter migration."
+   ],
+   "answer": 3,
+   "why": "Heating with SDS and β-mercaptoethanol **denatures** the protein — β-ME reduces disulfide bonds and SDS coats the chain with uniform negative charge — so what runs on the gel is the unfolded **primary structure**, and migration reflects chain **length**. Swapping one residue for another changes neither the number of residues nor, appreciably, the mass, so both samples run at the same position even though the folded behaviour differs dramatically.",
+   "wrong": [
+    "This is partly right and mostly wrong. Fibre formation is indeed an aberrant higher-order association, but the reason the gel cannot see it is that denaturation **destroys** all higher-order structure before electrophoresis, not that the mutation is confined to one level.",
+    "The gel does not show the protein is unchanged; it shows the protein is unchanged **in length**. A denaturing gel is simply blind to the property that differs. Inventing a second mutation is unnecessary.",
+    "The antibody works fine — it recognises an epitope present in both, which is why both give a band. The blot is uninformative about **folding**, but that is a consequence of denaturation, not of antibody specificity.",
+    "",
+    "SDS-PAGE separates by **size**, and that is the whole reason for the SDS — it gives every polypeptide the same charge-to-mass ratio so that charge differences cannot influence migration."
+   ],
+   "pts": 3,
+   "t": 180,
+   "work": false,
+   "src": "L4 — the four levels of protein structure, tied to the Western blot workflow she treats as a guaranteed recurring skill."
+  },
+  {
+   "id": "A-CY-24",
+   "type": "mc",
+   "lecture": 4,
+   "section": "Multiple choice",
+   "topic": "Illegal tRNA anticodons",
+   "tags": [
+    "wobble",
+    "trna",
+    "genetic-code"
+   ],
+   "stem": "Anticodons below are written **3′→5′**, as we write them in this course. Using the wobble rules provided, which of these anticodons could **NOT** exist in a functioning cell?",
+   "options": [
+    "3′-AAG-5′",
+    "3′-CGA-5′",
+    "3′-UAC-5′",
+    "3′-AUU-5′",
+    "3′-GAC-5′"
+   ],
+   "answer": 3,
+   "why": "Pair it position by position. The anticodon's 3′ base pairs with the codon's 5′ base, so 3′-A-U-U-5′ reads codons beginning **U, A**. Its **5′ base is U**, the wobble position, which reads codon-3′ **A or G**. So it would read **UAA and UAG — both stop codons.** No tRNA reads a stop codon, so this anticodon cannot exist.",
+   "wrong": [
+    "3′-AAG-5′ reads codons beginning U, U, with a 5′-G wobble reading C or U — so UUC and UUU, both **phenylalanine**. One amino acid, no stop: legal.",
+    "3′-CGA-5′ reads codons beginning G, C, with a 5′-A wobble reading U only — so GCU alone, **alanine**. Legal.",
+    "3′-UAC-5′ reads codons beginning A, U, with a 5′-C wobble reading G only — so **AUG alone, methionine**. This is exactly why it is methionine's only legal anticodon, and it is legal.",
+    "",
+    "3′-GAC-5′ reads codons beginning C, U, with a 5′-C wobble reading G only — so CUG alone, **leucine**. Legal."
+   ],
+   "pts": 3,
+   "t": 200,
+   "work": true,
+   "worked": "**The two-part legality test.** An anticodon is legal only if (1) it can physically pair, and (2) every codon it reaches means the **same thing** — one amino acid, and never a stop.\n\n**Set up the pairing.** Written 3′→5′, the anticodon aligns position-for-position against the codon written 5′→3′:\n\n`anticodon  3′ - N₁ N₂ N₃ - 5′`\n`codon      5′ - N₁ N₂ N₃ - 3′`\n\nThe anticodon's **5′ base is the wobble base** and pairs with codon position 3.\n\n**Now test 3′-AUU-5′:**\n- anticodon 3′-A pairs with codon 5′-**U**\n- anticodon middle U pairs with codon middle **A**\n- anticodon 5′-**U** is the wobble base, and U reads **A or G**\n\nSo the codons are **UAA** and **UAG**. Look them up: both are **STOP**. Stop codons are read by **release factors**, never by tRNAs, so a tRNA with this anticodon has nothing legitimate to do and does not exist.\n\n**Contrast with 3′-UAC-5′**, which many people flag by mistake: its wobble base is **C**, and C reads **G only**. That gives AUG and nothing else — one codon, one amino acid, perfectly legal. Change that C to U and it would read AUA (Ile) as well as AUG (Met), which *would* be illegal. That one-base difference is the whole game.",
+   "src": "L4 — the illegal-anticodon archetype, which appears on essentially every past paper. The 3′-AUU-5′ two-stops case is the recurring instance."
+  },
+  {
+   "id": "A-CY-25",
+   "type": "mc",
+   "lecture": 4,
+   "section": "Multiple choice",
+   "topic": "Minimum tRNAs per amino acid",
+   "tags": [
+    "wobble",
+    "trna",
+    "calculation"
+   ],
+   "stem": "Proline is specified by the four codons CCU, CCC, CCA and CCG — a complete family box. Using the wobble rules provided, what is the **minimum** number of distinct tRNA anticodons required to read all four proline codons, and what is the **maximum** number that could legally exist?",
+   "options": [
+    "Minimum 1, maximum 4",
+    "Minimum 2, maximum 4",
+    "Minimum 3, maximum 4",
+    "Minimum 2, maximum 5",
+    "Minimum 4, maximum 4"
+   ],
+   "answer": 3,
+   "why": "**Minimum 2.** No single wobble base reads all four of U, C, A and G, but two will cover them — inosine reads **U, C and A**, leaving a C-anticodon to read **G**. (Equivalently, G reads U and C while U reads A and G.) **Maximum 5**, because five different bases can legally occupy the wobble position: A, C, G, U and I.",
+   "wrong": [
+    "One tRNA cannot cover the box. The most permissive wobble base is inosine, and it reads only U, C and A — it cannot reach G, so CCG would go unread.",
+    "The minimum is right but the maximum is wrong. Five bases can sit in the wobble position — A, C, G, U and inosine — so five distinct legal anticodons could exist even though only two are needed.",
+    "Three is achievable but not minimal, and the maximum is wrong. The minimum-3 answer belongs to a **split six-codon family** like serine, not to a clean family box.",
+    "",
+    "This assumes one tRNA per codon with no wobble at all, which is the whole thing wobble exists to avoid. Four is a possible number of anticodons, but it is neither the minimum nor the maximum."
+   ],
+   "pts": 3,
+   "t": 210,
+   "work": true,
+   "worked": "**The wobble rules, in her orientation (5′ base of the anticodon → codon 3′ base):**\n\n- **G** reads U or C\n- **C** reads G only\n- **A** reads U only\n- **U** reads A or G\n- **I** (inosine) reads U, C or A\n\n**Minimum.** You need to cover the third-position set {U, C, A, G} with as few anticodons as possible. No single base covers all four — inosine gets closest at three. So the answer is at least 2, and 2 is achievable in two different ways:\n\n- **I** covers U, C, A  +  **C** covers G  → 2 tRNAs\n- **G** covers U, C  +  **U** covers A, G  → 2 tRNAs\n\nSo the **minimum is 2**.\n\n**Maximum.** Ask instead how many distinct legal anticodons *could* exist. Five bases can occupy the wobble position — A, C, G, U and I — and within a family box every codon means the same amino acid, so none of them creates an ambiguity problem. So the **maximum is 5**.\n\n**The distinction to keep straight:** a clean **family box** (all four third-position bases, one amino acid) needs a minimum of **2**. A **split six-codon family** like serine, leucine or arginine needs a minimum of **3**, because the four-codon block takes 2 and the separate two-codon pair takes another 1. Mixing these two numbers up is the standard error.",
+   "src": "L4 — 'Knowing the max and the minimum number of tRNAs for any specific amino acid is something you will need to know.' Note: min for a family box is 2, min 3 is the split six-codon family."
+  },
+  {
+   "id": "A-CY-03",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Reversion versus suppressor",
+   "tags": [
+    "reversion-suppressor",
+    "mutation-types",
+    "compare-contrast"
+   ],
+   "stem": "A strain carrying a loss-of-function point mutation in the *velo* gene is non-motile. You plate a large culture and recover four independent motile revertant colonies. Sequencing shows:\n\n| Isolate | What changed |\n|---|---|\n| 1 | The original *velo* codon has changed back to the exact wild-type codon |\n| 2 | A different position in *velo* has changed, restoring the original amino acid at the mutant site |\n| 3 | A single-base insertion elsewhere in *velo* restores the reading frame |\n| 4 | A point mutation in the unlinked *ryn* gene, with the original *velo* lesion still present |\n\nUsing the terminology as it is defined in this course, which isolates are **suppressor** mutations?",
+   "options": [
+    "Isolate 4 only.",
+    "Isolates 3 and 4.",
+    "Isolates 2, 3 and 4.",
+    "Isolate 1 only.",
+    "All four, since every isolate restored the wild-type phenotype."
+   ],
+   "answer": 0,
+   "why": "In this course the split is **by location, not by outcome**. A **reversion** is a second mutation in the **same gene**; a **suppressor** (second-site reversion) is a second mutation in a **different gene**. Only isolate 4 carries its second mutation elsewhere — in *ryn*, with the *velo* lesion intact — so it alone is a suppressor. Isolates 1, 2 and 3 are all reversions, being second changes within *velo*.",
+   "wrong": [
+    "",
+    "Isolate 3's insertion is stated to be **elsewhere in *velo***, so it is in the same gene — a frame-restoring reversion, not a suppressor. Only isolate 4 is in a different gene.",
+    "Isolates 2 and 3 both occur inside *velo*, which makes them reversions by this course's definition regardless of how indirectly they restore function.",
+    "Isolate 1 is the textbook case of a **true back-mutation** — the most unambiguous reversion there is, and the opposite of a suppressor.",
+    "This is the textbook's loose usage, which lumps everything that restores wild-type phenotype under 'reversion'. She defines the two terms specifically and expects the distinction, so 'they all restored the phenotype' is not the discriminator — **location relative to the original gene** is."
+   ],
+   "pts": 3,
+   "t": 165,
+   "work": false,
+   "src": "L5 — her words: 'We will use them very specifically differently in this class, and I expect you to know that difference for my exams.'"
+  },
+  {
+   "id": "A-CY-06",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Mutation classification from a sequence",
+   "tags": [
+    "mutation-types",
+    "sequence-reading",
+    "genetic-code"
+   ],
+   "stem": "A bacterial gene begins with the coding sequence below. Use the genetic code table provided.\n\n`5′-AUG CAG UGG AAA CCU GGA-3′`\n\nA single-nucleotide substitution changes the **fourth** nucleotide from **C to U**. Which option BEST describes the resulting mutation?",
+   "options": [
+    "A missense mutation caused by a transversion, replacing glutamine with tryptophan.",
+    "A nonsense mutation caused by a transversion, truncating the protein after the initiator methionine.",
+    "A silent mutation caused by a transition, since both codons specify glutamine.",
+    "A frameshift mutation caused by a transition, shifting every downstream codon.",
+    "A nonsense mutation caused by a transition, truncating the protein after the initiator methionine."
+   ],
+   "answer": 4,
+   "why": "The fourth nucleotide is the first base of codon 2. **CAG (Gln) becomes UAG**, a **stop** codon — so this is a **nonsense** mutation and translation ends after Met. C and U are both pyrimidines, so a C→U change is a **transition**, not a transversion.",
+   "wrong": [
+    "Two errors. UAG is a stop codon, not tryptophan (that would be UGG), so the mutation is nonsense rather than missense. And C→U is pyrimidine to pyrimidine, which is a transition.",
+    "The nonsense call is right but the base-change class is wrong. C→U is pyrimidine to pyrimidine, a **transition**. A transversion swaps a purine for a pyrimidine or vice versa.",
+    "UAG does not specify glutamine — it is a stop codon, so the mutation is anything but silent. The transition call is right; the consequence is not.",
+    "A substitution replaces one base with another and leaves the total length unchanged, so the reading frame is preserved. Frameshifts require an insertion or deletion of a number of bases not divisible by three.",
+    ""
+   ],
+   "pts": 3,
+   "t": 170,
+   "work": true,
+   "worked": "**Step 1 — find the affected codon.** Number the nucleotides from the A of AUG. Codon 1 = positions 1-3 (AUG), codon 2 = positions 4-6 (CAG). The fourth nucleotide is therefore the **first base of codon 2**.\n\n**Step 2 — apply the change.** CAG → UAG.\n\n**Step 3 — look it up.** CAG = glutamine. **UAG = STOP.** A codon that becomes a stop is a **nonsense** mutation, and translation terminates there, leaving just the initiator methionine.\n\n**Step 4 — classify the base change separately.** This is a second, independent question the option set is testing. Pyrimidines are C and U (T in DNA); purines are A and G. **C → U is pyrimidine to pyrimidine = a transition.** A transversion would be a purine-pyrimidine swap.\n\n**Step 5 — and remember what reads that new stop.** Not a tRNA. **Release factors** recognise UAG and hydrolyse the peptide free. She hammers this every year.",
+   "src": "L5 — mutation classification on a real sequence, with her favourite transition-versus-transversion one-detail swap in the distractors."
+  },
+  {
+   "id": "A-CY-12",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Repair pathway discrimination",
+   "tags": [
+    "excision-repair",
+    "mismatch-repair",
+    "dsb-repair"
+   ],
+   "stem": "You have four *E. coli* strains, each deficient in one repair pathway. You expose all four to UV light, which produces thymine dimers that distort the double helix. Only one strain shows a large increase in mutation frequency relative to wild type. Which pathway is missing in that strain?",
+   "options": [
+    "Base excision repair, because a glycosylase is required to remove the damaged thymines one at a time.",
+    "Nucleotide excision repair, because it recognises helical distortion and excises a section of the damaged strand.",
+    "Mismatch repair, because the dimer is read as a mismatch between the two strands.",
+    "Homologous recombination, because a thymine dimer constitutes a double-strand break.",
+    "Proofreading by DNA polymerase, because the dimer is introduced during replication."
+   ],
+   "answer": 1,
+   "why": "A thymine dimer is a **bulky, helix-distorting** lesion, and distortion is exactly what **nucleotide excision repair** recognises. NER excises an oligonucleotide **section** containing the lesion, then polymerase and ligase fill and seal. This is the pathway whose loss makes cells UV-sensitive.",
+   "wrong": [
+    "BER handles **single damaged bases** that do not distort the helix — uracil from deamination, oxidised or alkylated bases — via a glycosylase that flips out one base. It removes one base, not a distorting two-base lesion.",
+    "",
+    "Mismatch repair corrects **replication errors** — a correctly-formed but wrongly-paired base that escaped proofreading. It does not act on chemical damage, and a thymine dimer is damage, not a mispairing.",
+    "A thymine dimer is a covalent link between two adjacent bases on the **same** strand. It is not a double-strand break, and the backbone remains continuous.",
+    "Proofreading is the polymerase's own 3′→5′ exonuclease removing a base it just misinserted. UV damage occurs in DNA that already exists, independently of replication, so proofreading never sees it."
+   ],
+   "pts": 3,
+   "t": 160,
+   "work": false,
+   "src": "L5 — NER-versus-BER discrimination, the pathway split she draws explicitly."
+  },
+  {
+   "id": "A-CY-17",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Transposable element classes",
+   "tags": [
+    "transposons",
+    "compare-contrast",
+    "mechanism"
+   ],
+   "stem": "Two transposable elements are compared in the same genome. Element **Kip** is present in roughly 400,000 dispersed copies and moves through an RNA intermediate. Element **Vam** is present in about 200 copies and excises from one site before inserting at another. Which statement is correct?",
+   "options": [
+    "Kip is a Class I retrotransposon and Vam is a Class II DNA transposon; Kip reaches high copy number because the original stays in place while a copy inserts elsewhere.",
+    "Kip is a Class II DNA transposon and Vam is a Class I retrotransposon; Class II elements reach high copy number because excision duplicates them.",
+    "Both are Class I elements; the copy-number difference reflects only how long each has been in the genome.",
+    "Kip is a Class I retrotransposon and Vam is a Class II DNA transposon; Kip requires a transposase and Vam requires a reverse transcriptase.",
+    "Neither element can move without an autonomous partner supplying enzyme in trans."
+   ],
+   "answer": 0,
+   "why": "Movement through an **RNA intermediate** is the definition of a **Class I retrotransposon**, and its copy-and-paste mechanism is why these reach enormous copy numbers — the element is transcribed, reverse-transcribed, and the cDNA inserts at a new site while the **original remains in place**. **Class II DNA transposons** cut and paste, so a move relocates rather than duplicates, keeping copy number low.",
+   "wrong": [
+    "",
+    "The two classes are swapped. RNA intermediate means Class I, and cut-and-paste means Class II. The stated reason is also wrong: excision does not duplicate anything — that is exactly why cut-and-paste elements stay at low copy number.",
+    "Only Kip uses an RNA intermediate. Vam excises and reinserts as DNA, which makes it Class II. Residence time does not convert a cut-and-paste element into a high-copy family, because each move leaves the total unchanged.",
+    "The class assignments are correct but the enzymes are swapped. **Retrotransposons need reverse transcriptase** and **DNA transposons need transposase**.",
+    "Nothing in the stem says either element is non-autonomous. Non-autonomous elements exist — they have lost their transposase or reverse transcriptase and can move only if another element supplies it in trans — but that is a separate distinction from the Class I/II split."
+   ],
+   "pts": 3,
+   "t": 165,
+   "work": false,
+   "src": "L5-L6 seam — she flagged 'what you need to know for this exam' about why most elements are inactive, and the class distinction underlies it."
+  },
+  {
+   "id": "A-L5-1",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Reversion vs suppressor",
+   "tags": [
+    "reversion-suppressor",
+    "mutation-types",
+    "mechanism",
+    "compare-contrast"
+   ],
+   "stem": "You are studying flight in the marsh moth *Noctua palustris*. A recessive loss-of-function allele of the gene *shimmer*, caused by the insertion of a single nucleotide in codon 40, produces flightless moths. You mutagenize a population of these flightless *shimmer* mutants and recover three independent lines whose flight is fully restored to wild-type levels. You then sequence each line:\n\n- **Line 1:** the original single-nucleotide insertion in codon 40 is still present, and *shimmer* now also carries a single-nucleotide deletion in codon 44.\n- **Line 2:** *shimmer* is completely unchanged, but a nonsense mutation has appeared in *drag*, a gene on a different chromosome.\n- **Line 3:** the inserted nucleotide has been precisely deleted from codon 40 of *shimmer*, restoring the wild-type sequence of that codon exactly.\n\nUsing reversion and suppression as we have defined them in this course, which of the following is the BEST description of these three lines?",
+   "options": [
+    "All three lines are revertants, because in every case a second mutation restored the wild-type phenotype.",
+    "Lines 1 and 2 are revertants, and line 3 carries a suppressor mutation.",
+    "Lines 1 and 3 are revertants, and line 2 carries a suppressor mutation.",
+    "Line 3 is a true back-mutation and line 2 is a suppressor, but line 1 is best described as a missense revertant.",
+    "Only line 3 is a revertant, because reversion requires restoring the original nucleotide sequence; lines 1 and 2 both carry suppressor mutations."
+   ],
+   "answer": 2,
+   "why": "In this course the split is by location of the second mutation, not by its molecular flavour: a reversion is a second mutation in the SAME gene that restores the wild-type phenotype, and a suppressor is a second mutation in a DIFFERENT gene. Line 3 (true back-mutation) and line 1 (a compensating deletion that puts the downstream sequence back in frame) are both second mutations within *shimmer*, so both are revertants; line 2's restoring mutation is in *drag*, so it is a suppressor.",
+   "wrong": [
+    "This is the textbook conflation she explicitly rejects: the textbook calls every phenotype-restoring second mutation a reversion. In this class the same-gene versus different-gene distinction is the whole point, so line 2, whose restoring mutation is in *drag*, must be called a suppressor.",
+    "Backwards on both counts. Line 2's second mutation is in *drag*, a gene on a different chromosome, which makes it a suppressor rather than a revertant; line 3's alteration lies inside *shimmer* itself, which makes it a revertant.",
+    "",
+    "Lines 2 and 3 are labelled correctly, but line 1 is not a missense event. It is restored by a single-nucleotide deletion at codon 44 offsetting the insertion at codon 40: net change in nucleotide number is zero, so the frame is correct again from codon 44 onward. Missense is strictly a point substitution, so an indel that restores a reading frame is never called missense.",
+    "Reversion is not restricted to true back-mutations. Wild type is defined by function and phenotype, not by exact nucleotide sequence, so a change at a different position that still yields the original amino acid, or an indel that restores the reading frame, also counts. Line 2 is a suppressor because its mutation is in a different gene."
+   ],
+   "pts": 3,
+   "t": 240,
+   "work": false,
+   "src": "L5 — her class-specific reversion (same gene) vs suppressor (different gene) split, the flagged 'I expect you to know that difference for my exams' item."
+  },
+  {
+   "id": "A-L5-2",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Classifying a point mutation in a sequence",
+   "tags": [
+    "mutation-types",
+    "sequence-reading",
+    "mechanism"
+   ],
+   "stem": "You are studying the gene *glitter*, which controls elytral iridescence in the jewel beetle *Chrysochroa borealis*. The entire coding region of the wild-type allele is shown below as the **coding (sense) strand**, with its nine codons numbered:\n\n`codon:    1   2   3   4   5   6   7   8   9`\n`     5'- ATG GCA TAC CGT TGG AAC GAT TCA TGA -3'`\n\nA mutagenesis screen recovers a *glitter* allele in which the **third base of codon 3** (a C on the coding strand) has been replaced by an **A**. The allele carries no other change. Which of the following BEST describes this mutation and its consequence?",
+   "options": [
+    "A transition that creates a nonsense codon; translation terminates after the second amino acid, releasing a 2-residue peptide instead of the 8-residue wild-type protein.",
+    "A transversion that creates a missense codon; a full-length 8-residue protein is made in which the tyrosine at position 3 is replaced by a different amino acid.",
+    "A transversion that is synonymous; the codon changes but the amino acid it specifies does not, so the protein is unaffected.",
+    "A transversion that creates a nonsense codon; translation terminates after the second amino acid, releasing a 2-residue peptide instead of the 8-residue wild-type protein.",
+    "A transversion that shifts the reading frame beginning at codon 3, so every codon from codon 3 onward is read in the wrong frame."
+   ],
+   "answer": 3,
+   "why": "Codon 3 is TAC on the coding strand, so the mRNA codon is UAC (Tyr). Replacing its third base C with A gives TAA on the coding strand and UAA in the mRNA, a stop codon — so this is a nonsense mutation and translation ends after Met-Ala. C is a pyrimidine and A is a purine, so the substitution crosses ring classes and is a transversion.",
+   "wrong": [
+    "The consequence is right but the class of substitution is wrong. C to A goes pyrimidine to purine, which is a transversion. A transition stays within a ring class.",
+    "The substitution is correctly called a transversion, but the consequence is wrong. UAC to UAA does not substitute a different amino acid, because UAA is a stop codon: no tRNA reads it and a release factor terminates translation.",
+    "UAC and UAA are not synonymous. UAC specifies tyrosine; UAA specifies no amino acid at all. A synonymous change here would be UAC to UAU.",
+    "",
+    "A single base substitution swaps one nucleotide for another without changing the total number, so the downstream reading frame is untouched. A frameshift requires an indel whose length is not a multiple of 3."
+   ],
+   "pts": 3,
+   "t": 210,
+   "work": true,
+   "worked": "Wild-type coding strand: 5'-ATG GCA TAC CGT TGG AAC GAT TCA TGA-3'\nmRNA: 5'-AUG GCA UAC CGU UGG AAC GAU UCA UGA-3'\nTranslation: AUG=Met, GCA=Ala, UAC=Tyr, CGU=Arg, UGG=Trp, AAC=Asn, GAU=Asp, UCA=Ser, UGA=STOP. Wild-type product = 8 residues.\n\nApply the mutation: codon 3 TAC becomes TAA; mRNA codon 3 UAC becomes UAA.\nMutant mRNA: 5'-AUG GCA UAA ...-3' → AUG=Met, GCA=Ala, UAA=STOP. Mutant product = 2 residues.\n\nClassify the base change: C is a pyrimidine, A is a purine → crosses ring classes → **transversion**.\nClassify the consequence: an amino-acid codon became a stop → **nonsense**.\n\nBoth axes are being tested at once, which is her habit — get one right and the other wrong and you still lose the question.",
+   "src": "L5 — apply a stated point mutation to a labelled coding sequence and classify it on both of her favourite axes at once."
+  },
+  {
+   "id": "A-L5-3",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Discriminating NER, BER and mismatch repair",
+   "tags": [
+    "excision-repair",
+    "mismatch-repair",
+    "mechanism",
+    "compare-contrast"
+   ],
+   "stem": "You are studying DNA repair in cultured fibroblasts from the naked mole-rat (*Heterocephalus glaber*). You generate three cell lines, each carrying a null mutation that eliminates exactly one repair activity:\n\n- **Line *gly1*:** lacks the DNA glycosylase that removes 8-oxoguanine.\n- **Line *dis2*:** lacks the complex that recognises helical distortion and incises the backbone on both sides of a lesion.\n- **Line *mut3*:** lacks the MutS homolog.\n\nYou irradiate all three lines, plus a wild-type control, with UV light, and 6 hours later measure how many cyclobutane pyrimidine dimers remain. Which line retains the most unrepaired dimers, and why?",
+   "options": [
+    "*gly1*, because a DNA glycosylase must excise each damaged base before any other repair pathway can act on the lesion.",
+    "None of the three lines, because pyrimidine dimers are repaired only by direct reversal with photolyase, which is intact in all three lines.",
+    "*mut3*, because MutS recognises the mispaired bases produced by a pyrimidine dimer and targets them for excision.",
+    "*gly1* and *mut3* about equally, because base excision repair and mismatch repair both act by removing a single incorrect base.",
+    "*dis2*, because a cyclobutane pyrimidine dimer distorts the double helix and is removed as a whole section of nucleotides by nucleotide excision repair."
+   ],
+   "answer": 4,
+   "why": "UV produces cyclobutane pyrimidine dimers, which are bulky, helix-distorting lesions. The pathway that recognises helical distortion, cuts the backbone on both sides and removes a whole section of nucleotides is nucleotide excision repair — exactly the activity missing from *dis2*. Placental mammals have lost photolyase, so NER is the only route left.",
+   "wrong": [
+    "Glycosylases are lesion-specific, and the 8-oxoguanine glycosylase does not act on a pyrimidine dimer. BER is also not a prerequisite for other pathways: NER recognises the distorted helix directly and needs no glycosylase.",
+    "Photolyase does directly reverse dimers in many organisms, but placental mammals have lost it, so these cells have none to begin with. The word 'only' also makes the statement false in general, since NER removes dimers regardless.",
+    "MutS recognises base-base mismatches and small loops left by the replicative polymerase, not UV photoproducts. A dimer is a covalent bond between two adjacent pyrimidines on the same strand — a distortion, not a mispair.",
+    "Neither pathway removes pyrimidine dimers, so neither line accumulates them. The description of MMR is also wrong: it excises a stretch of the new strand around a replication mismatch and uses no glycosylase.",
+    ""
+   ],
+   "pts": 3,
+   "t": 180,
+   "work": false,
+   "src": "L5 — NER recognises helical DISTORTION and removes a section; BER uses a lesion-specific glycosylase for one base; MMR fixes replication errors."
+  },
+  {
+   "id": "A-L5-4",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Luria-Delbruck fluctuation test",
+   "tags": [
+    "mutation-origin",
+    "who-what-when",
+    "figure-interpretation",
+    "mechanism"
+   ],
+   "stem": "You are repeating the Luria-Delbrück fluctuation test with *E. coli* and a phage, phi-M. From a single phage-sensitive starter culture you set up **twelve small independent cultures**, grow each to the same density, and plate each entirely onto its own phi-M plate. In parallel, from the same starter you grow **one large culture** to the same density and plate **twelve equal samples** of it, each containing as many cells as one small culture.\n\n| Source of the plated cells | Resistant colonies per plate |\n|---|---|\n| Twelve independent cultures | 1, 0, 3, 0, 51, 2, 0, 8, 0, 143, 1, 0 |\n| Twelve samples of one large culture | 14, 18, 11, 15, 13, 17, 12, 16, 19, 13, 14, 12 |\n\nWhich conclusion is **NOT** supported by these data?",
+   "options": [
+    "Resistance mutations arise spontaneously during growth, before the cells are ever exposed to phi-M.",
+    "A culture in which the resistance mutation arose during an early division yields far more resistant colonies than one in which it arose late.",
+    "The close agreement among the twelve samples of the single large culture shows that the enormous spread among the independent cultures cannot be explained by sampling or plating error.",
+    "If exposure to phi-M had induced resistance, the twelve independent cultures should have yielded closely similar numbers of resistant colonies.",
+    "The rate at which resistance mutations arise per cell division differs from one independent culture to the next."
+   ],
+   "answer": 4,
+   "why": "All twelve independent cultures were founded from the same clonal starter and grown identically, so the mutation **rate** per cell division is the same in each — nothing in the data measures a difference in rate. The huge variance comes from **when** the mutation happened to arise: an early one is amplified by every subsequent division into a jackpot culture (the plate with 143), while a late one or none gives few or zero.",
+   "wrong": [
+    "Supported. All twelve were handled identically at plating, so a spread from 0 to 143 only makes sense if resistant cells were already present in differing numbers before the phage was added.",
+    "Supported, and it is the mechanism behind the jackpots. An early mutation is inherited by every descendant of that cell.",
+    "Supported, and it is exactly what the single-large-culture arm is for. Those twelve samples share one mutational history, so their tight agreement isolates sampling noise — far too small to explain a 0-to-143 range.",
+    "Supported. If the phage induced resistance on contact, each culture would convert roughly the same fraction of its cells and all twelve plates would look alike, the way the single-culture samples actually do.",
+    ""
+   ],
+   "pts": 3,
+   "t": 240,
+   "work": false,
+   "src": "L5 — random timing at a constant rate gives wildly different counts across parallel cultures; adaptive mutation would predict the same fraction everywhere."
+  },
+  {
+   "id": "A-L5-5",
+   "type": "mc",
+   "lecture": 5,
+   "section": "Multiple choice",
+   "topic": "Holliday junction resolution",
+   "tags": [
+    "dsb-repair",
+    "mechanism",
+    "compare-contrast"
+   ],
+   "stem": "You are studying meiosis in the alpine wildflower *Silene aurantia*. A plant is heterozygous at two closely linked loci: one homolog carries *A* and *B*, the other carries *a* and *b*. In one meiocyte a double-strand break forms **between** the two loci, strand invasion follows, and a Holliday junction forms between the two homologs. Among the products you recover chromatids carrying *A b* and *a B* — recombinant for the flanking markers. What BEST accounts for this?",
+   "options": [
+    "The Holliday junction was resolved in the opposite sense, which leaves each flanking arm attached to its original chromatid and produces only a short heteroduplex region.",
+    "The Holliday junction was resolved in the same sense, which exchanges the flanking arms of the two chromatids and produces crossover products.",
+    "The Holliday junction was resolved in the opposite sense, which exchanges the flanking arms of the two chromatids and produces crossover products.",
+    "The break was repaired by non-homologous end joining, which rejoined the ends of the two different homologs and thereby exchanged the flanking markers.",
+    "The break was repaired by synthesis-dependent strand annealing using the sister chromatid as template, which restored the broken chromatid and generated the recombinant arrangement."
+   ],
+   "answer": 2,
+   "why": "**Opposite-sense resolution is the crossover** — it exchanges the flanking arms of the two chromatids, so markers on either side of the junction end up in new combinations such as *A b* and *a B*. Same-sense resolution leaves the flanking arms with their original chromatids and yields only a short heteroduplex region.",
+   "wrong": [
+    "The term is right but the consequence is wrong. Leaving each arm with its original chromatid is the outcome of **same**-sense resolution.",
+    "The consequence described is right but the term is wrong. Arm exchange comes from **opposite**-sense resolution; same-sense leaves the flanking markers parental.",
+    "",
+    "NHEJ is the template-free pathway that directly rejoins the two ends of a single break. The stem specifies strand invasion and a Holliday junction, which is homologous recombination. NHEJ never performs homology-guided arm exchange between homologs.",
+    "SDSA is a **non-crossover** pathway: the invading strand is displaced and re-anneals to its own broken end, so flanking arms are never exchanged. More decisively, the sister chromatid is genetically identical, so copying from it could never turn an *A B* chromatid into *A b*."
+   ],
+   "pts": 3,
+   "t": 180,
+   "work": false,
+   "src": "L5 — 'I do need you to recognise the name Holliday junction and recognise the phrase opposite-sense resolution.' Cutting mechanics deliberately not required."
+  },
+  {
+   "id": "A-CY-02",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Bacterial genotype notation",
+   "tags": [
+    "bacterial-recombination",
+    "conjugation",
+    "exceptions"
+   ],
+   "stem": "You have isolated a bacterial strain with the genotype **his⁻ leu⁺ lac⁺ gal⁻ strR ampS**. You want to grow it. Which single plate below will support growth of this strain?",
+   "options": [
+    "Minimal medium plus galactose as the sole carbon source, plus histidine, plus streptomycin.",
+    "Minimal medium plus lactose as the sole carbon source, plus leucine, plus ampicillin.",
+    "Minimal medium plus lactose as the sole carbon source, plus histidine, plus streptomycin.",
+    "Minimal medium plus galactose as the sole carbon source, plus histidine and leucine, with no antibiotic.",
+    "Minimal medium plus lactose as the sole carbon source, plus histidine, plus ampicillin."
+   ],
+   "answer": 2,
+   "why": "Work the four classes separately. **his⁻** means the strain cannot make histidine, so histidine **must be supplied**. **lac⁺** means it can break lactose down, so lactose **works** as the carbon source. **gal⁻** means it cannot use galactose, so galactose as the sole carbon source starves it. **strR** means streptomycin does not kill it. Only option B supplies histidine, offers a usable sugar, and uses an antibiotic the strain resists.",
+   "wrong": [
+    "Galactose fails. **gal⁻** means the strain cannot break galactose down, so as the sole carbon source it provides nothing — supplying a sugar only helps if the strain can catabolise it.",
+    "Two failures. Histidine is absent and the strain is **his⁻**, so it cannot make its own. Leucine is supplied but the strain is **leu⁺** and never needed it. Ampicillin also kills it, since it is **ampS**.",
+    "",
+    "Galactose again fails as the sole carbon source for a **gal⁻** strain. The absence of antibiotic is fine and the amino acids are adequate, but with no usable carbon source there is no growth.",
+    "The carbon source and histidine are both correct here, but the strain is **ampS** — sensitive to ampicillin — so the antibiotic kills it."
+   ],
+   "pts": 3,
+   "t": 170,
+   "work": true,
+   "worked": "Split the genotype by class before touching the options.\n\n**Amino acids (biosynthesis, anabolic):** his⁻ = broken, so histidine **must be added**. leu⁺ = works, so leucine is **not** needed (adding it is harmless but pointless).\n\n**Sugars (metabolism, catabolic):** lac⁺ = works, so the strain **can grow on** lactose. gal⁻ = broken, so galactose is **useless** to it.\n\n**Antibiotics:** strR = survives streptomycin. ampS = killed by ampicillin.\n\nNotice the trap: a **⁻** amino acid gene means *supply it*, but a **⁻** sugar gene means *supplying it does not help*. Same symbol, opposite instruction, because building a molecule and eating one are opposite processes.\n\nNow screen the options — you need (1) histidine present, (2) lactose not galactose, (3) streptomycin or nothing, never ampicillin. Only B satisfies all three.",
+   "src": "L6 — the ± / R-S convention she flagged as the thing that makes the homework unreadable if you miss it."
+  },
+  {
+   "id": "A-CY-11",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Generalized versus specialized transduction",
+   "tags": [
+    "transduction",
+    "phage-biology",
+    "compare-contrast"
+   ],
+   "stem": "Two phages are used to move genes between bacterial strains. Phage **Alpha** can transfer essentially any gene from the donor chromosome, each at low and roughly equal frequency. Phage **Beta** transfers only the two genes lying immediately adjacent to a single fixed chromosomal location, and does so at high frequency. Which statement BEST accounts for the difference?",
+   "options": [
+    "Alpha performs generalized transduction, mispackaging random host fragments during the lytic cycle; Beta performs specialized transduction, carrying flanking genes after imprecise excision of an integrated prophage.",
+    "Alpha performs specialized transduction from a lysogenic prophage; Beta performs generalized transduction during the lytic cycle.",
+    "Alpha is a temperate phage and Beta is virulent, which is what determines the range of genes each can carry.",
+    "Alpha transfers genes by conjugation and Beta by transformation, which explains the difference in specificity.",
+    "Both are generalized transducers; Beta simply infects a strain in which only two genes differ between donor and recipient."
+   ],
+   "answer": 0,
+   "why": "**Generalized transduction** happens in the **lytic** cycle: as phage heads are filled, a random fragment of degraded host chromosome is occasionally packaged by mistake, so **any** gene can be moved, each rarely. **Specialized transduction** requires a **lysogenic** prophage integrated at a specific *att* site; when excision is imprecise it takes the **flanking** host genes with it, so only genes near that one site move — and because every progeny phage from that lysogen carries them, the frequency is high.",
+   "wrong": [
+    "",
+    "This has the two backwards. Random-any-gene is the signature of generalized transduction, and fixed-location-flanking-genes is the signature of specialized transduction.",
+    "Beta must be temperate, since specialized transduction requires a prophage integrated in the chromosome, and a strictly virulent phage never integrates. The temperate/virulent distinction is relevant but this option assigns it the wrong way round and treats it as the whole explanation.",
+    "Neither process is conjugation or transformation. Both are transduction, meaning phage-mediated transfer. Conjugation needs cell-to-cell contact through a pilus, and transformation is uptake of naked DNA.",
+    "The donor and recipient genotypes do not determine which genes a phage is physically able to package. Beta's restriction to two genes reflects where its prophage sits in the chromosome."
+   ],
+   "pts": 3,
+   "t": 165,
+   "work": false,
+   "src": "L6 — transduction, part of the Jul 14 session she confirmed is on Exam I."
+  },
+  {
+   "id": "A-CY-16",
+   "type": "mc",
+   "lecture": 6,
+   "section": "Multiple choice",
+   "topic": "Cotransduction three-factor mapping",
+   "tags": [
+    "transduction",
+    "hfr-mapping",
+    "calculation"
+   ],
+   "stem": "Using a transducing phage grown on a **thr⁺ ile⁺ nad⁺** donor, you infect a **thr⁻ ile⁻ nad⁻** recipient and select for each wild-type marker in turn. The unselected markers are scored in each experiment.\n\n| Experiment I (select thr⁺) | Experiment II (select ile⁺) | Experiment III (select nad⁺) |\n|---|---|---|\n| ile⁻ nad⁻ 82% | thr⁻ nad⁻ 41% | thr⁻ ile⁻ 18% |\n| ile⁺ nad⁻ 0% | thr⁺ nad⁻ 0% | thr⁺ ile⁻ 12% |\n| ile⁻ nad⁺ 14% | thr⁻ nad⁺ 57% | thr⁻ ile⁺ 64% |\n| ile⁺ nad⁺ 4% | thr⁺ nad⁺ 2% | thr⁺ ile⁺ 6% |\n\nWhat is the gene order?",
+   "options": [
+    "thr – ile – nad",
+    "The data are insufficient to determine an order.",
+    "ile – thr – nad",
+    "nad – thr – ile",
+    "thr – nad – ile"
+   ],
+   "answer": 4,
+   "why": "Compute the three pairwise cotransduction frequencies. **thr-ile** is by far the lowest (0 + 4 = 4% from I; 0 + 2 = 2% from II), so thr and ile are the **outermost** pair and **nad** must lie between them. The two 0% classes clinch it: those are exactly the thr⁺ile⁺nad⁻ combinations, which carry both outer markers **without** the middle one and therefore require **four** crossovers.",
+   "wrong": [
+    "This puts ile in the middle, but ile-thr is the *least* frequent pair, meaning they are farthest apart. A middle gene must be cotransduced frequently with **both** flanking genes, and ile is cotransduced with thr only 2-4% of the time.",
+    "The data are ample and internally consistent. Three pairwise frequencies plus the zero classes over-determine the answer.",
+    "This puts thr in the middle, but thr-ile at 2-4% is the weakest linkage in the set, so thr cannot be adjacent to ile at all — let alone between it and nad.",
+    "This places thr between nad and ile, which again requires thr-ile to be a close pair. It is the most distant pair.",
+    ""
+   ],
+   "pts": 3,
+   "t": 230,
+   "work": true,
+   "worked": "**Step 1 — read the frequencies.** Cotransduction frequency for a pair is the sum of **every** class in which both are wild-type... more precisely, for the selected marker X, the cotransduction of X with Y is the sum of all rows where Y is ⁺.\n\n- **thr-nad**, from Experiment I (selecting thr⁺): rows where nad is ⁺ = 14 + 4 = **18%**. Cross-check from Experiment III (selecting nad⁺): rows where thr is ⁺ = 12 + 6 = **18%**. The two estimates agree.\n- **ile-nad**, from Experiment II (selecting ile⁺): 57 + 2 = **59%**. Cross-check from III: 64 + 6 = **70%**. Same ballpark, comfortably the highest.\n- **thr-ile**, from Experiment I: 0 + 4 = **4%**. Cross-check from II: 0 + 2 = **2%**. By far the lowest.\n\n**Step 2 — rank them.** Cotransduction frequency is **inversely** related to distance: the more often two markers travel together on one phage fragment, the closer they are.\n\n`ile-nad (59-70%)  >  thr-nad (18%)  >>  thr-ile (2-4%)`\n\n**Step 3 — the lowest pair are the outer genes.** thr and ile are hardest to carry together, so they sit at the two ends, and **nad is in the middle**:\n\n**thr – nad – ile**\n\n**Step 4 — confirm independently with the zero class.** Look at the 0% rows: `ile⁺nad⁻` in Experiment I means thr⁺ile⁺nad⁻, and `thr⁺nad⁻` in Experiment II means the same genotype. That class carries **both outer markers but not the middle one**, which cannot be produced by two crossovers — it needs **four**. Four crossovers are vanishingly rare, hence 0%. That the observed zero falls exactly where the four-crossover class should be is strong, independent confirmation of the order.\n\n**Step 5 — sanity check the middle gene's two distances.** nad is closer to ile (59-70%) than to thr (18%), so the map is asymmetric: thr — long gap — nad — short gap — ile.",
+   "src": "L6 — cotransduction mapping, and the four-crossover logic she teaches as the rigorous confirmation of gene order."
+  },
+  {
+   "id": "A-B1",
+   "type": "problem",
+   "lecture": 6,
+   "section": "Written",
+   "topic": "Interrupted-mating Hfr mapping",
+   "tags": [
+    "hfr-mapping",
+    "conjugation",
+    "bacterial-recombination"
+   ],
+   "pts": 6,
+   "t": 900,
+   "work": true,
+   "stem": "You are mapping the circular chromosome of a newly isolated *Enterobacter* strain. You have four independent Hfr derivatives, each carrying the F factor integrated at a different site. Each Hfr is mated to an F⁻ recipient and the mating is interrupted by blending at intervals. All four donors are streptomycin-sensitive and the recipient is resistant, so streptomycin in the plates counter-selects the donors; *str* is therefore **not** one of the mapped markers. The table gives the time in minutes at which each mapped marker first appears among recombinants. A dash means the marker never appeared before mating was stopped at 60 minutes.\n\n| Order of entry | Hfr1 | Hfr2 | Hfr3 | Hfr4 |\n|---|---|---|---|---|\n| 1st | thr (5) | gal (3) | pro (8) | lac (4) |\n| 2nd | leu (17) | his (13) | leu (26) | gal (24) |\n| 3rd | pro (35) | mal (30) | thr (38) | his (34) |\n| 4th | lac (50) | thr (38) | mal (46) | mal (51) |\n| 5th | — | leu (50) | — | thr (59) |\n\n**(a)** Determine the complete circular gene order.\n**(b)** Give the distance in minutes between each pair of adjacent genes.\n**(c)** One of these four strains transfers its chromosome in the opposite direction from the other three. Identify it and explain how the data reveal it.",
+   "answer": "**Circular order:** thr – leu – pro – lac – gal – his – mal – (back to thr).\n\n**Intervals:** thr–leu 12, leu–pro 18, pro–lac 15, lac–gal 20, gal–his 10, his–mal 17, mal–thr 8. (Total 100 minutes — but see the worked solution: that total is *not* a check on your work.)\n\n**Hfr3 transfers in the opposite direction.** Its gene run pro → leu → thr is the exact reverse of the pro-leu-thr order every other strain shows.\n\nOn a circle, thr–leu–pro–lac–gal–his–mal and its mirror image mal–his–gal–lac–pro–leu–thr are the same map. Both are correct unless the question fixes a reference point.",
+   "worked": "**Step 1 — turn each strain's times into an ordered strip.** Drop the numbers for a moment and keep only the sequence:\n\n- Hfr1: thr – leu – pro – lac\n- Hfr2: gal – his – mal – thr – leu\n- Hfr3: pro – leu – thr – mal\n- Hfr4: lac – gal – his – mal – thr\n\n**Step 2 — compute gene-to-gene intervals, not distance-from-origin.** This is the step that makes the tiling work. Entry times are measured from each strain's own oriT and are not comparable between strains, but the *gaps* are.\n\n- Hfr1: thr–leu 12, leu–pro 18, pro–lac 15\n- Hfr2: gal–his 10, his–mal 17, mal–thr 8, thr–leu 12\n- Hfr3: pro–leu 18, leu–thr 12, thr–mal 8\n- Hfr4: lac–gal 20, gal–his 10, his–mal 17, mal–thr 8\n\n**Step 3 — spot the reversed strain.** Hfr1 and Hfr3 share three genes. Hfr1 reads thr–leu–pro; Hfr3 reads pro–leu–thr. Same three genes, same intervals (12 and 18), opposite direction. Hfr3 is not contradictory data — its F factor integrated in the opposite orientation, so its oriT fires the other way round the circle. **Flip Hfr3** to thr – leu – pro and it agrees with everything else.\n\nNote you can only conclude Hfr3 is the odd one out because the other three mutually fix a shared orientation: Hfr1 and Hfr2 overlap on {thr, leu, pro} in the same sense, and Hfr2 and Hfr4 overlap on {gal, his, mal, thr} in the same sense. Three strains agreeing outvote one.\n\n**Step 4 — tile the strips on shared genes.**\n\n- Hfr1 gives thr – leu – pro – lac.\n- Hfr4 starts lac – gal – his – mal – thr, so it extends Hfr1 from lac onward: thr – leu – pro – lac – gal – his – mal – thr.\n- That returns to thr, so the circle closes with seven genes.\n- Hfr2 (gal – his – mal – thr – leu) and flipped Hfr3 (thr – leu – pro) both sit on this map without contradiction.\n\n**Step 5 — assign distances,** reading them off the intervals from Step 2.\n\n**Step 6 — check your work properly. This is the part students get wrong.** The tempting move is to add the intervals, get 100 minutes, and call that confirmation. **It is not.** Every arc was measured directly, so the total is just those same numbers added back up — you would get a self-consistent total no matter what the numbers were. Summing to 100 confirms nothing.\n\nThe real check is **cross-strain agreement on redundantly-measured arcs.** Five of the seven were measured by more than one strain, and all five agree exactly:\n\n- thr–leu 12 — Hfr1, Hfr2, Hfr3\n- leu–pro 18 — Hfr1, Hfr3\n- gal–his 10 — Hfr2, Hfr4\n- his–mal 17 — Hfr2, Hfr4\n- mal–thr 8 — Hfr2, Hfr3, Hfr4\n\nThat is what tells you the tiling is right. Note the two arcs with **no** redundancy: **pro–lac (15), from Hfr1 alone**, and **lac–gal (20), from Hfr4 alone**. Those two rest on a single observation each — if this were real data you would want another Hfr crossing that region before trusting them.\n\n**Step 7 — the dashes are information.** Every marker absent from a strain should fall beyond the 60-minute cutoff on your finished map. Check a couple: on Hfr1, gal lands at 70 and str-free *mal* at 97, both past the cutoff. On Hfr3, *his* lands at 63 — only just past. If a missing marker came out *under* 60, your map is wrong.",
+   "rubric": [
+    "Converted each strain's entry times into an ordered strip of genes",
+    "Computed gene-to-gene intervals rather than only distance from the origin of transfer",
+    "Identified Hfr3 as reversed and flipped it, rather than discarding it as bad data",
+    "Tiled the strips on their shared genes into one continuous closed circle",
+    "Got the order thr – leu – pro – lac – gal – his – mal (or its mirror image) with all seven intervals correct",
+    "Validated using cross-strain agreement on the redundant arcs, NOT by the intervals summing to 100"
+   ],
+   "src": "L6 — the interrupted-mating map she guaranteed would be on the exam. Fresh dataset; the circular order was confirmed unique by exhaustive search over all 720 arrangements and both transfer directions."
+  },
+  {
+   "id": "A-B2",
+   "type": "problem",
+   "lecture": 2,
+   "section": "Written",
+   "topic": "Reading a Sanger sequencing gel",
+   "tags": [
+    "sanger-sequencing",
+    "directionality",
+    "gel-electrophoresis"
+   ],
+   "pts": 4,
+   "t": 480,
+   "work": true,
+   "stem": "You run a classic dideoxy sequencing reaction on a cloned fragment and resolve the products on a denaturing polyacrylamide gel. Four lanes were loaded, one per dideoxynucleotide. The wells are at the top; the positive electrode is at the bottom. Bands are listed from the top of the gel to the bottom.\n\n| Position on gel | ddA | ddC | ddG | ddT |\n|---|---|---|---|---|\n| top (slowest) | | | band | |\n| | band | | | |\n| | | band | | |\n| | | | | band |\n| | band | | | |\n| | | | band | |\n| | | | band | |\n| | | band | | |\n| | band | | | |\n| bottom (fastest) | | | | band |\n\n**(a)** Write out the sequence of the strand that was synthesized in the reaction, labelling its 5′ and 3′ ends.\n**(b)** Write out the sequence of the template strand that was being read, labelling its 5′ and 3′ ends.\n**(c)** State how you know which of your two answers is which, **and** how you know which end of each is 5′.",
+   "answer": "**(a)** Synthesized strand: **5′-TACGGATCAG-3′**\n\n**(b)** Template strand: **5′-CTGATCCGTA-3′**\n\n**(c)** Two separate things have to be argued. **Which strand:** every band is a nascent chain terminated by an *incorporated* ddNTP, so the ladder is necessarily the polymerase's product — the template is never in the gel and has to be inferred. **Which end is 5′:** the shortest fragment terminated earliest, i.e. nearest the primer, so the bottom band is the **5′-most base of the new sequence**, and each step up the gel adds one base in the 5′→3′ direction.",
+   "worked": "**Step 1 — orient the gel.** Smaller fragments migrate faster, so the **bottom** band is the shortest product, which means it terminated at the very first base added. Read the gel **bottom to top**.\n\n**Step 2 — read the lanes from bottom to top.** The lane a band sits in names the ddNTP that stopped that fragment, which is the base incorporated into the **new** strand at that position:\n\nT, A, C, G, G, A, T, C, A, G\n\n**Step 3 — that sequence is the synthesized strand, 5′ to 3′.** Polymerase builds 5′→3′, and the first base added is the 5′-most base of the read:\n\n**5′-TACGGATCAG-3′**\n\nThis is the answer to (a), and it is the one she warned people confuse — the gel does **not** show you the template.\n\n**Step 4 — derive the template.** It is antiparallel and complementary. Line it up first:\n\n`5′-T A C G G A T C A G-3′`  (synthesized)\n`3′-A T G C C T A G T C-5′`  (template)\n\n**Step 5 — rewrite the template 5′→3′,** which means reversing it. Do not just write the complement and stop — that is the classic error, and it gives ATGCCTAGTC, which is wrong:\n\n**5′-CTGATCCGTA-3′**\n\n**Why the ladder exists at all:** the reaction contains mostly normal dNTPs plus a small fraction of one ddNTP. The dideoxy sugar has no 3′-OH, so whenever one is incorporated that chain can form no further phosphodiester bond and terminates. Across millions of molecules this happens at every occurrence of that base, producing one fragment per position.\n\n**A note on strictness:** each real fragment is 5′-[primer]-TACGGATCAG…-3′, and the template must extend past the region read, so these ten-mers are properly the *extension product* and the *template region read* rather than complete strands. Every textbook makes that idealization for a ten-band gel with no primer given, and the expected answer is unchanged.",
+   "rubric": [
+    "Read the gel bottom to top, and justified it — the shortest fragment terminated earliest, so the bottom band is the 5′-most base of the new strand",
+    "Wrote the synthesized strand as 5′-TACGGATCAG-3′ with its ends labelled",
+    "Derived the template by reversing as well as complementing, not by complementing alone",
+    "Gave the template as 5′-CTGATCCGTA-3′ and said why the gel reports the synthesized strand (every band is a chain terminated by an incorporated ddNTP, so the template is never in the gel)"
+   ],
+   "src": "L2 — she said there is a very good chance of a Sanger gel question, and explicitly flagged the synthesized-versus-template confusion as the trap."
+  }
+ ]
+}

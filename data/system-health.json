@@ -1,229 +1,230 @@
 {
- "generatedAt": 1783393330304,
+ "generatedAt": 1784371703922,
  "stats": {
-  "cards": 266,
+  "cards": 459,
   "critics": 4,
-  "tags": 45
+  "tags": 81
  },
  "findings": [
   {
    "severity": "high",
-   "area": "reverse-engineered from exam/clicker",
-   "cardId": "L2-P002",
-   "msg": "Many answer cards bake in a specific past offering's clicker/exam key (\"Confirmed in lecture — answer C/D\", \"she flagged as exam-important\", \"clicker E\") rather than the general concept.",
-   "fix": "Strip the answer-letter/lecture-confirmation tags so cards test curriculum, not one exam's key.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "high",
-   "area": "tied to one course's assignments",
-   "cardId": "L1-P012",
-   "msg": "Cards reference specific one-off assignments by number (\"In the HW1 gel\", \"resolves HW1 Q6\", \"from the discussion sheet\"), which only make sense to students who had that exact handout.",
-   "fix": "Generalize to standalone gel/probability problems; remove HW/discussion-sheet cross-references (see also L1-C008, L2-P016).",
-   "lens": "relevance"
-  },
-  {
-   "severity": "high",
-   "area": "dup:gel-band-MCQ",
-   "cardId": "L1-P012 / L1-P020 / L1-P024",
-   "msg": "Three near-identical 'Band 1 near wells, Band 2 farther, which statement is NOT consistent' multiple-choice cards test the same single fact.",
-   "fix": "Keep one, delete the other two or repurpose them to a genuinely different figure/skill.",
-   "lens": "balance"
-  },
-  {
-   "severity": "high",
-   "area": "dup:-10-AT-rich",
-   "cardId": "L3-C008 / L3-C016",
-   "msg": "Both ask why the -10 Pribnow box is AT-rich and give the same 2-vs-3-H-bond / easier-to-melt answer.",
-   "fix": "Merge into one; drop the duplicate.",
-   "lens": "balance"
-  },
-  {
-   "severity": "high",
-   "area": "dup:count-10bp",
-   "cardId": "L3-C009 / L3-C017",
-   "msg": "Both refute 'find the -10 by counting exactly 10 bp upstream' with the identical variable-spacing explanation.",
-   "fix": "Collapse to a single card.",
-   "lens": "balance"
-  },
-  {
-   "severity": "warn",
-   "area": "promoter",
-   "cardId": "L3-R003",
-   "msg": "Says the −35 and −10 elements are 'separated by ~25 bp' — the standard (and exam-tested) spacer is ~17 bp, and this card even contradicts L3-P002, which correctly states 17 bp.",
-   "fix": "Change spacer to '~17 bp (16–19 bp optimal)'.",
-   "lens": "correctness"
-  },
-  {
-   "severity": "warn",
-   "area": "central-dogma-history",
-   "cardId": "L3-C005",
-   "msg": "Dates the discovery of reverse transcriptase to 1971; Temin and Baltimore both published it in 1970 (Nobel 1975).",
-   "fix": "Change '1971' to '1970'.",
-   "lens": "correctness"
-  },
-  {
-   "severity": "warn",
-   "area": "unanswerable placeholder",
-   "cardId": "L2-P016",
-   "msg": "Answer says \"Plug in the actual primer-binding 8-mer's bases from the discussion sheet\" — the card cannot be answered without an external sheet it doesn't contain.",
-   "fix": "Embed a concrete 8-mer so the problem is self-contained.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "warn",
-   "area": "off-topic / test-taking meta",
+   "area": "off-topic/test-strategy",
    "cardId": "L1-C012",
-   "msg": "Occam's razor \"how to pick the best multiple-choice answer\" is exam strategy, not molecular-genetics content.",
-   "fix": "Cut, or recast as a genetics-inference card if kept.",
+   "msg": "'What principle should guide picking the best multiple-choice answer? Occam's razor' is exam-taking strategy, not genetics content.",
+   "fix": "Cut it, or rewrite as a genetics-reasoning card (e.g. ss vs ds inference from Chargaff).",
    "lens": "relevance"
   },
   {
-   "severity": "warn",
-   "area": "instructor-specific asides",
-   "cardId": "L2-C029",
-   "msg": "Numerous cards hinge on one lecturer's in-class asides (\"Archbold told you to cross out the telomere figure\", \"she said this is likely on the exam\") rather than transferable content.",
-   "fix": "Convert to the underlying fact (what the textbook figure gets wrong) without the personal framing.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "warn",
-   "area": "cross-unit graft",
-   "cardId": "L1-P019",
-   "msg": "Round×wrinkled Mendelian cross scored on a gel mixes transmission-genetics (a different unit) into the DNA-structure unit, a combo typical of one exam question.",
-   "fix": "Move to the transmission-genetics deck or replace with a pure fragment-size gel-reading item.",
-   "lens": "relevance"
-  },
-  {
-   "severity": "warn",
-   "area": "who-what-when misuse",
-   "msg": "who-what-when is applied to definitional recall cards that carry no scientist or date attribution, diluting the skill tag's meaning.",
-   "fix": "Drop who-what-when from L3-R004 (+1/TSS), L3-R012 (TBP identity), and L3-C020 (rifampicin mechanism); use mechanism/technique instead.",
-   "lens": "tags"
-  },
-  {
-   "severity": "warn",
-   "area": "wrong tag",
+   "severity": "high",
+   "area": "wrong-tag",
    "cardId": "L2-P010",
-   "msg": "Tagged 'telomere' but the question is entirely about prokaryotic replication (primers, ligase, single origin, dsDNA) with no telomere content.",
-   "fix": "Remove telomere; add leading-lagging and/or replication-origin.",
+   "msg": "Tagged `telomere` but the card is entirely about prokaryotic (circular-chromosome) replication, which has no telomeres and none are discussed.",
+   "fix": "Drop `telomere`; use `replication-origin` and/or `leading-lagging`.",
    "lens": "tags"
   },
   {
-   "severity": "warn",
-   "area": "too few tags",
-   "cardId": "L1-R004",
-   "msg": "Only one tag (foundations) despite an obvious genotype/phenotype-correlation skill dimension.",
-   "fix": "Add compare-contrast.",
-   "lens": "tags"
+   "severity": "high",
+   "area": "L1 duplicate authoring pass",
+   "cardId": "L1-R045",
+   "msg": "L1-R045 and L1-C017 are the same card — 'name the three DNA-hereditary experiments with dates/scientists' (Griffith 1928 / Avery 1944 / Hershey-Chase 1952).",
+   "fix": "Delete one; keep the concept version (L1-C017) since it adds 'what each contributed.'",
+   "lens": "balance"
   },
   {
-   "severity": "warn",
-   "area": "too few tags",
-   "msg": "L1-R001 and L1-R002 each carry a single tag (foundations), below the 2-tag minimum.",
-   "fix": "Add a second axis or accept as intentional single-concept definitions and document the exemption.",
-   "lens": "tags"
+   "severity": "high",
+   "area": "Dawson in vitro dup",
+   "cardId": "L1-C029",
+   "msg": "L1-C029 and L1-C018 both ask 'what setup let Avery test which molecule + who developed it' → Martin Dawson's in vitro transformation, near-verbatim.",
+   "fix": "Merge into one card.",
+   "lens": "balance"
   },
   {
-   "severity": "warn",
-   "area": "dup:telomerase-aging-risk",
-   "cardId": "L2-C014 / L2-P011 / L2-C030",
-   "msg": "Three cards all deliver 'reactivating telomerase to cure aging → cancer risk (~80-90% reactivate).'",
-   "fix": "Retain the concept card plus one problem; cut the third.",
+   "severity": "high",
+   "area": "L1 over-represented",
+   "msg": "L1 (intro: history + DNA structure + techniques) holds ~100 of 459 cards (~22%), inflated by a second pass that re-created Griffith/Avery/Hershey-Chase/blotting/gel cards; disproportionate to its typical exam weight vs denser L6/L7 regulation material.",
+   "fix": "Prune ~15-20 redundant L1 recall/concept cards to rebalance toward L6-L7.",
    "lens": "balance"
   },
   {
    "severity": "warn",
-   "area": "dup:blot-unique-step",
-   "cardId": "L1-C020 / L1-C032",
-   "msg": "Near-identical concept cards giving Southern/Northern/Western targets plus the step unique to each; L1-C009/L1-P007/L1-R023 already cover the same restriction-digest point.",
-   "fix": "Consolidate the redundant overview cards.",
-   "lens": "balance"
+   "area": "promoter spacing",
+   "cardId": "L3-R003",
+   "msg": "Says the −35 and −10 elements are 'separated by ~25 bp (variable spacer)'; the conserved spacer is ~17 bp (16–19), and card L3-P002 correctly uses 17 bp — internal contradiction.",
+   "fix": "Change '~25 bp' to '~17 bp (16–19 bp variable spacer).'",
+   "lens": "correctness"
   },
   {
    "severity": "warn",
-   "area": "overrep:DNA-discovery-history",
-   "msg": "The Griffith/Avery-MacLeod-McCarty/Hershey-Chase discovery story is spread across ~15+ L1 cards (R016-18, C002-04, C017, R043-45, C025-29), far heavier than its likely exam share.",
-   "fix": "Trim overlapping who-what-when recalls; keep the highest-yield date+contribution set.",
-   "lens": "balance"
-  },
-  {
-   "severity": "low",
-   "area": "telomere-history",
+   "area": "who-when",
    "cardId": "L2-R021",
-   "msg": "Gives 1987 for the discovery of telomerase; Greider & Blackburn identified telomerase activity in Tetrahymena in 1985 (Cell).",
-   "fix": "Change '1987' to '1985'.",
+   "msg": "Dates the telomerase discovery to 1987; Greider & Blackburn discovered telomerase in 1984 (published Cell 1985).",
+   "fix": "Change '(1987)' to '(1985)' for the telomerase discovery.",
+   "lens": "correctness"
+  },
+  {
+   "severity": "warn",
+   "area": "reverse-engineered-from-exam",
+   "cardId": "L2-C015",
+   "msg": "Pervasive instructor-tell annotations ('she flagged this as exam-important', 'she said this is likely on the exam', 'her single loudest exam signal in purple') across L2/L3/L4 reveal cards built from one instructor's verbal exam hints rather than the curriculum.",
+   "fix": "Strip the 'she said/exam-important' meta and keep the underlying concept, so cards teach the material not the test.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "answer-key-leakage",
+   "cardId": "L2-P010",
+   "msg": "Many problem cards embed the specific past-exam answer letter ('Confirmed in lecture — answer C', 'answer B'), tying the card to one exam's key instead of the concept.",
+   "fix": "Remove the '(Confirmed — answer X)' tags; the reasoning already stands alone.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "tied-to-specific-assignment",
+   "cardId": "L1-C008",
+   "msg": "Card explicitly resolves 'HW1 Q6' and cross-references L1-P012, anchoring content to a specific past homework rather than the general concept.",
+   "fix": "Drop the HW1/cross-ref parenthetical.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "slide-specific-artifact",
+   "cardId": "L2-C029",
+   "msg": "'Archbold told you to cross out the telomere figure in the textbook' defines the card around one lecture's slide correction, which won't generalize as course knowledge.",
+   "fix": "Reframe as what telomerase actually does vs the common textbook error, without the 'cross out the figure' framing.",
+   "lens": "relevance"
+  },
+  {
+   "severity": "warn",
+   "area": "wrong-tag",
+   "cardId": "L2-R013",
+   "msg": "DNA ligase is tagged `primer-removal`, but ligase seals the nick between Okazaki fragments — primer removal is Pol I's job, not ligase's.",
+   "fix": "Replace `primer-removal` with `leading-lagging` (keep `mechanism`).",
+   "lens": "tags"
+  },
+  {
+   "severity": "warn",
+   "area": "too-few-tags",
+   "cardId": "L1-R001",
+   "msg": "Only one tag (`foundations`) — below the 2-tag minimum; same for L1-R002, L1-R004, and L1-C012 (all `foundations` alone).",
+   "fix": "Add a second content/skill tag (e.g. `compare-contrast` or `who-what-when`) to each.",
+   "lens": "tags"
+  },
+  {
+   "severity": "warn",
+   "area": "wrong-tag",
+   "cardId": "L2-C019",
+   "msg": "Ligase again carries `primer-removal`; the card contrasts topoisomerase vs ligase, and ligase's role is nick-sealing, not primer removal.",
+   "fix": "Swap `primer-removal` for `leading-lagging`.",
+   "lens": "tags"
+  },
+  {
+   "severity": "warn",
+   "area": "Gel migration mechanism dup",
+   "cardId": "L1-C030",
+   "msg": "L1-C030 and L1-C013 both ask the mechanism for why smaller DNA migrates farther (sieve/pore matrix) — same answer.",
+   "fix": "Keep one.",
+   "lens": "balance"
+  },
+  {
+   "severity": "warn",
+   "area": "Southern-vs-Northern step dup",
+   "cardId": "L1-P007",
+   "msg": "'Which step is in Southern but not Northern → restriction digestion' appears in L1-C009, L1-P007, and again inside L1-C020/C032 — 3-4x overlap.",
+   "fix": "Keep the problem (L1-P007) + one concept; trim the rest.",
+   "lens": "balance"
+  },
+  {
+   "severity": "warn",
+   "area": "End-replication problem dup",
+   "cardId": "L2-R034",
+   "msg": "L2-R034 and L2-C010 both ask why terminal lagging-strand primer removal leaves an unreplicated end (no upstream 3'-OH) — same content.",
+   "fix": "Collapse to one.",
+   "lens": "balance"
+  },
+  {
+   "severity": "low",
+   "area": "who-when",
+   "cardId": "L3-C005",
+   "msg": "States reverse transcriptase was discovered in 1971; Temin and Baltimore reported it in 1970 (Nature, June 1970).",
+   "fix": "Change 'Overturned in 1971' to '1970.'",
    "lens": "correctness"
   },
   {
    "severity": "low",
-   "area": "rna-pol-mass",
-   "cardId": "L3-R006",
-   "msg": "Holoenzyme mass '~430 kD' understates it — core ~390 kD plus σ70 (~70 kD) is ~460 kD.",
-   "fix": "Use ~460 kD, or drop the exact holoenzyme figure.",
+   "area": "genome composition",
+   "cardId": "L5-C028",
+   "msg": "Says LINEs + SINEs together are ~25% of the human genome; the accepted figure is closer to ~34% (LINEs ~20%, SINEs ~13%).",
+   "fix": "Update to '~33–34%.'",
    "lens": "correctness"
   },
   {
    "severity": "low",
-   "area": "deep historical trivia",
-   "cardId": "L1-R036",
-   "msg": "Very granular names/years untied to molecular mechanism (Carothers 1913 grasshoppers, Astbury & Bell 1938, E.B. Wilson 1895, Brock Yellowstone 1965) read as memorize-the-exam-slide trivia for an intro molecular unit.",
-   "fix": "Keep the load-bearing history (Griffith/Avery/Hershey-Chase/Watson-Crick); demote the obscure names to optional.",
+   "area": "deep-history-trivia",
+   "cardId": "L1-R019",
+   "msg": "Oddly specific history cards (Astbury & Bell 1938 first X-ray photos; Carothers 1913 grasshoppers; Brock Yellowstone 1965) sit far from the molecular mechanisms an intro course tests.",
+   "fix": "Demote to optional or fold the key name/date into a mechanism card.",
    "lens": "relevance"
   },
   {
    "severity": "low",
-   "area": "tag + content mismatch",
-   "cardId": "L1-C012",
-   "msg": "Occam's razor card is tagged only 'foundations' (<2) and is generic test-taking heuristic, not genetics content.",
-   "fix": "Add a second tag or reclassify out of the genetics decks.",
-   "lens": "tags"
+   "area": "biographical-trivia",
+   "cardId": "L4-C030",
+   "msg": "Herman Branson 'one-year sabbatical' biographical detail is trivia beyond intro-course scope.",
+   "fix": "Keep the α-helix/β-sheet + Pauling-Corey attribution; drop the sabbatical aside.",
+   "lens": "relevance"
   },
   {
    "severity": "low",
-   "area": "missing directionality",
-   "cardId": "L1-R021",
-   "msg": "Card explicitly asks which direction small fragments migrate but omits the directionality skill tag.",
-   "fix": "Add directionality.",
-   "lens": "tags"
-  },
-  {
-   "severity": "low",
-   "area": "weak tag",
+   "area": "marginal-tag",
    "cardId": "L3-C005",
-   "msg": "'telomere' tag is a stretch; the card is about the central dogma / reverse transcriptase, mentioning telomerase only as one example enzyme.",
-   "fix": "Consider dropping telomere; central-dogma+mechanism already cover it.",
+   "msg": "`telomere` is a stretch — the card is about reverse transcriptase and the updated central dogma; telomerase is only one example enzyme named.",
+   "fix": "Consider dropping `telomere`.",
    "lens": "tags"
   },
   {
    "severity": "low",
-   "area": "dup:semiconservative-def",
-   "cardId": "L1-R014 / L2-R001",
-   "msg": "Both define 'semiconservative'; L2-R001 supersedes it by also naming the conservative/dispersive alternatives.",
-   "fix": "Cross-tag as a deliberate spiral or drop the barer L1 version.",
+   "area": "missing-skill-tag",
+   "cardId": "L4-C030",
+   "msg": "Card explicitly hinges on the method (X-ray crystallography + modeling) but omits the `technique` skill tag.",
+   "fix": "Add `technique`.",
+   "lens": "tags"
+  },
+  {
+   "severity": "low",
+   "area": "missing-skill-tag",
+   "cardId": "L4-P014",
+   "msg": "Sequence→peptide scanning cards (also L4-P015) rely on 5'→3' reading-frame logic but omit `directionality`.",
+   "fix": "Add `directionality`.",
+   "lens": "tags"
+  },
+  {
+   "severity": "low",
+   "area": "Telomere/telomerase over-covered",
+   "cardId": "L2-C030",
+   "msg": "Telomere biology spans three overlapping batches in L2 (R018-24, C010-14, R034/35+C028-30); e.g. Hayflick/senescence in both C013 and C030, telomerase mechanism in C011 and R035.",
+   "fix": "Consolidate the third batch into the first two.",
    "lens": "balance"
   },
   {
    "severity": "low",
-   "area": "dup:telomerase-enzyme-type",
-   "cardId": "L2-R020 / L2-R035 / L2-P006",
-   "msg": "Three cards restate telomerase = ribonucleoprotein reverse transcriptase (RNA-dependent DNA polymerase, TERT).",
-   "fix": "Keep one recall + the problem; retire the redundant recall.",
+   "area": "Wobble volume",
+   "cardId": "L4-P021",
+   "msg": "L4 carries ~18 wobble cards (R010-12, C023-29, P003/07/10/11/17-21); legal/illegal anticodon problems repeat the same logic many times — heavy even for a flagged high-yield topic.",
+   "fix": "Keep 3-4 canonical legal/illegal examples; trim redundant ones.",
    "lens": "balance"
   },
   {
    "severity": "info",
-   "area": "dna-structure",
+   "area": "helix geometry",
    "cardId": "L1-R013",
-   "msg": "States ~10 bp per helical turn while L1-C024 states ~10.5 bp/turn; inconsistent within the deck.",
-   "fix": "Standardize on 10.5 bp/turn for B-form.",
+   "msg": "Gives B-DNA as ~10 bp/turn while L1-C024 gives ~10.5 bp/turn; harmless but inconsistent within the deck.",
+   "fix": "Standardize on 10.5 bp/turn (or note both are classic approximations).",
    "lens": "correctness"
   },
   {
    "severity": "info",
-   "area": "scope check",
-   "msg": "Topically the deck is well-aligned to Unit 1 (structure, replication, transcription); the concern is exam-mirroring granularity, not off-subject content.",
-   "fix": "Audit for the \"one past exam\" fingerprint above rather than adding/removing topics.",
+   "area": "scope-vs-unit1",
+   "msg": "L4–L7 (translation, mutation/repair, bacterial/viral genetics, gene regulation) extend well past the stated Unit 1 scope of 'DNA structure, replication, transcription' — fine for a full molgen course, but out of frame if this audit is Unit-1-only.",
    "lens": "relevance"
   }
  ]

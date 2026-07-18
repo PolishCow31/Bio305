@@ -629,5 +629,66 @@
    "mechanism"
   ],
   "id": "L6-C031"
+ },
+ {
+  "type": "concept",
+  "topic": "The ± and R/S genotype notation convention",
+  "diff": 3,
+  "target_s": 22,
+  "src": "Lec6T.md §5 (⚑ she called this a homework-killer)",
+  "q": "Bacterial genotypes in this unit use two different notations across four gene classes. What are the classes, and why does a **⁺** mean something *opposite* for amino-acid genes versus sugar genes?",
+  "a": "**Four classes, two notations.** **Antibiotic resistance** and **other toxic agents** (heavy metals) are written **R / S** — the question is always *can it grow in the presence of this?* **Amino-acid biosynthesis** and **sugar metabolism** are written **⁺ / −**.\n\nThe underlying rule is the same for both: **⁺ = the gene works, − = the gene is broken.** All mutations in this lecture are **loss-of-function**. What flips is the *growth consequence*, because biosynthesis is **anabolic** (you build the thing) and sugar use is **catabolic** (you break the thing down):\n- **Amino acid ⁺** = the cell **can make it** → it does **NOT** need it supplied. **Amino acid −** = auxotroph → it **must** be added to the plate or the cell dies.\n- **Sugar ⁺** = the cell **can break it down** → it **can grow on** that sugar. **Sugar −** = it cannot use that sugar, so **putting it on the plate doesn't help**.\n\nSo for amino acids the **−** strain is the one that needs the supplement; for sugars the **⁺** strain is the one the supplement helps. Reading these backwards is what makes the homework problems unsolvable.",
+  "tags": [
+   "bacterial-recombination",
+   "conjugation",
+   "compare-contrast",
+   "exceptions"
+  ],
+  "id": "L6-C032"
+ },
+ {
+  "type": "recall",
+  "topic": "Exconjugant",
+  "diff": 1,
+  "target_s": 10,
+  "src": "Lec6T.md (⚑ \"a term you should recognize\")",
+  "q": "What is an **exconjugant**?",
+  "a": "The **recipient cell immediately after it has received the F factor** in a conjugation — a **brand-new donor**, as opposed to one that was always F⁺. The term marks the moment of conversion: an F⁻ cell that has just been made F⁺ by mating.",
+  "tags": [
+   "conjugation",
+   "f-factor"
+  ],
+  "id": "L6-C033"
+ },
+ {
+  "type": "concept",
+  "topic": "Why four crossovers reveal the middle gene",
+  "diff": 3,
+  "target_s": 20,
+  "src": "Lec6T.md §7; Lec6D.pdf Part 2",
+  "q": "In a three-gene bacterial cross, why is the class carrying the two **outer** markers but **not** the middle one so vanishingly rare, and how do you use that to find the gene order?",
+  "a": "Incoming linear DNA must integrate by an **even** number of crossovers — a single crossover would linearize the circular chromosome and kill the cell, so the minimum is **two**. Each crossover is a rare event, so **two is rare and four is very much rarer**.\n\nPicking up **both outer genes while excluding the middle one** cannot be done with two crossovers — the middle gene sits between them, so you have to cross in, back out around the middle marker, and in again: **four crossovers**. Picking up all three, or any single one, needs only two.\n\n**How you use it:** find the recombinant class with a frequency at or near **zero**. The marker that is *absent* from that otherwise-double-positive class is the **middle** gene. This is an independent and more rigorous confirmation of gene order than ranking cotransduction frequencies, and the two methods should agree.",
+  "tags": [
+   "hfr-mapping",
+   "transduction",
+   "mechanism",
+   "bacterial-recombination"
+  ],
+  "id": "L6-C034"
+ },
+ {
+  "type": "concept",
+  "topic": "Replica plating and the Esther Lederberg credit question",
+  "diff": 1,
+  "target_s": 14,
+  "src": "Lec6T.md (her deliberate soapbox; compare Branson in L4)",
+  "q": "Replica plating is conventionally credited to Joshua Lederberg. What is the contribution question Archbold raises, and what does the technique actually do?",
+  "a": "**The technique:** press a velvet pad onto a master plate of colonies, then stamp that pad onto a series of selective plates. Every colony transfers to the same position on each plate, so you can ask which nutrient a colony needs by seeing which plate it **fails** to grow on. A colony that grows on complete medium but not on the plate lacking histidine is a **his⁻ auxotroph**.\n\n**The credit question:** **Esther Lederberg** worked in the lab, made discoveries of her own, and her family owned a textile factory — which is where the **velvet** came from. Joshua brought her to the Nobel ceremony and **did not thank her in the speech**. Archbold raises this deliberately, in her own words: *\"whether it was her who invented this or him… I know what I think.\"*\n\nNote her stated exam policy: she tests **what an experiment showed and why it matters**, not who did it in what year. Know the contribution and the logic, not the date.",
+  "tags": [
+   "who-what-when",
+   "technique",
+   "bacterial-recombination"
+  ],
+  "id": "L6-C035"
  }
 ]

@@ -33,9 +33,11 @@
     const h = location.hash.replace(/^#\/?/,"") || "home";
     const [view,arg] = h.split(/\/(.+)/);   // split on first slash only (tag:foo keeps colon)
     setTab(view);
+    if(view!=="exam" && window.Exam) Exam.cleanup();   // kill any live exam timer/keybinds on the way out
     if(view==="home") return renderHome();
     if(view==="review") return startReview(arg);
     if(view==="problems") return renderProblems(arg);
+    if(view==="exam") return renderExam(arg);
     if(view==="stats") return renderStats();
     if(view==="health") return renderHealth();
     if(view==="settings") return renderSettings();
@@ -301,6 +303,15 @@
       };
     }
     show();
+  }
+
+  // ---------- exam (engine lives in exam.js) ----------
+  function renderExam(arg){
+    if(!window.Exam){ app.innerHTML=""; app.appendChild(el(`<div class="empty"><div class="big">Exam engine not loaded</div></div>`)); return; }
+    const [sub,rest] = (arg||"").split(/\/(.+)/);
+    if(sub==="take")   return Exam.renderTake(app, rest);
+    if(sub==="review") return Exam.renderReview(app, rest);
+    return Exam.renderHome(app);
   }
 
   // ---------- stats ----------

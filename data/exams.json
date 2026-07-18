@@ -1,0 +1,15 @@
+{
+ "blurb": "Built from her real papers. Her Exam I is 31 best-answer multiple-choice questions at 3 points each, taken on Canvas in the lecture room, plus a separate 10-point collaborative exam in discussion. The codon and wobble tables are provided — they are below, in her orientation. Sit it timed, then review every question: each wrong option gets its own explanation.",
+ "papers": [
+  {
+   "id": "exam1a",
+   "file": "exam1a.json",
+   "title": "Exam I · Practice Paper A",
+   "covers": "Lectures 1-6",
+   "questions": 36,
+   "points": 112,
+   "minutes": 110,
+   "blurb": "34 multiple choice at 3 points each plus 2 written multi-step problems. Slightly longer than the real paper on purpose. Weighted to what she actually repeats year on year: wobble and illegal anticodons (her biggest bucket), replication mechanics, the guaranteed interrupted-mating map, repair-pathway routing, blots and EMSA, Sanger gels, primer design, and the plus/minus notation trap."
+  }
+ ]
+}
